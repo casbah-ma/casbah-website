@@ -11,6 +11,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@next/font": "^13.3.4",
     "autoprefixer": "10.4.14",
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-styled-components": "^2.1.1",
