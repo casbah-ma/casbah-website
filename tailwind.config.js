@@ -9,6 +9,13 @@ module.exports = {
     extend: {
       fontFamily: {
         mako: ["var(--font-mako)"],
+        inter: ["var(--font-inter)"],
+      },
+      colors: {
+        deepBlue: "#000F9F",
+        brightOrange: "#FF5100",
+        grayIsh: "#FF5100",
+        blackIsh: "#151B18",
       },
     },
   },
