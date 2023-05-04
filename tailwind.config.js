@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         mako: ["var(--font-mako)"],
         inter: ["var(--font-inter)"],
+        made: ["var(--font-made)"],
       },
       colors: {
         deepBlue: "#000F9F",

@@ -1,6 +1,12 @@
 import GlobalStyles from "@/components/GlobalStyles";
 import "@/styles/globals.css";
 import { Inter, Mako } from "next/font/google";
+import localFont from "next/font/local";
+
+const made = localFont({
+  src: "../fonts/MADE-Outer-Sans-Light.otf",
+  variable: "--font-made",
+});
 
 const mako = Mako({
   subsets: ["latin"],
@@ -15,7 +21,7 @@ const inter = Inter({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${mako.variable} ${inter.variable}`}>
+    <main className={`${mako.variable} ${inter.variable} ${made.variable}`}>
       <GlobalStyles />
       <Component {...pageProps} />
     </main>

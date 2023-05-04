@@ -2,6 +2,7 @@ import GlobalStyles from "../src/components/GlobalStyles";
 import "../src/styles/globals.css";
 import "twin.macro";
 import { Inter, Mako } from "next/font/google";
+import localFont from "next/font/local";
 const mako = Mako({
   subsets: ["latin"],
   weight: ["400"],
@@ -11,6 +12,11 @@ const mako = Mako({
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+});
+
+const made = localFont({
+  src: "../src/fonts/MADE-Outer-Sans-Light.otf",
+  variable: "--font-made",
 });
 
 const preview = {
@@ -28,7 +34,7 @@ const preview = {
 
   decorators: [
     (Story) => (
-      <main className={`${mako.variable} ${inter.variable}`}>
+      <main className={`${mako.variable} ${inter.variable} ${made.variable}`}>
         <GlobalStyles />
         <Story />
       </main>

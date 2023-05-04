@@ -1,16 +1,15 @@
 import Paragraph from "@/components/Paragraph";
+import Title from "@/components/Title";
 
 export default function Home() {
   return (
     <main
-      className={` w-full flex min-h-screen flex-col items-center justify-center p-24 font-bold text-3xl`}
+      className={`font-made w-full flex min-h-screen flex-col items-center justify-center p-24 font-bold text-3xl`}
     >
-      <Paragraph size="md" color="white">
+      <Title renderAs="h1" size="md">
         Hello Casbha Team
-      </Paragraph>
-      <Paragraph size="lg" color="white">
-        Our Website
-      </Paragraph>
+      </Title>
+      <Paragraph size="lg">Our Website</Paragraph>
     </main>
   );
 }
