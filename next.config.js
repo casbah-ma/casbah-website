@@ -1,4 +1,5 @@
 const { withContentlayer } = require("next-contentlayer")
+const withTwin = require("./withTwin");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -13,4 +14,5 @@ const nextConfig = {
   },
 };
 
-module.exports = withContentlayer(nextConfig);
+
+module.exports = withContentlayer(withTwin(nextConfig));
