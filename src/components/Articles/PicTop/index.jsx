@@ -5,11 +5,11 @@ import Paragraph from "../../Paragraph";
 import { directions } from "./PicTop.styles";
 function PicTop({ title, texts, direction, img }) {
   return (
-    <Wrapper direction={direction}>
+    <Wrapper>
       <Image src={img} alt={title} direction={direction} />
       <Content direction={direction}>
         <Title renderAs="h2">{title}</Title>
-        <Texts>
+        <Texts direction={direction}>
           {texts?.length > 0 &&
             texts.map((text, i) => (
               <Paragraph key={i} size="md">

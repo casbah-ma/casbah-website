@@ -3,12 +3,13 @@ import tw from "twin.macro";
 
 export const directions = {
   row: tw` flex-col gap-8 
-          lg:flex-row lg:gap-[8.438rem]`,
-  column: tw`flex-col gap-8 items-end lg:items-start lg:gap-11`,
+          lg:flex-row lg:gap-[8.438rem] lg:items-start`,
+  column: tw`flex-col gap-8 items-start 
+             md:items-start lg:gap-11`,
 };
 const textDirections = {
-  row: tw`w-[86%] last:self-end lg:w-full`,
-  column: tw`w-[86%] md:w-full`,
+  row: tw`w-[80%] last:self-end lg:w-full`,
+  column: tw`w-full pl-10 md:pl-0 last:self-end md:w-full `,
 };
 const imageDirections = {
   row: tw`w-full h-[19.375rem] lg:h-[24.563rem]`,
@@ -26,7 +27,7 @@ export const Content = styled.div(() => [
 ]);
 
 export const Texts = styled.div(() => [
-  tw`flex flex-col gap-6`,
+  tw`flex flex-col gap-3 lg:gap-4`,
   ({ direction }) => textDirections[direction],
 ]);
 
