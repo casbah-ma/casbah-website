@@ -11,7 +11,7 @@ const textDirections = {
   row: tw`w-[80%] last:self-end lg:w-full`,
   column: tw`w-full pl-10 md:pl-0 last:self-end md:w-full `,
 };
-const imageDirections = {
+export const imageDirections = {
   row: tw`w-full h-[19.375rem] lg:h-[24.563rem]`,
   column: tw`w-[86%] h-[16rem] md:w-full md:h-[17.563rem] lg:h-[21.938rem]`,
 };
@@ -29,9 +29,4 @@ export const Content = styled.div(() => [
 export const Texts = styled.div(() => [
   tw`flex flex-col gap-3 lg:gap-4`,
   ({ direction }) => textDirections[direction],
-]);
-
-export const Image = styled.img(() => [
-  tw`object-cover`,
-  ({ direction }) => imageDirections[direction],
 ]);

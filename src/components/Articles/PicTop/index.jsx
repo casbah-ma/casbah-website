@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Content, Image, Texts, Wrapper } from "./PicTop.styles";
+import { Content, Texts, Wrapper, imageDirections } from "./PicTop.styles";
 import Title from "../../Title";
 import Paragraph from "../../Paragraph";
 import { directions } from "./PicTop.styles";
@@ -7,13 +7,7 @@ import MyImage from "../../MyImage";
 function PicTop({ title, texts, direction, img }) {
   return (
     <Wrapper>
-      <MyImage
-        width="100%"
-        height="24.563rem"
-        src={img}
-        alt={title}
-        direction={direction}
-      />
+      <MyImage sizes={imageDirections[direction]} src={img} alt={title} />
       <Content direction={direction}>
         <Title renderAs="h2">{title}</Title>
         <Texts direction={direction}>

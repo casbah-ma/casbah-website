@@ -2,17 +2,16 @@ import PropTypes from "prop-types";
 import { Wrapper } from "./MyImage.styles";
 import Image from "next/image";
 
-function MyImage({ width, height, src, alt }) {
+function MyImage({ sizes, src, alt }) {
   return (
-    <Wrapper width={width} height={height}>
+    <Wrapper sizes={sizes}>
       <Image src={src} alt={alt} fill={true} style={{ objectFit: "cover" }} />
     </Wrapper>
   );
 }
 
 MyImage.propTypes = {
-  width: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired,
+  sizes: PropTypes.func.isRequired,
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
 };
