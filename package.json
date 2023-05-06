@@ -38,6 +38,7 @@
     "@storybook/react": "^7.0.9",
     "@storybook/testing-library": "^0.1.0",
     "eslint-plugin-storybook": "^0.6.12",
+    "next-translate-plugin": "^2.0.5",
     "storybook": "^7.0.9"
   }
 }

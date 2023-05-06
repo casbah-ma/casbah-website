@@ -7777,6 +7777,13 @@ next-contentlayer@^0.3.2:
     "@contentlayer/core" "0.3.2"
     "@contentlayer/utils" "0.3.2"
 
+next-translate-plugin@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/next-translate-plugin/-/next-translate-plugin-2.0.5.tgz#9db61207fbdac724b9ab4906194bafcd0b555969"
+  integrity sha512-H5Wecew+EQvrcCfnUiWwev8jS8ICH2Mw1SwWY8v8gXQfCpZ/ubpx+dinMhNZt+1BzqtEke53GHWov6gMvDB8tw==
+  dependencies:
+    typescript "4.5.2"
+
 next-translate@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/next-translate/-/next-translate-2.0.5.tgz#d723ce59889a7833562ea7b4fe571fe76a875d3b"
@@ -9924,6 +9931,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==
+
+typescript@4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.2.tgz#8ac1fba9f52256fdb06fb89e4122fa6a346c2998"
+  integrity sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==
 
 uglify-js@^3.1.4:
   version "3.17.4"
