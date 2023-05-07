@@ -34,3 +34,6 @@ export const CardTitle = tw.h3`text-black font-made uppercase font-light text-lg
 
 export const CardTags = tw.div`flex justify-start items-start gap-2 absolute top-4 left-4 z-10
                                lg:(top-6 left-6)`;
+
+
+export const CardDivider = tw.hr`w-full border-t border-solid border-darkBlue`
