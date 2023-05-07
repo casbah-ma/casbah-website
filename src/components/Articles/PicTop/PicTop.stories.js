@@ -13,9 +13,8 @@ export default {
 };
 
 const texts = [
-  "Creating the endogenous and exogenous conditions for a successful digital transformation.",
-  "A top-down approach often ticks all the boxes but doesn’t always have the right adhesion or comprehension of the operational challenges encountered.",
-  "(Un)surprisingly, the right ideas for how the transformation comes from within. The digital layer is added as an enabler to go from ideas to blueprints.",
+  "Making sure that the content expresses your brand’s personality, while also finding common ground with your audiences is a stepping-stone to better communication.",
+  "If you’re already invested in such effort, auditing your content and fine-tuning it for more visibility, understandability, and SEO optimization can wield direct results",
 ];
 
 const Template = (args) => <PicTop {...args} />;
