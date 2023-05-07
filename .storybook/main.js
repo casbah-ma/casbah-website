@@ -3,7 +3,7 @@
 const config = {
   // https://storybook.js.org/docs/react/configure/frameworks#which-frameworks-are-supported
   framework: {
-    name: "@storybook/nextjs",
+    name: '@storybook/nextjs',
     options: {}
   },
   stories: ["../src/components/**/*.stories.mdx", "../src/components/**/*.stories.@(js|jsx|ts|tsx)"],
@@ -20,6 +20,10 @@ const config = {
   },
   docs: {
     autodocs: true
-  }
+  },
+  staticDirs: [{
+    from: '../public',
+    to: 'public'
+  }]
 };
 export default config;
