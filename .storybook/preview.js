@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 const made = localFont({
-  src: "../src/fonts/MADE-Outer-Sans-Light.otf",
+  src: "../../public/fonts/made.otf",
   variable: "--font-made",
 });
 
