@@ -4,7 +4,7 @@ import { Inter, Mako } from "next/font/google";
 import localFont from "next/font/local";
 
 const made = localFont({
-  src: "../fonts/MADE-Outer-Sans-Light.otf",
+  src: "../../public/fonts/made.otf",
   variable: "--font-made",
 });
 
