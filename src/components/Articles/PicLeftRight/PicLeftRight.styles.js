@@ -34,14 +34,14 @@ export const versions = {
   //  Version 3
   v3: tw`
     // update text container
-    [&>section]:(w-[95%] gap-[1.875rem] [&>div]:(w-full max-w-[19.5rem] self-end)
-        md:(!w-full !gap-[2.125rem] [&>div]:max-w-full)
+    [&>section]:(w-[95%] gap-[1.875rem] [&>div]:(w-full pl-10 self-end)
+        md:(!w-full !gap-[2.125rem] [&>div]:pl-0)
         lg:(!max-w-[38.25rem] !gap-10))
     lg:flex-row-reverse`,
   // Version 4
   v4: tw`
-  [&>section]:(w-[95%] gap-[1.875rem] [&>div]:(w-full max-w-[19.5rem] self-end)
-        md:(!w-full !gap-[2.125rem] [&>div]:max-w-full)
+  [&>section]:(w-[95%] gap-[1.875rem] [&>div]:(w-full pl-10 self-end)
+        md:(!w-full !gap-[2.125rem] [&>div]:pl-0)
         lg:(max-w-[38.25rem] !gap-10))
     lg:flex-row`,
 };
