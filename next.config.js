@@ -1,8 +1,8 @@
-const { withContentlayer } = require("next-contentlayer")
+const { withContentlayer } = require("next-contentlayer");
 const withTwin = require("./withTwin");
-
+const nextTranslate = require("next-translate-plugin");
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = nextTranslate({
   reactStrictMode: true,
   images: {
     remotePatterns: [
@@ -12,7 +12,6 @@ const nextConfig = {
       },
     ],
   },
-};
-
+});
 
 module.exports = withContentlayer(withTwin(nextConfig));
