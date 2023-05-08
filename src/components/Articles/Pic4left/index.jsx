@@ -1,17 +1,19 @@
 import PropTypes from "prop-types";
 import {
   Content,
+  ExtraSmallImage,
   ImagesWrapper,
   MeduimImage,
   SmallImage,
   Texts,
   Wrapper,
   imagesSize,
-} from "./Pic3Left.styles";
+} from "./Pic4Left.styles";
 import MyImage from "../../MyImage";
 import Title from "../../Title";
 import Paragraph from "../../Paragraph";
-function Pic3Left({ title, texts, bigImg, mediumImg, smallImg }) {
+import LitleLogo from "../../../icons/litleLogo";
+function Pic4Left({ title, texts, bigImg, mediumImg, smallImg }) {
   return (
     <Wrapper>
       <ImagesWrapper>
@@ -20,6 +22,9 @@ function Pic3Left({ title, texts, bigImg, mediumImg, smallImg }) {
           <MyImage src={mediumImg} alt={title} sizes={imagesSize.md} />
           <SmallImage>
             <MyImage src={smallImg} alt={title} sizes={imagesSize.sm} />
+            <ExtraSmallImage>
+              <LitleLogo />
+            </ExtraSmallImage>
           </SmallImage>
         </MeduimImage>
       </ImagesWrapper>
@@ -38,7 +43,7 @@ function Pic3Left({ title, texts, bigImg, mediumImg, smallImg }) {
   );
 }
 
-Pic3Left.propTypes = {
+Pic4Left.propTypes = {
   title: PropTypes.string.isRequired,
   bigImg: PropTypes.string.isRequired,
   mediumImg: PropTypes.string.isRequired,
@@ -46,4 +51,4 @@ Pic3Left.propTypes = {
   texts: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-export default Pic3Left;
+export default Pic4Left;
