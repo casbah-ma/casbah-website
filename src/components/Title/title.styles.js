@@ -6,7 +6,7 @@ export const titleLevels = {
   h3: tw`md:text-lg md:leading-[166.02%]`,
 };
 export const StyledTitle = styled.h1(({ color }) => [
-  tw`text-black font-made uppercase font-light border-l border-brightOrange pl-10
+  tw`text-black font-made uppercase font-light border-l border-brightOrange pl-10 
      lg:pl-[6rem]`,
   ({ level }) => titleLevels[level],
   color && `color: ${color}`,
