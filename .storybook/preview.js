@@ -1,5 +1,6 @@
 import GlobalStyles from "../src/components/GlobalStyles";
 import "../src/styles/globals.css";
+import "swiper/css";
 import "twin.macro";
 import { Inter, Mako } from "next/font/google";
 import localFont from "next/font/local";

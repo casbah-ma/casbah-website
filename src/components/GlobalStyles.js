@@ -5,6 +5,10 @@ const CustomStyles = createGlobalStyle`
     body {
         ${tw`antialiased`}
     }
+    .swiper-slide {
+      width: fit-content !important;
+      height: fit-content !important;
+    }
 `;
 
 const GlobalStyles = () => (
