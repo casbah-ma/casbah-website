@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { CardInfo, CardText, CardTitle, CardWrapper, imagesSize } from "./ProfileCard.styles"
 import MyImage from '../MyImage'
 
@@ -11,6 +12,12 @@ const ProfileCard = ({name, post, imgSrc}) => {
             </CardInfo>
         </CardWrapper>
     )
+}
+
+ProfileCard.prototype = {
+    name: PropTypes.string.isRequired,
+    post: PropTypes.string.isRequired,
+    imgSrc: PropTypes.string.isRequired
 }
 
 export default ProfileCard

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { CardInfo, CardText, CardTitle, CardWrapper, imagesSize } from "./AwardsCard.styles"
 import MyImage from '../MyImage'
 
@@ -11,6 +12,13 @@ const AwardsCard = ({title, date, imgSrc}) => {
             </CardInfo>
         </CardWrapper>
     )
+}
+
+
+AwardsCard.prototype = {
+    title: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    imgSrc: PropTypes.string.isRequired
 }
 
 export default AwardsCard
