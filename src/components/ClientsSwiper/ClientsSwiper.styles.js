@@ -5,7 +5,7 @@ w-full flex flex-col gap-14 justify-center items-center
 lg:gap-[6rem]
 `;
 export const SwiperWrapper = tw.div`
-   w-full md:min-w-0 pl-4 md:pl-0 
+   w-full md:min-w-0
 `;
 
 export const imageStyle = tw`w-full h-full rounded-2xl`;
