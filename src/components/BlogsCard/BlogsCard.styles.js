@@ -23,7 +23,7 @@ export const versions = {
 };
 
 export const CardWrapper = styled.div`
-  ${tw`flex flex-col justify-center items-center gap-6 cursor-pointer relative`}
+  ${tw`flex flex-col justify-center items-center gap-6 cursor-pointer relative pb-6 border-b border-solid border-darkBlue`}
   // variant
     ${({ variant }) => versions[variant]}
 `;
@@ -36,4 +36,4 @@ export const CardTags = tw.div`flex justify-start items-start gap-2 absolute top
                                lg:(top-6 left-6)`;
 
 
-export const CardDivider = tw.hr`w-full border-t border-solid border-darkBlue`
+// export const CardDivider = tw.hr`w-full border border-solid border-darkBlue`

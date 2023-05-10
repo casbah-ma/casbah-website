@@ -2,7 +2,6 @@ import MyImage from "../MyImage";
 import Paragraph from "../Paragraph";
 import Tag from "../Tag";
 import {
-    CardDivider,
   CardInfo,
   CardTags,
   CardTitle,
@@ -26,7 +25,6 @@ const BlogsCard = ({ variant, title, description, imgSrc, tags, ...rest }) => {
         <CardTitle>{title}</CardTitle>
         <Paragraph size="md">{description}</Paragraph>
       </CardInfo>
-      <CardDivider />
     </CardWrapper>
   );
 };
