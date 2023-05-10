@@ -9,39 +9,44 @@ import {
   imageStyle,
 } from "./ClientsSwiper.styles";
 import Header from "../Header";
+
 function ClientsSwiper({ title, description, images }) {
   return (
     <Wrapper>
       <Header description={description} title={title} />
-      <SwiperWrapper>
-        <Swiper
-          modules={[A11y]}
-          slidesPerView="auto"
-          spaceBetween={32}
-          breakpoints={{
-            768: {
-              spaceBetween: 42,
-            },
-          }}
-        >
-          {images?.length > 0 &&
-            images.map((image, i) => (
-              <SwiperSlide key={i}>
-                <ImageWrapper>
-                  <MyImage
-                    src={image.src}
-                    sizes={imageStyle}
-                    alt={image.name}
-                  />
-                </ImageWrapper>
-              </SwiperSlide>
-            ))}
-        </Swiper>
-      </SwiperWrapper>
+      <Swiper
+        className="w-full h-full"
+        modules={[A11y]}
+        slidesPerView="auto"
+        spaceBetween={32}
+        breakpoints={{
+          768: {
+            spaceBetween: 42,
+          },
+        }}
+      >
+        {images?.length > 0 &&
+          images.map((image, i) => (
+            <SwiperSlide key={i}>
+              <ImageWrapper>
+                <MyImage src={image.src} sizes={imageStyle} alt={image.name} />
+              </ImageWrapper>
+            </SwiperSlide>
+          ))}
+      </Swiper>
     </Wrapper>
   );
 }
 
-ClientsSwiper.propTypes = {};
+ClientsSwiper.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ),
+};
 
 export default ClientsSwiper;

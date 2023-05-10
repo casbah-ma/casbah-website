@@ -32,6 +32,7 @@ const images = [
     name: "bolles gank",
   },
 ];
+
 export const Default = Template.bind({});
 Default.args = {
   title: "clients",
