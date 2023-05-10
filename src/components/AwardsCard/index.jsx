@@ -6,7 +6,7 @@ const AwardsCard = ({title, date, imgSrc}) => {
         <CardWrapper>
             <MyImage src={imgSrc} alt={title} sizes={imagesSize} />
             <CardInfo>
-                <CardText size='md'>{date}</CardText>
+                <CardText>{date}</CardText>
                 <CardTitle>{title}</CardTitle>
             </CardInfo>
         </CardWrapper>

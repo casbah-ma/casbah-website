@@ -5,7 +5,7 @@ export default {
   component: AwardsCard,
   tags: ["autodocs"],
   parameters: {
-    layout: "centered",
+    layout: "padded",
   },
 };
 
