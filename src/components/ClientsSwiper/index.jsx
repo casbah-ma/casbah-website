@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { A11y } from "swiper";
+import { A11y, Autoplay, FreeMode } from "swiper";
 import MyImage from "../MyImage";
 import {
   ImageWrapper,
@@ -16,9 +16,16 @@ function ClientsSwiper({ title, description, images }) {
       <Header description={description} title={title} />
       <Swiper
         className="w-full h-full"
-        modules={[A11y]}
+        modules={[A11y, FreeMode, Autoplay]}
         slidesPerView="auto"
         spaceBetween={32}
+        freeMode={true}
+        loop={true}
+        autoplay={{
+          delay: 0,
+          disableOnInteraction: false,
+        }}
+        speed={2000}
         breakpoints={{
           768: {
             spaceBetween: 42,
