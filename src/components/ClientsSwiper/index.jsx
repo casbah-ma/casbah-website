@@ -2,12 +2,7 @@ import PropTypes from "prop-types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Autoplay, FreeMode } from "swiper";
 import MyImage from "../MyImage";
-import {
-  ImageWrapper,
-  SwiperWrapper,
-  Wrapper,
-  imageStyle,
-} from "./ClientsSwiper.styles";
+import { ImageWrapper, Wrapper, imageStyle } from "./ClientsSwiper.styles";
 import Header from "../Header";
 
 function ClientsSwiper({ title, description, images }) {

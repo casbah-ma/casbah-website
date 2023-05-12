@@ -1,7 +1,7 @@
 import ClientsSwiper from ".";
 
 export default {
-  title: "Components/ClientsSwiper",
+  title: "Sections/ClientsSwiper",
   component: ClientsSwiper,
 };
 
