@@ -4,7 +4,7 @@ const Input = ({ label, type, name, value, placeholder }) => {
   return (
     <InputWrapper>
       <InputLabel>{label}</InputLabel>
-      <StyledInput name={name} type={type} vlaue={value} placeholder={placeholder} />
+      <StyledInput value={value} name={name} type={type}  placeholder={placeholder} />
     </InputWrapper>
   );
 };
