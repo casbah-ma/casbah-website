@@ -3,9 +3,9 @@ import { Wrapper } from "./Header.styles";
 import Title from "../Title";
 import Paragraph from "../Paragraph";
 
-function Header({ title, description }) {
+function Header({ title, description, withLine }) {
   return (
-    <Wrapper>
+    <Wrapper withLine={withLine}>
       <Title renderAs="h1" withoutBorder={true}>
         {title}
       </Title>
