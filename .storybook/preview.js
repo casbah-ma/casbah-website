@@ -1,5 +1,6 @@
 import GlobalStyles from "../src/components/GlobalStyles";
 import "../src/styles/globals.css";
+import 'mapbox-gl/dist/mapbox-gl.css';
 import "twin.macro";
 import { Inter, Mako } from "next/font/google";
 import localFont from "next/font/local";
