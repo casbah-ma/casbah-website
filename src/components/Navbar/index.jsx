@@ -7,8 +7,9 @@ import {
   NavbarWrapper,
 } from "./Navbar.styles";
 import NavMiniList from "../NavMiniList";
+import Language from "../Icons/Language";
 
-const Navbar = ({ logo, links, media }) => {
+const Navbar = ({ logo, links, media, languages }) => {
   return (
     <NavbarWrapper>
       <Link href="/">
@@ -34,6 +35,7 @@ const Navbar = ({ logo, links, media }) => {
           </Link>
         ))}
       </MediaWrapper>
+      <NavMiniList Icon={Language} languages={languages} />
     </NavbarWrapper>
   );
 };

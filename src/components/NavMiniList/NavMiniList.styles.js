@@ -11,7 +11,30 @@ export const DropdownButton = styled.div`
 `;
 
 export const DropdownList = styled.ul`
-  ${tw`absolute z-10 p-4 mt-4 bg-white flex flex-col items-start gap-[1.5rem] right-0`}
+  ${tw`absolute z-10 p-4 mt-4 bg-white flex flex-col items-start gap-[1.5rem] -right-3.5`}
+
+  /* Styles for the animation */
+  &.fade-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  &.fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  }
+
+  &.fade-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &.fade-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  }
 `;
 
 export const DropdownItem = styled.li`

@@ -79,4 +79,5 @@ Default.args = {
       icon: LinkedIn,
     },
   ],
+  languages: ["fresh", "English", "Spanish"],
 };
