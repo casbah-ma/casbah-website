@@ -4,6 +4,7 @@ import { A11y, Autoplay, FreeMode } from "swiper";
 import MyImage from "../MyImage";
 import { ImageWrapper, Wrapper, imageStyle } from "./ClientsSwiper.styles";
 import Header from "../Header";
+import { useEffect, useState } from "react";
 
 function ClientsSwiper({ title, description, images }) {
   return (
@@ -12,7 +13,8 @@ function ClientsSwiper({ title, description, images }) {
       <Swiper
         className="w-full h-full"
         modules={[A11y, FreeMode, Autoplay]}
-        slidesPerView="auto"
+        slidesPerView={5}
+        loopedSlides={images.length}
         spaceBetween={32}
         freeMode={true}
         loop={true}
