@@ -10,6 +10,10 @@ const nextConfig = nextTranslate({
         protocol: "https",
         hostname: "images.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "source.unsplash.com",
+      },
     ],
   },
 });
