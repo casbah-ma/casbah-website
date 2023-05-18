@@ -4,12 +4,12 @@ import { Map, Marker } from "react-map-gl";
 import MarkerIcon from "public/Subtract.png";
 import { useState } from "react";
 
-const MapCard = () => {
+const MapCard = ({ latitude, longitude, zoom }) => {
   // initial map state
   const [viewport, setViewport] = useState({
-    latitude: 35.775815942301875,
-    longitude: -5.796029401535288,
-    zoom: 14,
+    latitude,
+    longitude,
+    zoom,
   });
 
   return (
@@ -21,7 +21,7 @@ const MapCard = () => {
         height="100%"
         initialViewState={viewport}
       >
-        <Marker latitude={35.775815942301875} longitude={-5.796029401535288}>
+        <Marker latitude={latitude} longitude={longitude}>
           <Image src={MarkerIcon} alt="casbah" width="60" height="72" />
         </Marker>
       </Map>
