@@ -2,6 +2,9 @@ import GlobalStyles from "../src/components/GlobalStyles";
 import "../src/styles/globals.css";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import "twin.macro";
+import "swiper/css";
+import "swiper/css/navigation";
+
 import { Inter, Mako } from "next/font/google";
 import localFont from "next/font/local";
 const mako = Mako({
@@ -30,12 +33,11 @@ const preview = {
       },
       expanded: true,
     },
-    layout: "centered",
   },
 
   decorators: [
     (Story) => (
-      <main className={`${mako.variable} ${inter.variable} ${made.variable}`}>
+      <main className={`${mako.variable} ${inter.variable} ${made.variable} `}>
         <GlobalStyles />
         <Story />
       </main>
