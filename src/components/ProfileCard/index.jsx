@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import MyImage from "../MyImage";
 import {
   CardInfo,
   CardText,
@@ -6,10 +7,6 @@ import {
   CardWrapper,
   imagesSize,
 } from "./ProfileCard.styles";
-import MyImage from "../MyImage";
-import PropTypes from 'prop-types'
-import { CardInfo, CardText, CardTitle, CardWrapper, imagesSize } from "./ProfileCard.styles"
-
 
 const ProfileCard = ({ name, post, imgSrc }) => {
   return (
@@ -22,7 +19,6 @@ const ProfileCard = ({ name, post, imgSrc }) => {
     </CardWrapper>
   );
 };
-
 
 ProfileCard.propTypes = {
   name: PropTypes.string.isRequired,
