@@ -5,7 +5,7 @@ export default {
   title: "Components/Button",
   component: Button,
   argTypes: {
-    renderAs: {
+    variant: {
       options: Object.keys(variants),
       control: { type: "radio" },
     },
