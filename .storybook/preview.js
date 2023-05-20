@@ -1,27 +1,27 @@
-import GlobalStyles from "../src/components/GlobalStyles";
-import "../src/styles/globals.css";
-import "twin.macro";
-import { Inter, Mako } from "next/font/google";
-import localFont from "next/font/local";
+import GlobalStyles from '../src/components/GlobalStyles';
+import '../src/styles/globals.css';
+import 'twin.macro';
+import { Inter, Mako } from 'next/font/google';
+import localFont from 'next/font/local';
 const mako = Mako({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-mako",
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-mako',
 });
 
 const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
+  subsets: ['latin'],
+  variable: '--font-inter',
 });
 
 const made = localFont({
-  src: "../../public/fonts/made.otf",
-  variable: "--font-made",
+  src: '../../public/fonts/made.otf',
+  variable: '--font-made',
 });
 
 const preview = {
   parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
+    actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -29,7 +29,7 @@ const preview = {
       },
       expanded: true,
     },
-    layout: "centered",
+    layout: 'centered',
   },
 
   decorators: [

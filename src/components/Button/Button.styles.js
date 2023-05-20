@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import tw from "twin.macro";
+import styled from 'styled-components';
+import tw from 'twin.macro';
 
 export const variants = {
   primary: tw`w-full bg-white  py-4 px-2 rounded-full`,

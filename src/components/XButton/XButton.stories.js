@@ -1,7 +1,7 @@
-import XButton from ".";
+import XButton from '.';
 
 export default {
-  title: "Components/XButton",
+  title: 'Components/XButton',
   component: XButton,
 };
 

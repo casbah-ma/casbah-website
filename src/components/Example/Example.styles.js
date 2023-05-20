@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import tw from "twin.macro";
+import styled from 'styled-components';
+import tw from 'twin.macro';
 
 export const ExampleStyled = styled.div`
   ${tw`w-40 h-32 border-2 border-solid border-gray-900 
