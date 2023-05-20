@@ -1,10 +1,9 @@
-import { Button, ContactForm, ContactTitle, Wrapper } from "./ContactUs.styles";
+import { Button, ContactForm, Wrapper } from "./ContactUs.styles";
 import Input from "../../Input";
+import Title from "../../Title";
 import { useState } from "react";
 
 const ContactUs = ({}) => {
-  // handle form state
-
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -25,7 +24,9 @@ const ContactUs = ({}) => {
 
   return (
     <Wrapper>
-      <ContactTitle>Contact Us</ContactTitle>
+      <Title renderAs="h1" withoutBorder={true}>
+        Contact Us
+      </Title>
       <ContactForm onSubmit={handleSubmit} defaultValue={formState}>
         <Input
           name="name"

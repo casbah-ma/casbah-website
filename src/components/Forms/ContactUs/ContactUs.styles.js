@@ -4,9 +4,6 @@ export const Wrapper = tw.section`w-full flex flex-col gap-14
                         md:(gap-12 [&>h1]:!text-[2.5rem])
                         lg:(gap-10 [&>h1]:!text-[3.5rem])`
 
-
-export const ContactTitle = tw.h1`text-[2rem] text-darkBlue font-light font-made`
-
 export const ContactForm = tw.form`w-full flex flex-col gap-8`
 
 
