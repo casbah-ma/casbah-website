@@ -4,13 +4,13 @@ import Title from "../../Title";
 import Paragraph from "../../Paragraph";
 import { directions } from "./PicTop.styles";
 import MyImage from "../../MyImage";
-function PicTop({ title, texts, direction, img }) {
+function PicTop({ title, texts, variant, img }) {
   return (
     <Wrapper>
-      <MyImage sizes={imageDirections[direction]} src={img} alt={title} />
-      <Content direction={direction}>
+      <MyImage sizes={imageDirections[variant]} src={img} alt={title} />
+      <Content variant={variant}>
         <Title renderAs="h2">{title}</Title>
-        <Texts direction={direction}>
+        <Texts variant={variant}>
           {texts?.length > 0 &&
             texts.map((text, i) => (
               <Paragraph key={i} size="md">
@@ -27,7 +27,7 @@ PicTop.propTypes = {
   title: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
   texts: PropTypes.arrayOf(PropTypes.string).isRequired,
-  direction: PropTypes.oneOf(Object.keys(directions)),
+  variant: PropTypes.oneOf(Object.keys(directions)),
 };
 
 export default PicTop;
