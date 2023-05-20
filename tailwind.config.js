@@ -14,10 +14,13 @@ module.exports = {
         made: ['var(--font-made)'],
       },
       colors: {
-        deepBlue: '#000F9F',
-        brightOrange: '#FF5100',
-        grayIsh: '#FF5100',
-        blackIsh: '#151B18',
+
+        deepBlue: "#000F9F",
+        darkBlue: "#000219",
+        brightOrange: "#FF5100",
+        grayIsh: "#FF5100",
+        blackIsh: "#151B18",
+
       },
       screens: {
         md: '600px',
