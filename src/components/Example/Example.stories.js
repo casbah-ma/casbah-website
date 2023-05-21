@@ -1,12 +1,12 @@
-import Example from ".";
+import Example from '.';
 
 export default {
-  title: "Example",
+  title: 'Example',
   component: Example,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout
-    layout: "centered",
+    layout: 'centered',
   },
 };
 
@@ -15,5 +15,5 @@ const Template = (args) => <Example {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  text: "Hello Casbah Team",
+  text: 'Hello Casbah Team',
 };

@@ -1,4 +1,4 @@
-import tw from "twin.macro";
+import tw from 'twin.macro';
 
 export const Wrapper = tw.div`
   flex w-full flex-col gap-6 items-end pt-[4.688rem]

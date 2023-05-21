@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import {
   Content,
   ImagesWrapper,
@@ -7,10 +7,10 @@ import {
   Texts,
   Wrapper,
   imagesSize,
-} from "./Pic3Right.styles";
-import MyImage from "../../MyImage";
-import Title from "../../Title";
-import Paragraph from "../../Paragraph";
+} from './Pic3Right.styles';
+import MyImage from '../../MyImage';
+import Title from '../../Title';
+import Paragraph from '../../Paragraph';
 function Pic3Right({ title, texts, bigImg, mediumImg, smallImg }) {
   return (
     <Wrapper>

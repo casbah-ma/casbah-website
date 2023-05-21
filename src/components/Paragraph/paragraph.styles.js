@@ -1,4 +1,4 @@
-import tw, { styled } from "twin.macro";
+import tw, { styled } from 'twin.macro';
 
 export const sizes = {
   md: tw`text-base leading-[1.688rem]`,
