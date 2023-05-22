@@ -1,22 +1,23 @@
-import styled from "styled-components";
-import tw from "twin.macro";
+import styled from 'styled-components';
+import tw from 'twin.macro';
 
 export const imagesSizes = {
   v1: tw`w-full h-[19.375rem]
-    md:(!w-[20.125rem] !h-[15.625rem])
-    lg:(!w-[38.5rem] !h-[22.875rem])`,
-  v2: tw`w-full h-[24.688rem]
+    md:( !h-[15.625rem])
+    lg:( !h-[22.875rem])`,
+  v2: tw`w-full h-[32.75rem]
+    md:(h-[23.25rem])
+    lg:(h-[32.3755rem])`,
+  v3: tw`w-full h-[24.688rem]
     md:(!w-[20.125rem])
     lg:(!w-[38.5rem] !h-[47.25rem])
   `,
 };
 
 export const versions = {
-  v1: tw`w-full 
-    md:(!max-w-[20.125rem])
-    lg:(!max-w-[38.5rem])
-    `,
-  v2: tw`w-full
+  v1: tw`w-full col-span-1`,
+  v2: tw`w-full gap-4 pb-4 md:(col-span-2 gap-6 pb-10) lg:(gap-12 pb-8)`,
+  v3: tw`w-full
     md:(!max-w-[20.125rem])
     lg:(!max-w-[38.5rem])
     `,
@@ -34,6 +35,3 @@ export const CardTitle = tw.h3`text-black font-made uppercase font-light text-lg
 
 export const CardTags = tw.div`flex justify-start items-start gap-2 absolute top-4 left-4 z-10
                                lg:(top-6 left-6)`;
-
-
-// export const CardDivider = tw.hr`w-full border border-solid border-darkBlue`
