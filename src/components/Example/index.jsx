@@ -1,5 +1,5 @@
-import { ExampleStyled } from "./Example.styles";
-import PropTypes from "prop-types";
+import { ExampleStyled } from './Example.styles';
+import PropTypes from 'prop-types';
 
 const Example = ({ text, bgColor, color, rest }) => {
   return (
@@ -25,7 +25,7 @@ Example.propTypes = {
 };
 
 Example.defaultProps = {
-  text: "Example",
+  text: 'Example',
   bgColor: null,
   color: null,
 };

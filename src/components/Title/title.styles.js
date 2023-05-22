@@ -1,4 +1,4 @@
-import tw, { styled } from "twin.macro";
+import tw, { styled } from 'twin.macro';
 
 export const titleLevels = {
   h1: tw`text-[2rem] leading-[107.7%] md:text-[2.5rem]

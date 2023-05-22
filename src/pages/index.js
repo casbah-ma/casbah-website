@@ -1,3 +1,4 @@
+
 import Paragraph from "@/components/Paragraph";
 import Title from "@/components/Title";
 import ClientsSwiper from "../components/ClientsSwiper";
@@ -51,6 +52,7 @@ const props = {
     "It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer optimal experiences for the targeted audiences, while conveying the right messages and staying true to the brand’s identity.",
   images,
 };
+
 
 export default function Home() {
   console.log(images.length);

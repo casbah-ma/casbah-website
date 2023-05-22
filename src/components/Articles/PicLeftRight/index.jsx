@@ -3,13 +3,13 @@ import {
   StyledPicLeft,
   StyledText,
   imageVariants,
-} from "./PicLeftRight.styles";
-import Title from "@/components/Title";
-import Paragraph from "@/components/Paragraph";
-import MyImage from "../../MyImage";
-import PropTypes from "prop-types";
+} from './PicLeftRight.styles';
+import Title from '@/components/Title';
+import Paragraph from '@/components/Paragraph';
+import MyImage from '../../MyImage';
+import PropTypes from 'prop-types';
 
-const PicLeftRight = ({ title, article, imgSrc, variant = "v1" }) => {
+const PicLeftRight = ({ title, article, imgSrc, variant = 'v1' }) => {
   return (
     <StyledPicLeft variant={variant}>
       <MyImage sizes={imageVariants[variant]} src={imgSrc} alt={title} />

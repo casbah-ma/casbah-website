@@ -1,8 +1,8 @@
 // withTwin.js
-const path = require("path");
+const path = require('path');
 
 // The folders containing files importing twin.macro
-const includedDirs = [path.resolve(__dirname, "src")];
+const includedDirs = [path.resolve(__dirname, 'src')];
 
 module.exports = function withTwin(nextConfig) {
   return {
@@ -17,14 +17,14 @@ module.exports = function withTwin(nextConfig) {
         use: [
           options.defaultLoaders.babel,
           {
-            loader: "babel-loader",
+            loader: 'babel-loader',
             options: {
               sourceMaps: dev,
               plugins: [
-                require.resolve("babel-plugin-macros"),
-                require.resolve("@babel/plugin-syntax-jsx"),
+                require.resolve('babel-plugin-macros'),
+                require.resolve('@babel/plugin-syntax-jsx'),
                 [
-                  require.resolve("babel-plugin-styled-components"),
+                  require.resolve('babel-plugin-styled-components'),
                   { ssr: true, displayName: true },
                 ],
               ],
@@ -44,7 +44,7 @@ module.exports = function withTwin(nextConfig) {
         };
       }
 
-      if (typeof nextConfig.webpack === "function") {
+      if (typeof nextConfig.webpack === 'function') {
         return nextConfig.webpack(config, options);
       } else {
         return config;
