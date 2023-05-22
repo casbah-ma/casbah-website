@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": " storybook build",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
@@ -39,7 +40,9 @@
     "@storybook/react": "^7.0.9",
     "@storybook/testing-library": "^0.1.0",
     "eslint-plugin-storybook": "^0.6.12",
+    "husky": "^8.0.3",
     "next-translate-plugin": "^2.0.5",
+    "prettier": "^2.8.8",
     "storybook": "^7.0.9"
   }
 }
