@@ -9,9 +9,6 @@ export const HeaderTitle = tw.div`w-full flex flex-col justify-start items-start
 
 export const HeaderLine = tw.hr`self-end border-4 border-solid border-black w-[80%]`;
 
-export const HeaderText = tw.p`w-full font-mako font-normal text-base md:text-lg lg:text-2xl
-                             text-darkBlue [&>span]:(text-brightOrange)`;
-
 export const InfoSection = tw.div`w-full flex flex-col  gap-8 
                                 md:(flex-row flex-wrap gap-x-[7.438rem]) lg:(flex-nowrap gap-[9.938rem])`;
 

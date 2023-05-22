@@ -4,15 +4,15 @@ import Title from "../Title";
 import {
   Header,
   HeaderLine,
-  HeaderText,
   HeaderTitle,
   InfoSection,
   Wrapper,
 } from "./DropUsSection.styles";
 import useTranslation from "next-translate/useTranslation";
 import Info from "./Info";
+import SpecialText from "../SpecialText";
 
-const DropUsSection = ({ description, infos, cords }) => {
+const DropUsSection = ({ description, specialLine, infos, cords }) => {
   const { t } = useTranslation();
 
   return (
@@ -24,7 +24,7 @@ const DropUsSection = ({ description, infos, cords }) => {
           </Title>
           <HeaderLine />
         </HeaderTitle>
-        <HeaderText>{description}</HeaderText>
+        <SpecialText text={description} specialLine={specialLine} />
       </Header>
       <InfoSection>
         <Info label={t("phone")} title={infos?.phone} />
@@ -39,6 +39,7 @@ const DropUsSection = ({ description, infos, cords }) => {
 // proptypes
 DropUsSection.propTypes = {
   description: PropTypes.string.isRequired,
+  specialLine: PropTypes.string,
   infos: PropTypes.object.isRequired,
   cords: PropTypes.object.isRequired,
 };
