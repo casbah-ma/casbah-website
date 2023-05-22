@@ -1,4 +1,11 @@
 {
     "en": "english",
-    "fr": "french"
+    "fr": "french",
+    "contactus": "Contact Us",
+    "yourname": "Your name",
+    "yourfullname": "Your full name",
+    "youremail": "Your email",
+    "yourmessage": "Your message",
+    "send": "Send",
+    "typein": "type in"
 }

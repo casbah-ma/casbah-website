@@ -2,8 +2,10 @@ import { Button, ContactForm, Wrapper } from "./ContactUs.styles";
 import Input from "../../Input";
 import Title from "../../Title";
 import { useState } from "react";
+import useTranslation from "next-translate/useTranslation";
 
-const ContactUs = ({}) => {
+const ContactUs = ({ handleSubmit }) => {
+  const { t } = useTranslation();
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -17,42 +19,37 @@ const ContactUs = ({}) => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formState);
-  };
-
   return (
     <Wrapper>
       <Title renderAs="h1" withoutBorder={true}>
-        Contact Us
+        {t("contactus")}
       </Title>
       <ContactForm onSubmit={handleSubmit} defaultValue={formState}>
         <Input
           name="name"
           value={formState.name}
           type="text"
-          label="your name"
-          placeholder="type in your full name"
+          label={t("yourname")}
+          placeholder={t("typein" + " " + "yourfullname")}
           onChange={handleInputChange}
         />
         <Input
           name="email"
           value={formState.email}
           type="email"
-          label="your email"
-          placeholder="type in your email"
+          label={t("youremail")}
+          placeholder={t("typein" + " " + "youremail")}
           onChange={handleInputChange}
         />
         <Input
           name="message"
           value={formState.message}
           type="text"
-          label="your message"
-          placeholder="type in your message"
+          label={"yourmessage"}
+          placeholder={t("typein" + " " + "yourmessage")}
           onChange={handleInputChange}
         />
-        <Button type="submit">Send</Button>
+        <Button type="submit">{t("send")}</Button>
       </ContactForm>
     </Wrapper>
   );
