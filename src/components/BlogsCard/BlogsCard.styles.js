@@ -16,7 +16,9 @@ export const imagesSizes = {
 
 export const versions = {
   v1: tw`w-full col-span-1`,
-  v2: tw`w-full gap-4 pb-4 md:(col-span-2 gap-6 pb-10) lg:(gap-12 pb-8)`,
+  v2: tw`w-full gap-4 pb-4 
+         md:(col-span-2 gap-6 pb-10 mb-2) 
+         lg:(gap-12 pb-8 mb-0)`,
   v3: tw`w-full
     md:(!max-w-[20.125rem])
     lg:(!max-w-[38.5rem])
@@ -29,7 +31,7 @@ export const CardWrapper = styled.div`
     ${({ variant }) => versions[variant]}
 `;
 
-export const CardInfo = tw.div`w-full flex flex-col justify-center items-center gap-4`;
+export const CardInfo = tw.div`w-full flex flex-col justify-center items-start gap-4`;
 
 export const CardTitle = tw.h3`text-black font-made uppercase font-light text-lg md:leading-[166.02%]`;
 
