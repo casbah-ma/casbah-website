@@ -3,9 +3,9 @@ import { Wrapper } from './Header.styles';
 import Title from '../Title';
 import Paragraph from '../Paragraph';
 
-function Header({ title, description, withLine }) {
+function Header({ title, description, withLine, isVertical = false }) {
   return (
-    <Wrapper withLine={withLine}>
+    <Wrapper withLine={withLine} isVertical={isVertical}>
       <Title renderAs="h1" withoutBorder={true}>
         {title}
       </Title>
@@ -17,6 +17,8 @@ function Header({ title, description, withLine }) {
 Header.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  withLine: PropTypes.bool,
+  isVertical: PropTypes.bool,
 };
 
 export default Header;

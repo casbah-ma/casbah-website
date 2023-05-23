@@ -19,3 +19,11 @@ WithLine.args = {
   ...Default.args,
   withLine: true,
 };
+
+export const IsVertical = Template.bind({});
+IsVertical.args = {
+  ...WithLine.args,
+  title:
+    'Experience the Joy of Creativity: \n Open Source and Fun Projects from Our Lab',
+  isVertical: true,
+};
