@@ -1,0 +1,56 @@
+import PropTypes from "prop-types";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { A11y, Autoplay, FreeMode } from "swiper";
+import MyImage from "../MyImage";
+import { ImageWrapper, Wrapper, imageStyle } from "./ClientsSwiper.styles";
+import Header from "../Header";
+import { useEffect, useState } from "react";
+
+function ClientsSwiper({ title, description, images }) {
+  return (
+    <Wrapper>
+      <Header description={description} title={title} />
+      <Swiper
+        className="w-full h-full"
+        modules={[A11y, FreeMode, Autoplay]}
+        slidesPerView={5}
+        loopedSlides={images.length}
+        spaceBetween={32}
+        freeMode={true}
+        loop={true}
+        autoplay={{
+          delay: 0,
+          disableOnInteraction: false,
+        }}
+        speed={2000}
+        breakpoints={{
+          768: {
+            spaceBetween: 42,
+          },
+        }}
+      >
+        {images?.length > 0 &&
+          images.map((image, i) => (
+            <SwiperSlide key={i}>
+              <ImageWrapper>
+                <MyImage src={image.src} sizes={imageStyle} alt={image.name} />
+              </ImageWrapper>
+            </SwiperSlide>
+          ))}
+      </Swiper>
+    </Wrapper>
+  );
+}
+
+ClientsSwiper.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ),
+};
+
+export default ClientsSwiper;

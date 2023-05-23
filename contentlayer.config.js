@@ -1,7 +1,6 @@
 // contentlayer.config.js
 
-import { defineDocumentType, makeSource } from 'contentlayer/source-files'
-
+import { defineDocumentType, makeSource } from 'contentlayer/source-files';
 
 export const Post = defineDocumentType(() => ({
   name: 'Post',
@@ -24,9 +23,9 @@ export const Post = defineDocumentType(() => ({
       resolve: (post) => `/${post._raw.flattenedPath}`,
     },
   },
-}))
+}));
 
 export default makeSource({
   contentDirPath: 'data',
   documentTypes: [Post],
-})
+});
