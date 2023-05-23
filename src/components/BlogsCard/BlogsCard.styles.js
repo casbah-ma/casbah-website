@@ -2,16 +2,10 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const imagesSizes = {
-  v1: tw`w-full h-[19.375rem]
-    md:( !h-[15.625rem])
-    lg:( !h-[22.875rem])`,
-  v2: tw`w-full h-[32.75rem]
-    md:(h-[23.25rem])
-    lg:(h-[32.3755rem])`,
-  v3: tw`w-full h-[24.688rem]
-    md:(!w-[20.125rem])
-    lg:(!w-[38.5rem] !h-[47.25rem])
-  `,
+  v1: tw`w-full h-[19.375rem] md:h-[15.625rem] lg:h-[22.875rem]`,
+  v2: tw`w-full h-[32.75rem] md:(h-[23.25rem]) lg:(h-[32.3755rem])`,
+  v3: tw`w-full h-[24.688rem] lg:h-[47.25rem]
+`,
 };
 
 export const versions = {
@@ -19,10 +13,7 @@ export const versions = {
   v2: tw`w-full gap-4 pb-4 
          md:(col-span-2 gap-6 pb-10 mb-2) 
          lg:(gap-12 pb-8 mb-0)`,
-  v3: tw`w-full
-    md:(!max-w-[20.125rem])
-    lg:(!max-w-[38.5rem])
-    `,
+  v3: tw`w-full`,
 };
 
 export const CardWrapper = styled.div`

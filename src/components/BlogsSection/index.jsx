@@ -15,7 +15,7 @@ function BlogsSection({ blogs }) {
     };
     window.addEventListener('mousemove', updatePosition);
   }, []);
-  console.log(position);
+
   return (
     <Grid>
       {blogs?.length > 0 &&

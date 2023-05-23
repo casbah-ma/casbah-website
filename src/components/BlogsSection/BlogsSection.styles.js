@@ -6,12 +6,6 @@ export const Grid = tw.div`
    lg:(gap-y-10 gap-x-6)
 `;
 
-const Component = styled.div.attrs((props) => ({
-  style: {
-    background: props.background,
-  },
-}));
-
 export const ReadMore = styled.div.attrs(
   ({ x, y }) =>
     x &&

@@ -32,7 +32,7 @@ Version2.args = {
 };
 
 Version3.args = {
-  variant: 'v2',
+  variant: 'v3',
   imgSrc:
     'https://images.unsplash.com/photo-1513001900722-370f803f498d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
   title:
