@@ -1,6 +1,7 @@
 
 import GlobalStyles from "../src/components/GlobalStyles";
 import "../src/styles/globals.css";
+import 'mapbox-gl/dist/mapbox-gl.css';
 import "twin.macro";
 import "swiper/css";
 import "swiper/css/navigation";
