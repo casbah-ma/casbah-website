@@ -5,6 +5,12 @@ const CustomStyles = createGlobalStyle`
     body {
         ${tw`antialiased`}
     }
+    .dialog {
+      ${tw`fixed bg-black/25 z-10 inset-0`}
+    
+      .dialog-panel {
+        ${tw`w-full h-full transform overflow-y-scroll bg-white text-left align-middle transition-all`}
+      }
     .swiper-wrapper {
       transition-timing-function: linear;
       }
