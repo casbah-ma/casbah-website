@@ -1,4 +1,4 @@
-import tw, { styled } from "twin.macro";
+import tw, { styled } from 'twin.macro';
 
 export const Wrapper = styled.div(({ withLine }) => [
   tw`w-full flex flex-col gap-6 [&>p]:(self-end w-[76%])

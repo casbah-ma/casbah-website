@@ -1,12 +1,11 @@
+import GlobalStyles from '../src/components/GlobalStyles';
+import '../src/styles/globals.css';
+import 'twin.macro';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
-import GlobalStyles from "../src/components/GlobalStyles";
-import "../src/styles/globals.css";
-import "twin.macro";
-import "swiper/css";
-import "swiper/css/navigation";
-
-import { Inter, Mako } from "next/font/google";
-import localFont from "next/font/local";
+import { Inter, Mako } from 'next/font/google';
+import localFont from 'next/font/local';
 
 const mako = Mako({
   subsets: ['latin'],
@@ -34,7 +33,6 @@ const preview = {
       },
       expanded: true,
     },
-
   },
 
   decorators: [

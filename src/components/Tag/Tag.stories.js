@@ -1,12 +1,12 @@
-import Tag from "."; 
+import Tag from '.';
 
 export default {
-    title: "Common/Tag",
-    component: Tag,
-    tags: ["autodocs"],
-    parameters: {
-        layout: "centered",
-    },
+  title: 'Common/Tag',
+  component: Tag,
+  tags: ['autodocs'],
+  parameters: {
+    layout: 'centered',
+  },
 };
 
 const Template = (args) => <Tag {...args} />;
@@ -14,5 +14,5 @@ const Template = (args) => <Tag {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-    title: 'copywriting'
-}
+  title: 'copywriting',
+};

@@ -12,5 +12,5 @@ export const StyledTitle = styled.h1(({ color }) => [
      lg:pl-[6rem]`,
   ({ level }) => titleLevels[level],
   ({ withoutBorder }) => withoutBorder && tw`pl-0 lg:pl-0 border-0`,
-  ({color}) => color && `color: ${color}`,
+  ({ color }) => color && `color: ${color}`,
 ]);

@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import {
   Content,
   ExtraSmallImage,
@@ -8,11 +8,11 @@ import {
   Texts,
   Wrapper,
   imagesSize,
-} from "./Pic4Left.styles";
-import MyImage from "../../MyImage";
-import Title from "../../Title";
-import Paragraph from "../../Paragraph";
-import LitleLogo from "../../../icons/litleLogo";
+} from './Pic4Left.styles';
+import MyImage from '../../MyImage';
+import Title from '../../Title';
+import Paragraph from '../../Paragraph';
+import LitleLogo from '../../../icons/litleLogo';
 function Pic4Left({ title, texts, bigImg, mediumImg, smallImg }) {
   return (
     <Wrapper>

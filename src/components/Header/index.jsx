@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
-import { Wrapper } from "./Header.styles";
-import Title from "../Title";
-import Paragraph from "../Paragraph";
+import PropTypes from 'prop-types';
+import { Wrapper } from './Header.styles';
+import Title from '../Title';
+import Paragraph from '../Paragraph';
 
 function Header({ title, description, withLine }) {
   return (
