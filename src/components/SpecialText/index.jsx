@@ -1,24 +1,23 @@
-import { useEffect } from "react";
-import { SpecialStyle, sizes } from "./SpecialText.styles";
-import PropTypes from "prop-types";
+import { useEffect, useRef } from 'react';
+import { SpecialStyle, sizes } from './SpecialText.styles';
+import PropTypes from 'prop-types';
 
-const SpecialText = ({ text, specialLine, uppercase, size = "md" }) => {
+const SpecialText = ({ text, specialLine, uppercase, size = 'md' }) => {
+  const textRef = useRef(null);
   useEffect(() => {
-    // Get Text Element
-    var textElement = document.getElementById("SpeciaLine");
-    var newText = textElement.innerHTML;
-
-    // Search about Speciale Line using regex
-    var regex = new RegExp("\\b" + specialLine + "\\b", "gi");
-
+    const textElement = textRef.current;
+    if (!textElement) return;
+    let newText = textElement.innerHTML;
+    // Search for specialLine using regex
+    const regex = new RegExp(`\\b${specialLine}\\b`, 'gi');
     // Replace the text with the same text but with span tag
-    newText = newText.replace(regex, "<span>$&</span>");
+    newText = newText.replace(regex, '<span>$&</span>');
 
     textElement.innerHTML = newText;
   }, []);
 
   return (
-    <SpecialStyle id="SpeciaLine" uppercase={uppercase} size={size}>
+    <SpecialStyle ref={textRef} uppercase={uppercase} size={size}>
       {text}
     </SpecialStyle>
   );
