@@ -13,13 +13,17 @@ export const versions = {
   v2: tw`w-full gap-4 pb-4 
          md:(col-span-2 gap-6 pb-10 mb-2) 
          lg:(gap-12 pb-8 mb-0)`,
-  v3: tw`w-full`,
+  v3: tw`w-full `,
 };
 
 export const CardWrapper = styled.div`
   ${tw`flex flex-col justify-center items-center gap-6 cursor-pointer relative pb-6 border-b border-solid border-darkBlue`}
   // variant
-    ${({ variant }) => versions[variant]}
+  ${({ variant }) => versions[variant]}
+  :nth-child(2) {
+    ${({ variant }) =>
+      variant === 'v3' && tw` md:mt-[9.875rem] lg:mt-[17.188rem]`}
+  }
 `;
 
 export const CardInfo = tw.div`w-full flex flex-col justify-center items-start gap-4`;
