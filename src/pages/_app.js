@@ -1,6 +1,7 @@
 
 import GlobalStyles from "@/components/GlobalStyles";
 import "@/styles/globals.css";
+import 'mapbox-gl/dist/mapbox-gl.css';
 import "swiper/css";
 import "swiper/css/navigation";
 import { Inter, Mako } from "next/font/google";
