@@ -1,17 +1,24 @@
 import tw, { styled } from "twin.macro";
 
 export const DropdownContainer = styled.div`
-  ${tw`relative`}
+  ${tw`relative transition-all duration-300 ease-in-out`}
+  ${({ active }) =>
+    active && tw`lg:bg-transparent bg-deepBlue lg:text-black text-white`}
 `;
 
 export const DropdownButton = styled.div`
-  ${tw`text-black text-base font-light leading-[1.257rem] capitalize font-made
+  ${tw`lg:text-base text-lg leading-[1.257rem] capitalize font-made
   flex flex-row items-center cursor-pointer gap-[0.5rem]
+  lg:py-0 py-4 pl-10 lg:pl-0 text-lg
   `}
 `;
 
 export const DropdownList = styled.ul`
-  ${tw`absolute z-10 p-4 mt-4 bg-white flex flex-col items-start gap-[1.5rem] -right-3.5`}
+  ${tw`lg:absolute z-10 lg:p-4 lg:mt-4 lg:bg-white flex flex-col items-start gap-[1.5rem] -right-3.5
+  pl-[11rem]  pb-4
+
+   -mt-[2.3rem]
+  `}
 
   /* Styles for the animation */
   &.fade-enter {
@@ -38,11 +45,17 @@ export const DropdownList = styled.ul`
 `;
 
 export const DropdownItem = styled.li`
-  ${tw`text-[#151B1870] text-base font-light leading-[1.257rem] uppercase font-made`}
-  ${({ active }) => active && tw`text-[#FF5100] font-bold leading-[1.276rem]`}
+  ${tw`lg:text-[#151B1870] text-white text-base font-light leading-[1.257rem] uppercase font-made`}
+  ${({ active }) =>
+    active && tw`lg:text-brightOrange font-bold leading-[1.276rem]`}
 `;
 
 export const ToggleButton = styled.div(({ open }) => [
+  tw`lg:flex hidden`,
   !open && tw`transform transition-transform duration-500 `,
   open && tw`transform transition-transform duration-500 rotate-180`,
 ]);
+
+export const MobileToggle = styled.div`
+  ${tw`lg:hidden flex flex-row items-center justify-between`}
+`;

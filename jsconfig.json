@@ -6,5 +6,5 @@
       "contentlayer/generated": ["./.contentlayer/generated"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.tsx", "**/*.ts", ".contentlayer/generated"]
+  "include": ["next-env.d.ts", "**/*.tsx", "**/*.ts", ".contentlayer/generated", "src/components/Icons/ArrowRight.jsx"]
 }

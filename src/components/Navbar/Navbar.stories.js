@@ -80,4 +80,5 @@ Default.args = {
     },
   ],
   languages: ["fresh", "English", "Spanish"],
+  languageLabel: "Language",
 };

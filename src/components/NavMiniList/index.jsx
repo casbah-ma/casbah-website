@@ -1,11 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import ArrowDown from "../Icons/ArrowDown";
+import ArrowRight from "../Icons/ArrowRight";
 import { CSSTransition } from "react-transition-group";
 import {
   DropdownButton,
   DropdownContainer,
   DropdownItem,
   DropdownList,
+  MobileToggle,
   ToggleButton,
 } from "./NavMiniList.styles";
 import Link from "next/link";
@@ -48,12 +50,16 @@ const NavMiniList = ({ name, options, Icon, languages }) => {
   };
 
   return (
-    <DropdownContainer ref={ref}>
+    <DropdownContainer ref={ref} active={isOpen}>
       <DropdownButton onClick={toggle}>
-        {Icon ? <Icon /> : name}
+        {Icon && <Icon color={isOpen ? "white" : "black"} />}
+        {name}
         <ToggleButton open={isOpen}>
           <ArrowDown />
         </ToggleButton>
+        <MobileToggle>
+          <ArrowRight color={isOpen ? "white" : "black"} />
+        </MobileToggle>
       </DropdownButton>
       <CSSTransition in={isOpen} timeout={300} classNames="fade" unmountOnExit>
         <DropdownList>
