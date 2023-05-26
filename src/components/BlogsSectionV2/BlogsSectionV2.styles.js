@@ -5,7 +5,7 @@ export const Wrapper = tw.section`
 `;
 
 export const Grid = styled.div`
-  ${tw`grid grid-cols-1 gap-y-6 
+  ${tw`grid grid-cols-1 gap-y-6 place-items-start
    md:(grid-cols-2 gap-x-5)
    lg:(gap-y-16 gap-x-6)`};
 `;
