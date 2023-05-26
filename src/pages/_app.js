@@ -1,12 +1,10 @@
-
-import GlobalStyles from "@/components/GlobalStyles";
-import "@/styles/globals.css";
+import GlobalStyles from '@/components/GlobalStyles';
+import '@/styles/globals.css';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import "swiper/css";
-import "swiper/css/navigation";
-import { Inter, Mako } from "next/font/google";
-import localFont from "next/font/local";
-
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Inter, Mako } from 'next/font/google';
+import localFont from 'next/font/local';
 
 const made = localFont({
   src: '../../public/fonts/made.otf',

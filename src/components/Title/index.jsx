@@ -1,7 +1,5 @@
-
 import PropTypes from 'prop-types';
 import { StyledTitle, titleLevels } from './title.styles';
-
 
 const Title = ({
   children,

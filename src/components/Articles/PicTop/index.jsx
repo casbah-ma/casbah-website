@@ -1,12 +1,10 @@
-
-import PropTypes from "prop-types";
-import { Content, Texts, Wrapper, imageDirections } from "./PicTop.styles";
-import Title from "../../Title";
-import Paragraph from "../../Paragraph";
-import { directions } from "./PicTop.styles";
-import MyImage from "../../MyImage";
+import PropTypes from 'prop-types';
+import { Content, Texts, Wrapper, imageDirections } from './PicTop.styles';
+import Title from '../../Title';
+import Paragraph from '../../Paragraph';
+import { directions } from './PicTop.styles';
+import MyImage from '../../MyImage';
 function PicTop({ title, texts, variant, img }) {
-
   return (
     <Wrapper>
       <MyImage sizes={imageDirections[variant]} src={img} alt={title} />

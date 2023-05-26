@@ -11,8 +11,8 @@ const nextConfig = nextTranslate({
         hostname: 'images.unsplash.com',
       },
       {
-        protocol: "https",
-        hostname: "source.unsplash.com",
+        protocol: 'https',
+        hostname: 'source.unsplash.com',
       },
     ],
   },
