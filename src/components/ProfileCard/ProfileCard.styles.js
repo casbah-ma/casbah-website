@@ -1,4 +1,4 @@
-import tw from "twin.macro";
+import tw from 'twin.macro';
 
 export const imagesSize = tw`w-full h-[20.125rem] 
                              md:( h-[20.125rem])

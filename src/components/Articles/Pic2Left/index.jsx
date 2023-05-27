@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import {
   Content,
   ImagesWrapper,
@@ -7,10 +7,10 @@ import {
   Texts,
   Wrapper,
   imagesSize,
-} from "./Pic2Left.styles";
-import MyImage from "../../MyImage";
-import Title from "../../Title";
-import Paragraph from "../../Paragraph";
+} from './Pic2Left.styles';
+import MyImage from '../../MyImage';
+import Title from '../../Title';
+import Paragraph from '../../Paragraph';
 function Pic2Left({ title, texts, bigImg, mediumImg }) {
   return (
     <Wrapper>

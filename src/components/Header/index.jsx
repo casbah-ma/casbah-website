@@ -4,10 +4,10 @@ import Title from '../Title';
 import Paragraph from '../Paragraph';
 import useTranslation from 'next-translate/useTranslation';
 
-function Header({ title, description, withLine }) {
-  const { t } = useTranslation();
+function Header({ title, description, withLine, isVertical = false }) {
+    const { t } = useTranslation();
   return (
-    <Wrapper withLine={withLine}>
+    <Wrapper withLine={withLine} isVertical={isVertical}>
       <Title renderAs="h1" withoutBorder={true}>
         {t(title)}
       </Title>
@@ -19,6 +19,8 @@ function Header({ title, description, withLine }) {
 Header.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  withLine: PropTypes.bool,
+  isVertical: PropTypes.bool,
 };
 
 export default Header;

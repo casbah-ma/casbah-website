@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 import {
   DeskView,
   LinkLabel,
@@ -11,13 +11,13 @@ import {
   NavbarWrapper,
   PointerWrapper,
   StyledMedia,
-} from "./Navbar.styles";
-import NavMiniList from "../NavMiniList";
-import Language from "../Icons/Language";
-import Casbah from "../Icons/Casbah";
-import Menu from "../Icons/Menu";
-import Modal from "../Modal";
-import { useState } from "react";
+} from './Navbar.styles';
+import NavMiniList from '../NavMiniList';
+import Language from '../Icons/Language';
+import Casbah from '../Icons/Casbah';
+import Menu from '../Icons/Menu';
+import Modal from '../Modal';
+import { useState } from 'react';
 
 const Navbar = ({ logo, links, media, languages, languageLabel }) => {
   const [isOpen, setIsOpen] = useState(false);

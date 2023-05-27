@@ -1,4 +1,4 @@
-import { TagWrapper } from "./Tag.styles";
+import { TagWrapper } from './Tag.styles';
 
 const Tag = ({ title }) => {
   return <TagWrapper>{title}</TagWrapper>;

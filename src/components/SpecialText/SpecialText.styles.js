@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import tw from "twin.macro";
+import styled from 'styled-components';
+import tw from 'twin.macro';
 
 export const sizes = {
   md: tw`text-base md:text-lg lg:text-2xl`,

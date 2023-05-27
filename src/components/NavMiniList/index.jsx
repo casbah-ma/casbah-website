@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
-import ArrowDown from "../Icons/ArrowDown";
-import ArrowRight from "../Icons/ArrowRight";
-import { CSSTransition } from "react-transition-group";
+import React, { useState, useRef, useEffect } from 'react';
+import ArrowDown from '../Icons/ArrowDown';
+import ArrowRight from '../Icons/ArrowRight';
+import { CSSTransition } from 'react-transition-group';
 import {
   DropdownButton,
   DropdownContainer,
@@ -9,8 +9,8 @@ import {
   DropdownList,
   MobileToggle,
   ToggleButton,
-} from "./NavMiniList.styles";
-import Link from "next/link";
+} from './NavMiniList.styles';
+import Link from 'next/link';
 
 const useDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,9 +23,9 @@ const useDropdown = () => {
         setIsOpen(false);
       }
     };
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [ref]);
 
@@ -42,7 +42,7 @@ const NavMiniList = ({ name, options, Icon, languages }) => {
   };
 
   //For language dropdown
-  const [activeLanguage, setActiveLanguage] = useState("English");
+  const [activeLanguage, setActiveLanguage] = useState('English');
 
   const handleChangeLanguage = (item) => {
     setActiveLanguage(item);
@@ -52,13 +52,13 @@ const NavMiniList = ({ name, options, Icon, languages }) => {
   return (
     <DropdownContainer ref={ref} active={isOpen}>
       <DropdownButton onClick={toggle}>
-        {Icon && <Icon color={isOpen ? "white" : "black"} />}
+        {Icon && <Icon color={isOpen ? 'white' : 'black'} />}
         {name}
         <ToggleButton open={isOpen}>
           <ArrowDown />
         </ToggleButton>
         <MobileToggle>
-          <ArrowRight color={isOpen ? "white" : "black"} />
+          <ArrowRight color={isOpen ? 'white' : 'black'} />
         </MobileToggle>
       </DropdownButton>
       <CSSTransition in={isOpen} timeout={300} classNames="fade" unmountOnExit>

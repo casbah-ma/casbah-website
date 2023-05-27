@@ -1,12 +1,12 @@
-import PropTypes from "prop-types";
-import MyImage from "../MyImage";
+import PropTypes from 'prop-types';
+import MyImage from '../MyImage';
 import {
   CardInfo,
   CardText,
   CardTitle,
   CardWrapper,
   imagesSize,
-} from "./ProfileCard.styles";
+} from './ProfileCard.styles';
 
 const ProfileCard = ({ name, post, imgSrc }) => {
   return (

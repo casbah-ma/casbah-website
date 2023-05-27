@@ -1,11 +1,11 @@
-import MapCard from ".";
+import MapCard from '.';
 
 export default {
-  title: "Components/MapCard",
+  title: 'Components/MapCard',
   component: MapCard,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   parameters: {
-    layout: "padded",
+    layout: 'padded',
   },
 };
 
