@@ -22,7 +22,7 @@ function Articulate({ data }) {
   return (
     <div className="flex flex-col justify-center items-center gap-[120px] mb-36">
       <LottieText lottie={articulate} />
-      <Header {...data.headerProps} />
+      <Header {...data.headerProps} isSplited={true} />
       <PicTop {...data.picTopProps} variant="v1" />
       <PicLeftRight {...data.picLeftProps} variant="v1" />
       <Pic4Left {...data.pic4LeftProps} />
