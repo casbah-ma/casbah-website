@@ -13,14 +13,17 @@ import {
   StyledMedia,
 } from './Navbar.styles';
 import NavMiniList from '../NavMiniList';
-import Language from '../Icons/Language';
-import Casbah from '../Icons/Casbah';
-import Menu from '../Icons/Menu';
+import Casbah from '@/icons/Casbah';
+import Menu from '@/icons/Menu';
 import Modal from '../Modal';
 import { useState } from 'react';
+import { links, logo, media } from '../../config/constant';
+import useTranslation from 'next-translate/useTranslation';
+import LanguageMenu from '../LanguageMenu';
 
-const Navbar = ({ logo, links, media, languages, languageLabel }) => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
   return (
     <>
       <NavbarWrapper>
@@ -47,7 +50,7 @@ const Navbar = ({ logo, links, media, languages, languageLabel }) => {
               ) : (
                 link?.url && (
                   <Link key={index} href={link?.url}>
-                    <LinkLabel>{link.name}</LinkLabel>
+                    <LinkLabel>{t(link.name)}</LinkLabel>
                   </Link>
                 )
               )
@@ -60,7 +63,7 @@ const Navbar = ({ logo, links, media, languages, languageLabel }) => {
               </Link>
             ))}
           </MediaWrapper>
-          <NavMiniList Icon={Language} languages={languages} />
+          <LanguageMenu />
         </DeskView>
       </NavbarWrapper>
       <Modal isOpen={isOpen} closeModal={() => setIsOpen(false)}>
@@ -76,7 +79,7 @@ const Navbar = ({ logo, links, media, languages, languageLabel }) => {
               ) : (
                 link?.url && (
                   <Link key={index} href={link?.url}>
-                    <LinkLabel>{link.name}</LinkLabel>
+                    <LinkLabel>{t(link.name)}</LinkLabel>
                   </Link>
                 )
               )
@@ -90,11 +93,7 @@ const Navbar = ({ logo, links, media, languages, languageLabel }) => {
                 ))}
               </MediaWrapper>
             </StyledMedia>
-            <NavMiniList
-              Icon={Language}
-              languages={languages}
-              name={languageLabel}
-            />
+            <LanguageMenu />
           </MobileList>
         </MobileNav>
       </Modal>

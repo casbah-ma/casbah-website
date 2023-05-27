@@ -8,7 +8,7 @@ export const Logo = tw.img`
  max-w-[14.5rem] max-h-[1.563rem]
 `;
 
-export const LinksWrapper = tw.div`
+export const LinksWrapper = tw.nav`
     flex flex-row items-center gap-[2.5rem]
 `;
 
@@ -36,6 +36,6 @@ export const PointerWrapper = tw.div`
  cursor-pointer
 `;
 
-export const MobileNav = tw.div`flex flex-col mt-[4.813rem] border-y border-[#D9D9D9]`;
+export const MobileNav = tw.nav`flex flex-col mt-[4.813rem] border-y border-[#D9D9D9]`;
 
 export const MobileList = tw.ul`flex w-full flex-col  justify-center divide-y divide-[#D9D9D9]`;
