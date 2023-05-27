@@ -1,9 +1,9 @@
-import PropTypes from "prop-types";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { A11y } from "swiper";
-import { Wrapper } from "./AwardsSection.styles";
-import Header from "../Header";
-import AwardsCard from "../AwardsCard";
+import PropTypes from 'prop-types';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { A11y } from 'swiper';
+import { Wrapper } from './AwardsSection.styles';
+import Header from '../Header';
+import AwardsCard from '../AwardsCard';
 
 function AwardsSection({ title, description, cards }) {
   return (

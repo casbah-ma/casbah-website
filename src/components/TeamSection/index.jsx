@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
-import { Grid, Wrapper } from "./TeamSection.styles";
-import Header from "../Header";
-import ProfileCard from "../ProfileCard";
+import PropTypes from 'prop-types';
+import { Grid, Wrapper } from './TeamSection.styles';
+import Header from '../Header';
+import ProfileCard from '../ProfileCard';
 
 function TeamSection({ title, description, cards }) {
   return (

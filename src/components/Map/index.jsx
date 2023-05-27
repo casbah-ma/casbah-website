@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { MapWrapper } from "./Map.styles";
-import { Map, Marker } from "react-map-gl";
-import MarkerIcon from "public/Subtract.png";
-import { useState } from "react";
+import Image from 'next/image';
+import { MapWrapper } from './Map.styles';
+import { Map, Marker } from 'react-map-gl';
+import MarkerIcon from 'public/Subtract.png';
+import { useState } from 'react';
 
 const MapCard = ({ latitude, longitude, zoom = 14 }) => {
   // initial map state

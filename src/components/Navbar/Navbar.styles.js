@@ -1,4 +1,4 @@
-import tw from "twin.macro";
+import tw from 'twin.macro';
 
 export const NavbarWrapper = tw.div`
     fixed inset-0 bg-[#FFFFFF] h-[6.5rem] flex items-center justify-between flex-row lg:px-[4.5rem]  px-[2.5rem] z-50
@@ -23,7 +23,7 @@ export const MediaWrapper = tw.div`
      justify-between lg:justify-start pl-10 lg:pl-0  max-w-[20rem]
 `;
 
-export const StyledMedia = tw.div``
+export const StyledMedia = tw.div``;
 
 export const DeskView = tw.div`
   hidden lg:flex w-full flex-row items-center justify-between
