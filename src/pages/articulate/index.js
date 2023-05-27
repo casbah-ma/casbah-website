@@ -6,8 +6,9 @@ import PicLeftRight from '@/components/Articles/PicLeftRight';
 import Pic4Left from '@/components/Articles/Pic4Left';
 
 //get the data for the current locale
-export const getStaticProps = async ({ locale }) => {
-  const data = allArticulates.find((recipe) => recipe.lang === locale);
+export const getStaticProps = ({ locale }) => {
+  const data = allArticulates.find((page) => page.lang === locale);
+  console.log(locale, data.headerProps.title);
   return {
     props: {
       data,

@@ -16,6 +16,27 @@ import {
   picTopPropsType,
 } from './src/config/contentLayerTypes';
 
+/* ---------------------------------------------- */
+export const Home = defineDocumentType(() => ({
+  name: 'Home',
+  filePathPattern: `home/**/*.md`,
+  fields: {
+    title: { type: 'string' },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (home) => {
+        const local = getLocale(home._raw.sourceFilePath);
+        return `${local}`;
+      },
+    },
+  },
+}));
+
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
 export const Articulate = defineDocumentType(() => ({
   name: 'Articulate',
   filePathPattern: `articulate/**/*.md`,
@@ -45,8 +66,9 @@ export const Articulate = defineDocumentType(() => ({
     },
   },
 }));
+/* ---------------------------------------------- */
 
 export default makeSource({
   contentDirPath: 'data',
-  documentTypes: [Articulate],
+  documentTypes: [Articulate, Home],
 });
