@@ -5,7 +5,7 @@ export const sizes = {
   lg: tw`text-lg  leading-[1.875rem]`,
 };
 export const StyledP = styled.p(({ color }) => [
-  tw`first-letter:uppercase text-black font-mako font-normal`,
+  tw`first-letter:uppercase text-black font-mako`,
   ({ size }) => sizes[size],
   color && `color: ${color}`,
 ]);
