@@ -2,12 +2,14 @@ import PropTypes from 'prop-types';
 import { Wrapper } from './Header.styles';
 import Title from '../Title';
 import Paragraph from '../Paragraph';
+import useTranslation from 'next-translate/useTranslation';
 
 function Header({ title, description, withLine, isVertical = false }) {
+    const { t } = useTranslation();
   return (
     <Wrapper withLine={withLine} isVertical={isVertical}>
       <Title renderAs="h1" withoutBorder={true}>
-        {title}
+        {t(title)}
       </Title>
       <Paragraph size="md">{description}</Paragraph>
     </Wrapper>
