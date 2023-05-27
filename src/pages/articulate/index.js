@@ -8,7 +8,6 @@ import Pic4Left from '@/components/Articles/Pic4Left';
 //get the data for the current locale
 export const getStaticProps = ({ locale }) => {
   const data = allArticulates.find((page) => page.lang === locale);
-  console.log(locale, data.headerProps.title);
   return {
     props: {
       data,
@@ -18,7 +17,7 @@ export const getStaticProps = ({ locale }) => {
 
 function articulate({ data }) {
   return (
-    <div className="flex flex-col justify-center items-center gap-[120px] px-[72px] mb-36">
+    <div className="flex flex-col justify-center items-center gap-[120px] mb-36">
       <Header {...data.headerProps} />
       <PicTop {...data.picTopProps} variant="v1" />
       <PicLeftRight {...data.picLeftProps} variant="v1" />

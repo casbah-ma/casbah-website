@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Inter, Mako } from 'next/font/google';
 import localFont from 'next/font/local';
+import Layout from '../components/Layout';
 
 const made = localFont({
   src: '../../public/fonts/made.otf',
@@ -24,9 +25,11 @@ const inter = Inter({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${mako.variable} ${inter.variable} ${made.variable}`}>
+    <>
       <GlobalStyles />
-      <Component {...pageProps} />
-    </main>
+      <Layout className={`${mako.variable} ${inter.variable} ${made.variable}`}>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   );
 }
