@@ -1,7 +1,7 @@
 import Layout from '.';
 
 export default {
-  title: 'Components/Layout',
+  title: 'Common/Layout',
   component: Layout,
 };
 

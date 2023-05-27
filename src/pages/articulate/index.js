@@ -4,6 +4,9 @@ import Header from '@/components/Header';
 import PicTop from '@/components/Articles/PicTop';
 import PicLeftRight from '@/components/Articles/PicLeftRight';
 import Pic4Left from '@/components/Articles/Pic4Left';
+import LottieText from '@/components/LottieText';
+//Lotties
+import articulate from '@/lotties/aticulate.json';
 
 //get the data for the current locale
 export const getStaticProps = ({ locale }) => {
@@ -15,9 +18,10 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
-function articulate({ data }) {
+function Articulate({ data }) {
   return (
     <div className="flex flex-col justify-center items-center gap-[120px] mb-36">
+      <LottieText lottie={articulate} />
       <Header {...data.headerProps} />
       <PicTop {...data.picTopProps} variant="v1" />
       <PicLeftRight {...data.picLeftProps} variant="v1" />
@@ -29,4 +33,4 @@ function articulate({ data }) {
   );
 }
 
-export default articulate;
+export default Articulate;
