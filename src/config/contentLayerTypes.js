@@ -44,3 +44,13 @@ export const pic4LeftPropsType = defineNestedType(() => ({
   },
 }));
 /******* Pic4Left props types *******/
+
+/******* Dropus props types *******/
+export const DropUsPropsType = defineNestedType(() => ({
+  name: 'DropUsProps',
+  fields: {
+    description: {type: 'string'},
+    specialLine: {type: 'string'}
+  }
+}))
+/******* Dropus props types *******/

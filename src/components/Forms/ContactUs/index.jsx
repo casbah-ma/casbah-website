@@ -36,7 +36,7 @@ const ContactUs = ({}) => {
           value={formState.name}
           type="text"
           label={t('yourname')}
-          placeholder={t('typein' + ' ' + 'yourfullname')}
+          placeholder={`${t('typein')} ${t('yourfullname')}`}
           onChange={handleInputChange}
         />
         <Input
@@ -44,7 +44,7 @@ const ContactUs = ({}) => {
           value={formState.email}
           type="email"
           label={t('youremail')}
-          placeholder={t('typein' + ' ' + 'youremail')}
+          placeholder={`${t('typein')} ${t('youremail')}`}
           onChange={handleInputChange}
         />
         <Input
@@ -52,7 +52,7 @@ const ContactUs = ({}) => {
           value={formState.message}
           type="text"
           label={'yourmessage'}
-          placeholder={t('typein' + ' ' + 'yourmessage')}
+          placeholder={`${t('typein')} ${t('yourmessage')}`}
           onChange={handleInputChange}
         />
         <Button type="submit" variant="primary">

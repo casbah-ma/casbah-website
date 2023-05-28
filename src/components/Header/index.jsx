@@ -4,7 +4,13 @@ import Title from '../Title';
 import Paragraph from '../Paragraph';
 import useTranslation from 'next-translate/useTranslation';
 
-function Header({ title, description, withLine, isVertical = false }) {
+function Header({
+  title,
+  description,
+  withLine,
+  isVertical = false,
+  isSplited = false,
+}) {
   const { t } = useTranslation();
   return (
     <Wrapper isSplited={isSplited} withLine={withLine} isVertical={isVertical}>

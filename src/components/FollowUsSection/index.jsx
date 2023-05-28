@@ -1,15 +1,15 @@
 import { SocialMedia, Wrapper } from './FollowUsSection.styles';
 import Header from '../Header';
 import XButton from '../XButton';
-import { socialMedia } from '../../config/constant';
+import { media } from '../../config/constant';
 
 const FollowUs = ({ description }) => {
   return (
     <Wrapper>
-      <Header description={description} title="followus" />
+      <Header description={description} title="followus" is />
       <SocialMedia>
-        {socialMedia.length > 0 &&
-          socialMedia.map((item, index) => (
+        {media.length > 0 &&
+          media.map((item, index) => (
             <XButton key={index} as="a" href={item.link} target="_blank">
               {item.name}
             </XButton>
