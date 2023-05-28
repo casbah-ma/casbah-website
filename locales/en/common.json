@@ -1,4 +1,5 @@
 {
+  "hello": "hello",
   "en": "english",
   "fr": "french",
   "dropus": "drop us a line",
@@ -11,5 +12,16 @@
   "youremail": "Your email",
   "yourmessage": "Your message",
   "send": "Send",
-  "typein": "type in"
+  "typein": "type in",
+  "home": "home",
+  "agency": "agency",
+  "expertise": "expertise",
+  "articulate": "articulate",
+  "design": "design",
+  "build": "build",
+  "formulate": "formulate",
+  "portfolio": "portfolio",
+  "lab": "lab",
+  "blog": "blog",
+  "contact": "contact"
 }

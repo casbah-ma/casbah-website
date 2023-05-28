@@ -1,4 +1,4 @@
-const Language = ({ color }) => {
+const LanguageIcon = ({ color }) => {
   return (
     <svg
       width="24"
@@ -15,4 +15,4 @@ const Language = ({ color }) => {
   );
 };
 
-export default Language;
+export default LanguageIcon;

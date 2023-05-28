@@ -1,8 +1,8 @@
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import { CloseButton, TopWrapper } from './Modal.styles';
-import Close from '../Icons/Close';
-import Casbah from '../Icons/Casbah';
+import Close from '@/icons/Close';
+import Casbah from '@/icons/Casbah';
 
 function Modal({ children, isOpen, closeModal }) {
   return (
