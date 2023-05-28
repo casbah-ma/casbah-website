@@ -73,13 +73,16 @@ export const media = [
   {
     url: 'https://www.facebook.com/',
     icon: Facebook,
+    name: 'facebook',
   },
   {
     url: 'https://www.instagram.com/',
     icon: Instagram,
+    name: 'instagram',
   },
   {
     url: 'https://www.linkedin.com/',
     icon: LinkedIn,
+    name: 'LinkedIn',
   },
 ];

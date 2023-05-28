@@ -1,6 +1,6 @@
 import { StyledBtn } from './XButton.styles';
 
-const XButton = ({ children, rest }) => {
+const XButton = ({ children, ...rest }) => {
   return <StyledBtn {...rest}>{children}</StyledBtn>;
 };
 
