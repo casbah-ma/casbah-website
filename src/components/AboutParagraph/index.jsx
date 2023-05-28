@@ -8,7 +8,7 @@ const AboutParagraph = ({ title, text, size = 'lg' }) => {
 
   return (
     <Wrapper size={size}>
-      <Title renderAs="h2" withoutBorder>
+      <Title renderAs="h1" withoutBorder>
         {t(title)}
       </Title>
       <TextSection>
