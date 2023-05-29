@@ -57,11 +57,11 @@ export const links = [
   },
   {
     name: 'lab',
-    url: '/contact',
+    url: '/lab',
   },
   {
-    name: 'blog',
-    url: '/contact',
+    name: 'blogs',
+    url: '/blogs',
   },
   {
     name: 'contact',

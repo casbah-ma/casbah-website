@@ -15,6 +15,7 @@ import {
   ClientSectionPropsType,
   DropUsPropsType,
   TeamSectionPropsType,
+  blogsCardProps,
   headerPropsType,
   pic4LeftPropsType,
   picLeftRightPropsType,
@@ -105,9 +106,9 @@ export const About = defineDocumentType(() => ({
   filePathPattern: `about/**/*.md`,
   fields: {
     aboutSection: { type: 'nested', of: AboutSectionPropsType },
-    awardsSection: {type: 'nested', of: AwardsSectionPropsType},
-    teamSection: {type: 'nested', of: TeamSectionPropsType},
-    clientSection: {type: 'nested', of: ClientSectionPropsType}
+    awardsSection: { type: 'nested', of: AwardsSectionPropsType },
+    teamSection: { type: 'nested', of: TeamSectionPropsType },
+    clientSection: { type: 'nested', of: ClientSectionPropsType },
   },
   computedFields: {
     lang: {
@@ -128,29 +129,61 @@ export const About = defineDocumentType(() => ({
 }));
 /* ---------------------------------------------- */
 
-export const ContactUs = defineDocumentType(() => ({
-  name: 'ContactUs',
-  filePathPattern: `contact-us/**/*.md`,
+/* ----------------------- blogs ----------------------- */
+export const Blogs = defineDocumentType(() => ({
+  name: 'Blogs',
+  filePathPattern: `blogs/**/*.md`,
   fields: {
-    // DropUs= {descreption: '', specialLine: ''}
-    DropUs: {
-      type: 'json',
-    },
-    FollowUsDescription: {
-      type: 'string',
-      description: 'The descreption of the FollowUs',
-      required: true,
-    },
+    blogs: { type: 'list', of: blogsCardProps },
   },
   computedFields: {
-    url: {
+    lang: {
       type: 'string',
-      resolve: (post) => `/${post._raw.flattenedPath}`,
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+    slug: {
+      type: 'string',
+      resolve: (recipe) => {
+        const slug = getSlug(recipe._raw.sourceFileName);
+        return slug;
+      },
     },
   },
 }));
+/* ---------------------------------------------- */
+
+/* ----------------------- blogs ----------------------- */
+export const Lab = defineDocumentType(() => ({
+  name: 'Lab',
+  filePathPattern: `lab/**/*.md`,
+  fields: {
+    title: { type: 'string' },
+    subtitle: { type: 'string' },
+    blogs: { type: 'list', of: blogsCardProps },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+    slug: {
+      type: 'string',
+      resolve: (recipe) => {
+        const slug = getSlug(recipe._raw.sourceFileName);
+        return slug;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
 
 export default makeSource({
   contentDirPath: 'data',
-  documentTypes: [Articulate, Home, Contact, About],
+  documentTypes: [Articulate, Home, Contact, About, Blogs, Lab],
 });
