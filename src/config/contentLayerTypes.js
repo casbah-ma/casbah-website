@@ -143,3 +143,16 @@ export const ClientSectionPropsType = defineNestedType(() => ({
   },
 }));
 /******* Client Section props types *******/
+
+/******* Blogs Card props types *******/
+export const blogsCardProps = defineNestedType(() => ({
+  name: 'BlogsCardProps',
+  // title, description, imgSrc, tags
+  fields: {
+    title: { type: 'string' },
+    description: {type: 'string'},
+    imgSrc: {type: 'string'},
+    tags: {type: 'json'}
+  }
+}));
+/******* Blogs Card props types *******/

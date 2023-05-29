@@ -14,7 +14,9 @@ function BlogsSectionV2({ title, subtitle, blogs }) {
       />
       <Grid>
         {blogs?.length > 0 &&
-          blogs.map((blog, i) => <BlogsCard key={blog.title} {...blog} />)}
+          blogs.map((blog, i) => (
+            <BlogsCard key={blog.title} {...blog} variant="v3" />
+          ))}
       </Grid>
     </Wrapper>
   );
