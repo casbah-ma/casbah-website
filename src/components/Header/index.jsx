@@ -4,12 +4,20 @@ import Title from '../Title';
 import Paragraph from '../Paragraph';
 import useTranslation from 'next-translate/useTranslation';
 
-function Header({ title, description, withLine, isVertical = false }) {
-    const { t } = useTranslation();
+
+function Header({
+  title,
+  description,
+  withLine,
+  isVertical = false,
+  isSplited = false,
+}) {
+
+
   return (
-    <Wrapper withLine={withLine} isVertical={isVertical}>
+    <Wrapper isSplited={isSplited} withLine={withLine} isVertical={isVertical}>
       <Title renderAs="h1" withoutBorder={true}>
-        {t(title)}
+        {title}
       </Title>
       <Paragraph size="md">{description}</Paragraph>
     </Wrapper>

@@ -33,6 +33,12 @@ const preview = {
       },
       expanded: true,
     },
+    nextjs: {
+      router: {
+        basePath: '/',
+        locale: 'en',
+      },
+    },
   },
 
   decorators: [
