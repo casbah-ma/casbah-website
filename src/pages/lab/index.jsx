@@ -8,7 +8,6 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 const Lab = ({ data }) => {
-  console.log(data);
   return (
     <div className="flex flex-col justify-center items-center gap-36 p-[2rem] md:p-16">
       <BlogsSectionV2 {...data} />
