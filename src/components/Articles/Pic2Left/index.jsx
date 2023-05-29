@@ -11,9 +11,9 @@ import {
 import MyImage from '../../MyImage';
 import Title from '../../Title';
 import Paragraph from '../../Paragraph';
-function Pic2Left({ title, texts, bigImg, mediumImg }) {
+function Pic2Left({ title, texts, bigImg, mediumImg, ...rest }) {
   return (
-    <Wrapper>
+    <Wrapper {...rest}>
       <ImagesWrapper>
         <MyImage src={bigImg} alt={title} sizes={imagesSize.lg} />
         <MeduimImage>
@@ -39,7 +39,6 @@ Pic2Left.propTypes = {
   title: PropTypes.string.isRequired,
   bigImg: PropTypes.string.isRequired,
   mediumImg: PropTypes.string.isRequired,
-  smallImg: PropTypes.string.isRequired,
   texts: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 

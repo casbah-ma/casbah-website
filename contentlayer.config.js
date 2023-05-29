@@ -68,6 +68,39 @@ export const Articulate = defineDocumentType(() => ({
 }));
 /* ---------------------------------------------- */
 
+/* ---------------------------------------------- */
+export const Build = defineDocumentType(() => ({
+  name: 'Build',
+  filePathPattern: `build/**/*.md`,
+  fields: {
+    picTopProps: { type: 'nested', of: picTopPropsType },
+    picRightProps: { type: 'nested', of: picLeftRightPropsType },
+    pic2LeftProps: { type: 'nested', of: pic4LeftPropsType },
+    picLeftProps: { type: 'nested', of: picLeftRightPropsType },
+    picRightProps2: { type: 'nested', of: picLeftRightPropsType },
+    picTopProps2: { type: 'nested', of: picTopPropsType },
+    picLeftProps2: { type: 'nested', of: picLeftRightPropsType },
+    pic2LeftProps2: { type: 'nested', of: pic4LeftPropsType },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+    slug: {
+      type: 'string',
+      resolve: (recipe) => {
+        const slug = getSlug(recipe._raw.sourceFileName);
+        return slug;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
+
 export const ContactUs = defineDocumentType(() => ({
   name: 'ContactUs',
   filePathPattern: `contact-us/**/*.md`,
@@ -92,5 +125,5 @@ export const ContactUs = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: 'data',
-  documentTypes: [Articulate, Home],
+  documentTypes: [Articulate, Home, Build],
 });

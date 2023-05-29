@@ -9,9 +9,9 @@ import Paragraph from '@/components/Paragraph';
 import MyImage from '../../MyImage';
 import PropTypes from 'prop-types';
 
-const PicLeftRight = ({ title, article, imgSrc, variant = 'v1' }) => {
+const PicLeftRight = ({ title, article, imgSrc, variant = 'v1', ...rest }) => {
   return (
-    <StyledPicLeft variant={variant}>
+    <StyledPicLeft variant={variant} {...rest}>
       <MyImage sizes={imageVariants[variant]} src={imgSrc} alt={title} />
       <StyledText>
         <Title renderAs="h2">{title}</Title>

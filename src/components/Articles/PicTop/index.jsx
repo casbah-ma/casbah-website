@@ -4,9 +4,9 @@ import Title from '../../Title';
 import Paragraph from '../../Paragraph';
 import { directions } from './PicTop.styles';
 import MyImage from '../../MyImage';
-function PicTop({ title, texts, variant, img }) {
+function PicTop({ title, texts, variant, img, ...rest }) {
   return (
-    <Wrapper>
+    <Wrapper {...rest}>
       <MyImage sizes={imageDirections[variant]} src={img} alt={title} />
       <Content variant={variant}>
         <Title renderAs="h2">{title}</Title>

@@ -44,3 +44,15 @@ export const pic4LeftPropsType = defineNestedType(() => ({
   },
 }));
 /******* Pic4Left props types *******/
+
+/******* Pic2Left props types *******/
+export const pic2LeftPropsType = defineNestedType(() => ({
+  name: 'Pic4LeftProps',
+  fields: {
+    title: { type: 'string' },
+    bigImg: { type: 'string' },
+    mediumImg: { type: 'string' },
+    texts: { type: 'json' },
+  },
+}));
+/******* Pic2Left props types *******/
