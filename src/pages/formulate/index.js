@@ -1,16 +1,16 @@
-import { allBuilds } from 'contentlayer/generated';
+import { allFormulates } from 'contentlayer/generated';
 //components
 import Header from '@/components/Header';
 import PicTop from '@/components/Articles/PicTop';
-import Pic2Left from '@/components/Articles/Pic2Left';
+import Pic3Left from '@/components/Articles/Pic3Left';
 import PicLeftRight from '@/components/Articles/PicLeftRight';
 import LottieText from '@/components/LottieText';
 //Lotties
-import build from '@/lotties/build.json';
+import formulate from '@/lotties/formulate.json';
 
 //get the data for the current locale
 export const getStaticProps = ({ locale }) => {
-  const data = allBuilds.find((page) => page.lang === locale);
+  const data = allFormulates.find((page) => page.lang === locale);
   return {
     props: {
       data,
@@ -18,44 +18,29 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
-function Build({ data }) {
+function Formulate({ data }) {
   return (
     <div className="flex flex-col justify-center items-center gap-[120px] mb-36">
-      <LottieText lottie={build} />
+      <LottieText lottie={formulate} />
+      <Header {...data.headerProps} isVertical={true} />
+      <Pic3Left {...data.pic3LeftProps} className="max-w-[71.8rem] ml-auto" />
       <PicTop
         {...data.picTopProps}
         variant="v3"
         className="pl-14 md:pl-[13.188rem] lg:pl-[24.625rem]"
       />
       <PicLeftRight
-        {...data.picRightProps}
-        variant="v3"
-        className="md:pr-[13.188rem] lg:pr-0"
-      />
-      <Pic2Left {...data.pic2LeftProps} className="max-w-[65rem] mx-auto" />
-      <PicLeftRight
         {...data.picLeftProps}
-        variant="v2"
+        variant="v4"
         className="md:pl-[13.188rem] lg:pl-0"
-      />
-      <PicLeftRight
-        {...data.picRightProps2}
-        variant="v3"
-        className="md:pr-[13.188rem] lg:pr-0"
       />
       <PicTop
         {...data.picTopProps2}
         variant="v3"
         className="pl-14 md:pl-[13.188rem] lg:pl-[24.625rem]"
       />
-      <PicLeftRight
-        {...data.picLeftProps2}
-        variant="v2"
-        className="md:pl-[13.188rem] lg:pl-0"
-      />
-      <Pic2Left {...data.pic2LeftProps2} className="max-w-[65rem] mx-auto" />
     </div>
   );
 }
 
-export default Build;
+export default Formulate;

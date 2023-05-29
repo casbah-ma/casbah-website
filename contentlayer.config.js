@@ -11,6 +11,7 @@ const getSlug = (path) => {
 import { defineDocumentType, makeSource } from 'contentlayer/source-files';
 import {
   headerPropsType,
+  pic2LeftPropsType,
   pic4LeftPropsType,
   picLeftRightPropsType,
   picTopPropsType,
@@ -101,6 +102,36 @@ export const Build = defineDocumentType(() => ({
 }));
 /* ---------------------------------------------- */
 
+/* ---------------------------------------------- */
+export const Formulate = defineDocumentType(() => ({
+  name: 'Formulate',
+  filePathPattern: `formulate/**/*.md`,
+  fields: {
+    headerProps: { type: 'nested', of: headerPropsType },
+    pic3LeftProps: { type: 'nested', of: pic4LeftPropsType },
+    picTopProps: { type: 'nested', of: picTopPropsType },
+    picLeftProps: { type: 'nested', of: picLeftRightPropsType },
+    picTopProps2: { type: 'nested', of: picTopPropsType },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+    slug: {
+      type: 'string',
+      resolve: (recipe) => {
+        const slug = getSlug(recipe._raw.sourceFileName);
+        return slug;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
+
 export const ContactUs = defineDocumentType(() => ({
   name: 'ContactUs',
   filePathPattern: `contact-us/**/*.md`,
@@ -125,5 +156,5 @@ export const ContactUs = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: 'data',
-  documentTypes: [Articulate, Home, Build],
+  documentTypes: [Articulate, Home, Build, Formulate],
 });
