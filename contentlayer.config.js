@@ -128,6 +128,28 @@ export const About = defineDocumentType(() => ({
 }));
 /* ---------------------------------------------- */
 
+export const ContactUs = defineDocumentType(() => ({
+  name: 'ContactUs',
+  filePathPattern: `contact-us/**/*.md`,
+  fields: {
+    // DropUs= {descreption: '', specialLine: ''}
+    DropUs: {
+      type: 'json',
+    },
+    FollowUsDescription: {
+      type: 'string',
+      description: 'The descreption of the FollowUs',
+      required: true,
+    },
+  },
+  computedFields: {
+    url: {
+      type: 'string',
+      resolve: (post) => `/${post._raw.flattenedPath}`,
+    },
+  },
+}));
+
 export default makeSource({
   contentDirPath: 'data',
   documentTypes: [Articulate, Home, Contact, About],

@@ -15,7 +15,7 @@ function Header({
   return (
     <Wrapper isSplited={isSplited} withLine={withLine} isVertical={isVertical}>
       <Title renderAs="h1" withoutBorder={true}>
-        {t(title)}
+        {title}
       </Title>
       <Paragraph size="md">{description}</Paragraph>
     </Wrapper>
