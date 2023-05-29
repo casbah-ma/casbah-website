@@ -10,6 +10,11 @@ const getSlug = (path) => {
 };
 import { defineDocumentType, makeSource } from 'contentlayer/source-files';
 import {
+  AboutSectionPropsType,
+  AwardsSectionPropsType,
+  ClientSectionPropsType,
+  DropUsPropsType,
+  TeamSectionPropsType,
   headerPropsType,
   pic4LeftPropsType,
   picLeftRightPropsType,
@@ -67,6 +72,61 @@ export const Articulate = defineDocumentType(() => ({
   },
 }));
 /* ---------------------------------------------- */
+/* ----------------------- Contact ----------------------- */
+export const Contact = defineDocumentType(() => ({
+  name: 'Contact',
+  filePathPattern: `contact/**/*.md`,
+  fields: {
+    DropUs: { type: 'nested', of: DropUsPropsType },
+    FollowUsDescription: { type: 'string' },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+    slug: {
+      type: 'string',
+      resolve: (recipe) => {
+        const slug = getSlug(recipe._raw.sourceFileName);
+        return slug;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
+
+/* ----------------------- About ----------------------- */
+export const About = defineDocumentType(() => ({
+  name: 'About',
+  filePathPattern: `about/**/*.md`,
+  fields: {
+    aboutSection: { type: 'nested', of: AboutSectionPropsType },
+    awardsSection: {type: 'nested', of: AwardsSectionPropsType},
+    teamSection: {type: 'nested', of: TeamSectionPropsType},
+    clientSection: {type: 'nested', of: ClientSectionPropsType}
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+    slug: {
+      type: 'string',
+      resolve: (recipe) => {
+        const slug = getSlug(recipe._raw.sourceFileName);
+        return slug;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
 
 export const ContactUs = defineDocumentType(() => ({
   name: 'ContactUs',
@@ -92,6 +152,5 @@ export const ContactUs = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: 'data',
-  documentTypes: [Articulate, Home],
-
+  documentTypes: [Articulate, Home, Contact, About],
 });

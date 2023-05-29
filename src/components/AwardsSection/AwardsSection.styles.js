@@ -1,8 +1,7 @@
 import tw from 'twin.macro';
 
 export const Wrapper = tw.div`
-w-full flex flex-col gap-14 
-lg:gap-[6rem] 
+w-full flex flex-col gap-8 
 `;
 
 export const imageStyle = tw`w-full h-full rounded-2xl`;
