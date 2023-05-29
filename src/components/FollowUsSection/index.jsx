@@ -10,7 +10,7 @@ const FollowUs = ({ description }) => {
       <SocialMedia>
         {media.length > 0 &&
           media.map((item, index) => (
-            <XButton key={index} as="a" href={item.link} target="_blank">
+            <XButton key={index} as="a" href={item.url} target="_blank">
               {item.name}
             </XButton>
           ))}

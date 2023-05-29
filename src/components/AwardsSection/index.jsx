@@ -13,7 +13,7 @@ function AwardsSection({ title, description, cards }) {
         className="w-full h-full"
         modules={[A11y]}
         slidesPerView="auto"
-        spaceBetween={32}
+        spaceBetween={16}
         breakpoints={{
           768: {
             spaceBetween: 42,
@@ -22,7 +22,7 @@ function AwardsSection({ title, description, cards }) {
       >
         {cards?.length > 0 &&
           cards.map((card, i) => (
-            <SwiperSlide key={i}>
+            <SwiperSlide key={i} className='!w-fit !h-fit'>
               <AwardsCard {...card} />
             </SwiperSlide>
           ))}
