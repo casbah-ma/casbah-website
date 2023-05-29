@@ -14,7 +14,6 @@ export const infos = {
   address: 'Rue Ahfir Res Nouha Etage 7 N°49 Tanger 90000 Morocco',
 };
 
-
 export const logo =
   'https://res.cloudinary.com/casbah/image/upload/v1683662155/Group_93_ssmvyu.svg';
 
@@ -82,7 +81,8 @@ export const media = [
   {
     url: 'https://www.linkedin.com/',
     icon: LinkedIn,
-
+  },
+];
 // Casbah Social Media
 export const socialMedia = [
   {
