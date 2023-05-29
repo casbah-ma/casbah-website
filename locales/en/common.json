@@ -1,4 +1,5 @@
 {
+
   "hello": "hello",
   "en": "english",
   "fr": "french",
@@ -24,4 +25,6 @@
   "lab": "lab",
   "blog": "blog",
   "contact": "contact"
+   "followus": "follow us on"
+
 }
