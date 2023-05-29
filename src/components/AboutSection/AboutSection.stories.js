@@ -1,7 +1,7 @@
 import AboutSection from '.';
 
 export default {
-  title: 'Components/AboutSection',
+  title: 'Sections/AboutSection',
   component: AboutSection,
 };
 
