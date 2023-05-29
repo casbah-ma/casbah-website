@@ -93,5 +93,4 @@ export const ContactUs = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: 'data',
   documentTypes: [Articulate, Home],
-
 });

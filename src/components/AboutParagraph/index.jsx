@@ -13,7 +13,9 @@ const AboutParagraph = ({ title, text, size = 'lg' }) => {
       </Title>
       <TextSection>
         {text?.map((item, i) => (
-          <Paragraph key={i} size='md'>{item}</Paragraph>
+          <Paragraph key={i} size="md">
+            {item}
+          </Paragraph>
         ))}
       </TextSection>
     </Wrapper>
