@@ -44,6 +44,7 @@ export const Version1 = Template.bind({});
 export const Version2 = Template.bind({});
 export const Version3 = Template.bind({});
 export const Version4 = Template.bind({});
+export const Version5 = Template.bind({});
 
 Version1.args = {
   variant: 'v1',
@@ -71,6 +72,14 @@ Version3.args = {
 
 Version4.args = {
   variant: 'v4',
+  imgSrc:
+    'https://images.unsplash.com/photo-1682685797208-c741d58c2eff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
+  title: 'copywriting',
+  article: v4Texts,
+};
+
+Version5.args = {
+  variant: 'v5',
   imgSrc:
     'https://images.unsplash.com/photo-1682685797208-c741d58c2eff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
   title: 'copywriting',

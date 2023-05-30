@@ -14,6 +14,9 @@ export const imageVariants = {
   v4: tw`w-full h-[14.75rem]
     md:(!h-[17.563rem])
     lg:(!w-[44.813rem] !h-[21.938rem])`,
+  v5: tw`w-full h-[13rem]
+    md:(!h-[20.5rem])
+    lg:(!w-[38.25rem] !h-[24.5rem])`,
 };
 
 export const versions = {
@@ -43,6 +46,12 @@ export const versions = {
   [&>section]:(w-[95%] gap-[1.875rem] [&>div]:(w-full pl-10 self-end)
         md:(!w-full !gap-[2.125rem] [&>div]:pl-0)
         lg:(max-w-[38.25rem] !gap-10))
+    lg:flex-row`,
+  //Version 5
+  v5: tw`
+  [&>section]:(w-[95%] gap-[1.875rem] [&>div]:(w-full pl-10 self-end)
+        md:(!w-full !gap-[2.125rem])
+        lg:(max-w-[38.25rem] !gap-10  [&>div]:pl-0))
     lg:flex-row`,
 };
 
