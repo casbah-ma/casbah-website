@@ -1,6 +1,6 @@
 import { allBuilds } from 'contentlayer/generated';
 //components
-import Header from '@/components/Header';
+import HeaderV2 from '@/components/HeaderV2';
 import PicTop from '@/components/Articles/PicTop';
 import Pic2Left from '@/components/Articles/Pic2Left';
 import PicLeftRight from '@/components/Articles/PicLeftRight';
@@ -22,6 +22,7 @@ function Build({ data }) {
   return (
     <div className="flex flex-col justify-center items-center gap-[120px] mb-36">
       <LottieText lottie={build} />
+      <HeaderV2 {...data.headerProps} />
       <PicTop
         {...data.picTopProps}
         variant="v3"

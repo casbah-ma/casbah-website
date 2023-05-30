@@ -1,6 +1,6 @@
 import { allDesigns } from 'contentlayer/generated';
 //components
-import Header from '@/components/Header';
+import HeaderV2 from '@/components/HeaderV2';
 import PicTop from '@/components/Articles/PicTop';
 import Pic3Right from '@/components/Articles/Pic3Right';
 import Pic4Left from '@/components/Articles/Pic4Left';
@@ -23,6 +23,7 @@ function Design({ data }) {
   return (
     <div className="flex flex-col justify-center items-center gap-[120px] mb-36">
       <LottieText lottie={design} />
+      <HeaderV2 {...data.headerProps} variant="v2" />
       <PicLeftRight {...data.picLeftProps} variant="v5" />
       <Pic3Right
         {...data.pic3RightProps}

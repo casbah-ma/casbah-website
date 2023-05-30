@@ -11,6 +11,7 @@ const getSlug = (path) => {
 import { defineDocumentType, makeSource } from 'contentlayer/source-files';
 import {
   headerPropsType,
+  headerV2PropsType,
   pic2LeftPropsType,
   pic4LeftPropsType,
   picLeftRightPropsType,
@@ -74,6 +75,7 @@ export const Build = defineDocumentType(() => ({
   name: 'Build',
   filePathPattern: `build/**/*.md`,
   fields: {
+    headerProps: { type: 'nested', of: headerV2PropsType },
     picTopProps: { type: 'nested', of: picTopPropsType },
     picRightProps: { type: 'nested', of: picLeftRightPropsType },
     pic2LeftProps: { type: 'nested', of: pic4LeftPropsType },
@@ -137,6 +139,7 @@ export const Design = defineDocumentType(() => ({
   name: 'Design',
   filePathPattern: `design/**/*.md`,
   fields: {
+    headerProps: { type: 'nested', of: headerV2PropsType },
     picLeftProps: { type: 'nested', of: picLeftRightPropsType },
     pic3RightProps: { type: 'nested', of: pic4LeftPropsType },
     picTopProps: { type: 'nested', of: picTopPropsType },

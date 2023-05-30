@@ -1,4 +1,8 @@
 ---
+headerProps:
+  title: 'Creating the products, interfaces, tools, and architectures that will help the organization fulfill its mission and reach its audiences,'
+  description: 'with a specific set of functionalities that will enable the users, but also the organization itself, to find the right match to their needs, whether they are informative, promotional or practical.'
+  specialLine: 'help the organization fulfill its mission'
 picTopProps:
   title: 'Digital transformation'
   texts:

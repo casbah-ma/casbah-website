@@ -10,6 +10,17 @@ export const headerPropsType = defineNestedType(() => ({
 }));
 /******* Header props types *******/
 
+/******* HeaderV2 props types *******/
+export const headerV2PropsType = defineNestedType(() => ({
+  name: 'HeaderV2Props',
+  fields: {
+    title: { type: 'string' },
+    description: { type: 'string' },
+    specialLine: { type: 'string' },
+  },
+}));
+/******* HeaderV2 props types *******/
+
 /******* PicTop props types *******/
 export const picTopPropsType = defineNestedType(() => ({
   name: 'PicTopProps',
