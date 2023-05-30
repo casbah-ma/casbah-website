@@ -132,6 +132,36 @@ export const Formulate = defineDocumentType(() => ({
 }));
 /* ---------------------------------------------- */
 
+/* ---------------------------------------------- */
+export const Design = defineDocumentType(() => ({
+  name: 'Design',
+  filePathPattern: `design/**/*.md`,
+  fields: {
+    picLeftProps: { type: 'nested', of: picLeftRightPropsType },
+    pic3RightProps: { type: 'nested', of: pic4LeftPropsType },
+    picTopProps: { type: 'nested', of: picTopPropsType },
+    pic4LeftProps: { type: 'nested', of: pic4LeftPropsType },
+    picRightProps: { type: 'nested', of: picLeftRightPropsType },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+    slug: {
+      type: 'string',
+      resolve: (recipe) => {
+        const slug = getSlug(recipe._raw.sourceFileName);
+        return slug;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
+
 export const ContactUs = defineDocumentType(() => ({
   name: 'ContactUs',
   filePathPattern: `contact-us/**/*.md`,
@@ -156,5 +186,5 @@ export const ContactUs = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: 'data',
-  documentTypes: [Articulate, Home, Build, Formulate],
+  documentTypes: [Articulate, Home, Build, Formulate, Design],
 });
