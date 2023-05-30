@@ -10,6 +10,12 @@ const getSlug = (path) => {
 };
 import { defineDocumentType, makeSource } from 'contentlayer/source-files';
 import {
+  AboutSectionPropsType,
+  AwardsSectionPropsType,
+  ClientSectionPropsType,
+  DropUsPropsType,
+  TeamSectionPropsType,
+  blogsCardProps,
   headerPropsType,
   headerV2PropsType,
   pic2LeftPropsType,
@@ -69,6 +75,62 @@ export const Articulate = defineDocumentType(() => ({
   },
 }));
 /* ---------------------------------------------- */
+/* ----------------------- Contact ----------------------- */
+export const Contact = defineDocumentType(() => ({
+  name: 'Contact',
+  filePathPattern: `contact/**/*.md`,
+  fields: {
+    DropUs: { type: 'nested', of: DropUsPropsType },
+    FollowUsDescription: { type: 'string' },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+    slug: {
+      type: 'string',
+      resolve: (recipe) => {
+        const slug = getSlug(recipe._raw.sourceFileName);
+        return slug;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
+
+/* ----------------------- About ----------------------- */
+export const About = defineDocumentType(() => ({
+  name: 'About',
+  filePathPattern: `about/**/*.md`,
+  fields: {
+    aboutSection: { type: 'nested', of: AboutSectionPropsType },
+    awardsSection: { type: 'nested', of: AwardsSectionPropsType },
+    teamSection: { type: 'nested', of: TeamSectionPropsType },
+    clientSection: { type: 'nested', of: ClientSectionPropsType },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+    slug: {
+      type: 'string',
+      resolve: (recipe) => {
+        const slug = getSlug(recipe._raw.sourceFileName);
+        return slug;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
+
 
 /* ---------------------------------------------- */
 export const Build = defineDocumentType(() => ({
@@ -165,29 +227,66 @@ export const Design = defineDocumentType(() => ({
 }));
 /* ---------------------------------------------- */
 
-export const ContactUs = defineDocumentType(() => ({
-  name: 'ContactUs',
-  filePathPattern: `contact-us/**/*.md`,
+
+/* ----------------------- blogs ----------------------- */
+export const Blogs = defineDocumentType(() => ({
+  name: 'Blogs',
+  filePathPattern: `blogs/**/*.md`,
+
   fields: {
-    // DropUs= {descreption: '', specialLine: ''}
-    DropUs: {
-      type: 'json',
-    },
-    FollowUsDescription: {
-      type: 'string',
-      description: 'The descreption of the FollowUs',
-      required: true,
-    },
+    blogs: { type: 'list', of: blogsCardProps },
   },
   computedFields: {
-    url: {
+    lang: {
       type: 'string',
-      resolve: (post) => `/${post._raw.flattenedPath}`,
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+    slug: {
+      type: 'string',
+      resolve: (recipe) => {
+        const slug = getSlug(recipe._raw.sourceFileName);
+        return slug;
+      },
     },
   },
 }));
+/* ---------------------------------------------- */
+
+/* ----------------------- blogs ----------------------- */
+export const Lab = defineDocumentType(() => ({
+  name: 'Lab',
+  filePathPattern: `lab/**/*.md`,
+  fields: {
+    title: { type: 'string' },
+    subtitle: { type: 'string' },
+    blogs: { type: 'list', of: blogsCardProps },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+    slug: {
+      type: 'string',
+      resolve: (recipe) => {
+        const slug = getSlug(recipe._raw.sourceFileName);
+        return slug;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
 
 export default makeSource({
   contentDirPath: 'data',
-  documentTypes: [Articulate, Home, Build, Formulate, Design],
+
+  documentTypes: [Articulate, Home, Build, Formulate, Design,  Contact, About, Blogs, Lab],
+
+
 });

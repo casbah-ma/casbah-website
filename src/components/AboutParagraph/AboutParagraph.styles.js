@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const sizes = {
-  sm: tw`md:gap-[1.9rem] [&>h2]:(text-lg) [&>div]:gap-0`,
+  sm: tw`md:gap-[1.9rem] [&>h1]:(text-lg) [&>div]:gap-0`,
   lg: tw`md:gap-6 lg:gap-8`,
 };
 

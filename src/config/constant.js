@@ -57,11 +57,11 @@ export const links = [
   },
   {
     name: 'lab',
-    url: '/contact',
+    url: '/lab',
   },
   {
-    name: 'blog',
-    url: '/contact',
+    name: 'blogs',
+    url: '/blogs',
   },
   {
     name: 'contact',
@@ -73,28 +73,16 @@ export const media = [
   {
     url: 'https://www.facebook.com/',
     icon: Facebook,
+    name: 'facebook',
   },
   {
     url: 'https://www.instagram.com/',
     icon: Instagram,
+    name: 'instagram',
   },
   {
     url: 'https://www.linkedin.com/',
     icon: LinkedIn,
-  },
-];
-// Casbah Social Media
-export const socialMedia = [
-  {
-    name: 'facebook',
-    link: 'https://www.facebook.com/CasbahTechDigital',
-  },
-  {
-    name: 'instagram',
-    link: 'https://www.instagram.com/casbahtechdigital/',
-  },
-  {
-    name: 'linkedin',
-    link: 'https://www.linkedin.com/company/casbahtechdigital/',
+    name: 'LinkedIn',
   },
 ];
