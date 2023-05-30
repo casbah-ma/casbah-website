@@ -17,6 +17,9 @@ export const imageVariants = {
   v5: tw`w-full h-[13rem]
     md:(!h-[20.5rem])
     lg:(!w-[38.25rem] !h-[24.5rem])`,
+  v6: tw`(w-full h-[19.375rem]
+    md:(!h-[19.938rem])
+    lg:(!w-[38.25rem]) !h-[21.875rem])`,
 };
 
 export const versions = {
@@ -53,6 +56,12 @@ export const versions = {
         md:(!w-full !gap-[2.125rem])
         lg:(max-w-[38.25rem] !gap-10  [&>div]:pl-0))
     lg:flex-row`,
+  v6: tw`
+    // update text container
+    [&>section]:(w-[95%] gap-[1.875rem] [&>div]:(w-full pl-10 self-end)
+        md:(!w-full !gap-[2.125rem] [&>div]:pl-[13.188rem])
+        lg:(!max-w-[38.25rem] !gap-10 [&>div]:!pl-0))
+    lg:flex-row-reverse`,
 };
 
 export const StyledPicLeft = styled.div`
