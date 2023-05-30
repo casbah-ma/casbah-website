@@ -11,9 +11,9 @@ import {
 import MyImage from '../../MyImage';
 import Title from '../../Title';
 import Paragraph from '../../Paragraph';
-function Pic3Right({ title, texts, bigImg, mediumImg, smallImg }) {
+function Pic3Right({ title, texts, bigImg, mediumImg, smallImg, ...rest }) {
   return (
-    <Wrapper>
+    <Wrapper {...rest}>
       <ImagesWrapper>
         <MyImage src={bigImg} alt={title} sizes={imagesSize.lg} />
         <MeduimImage>

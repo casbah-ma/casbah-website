@@ -14,7 +14,7 @@ const SpecialText = ({ text, specialLine, uppercase, size = 'md' }) => {
     newText = newText.replace(regex, '<span>$&</span>');
 
     textElement.innerHTML = newText;
-  }, []);
+  }, [specialLine]);
 
   return (
     <SpecialStyle ref={textRef} uppercase={uppercase} size={size}>
