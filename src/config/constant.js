@@ -32,7 +32,7 @@ export const links = [
       {
         label: 'articulate',
         value: '1',
-        url: '/',
+        url: '/articulate',
       },
       {
         label: 'design',
