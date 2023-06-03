@@ -1,4 +1,5 @@
 import BlogSteps from '.';
+import * as UserInfoStories from '../../UserInfo/UserInfo.stories';
 
 export default {
   title: 'Blogs/BlogSteps',
@@ -30,4 +31,5 @@ Default.args = {
     'It is not about putting forms and colors together, but about finding ',
   paragraph:
     'It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer optimal experiences for the targeted audiences, while conveying the right messages and staying true to the brand’s identity.',
+  userInfo: UserInfoStories.Default.args,
 };

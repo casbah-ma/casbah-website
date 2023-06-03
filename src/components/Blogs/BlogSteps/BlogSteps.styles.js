@@ -6,6 +6,6 @@ export const BlogContent = tw.div`w-full flex flex-col md:max-w-[38.188rem] lg:(
 
 export const BlogStepsWrapper = tw.div`flex flex-col items-center justify-center w-full h-full space-y-8 `;
 
-export const BlogStep = tw.div`w-full bg-red bg-opacity-10 py-8 px-9 border-l border-solid border-black flex gap-14`;
+export const BlogStep = tw.div`w-full bg-red bg-opacity-10 py-8 px-9 flex gap-14`;
 
 export const BlogNumber = tw.div`font-made font-bold text-[2rem]`;

@@ -1,4 +1,6 @@
+import Paragraph from '../../Paragraph';
 import Title from '../../Title';
+import UserInfo from '../../UserInfo';
 import { BlogTitle } from '../BlogInfo/BlogInfo.styles';
 import {
   BlogContent,
@@ -20,13 +22,12 @@ const BlogSteps = ({ title, steps, paragraph, userInfo }) => {
           {steps?.map((step, i) => (
             <BlogStep key={i}>
               <BlogNumber>{i + 1 < 10 ? `0${i + 1}` : i + 1}</BlogNumber>
-              <p className="text-lg font-medium text-gray-600">{step}</p>
+              <Paragraph size="md">{step}</Paragraph>
             </BlogStep>
           ))}
         </BlogStepsWrapper>
-        <div className="flex flex-col items-center justify-center w-full h-full space-y-4">
-          <p className="text-lg font-medium text-gray-600">{paragraph}</p>
-        </div>
+        <Paragraph size="md">{paragraph}</Paragraph>
+        <UserInfo {...userInfo} />
       </BlogContent>
     </Wrapper>
   );
