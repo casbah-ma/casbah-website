@@ -8,4 +8,4 @@ export const BlogStepsWrapper = tw.div`flex flex-col items-center justify-center
 
 export const BlogStep = tw.div`w-full bg-red bg-opacity-10 py-8 px-9 flex gap-14`;
 
-export const BlogNumber = tw.div`font-made font-bold text-[2rem]`;
+export const BlogNumber = tw.div`font-made font-bold text-[2rem] uppercase`;
