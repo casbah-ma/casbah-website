@@ -1,4 +1,4 @@
-import { data } from './dummy';
+import { data } from '../../config/dummy';
 import BlogHeader from '../../components/BlogHeader';
 import ShareSection from '../../components/ShareSection';
 import BlogInfo from '../../components/Blogs/BlogInfo';

@@ -4,7 +4,7 @@ import BlogsCard from '../BlogsCard';
 import { useEffect, useState } from 'react';
 import useTranslation from 'next-translate/useTranslation';
 
-function BlogsSection({ blogs }) {
+function BlogsSection({ blogs, onClick }) {
   const { t } = useTranslation();
   const [position, setPosition] = useState({ x: null, y: null });
 
@@ -27,7 +27,7 @@ function BlogsSection({ blogs }) {
           />
         ))}
       {position.x && position.y && (
-        <ReadMore x={position.x} y={position.y}>
+        <ReadMore x={position.x} y={position.y} onClick={onClick}>
           {t('readMore')}
         </ReadMore>
       )}
