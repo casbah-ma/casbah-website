@@ -17,8 +17,10 @@ module.exports = {
         deepBlue: '#000F9F',
         darkBlue: '#000219',
         brightOrange: '#FF5100',
+        gray: '#D9D9D9',
         grayIsh: '#FF5100',
         blackIsh: '#151B18',
+        red: '#F30000',
       },
       screens: {
         md: '600px',

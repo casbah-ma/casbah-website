@@ -37,17 +37,17 @@ export const links = [
       {
         label: 'design',
         value: '2',
-        url: '/',
+        url: '/design',
       },
       {
         label: 'build',
         value: '3',
-        url: '/',
+        url: '/build',
       },
       {
         label: 'formulate',
         value: '4',
-        url: '/',
+        url: '/formulate',
       },
     ],
   },

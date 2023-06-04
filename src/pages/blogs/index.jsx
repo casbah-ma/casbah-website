@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import BlogsSection from '../../components/BlogsSection';
 import { allBlogs } from 'contentlayer/generated';
 
@@ -8,10 +9,15 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 const Blogs = ({ data }) => {
-  console.log(data);
+  const route = useRouter();
+
+  const handleBlogClick = () => {
+    route.push('/blogs/test');
+  };
+
   return (
     <div className="flex flex-col justify-center items-center gap-36 p-[2rem] md:p-16">
-      <BlogsSection {...data} />
+      <BlogsSection {...data} onClick={handleBlogClick} />
     </div>
   );
 };
