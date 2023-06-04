@@ -37,5 +37,5 @@ export const WithSubtitle = Template.bind({});
 WithSubtitle.args = {
   ...Left.args,
   variant: 'right',
-  subtitle: 'Or you know where you have to get.',
+  subtitle: 'Or you know where you have to get. ',
 };

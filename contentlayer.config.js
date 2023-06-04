@@ -18,7 +18,7 @@ import {
   blogsCardProps,
   headerPropsType,
   headerV2PropsType,
-  pic2LeftPropsType,
+  homeSectionPropsType,
   pic4LeftPropsType,
   picLeftRightPropsType,
   picTopPropsType,
@@ -29,7 +29,13 @@ export const Home = defineDocumentType(() => ({
   name: 'Home',
   filePathPattern: `home/**/*.md`,
   fields: {
-    title: { type: 'string' },
+    sectionProps: { type: 'nested', of: homeSectionPropsType },
+    sectionProps1: { type: 'nested', of: homeSectionPropsType },
+    sectionProps2: { type: 'nested', of: homeSectionPropsType },
+    sectionProps3: { type: 'nested', of: homeSectionPropsType },
+    sectionProps4: { type: 'nested', of: homeSectionPropsType },
+    sectionProps5: { type: 'nested', of: homeSectionPropsType },
+    sectionProps6: { type: 'nested', of: homeSectionPropsType },
   },
   computedFields: {
     lang: {

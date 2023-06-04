@@ -6,7 +6,9 @@ export const variants = {
 };
 
 export const Wrapper = styled.div(() => [
-  tw`w-full h-screen flex flex-col gap-10 px-4 justify-start items-start md:gap-36 
+  tw`w-full flex flex-col gap-10 px-4 justify-start items-start 
+  h-[calc(100vh - 8rem)]
+  md:gap-36 
   lg:(gap-14)`,
   ({ variant }) => variants[variant],
 ]);

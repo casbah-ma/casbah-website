@@ -179,3 +179,15 @@ export const blogsCardProps = defineNestedType(() => ({
   },
 }));
 /******* Blogs Card props types *******/
+
+/******* Home Section props types *******/
+export const homeSectionPropsType = defineNestedType(() => ({
+  name: 'HomeSectionProps',
+  // title, description, imgSrc, tags
+  fields: {
+    title: { type: 'string' },
+    subtitle: { type: 'string' },
+    texts: { type: 'json' },
+  },
+}));
+/******* Home Section props types *******/
