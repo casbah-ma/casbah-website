@@ -56,7 +56,6 @@ export const pic4LeftPropsType = defineNestedType(() => ({
 }));
 /******* Pic4Left props types *******/
 
-
 /******* Pic2Left props types *******/
 export const pic2LeftPropsType = defineNestedType(() => ({
   name: 'Pic4LeftProps',
@@ -174,10 +173,9 @@ export const blogsCardProps = defineNestedType(() => ({
   // title, description, imgSrc, tags
   fields: {
     title: { type: 'string' },
-    description: {type: 'string'},
-    imgSrc: {type: 'string'},
-    tags: {type: 'json'}
-  }
+    description: { type: 'string' },
+    imgSrc: { type: 'string' },
+    tags: { type: 'json' },
+  },
 }));
 /******* Blogs Card props types *******/
-

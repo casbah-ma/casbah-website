@@ -131,7 +131,6 @@ export const About = defineDocumentType(() => ({
 }));
 /* ---------------------------------------------- */
 
-
 /* ---------------------------------------------- */
 export const Build = defineDocumentType(() => ({
   name: 'Build',
@@ -227,7 +226,6 @@ export const Design = defineDocumentType(() => ({
 }));
 /* ---------------------------------------------- */
 
-
 /* ----------------------- blogs ----------------------- */
 export const Blogs = defineDocumentType(() => ({
   name: 'Blogs',
@@ -286,7 +284,15 @@ export const Lab = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: 'data',
 
-  documentTypes: [Articulate, Home, Build, Formulate, Design,  Contact, About, Blogs, Lab],
-
-
+  documentTypes: [
+    Articulate,
+    Home,
+    Build,
+    Formulate,
+    Design,
+    Contact,
+    About,
+    Blogs,
+    Lab,
+  ],
 });
