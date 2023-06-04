@@ -17,6 +17,8 @@ import {
   TeamSectionPropsType,
   blogsCardProps,
   headerPropsType,
+  headerV2PropsType,
+  pic2LeftPropsType,
   pic4LeftPropsType,
   picLeftRightPropsType,
   picTopPropsType,
@@ -129,10 +131,108 @@ export const About = defineDocumentType(() => ({
 }));
 /* ---------------------------------------------- */
 
+
+/* ---------------------------------------------- */
+export const Build = defineDocumentType(() => ({
+  name: 'Build',
+  filePathPattern: `build/**/*.md`,
+  fields: {
+    headerProps: { type: 'nested', of: headerV2PropsType },
+    picTopProps: { type: 'nested', of: picTopPropsType },
+    picRightProps: { type: 'nested', of: picLeftRightPropsType },
+    pic2LeftProps: { type: 'nested', of: pic4LeftPropsType },
+    picLeftProps: { type: 'nested', of: picLeftRightPropsType },
+    picRightProps2: { type: 'nested', of: picLeftRightPropsType },
+    picTopProps2: { type: 'nested', of: picTopPropsType },
+    picLeftProps2: { type: 'nested', of: picLeftRightPropsType },
+    pic2LeftProps2: { type: 'nested', of: pic4LeftPropsType },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+    slug: {
+      type: 'string',
+      resolve: (recipe) => {
+        const slug = getSlug(recipe._raw.sourceFileName);
+        return slug;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+export const Formulate = defineDocumentType(() => ({
+  name: 'Formulate',
+  filePathPattern: `formulate/**/*.md`,
+  fields: {
+    headerProps: { type: 'nested', of: headerPropsType },
+    pic3LeftProps: { type: 'nested', of: pic4LeftPropsType },
+    picTopProps: { type: 'nested', of: picTopPropsType },
+    picLeftProps: { type: 'nested', of: picLeftRightPropsType },
+    picTopProps2: { type: 'nested', of: picTopPropsType },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+    slug: {
+      type: 'string',
+      resolve: (recipe) => {
+        const slug = getSlug(recipe._raw.sourceFileName);
+        return slug;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+export const Design = defineDocumentType(() => ({
+  name: 'Design',
+  filePathPattern: `design/**/*.md`,
+  fields: {
+    headerProps: { type: 'nested', of: headerV2PropsType },
+    picLeftProps: { type: 'nested', of: picLeftRightPropsType },
+    pic3RightProps: { type: 'nested', of: pic4LeftPropsType },
+    picTopProps: { type: 'nested', of: picTopPropsType },
+    pic4LeftProps: { type: 'nested', of: pic4LeftPropsType },
+    picRightProps: { type: 'nested', of: picLeftRightPropsType },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+    slug: {
+      type: 'string',
+      resolve: (recipe) => {
+        const slug = getSlug(recipe._raw.sourceFileName);
+        return slug;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
+
+
 /* ----------------------- blogs ----------------------- */
 export const Blogs = defineDocumentType(() => ({
   name: 'Blogs',
   filePathPattern: `blogs/**/*.md`,
+
   fields: {
     blogs: { type: 'list', of: blogsCardProps },
   },
@@ -185,5 +285,8 @@ export const Lab = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: 'data',
-  documentTypes: [Articulate, Home, Contact, About, Blogs, Lab],
+
+  documentTypes: [Articulate, Home, Build, Formulate, Design,  Contact, About, Blogs, Lab],
+
+
 });
