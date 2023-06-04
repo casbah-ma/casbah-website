@@ -13,13 +13,13 @@ const ShareSection = ({ data }) => {
         {t('shareon')}
       </Title>
       <Swiper
-        className="w-full"
+        className="flex-1"
         modules={[A11y]}
         slidesPerView="auto"
         spaceBetween={15}
       >
         {data?.map((item, i) => (
-          <SwiperSlide className="w-fit h-fit" key={item.name + i}>
+          <SwiperSlide className="!w-fit !h-fit" key={item.name + i}>
             <ShareButton {...item} />
           </SwiperSlide>
         ))}

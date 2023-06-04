@@ -1,5 +1,5 @@
 import SimilarBlog from '.';
-import * as BlogCardStories from '../BlogsCard/BlogsCard.stories';
+import * as BlogCardStories from '../../BlogsCard/BlogsCard.stories';
 
 export default {
   title: 'Sections/SimilarBlog',
