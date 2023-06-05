@@ -197,4 +197,70 @@ export const data = {
       },
     ],
   },
+  portfolioBlog1: {
+    text: 'It is not about putting forms and colors together, but about finding the\
+    right balance between logic and aesthetics, in order to offer optimal\
+    experiences for the targeted audiences, while conveying the right\
+    messages and staying true to the brand’s identity. #It is not about\
+    putting forms and colors together, but about finding the right balance\
+    between logic and aesthetics, in order to offer optimal experiences for\
+    the targeted audiences, while conveying the right messages and staying\
+    true to the brand’s identity.#It is not about putting forms and colors\
+    together, but about finding the right balance between logic and\
+    aesthetics, in order to offer optimal experiences for the targeted\
+    audiences, while conveying the right messages and staying true to the\
+    brand’s identity.#It is not about putting forms and colors together, but\
+    about finding the right balance between logic and aesthetics, in order\
+    to offer optimal experiences for the targeted audiences, while conveying\
+    the right messages and staying true to the brand’s identity. It is not\
+    about putting forms and colors together, but about finding the right\
+    balance between logic and aesthetics, in order to offer optimal\
+    experiences for the It is not about putting forms and colors together,\
+    but about finding the right balance between logic and aesthetics, in\
+    order to offer optimal experiences for the targeted audiences, while\
+    conveying the right messages and staying true to the brand’s identity.#\
+    It is not about putting forms and colors together, but about finding the\
+    right balance between logic and aesthetics, in order to offer optimal\
+    experiences for the',
+    images: [
+      'https://images.unsplash.com/photo-1685877596988-18f654f1138f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80',
+      'https://images.unsplash.com/photo-1684310963827-9978b26ebc4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80',
+      'https://images.unsplash.com/photo-1684395521046-fe664a85a9e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2371&q=80',
+      'https://images.unsplash.com/photo-1682344382195-553372019072?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80',
+      'https://images.unsplash.com/photo-1680787637178-6818ba60c579?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80',
+    ],
+  },
+  portfolioBlog2: {
+    text: 'It is not about putting forms and colors together, but about finding the\
+    right balance between logic and aesthetics, in order to offer optimal\
+    experiences for the targeted audiences, while conveying the right\
+    messages and staying true to the brand’s identity. #It is not about\
+    putting forms and colors together, but about finding the right balance\
+    between logic and aesthetics, in order to offer optimal experiences for\
+    the targeted audiences, while conveying the right messages and staying\
+    true to the brand’s identity.#It is not about putting forms and colors\
+    together, but about finding the right balance between logic and\
+    aesthetics, in order to offer optimal experiences for the targeted\
+    audiences, while conveying the right messages and staying true to the\
+    brand’s identity.#It is not about putting forms and colors together, but\
+    about finding the right balance between logic and aesthetics, in order\
+    to offer optimal experiences for the targeted audiences, while conveying\
+    the right messages and staying true to the brand’s identity. It is not\
+    about putting forms and colors together, but about finding the right\
+    balance between logic and aesthetics, in order to offer optimal\
+    experiences for the It is not about putting forms and colors together,\
+    but about finding the right balance between logic and aesthetics, in\
+    order to offer optimal experiences for the targeted audiences, while\
+    conveying the right messages and staying true to the brand’s identity.#\
+    It is not about putting forms and colors together, but about finding the\
+    right balance between logic and aesthetics, in order to offer optimal\
+    experiences for the',
+    images: [
+      'https://images.unsplash.com/photo-1681556374834-e8f926d03949?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80',
+      'https://images.unsplash.com/photo-1680610757394-6dd4113be243?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2371&q=80',
+      'https://images.unsplash.com/photo-1678541192455-e1e96bdf1b9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80',
+      'https://images.unsplash.com/photo-1678540939206-e32d7ff93474?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80',
+      'https://images.unsplash.com/photo-1675263830758-35df1a683bf6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2336&q=80'
+    ],
+  },
 };

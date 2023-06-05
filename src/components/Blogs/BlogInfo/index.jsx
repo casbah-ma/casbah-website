@@ -38,8 +38,8 @@ const BlogInfo = ({ title, texts, quote, swiperImages, image }) => {
             },
           }}
         >
-          {swiperImages?.map((img) => (
-            <SwiperSlide key={img.alt} className="!w-fit !h-fit">
+          {swiperImages?.map((img, i) => (
+            <SwiperSlide key={img.alt + i} className="!w-fit !h-fit">
               <MyImage sizes={imagesSize} src={img.url} alt={img.alt} />
             </SwiperSlide>
           ))}

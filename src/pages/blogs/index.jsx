@@ -12,7 +12,7 @@ const Blogs = ({ data }) => {
   const route = useRouter();
 
   const handleBlogClick = () => {
-    route.push('/blogs/test');
+    route.push('/blogs/blog/test');
   };
 
   return (

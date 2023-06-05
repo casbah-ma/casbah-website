@@ -3,7 +3,7 @@ import { Grid, ReadMore, Wrapper } from './BlogsSectionV2.styles';
 import BlogsCard from '../BlogsCard';
 import Header from '../Header';
 
-function BlogsSectionV2({ title, subtitle, blogs }) {
+function BlogsSectionV2({ title, subtitle, blogs, onClick }) {
   return (
     <Wrapper>
       <Header
@@ -15,7 +15,7 @@ function BlogsSectionV2({ title, subtitle, blogs }) {
       <Grid>
         {blogs?.length > 0 &&
           blogs.map((blog, i) => (
-            <BlogsCard key={blog.title} {...blog} variant="v3" />
+            <BlogsCard key={blog.title} {...blog} variant="v3" onClick={onClick} />
           ))}
       </Grid>
     </Wrapper>
