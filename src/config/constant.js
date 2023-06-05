@@ -53,7 +53,7 @@ export const links = [
   },
   {
     name: 'portfolio',
-    url: '/contact',
+    url: '/portfolio',
   },
   {
     name: 'lab',
