@@ -10,6 +10,17 @@ export const headerPropsType = defineNestedType(() => ({
 }));
 /******* Header props types *******/
 
+/******* HeaderV2 props types *******/
+export const headerV2PropsType = defineNestedType(() => ({
+  name: 'HeaderV2Props',
+  fields: {
+    title: { type: 'string' },
+    description: { type: 'string' },
+    specialLine: { type: 'string' },
+  },
+}));
+/******* HeaderV2 props types *******/
+
 /******* PicTop props types *******/
 export const picTopPropsType = defineNestedType(() => ({
   name: 'PicTopProps',
@@ -44,6 +55,19 @@ export const pic4LeftPropsType = defineNestedType(() => ({
   },
 }));
 /******* Pic4Left props types *******/
+
+
+/******* Pic2Left props types *******/
+export const pic2LeftPropsType = defineNestedType(() => ({
+  name: 'Pic4LeftProps',
+  fields: {
+    title: { type: 'string' },
+    bigImg: { type: 'string' },
+    mediumImg: { type: 'string' },
+    texts: { type: 'json' },
+  },
+}));
+/******* Pic2Left props types *******/
 
 /******* Dropus props types *******/
 export const DropUsPropsType = defineNestedType(() => ({
@@ -156,3 +180,4 @@ export const blogsCardProps = defineNestedType(() => ({
   }
 }));
 /******* Blogs Card props types *******/
+
