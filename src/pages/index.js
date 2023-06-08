@@ -83,6 +83,7 @@ export default function Home({ data }) {
   );
 
   useEffect(() => {
+    console.log(activeSection);
     if (debouncedScrollDirection === 'up' && activeSection > 0) {
       setActiveSections((prev) => prev - 1);
     } else if (
@@ -91,7 +92,7 @@ export default function Home({ data }) {
     ) {
       setActiveSections((prev) => prev + 1);
     }
-  }, [debouncedScroll, debouncedScrollDirection, sections.length]);
+  }, [debouncedScroll, sections.length]);
 
   useEffect(() => {
     const handleWheel = (e) => {
