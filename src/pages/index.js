@@ -103,8 +103,25 @@ export default function Home({ data }) {
         setScroll(e.deltaY);
       }
     };
+
+    const handleArrowKeys = (e) => {
+      if (e.keyCode == '38') {
+        setActiveSections((prev) => (prev > 0 ? prev - 1 : prev));
+      } else if (e.keyCode == '40') {
+        setActiveSections((prev) =>
+          prev + 1 < sections.length ? prev + 1 : prev
+        );
+      }
+    };
+
     document.addEventListener('wheel', handleWheel);
-  }, []);
+    document.addEventListener('keydown', handleArrowKeys);
+
+    return () => {
+      document.removeEventListener('wheel', handleWheel);
+      document.removeEventListener('keydown', handleArrowKeys);
+    };
+  }, [sections.length]);
 
   return <>{sections[activeSection]}</>;
 }
