@@ -83,15 +83,14 @@ export default function Home({ data }) {
   );
 
   useEffect(() => {
-    console.log(activeSection);
-    if (debouncedScrollDirection === 'up' && activeSection > 0) {
-      setActiveSections((prev) => prev - 1);
-    } else if (
-      debouncedScrollDirection === 'down' &&
-      activeSection < sections.length
-    ) {
-      setActiveSections((prev) => prev + 1);
+    if (debouncedScrollDirection === 'up') {
+      setActiveSections((prev) => (prev > 0 ? prev - 1 : prev));
+    } else if (debouncedScrollDirection === 'down') {
+      setActiveSections((prev) =>
+        prev + 1 < sections.length ? prev + 1 : prev
+      );
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedScroll, sections.length]);
 
   useEffect(() => {
