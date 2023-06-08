@@ -3,9 +3,10 @@ import tw, { styled } from 'twin.macro';
 export const variants = {
   left: tw`lg:items-start`,
   right: tw`lg:items-end`,
+  centre: tw`fixed left-0 bottom-0 h-screen px-0 pt-32 bg-[#000F9F] lg:items-center`,
 };
 
-export const Wrapper = styled.div(() => [
+export const Wrapper = styled.div(({ variant }) => [
   tw`w-full flex flex-col gap-10 px-4 justify-start items-start 
   h-[calc(100vh - 8rem)]
   md:gap-36 

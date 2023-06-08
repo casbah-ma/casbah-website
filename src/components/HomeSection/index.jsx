@@ -7,7 +7,6 @@ import {
   variants,
 } from './HomeSection.styles';
 import { Player } from '@lottiefiles/react-lottie-player';
-
 import Title from '../Title';
 import Paragraph from '../Paragraph';
 function HomeSection({ title, subtitle, texts, lottie, variant, ...rest }) {
