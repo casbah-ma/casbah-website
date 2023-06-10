@@ -51,6 +51,25 @@ export const Home = defineDocumentType(() => ({
 /* ---------------------------------------------- */
 
 /* ---------------------------------------------- */
+export const Portfolio = defineDocumentType(() => ({
+  name: 'Portfolio',
+  filePathPattern: `portfolio/**/*.md`,
+  fields: {
+    headerProps: { type: 'nested', of: headerV2PropsType },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (portfolio) => {
+        const local = getLocale(portfolio._raw.sourceFilePath);
+        return `${local}`;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
 export const Articulate = defineDocumentType(() => ({
   name: 'Articulate',
   filePathPattern: `articulate/**/*.md`,
@@ -300,5 +319,6 @@ export default makeSource({
     About,
     Blogs,
     Lab,
+    Portfolio,
   ],
 });
