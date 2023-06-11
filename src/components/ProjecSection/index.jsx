@@ -11,71 +11,16 @@ import {
 } from './ProjecSection.styles';
 import MyImage from '@/components/MyImage';
 
+import {
+  wrapperVariant,
+  imageVariant,
+  contentVariant,
+  tagsVariant,
+  tagVariant,
+  titleVariant,
+} from './variants';
+
 function ProjecSection({ image, title, tags, ...rest }) {
-  const wrapperVariant = {
-    visible: {
-      transition: {
-        delay: 0.2,
-        staggerChildren: 1,
-      },
-    },
-  };
-
-  const imageVariant = {
-    hidden: {
-      scale: 0.5,
-    },
-    visible: {
-      scale: 1,
-      transition: {
-        duration: 1,
-        ease: 'easeIn',
-      },
-    },
-  };
-
-  const contentVariant = {
-    visible: {
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const tagsVariant = {
-    visible: {
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const tagVariant = {
-    hidden: {
-      y: '100%',
-    },
-    visible: {
-      y: 0,
-      transition: {
-        duration: 0.2,
-        ease: 'easeIn',
-      },
-    },
-  };
-
-  const titleVariant = {
-    hidden: {
-      y: '100%',
-    },
-    visible: {
-      y: 0,
-      transition: {
-        duration: 0.4,
-        ease: 'easeIn',
-      },
-    },
-  };
-
   return (
     <Wrapper
       variants={wrapperVariant}

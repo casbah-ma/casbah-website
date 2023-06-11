@@ -1,20 +1,11 @@
 import PropTypes from 'prop-types';
 import { Title, Wrapper } from './PortfolioHeader.styles';
 import SpecialText from '../SpecialText';
-import { motion } from 'framer-motion';
+
 import WordWrapper from './WordWrapper';
+import { sentenceVariant } from './variants';
 
 function PortfolioHeader({ title, description, specialLine, ...rest }) {
-  const sentenceVariant = {
-    visible: {
-      transition: {
-        delay: 0.2,
-        staggerChildren: 0.2,
-        ease: 'easeOut',
-      },
-    },
-  };
-
   const words = title.split(' ').map((word) => [...word.split(''), '\u00A0']);
 
   return (
