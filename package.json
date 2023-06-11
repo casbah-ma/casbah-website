@@ -22,6 +22,7 @@
     "date-fns": "^2.30.0",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.4",
+    "framer-motion": "^10.12.16",
     "mapbox-gl": "^2.14.1",
     "next": "13.3.4",
     "next-contentlayer": "^0.3.2",
