@@ -8,9 +8,9 @@ function PortfolioHeader({ title, description, specialLine, ...rest }) {
   const sentenceVariant = {
     visible: {
       transition: {
-        delay: 0.3,
-        staggerChildren: 0.12,
-        ease: 'ease-out',
+        delay: 0.2,
+        staggerChildren: 0.2,
+        ease: 'easeOut',
       },
     },
   };

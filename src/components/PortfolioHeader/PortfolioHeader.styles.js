@@ -6,9 +6,9 @@ export const Wrapper = styled(motion.div)`
 `;
 
 export const Title = styled(motion.h1)`
-  ${tw`text-[3.438rem] leading-[2.671rem] text-[#000219]  font-light capitalize overflow-y-hidden
+  ${tw`font-made text-[3.438rem] leading-[2.671rem] text-[#000219]  font-light capitalize overflow-y-hidden
        md:(text-[6.438rem] leading-[5rem])
-       lg:(text-[12.313rem] leading-[9.567rem])`}
+       lg:(text-[12rem] leading-[9.567rem])`}
 `;
 
 export const Word = styled(motion.span)`
