@@ -8,6 +8,8 @@ export const sentenceVariant = {
   },
 };
 
+export const Exist = {};
+
 export const letterVariant = {
   hidden: {
     y: '150%',
@@ -16,6 +18,6 @@ export const letterVariant = {
   visible: {
     y: 0,
     color: '#000219',
-    transition: { duration: 0.6 },
+    transition: { duration: 0.5 },
   },
 };
