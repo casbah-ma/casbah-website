@@ -1,12 +1,12 @@
 import { allArticulates } from 'contentlayer/generated';
 //components
-import Header from '@/components/Header';
-import PicTop from '@/components/Articles/PicTop';
-import PicLeftRight from '@/components/Articles/PicLeftRight';
-import Pic4Left from '@/components/Articles/Pic4Left';
-import LottieText from '@/components/LottieText';
+import Header from '../../components/Header';
+import PicTop from '../../components/Articles/PicTop';
+import PicLeftRight from '../../components/Articles/PicLeftRight';
+import Pic4Left from '../../components/Articles/Pic4Left';
+import LottieText from '../../components/LottieText';
 //Lotties
-import articulate from '@/lotties/aticulate.json';
+import articulate from '../../lotties/aticulate.json';
 
 //get the data for the current locale
 export const getStaticProps = ({ locale }) => {

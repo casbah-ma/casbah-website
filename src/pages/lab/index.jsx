@@ -15,7 +15,7 @@ const Lab = ({ data }) => {
     route.push('/blogs/portfolio/test');
   };
   return (
-    <div className="flex flex-col justify-center items-center gap-36 p-[2rem] md:p-16">
+    <div className="h-full flex flex-col justify-center items-center gap-36 p-[2rem] md:p-16 mb-20">
       <BlogsSectionV2 {...data} onClick={handlClick} />
     </div>
   );

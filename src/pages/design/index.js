@@ -1,13 +1,13 @@
 import { allDesigns } from 'contentlayer/generated';
 //components
-import HeaderV2 from '@/components/HeaderV2';
-import PicTop from '@/components/Articles/PicTop';
-import Pic3Right from '@/components/Articles/Pic3Right';
-import Pic4Left from '@/components/Articles/Pic4Left';
-import PicLeftRight from '@/components/Articles/PicLeftRight';
-import LottieText from '@/components/LottieText';
+import HeaderV2 from '../../components/HeaderV2';
+import PicTop from '../../components/Articles/PicTop';
+import Pic3Right from '../../components/Articles/Pic3Right';
+import Pic4Left from '../../components/Articles/Pic4Left';
+import PicLeftRight from '../../components/Articles/PicLeftRight';
+import LottieText from '../../components/LottieText';
 //Lotties
-import design from '@/lotties/design.json';
+import design from '../../lotties/design.json';
 
 //get the data for the current locale
 export const getStaticProps = ({ locale }) => {

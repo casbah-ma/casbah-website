@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 
 export const Wrapper = tw.section`
-  flex flex-col justify-center items-center gap-[5.625rem]
+  flex flex-col justify-center items-center gap-[5.625rem] mb-[10rem] 
 `;
 
 export const Grid = styled.div`

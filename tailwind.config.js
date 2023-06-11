@@ -23,8 +23,12 @@ module.exports = {
         red: '#F30000',
       },
       screens: {
-        md: '600px',
+        xs: '320px',
         ...defaultTheme.screens,
+        // sm: '414px',
+        md: '600px',
+        sm: '414px',
+
       },
     },
   },
