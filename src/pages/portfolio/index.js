@@ -1,4 +1,5 @@
 import PortfolioHeader from '@/components/PortfolioHeader';
+import ProjecSection from '@/components/ProjecSection';
 import { allPortfolios } from 'contentlayer/generated';
 import { useEffect, useMemo, useState } from 'react';
 
@@ -20,7 +21,10 @@ export default function Portfolio({ data }) {
   const debouncedScroll = useDebounce(scroll, 500);
 
   const sections = useMemo(
-    () => [<PortfolioHeader key={0} {...data.headerProps} />],
+    () => [
+      <PortfolioHeader key={0} {...data.headerProps} />,
+      <ProjecSection key={1} {...data.projectProps} />,
+    ],
     [data.headerProps]
   );
 

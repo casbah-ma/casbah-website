@@ -21,6 +21,17 @@ export const headerV2PropsType = defineNestedType(() => ({
 }));
 /******* HeaderV2 props types *******/
 
+/******* Project props types *******/
+export const projectPropsType = defineNestedType(() => ({
+  name: 'ProjectProps',
+  fields: {
+    title: { type: 'string' },
+    tags: { type: 'json' },
+    image: { type: 'string' },
+  },
+}));
+/******* Project props types *******/
+
 /******* PicTop props types *******/
 export const picTopPropsType = defineNestedType(() => ({
   name: 'PicTopProps',

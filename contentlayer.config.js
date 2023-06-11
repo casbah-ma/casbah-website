@@ -22,6 +22,7 @@ import {
   pic4LeftPropsType,
   picLeftRightPropsType,
   picTopPropsType,
+  projectPropsType,
 } from './src/config/contentLayerTypes';
 
 /* ---------------------------------------------- */
@@ -56,6 +57,7 @@ export const Portfolio = defineDocumentType(() => ({
   filePathPattern: `portfolio/**/*.md`,
   fields: {
     headerProps: { type: 'nested', of: headerV2PropsType },
+    projectProps: { type: 'nested', of: projectPropsType },
   },
   computedFields: {
     lang: {
