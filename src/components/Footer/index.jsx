@@ -26,11 +26,34 @@ import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import { Disclosure } from '@headlessui/react';
 import ArrowDown from '@/icons/ArrowDown';
+import { useEffect, useState } from 'react';
 
 function MyDisclosure({ link }) {
   const { t } = useTranslation();
+
+  const [isMobile, setIsMobile] = useState(false);
+  const [key, setKey] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024); // Set isMobile to true for viewport width <= 768 (tablet and mobile devices)
+    };
+
+    handleResize(); // Check initial viewport width
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [isMobile]);
+
+  useEffect(() => {
+    setKey((prevKey) => prevKey + 1); // Increment the key to force re-render when isMobile changes
+  }, [isMobile]);
+
   return (
-    <Disclosure>
+    <Disclosure defaultOpen={isMobile} as="div" key={key}>
       {({ open }) => (
         /* Use the `open` state to conditionally change the direction of an icon. */
         <>
@@ -65,9 +88,9 @@ const Footer = ({}) => {
           <FooterLogo>
             <MyImage src={logo} alt="casbah" sizes={imageSize} />
           </FooterLogo>
-          <SocialWrapper className="lg:-mr-[4.375rem] z-20">
+          <SocialWrapper className="md:[&>div]:-mr-[1.282rem] lg:-mr-[4.375rem] z-20">
             <FooterSocial>{t('social')}</FooterSocial>
-            <FooterSocialItems>
+            <FooterSocialItems className="self-end md:self-c">
               {socialMedia.slice(0, 3).map((item, index) => (
                 <SocialItem
                   key={index + item.name}
