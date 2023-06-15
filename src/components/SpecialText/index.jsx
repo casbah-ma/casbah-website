@@ -1,38 +1,15 @@
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Line, LineWrapper, SpecialStyle, sizes } from './SpecialText.styles';
 import PropTypes from 'prop-types';
-import { getLineBreaks } from '../../config/utils';
-import { lineVariants, sentenceVariant, textVariant } from './variants';
+
+import { lineVariants } from './variants';
+import { useSplitText } from '../../hooks/useSplitText';
 
 const SpecialText = ({ text, specialLine, uppercase, size = 'md' }) => {
-  const textRef = useRef(null);
-  const [lines, setLines] = useState([]);
-
-  useLayoutEffect(() => {
-    const calculateLines = () => {
-      const textElement = textRef.current;
-      if (!textElement) return;
-
-      const textNode = document.createTextNode(text);
-      textElement.appendChild(textNode);
-      setLines(getLineBreaks(textNode));
-      textElement.removeChild(textNode);
-    };
-
-    calculateLines();
-    window.addEventListener('resize', calculateLines);
-    return () => {
-      window.removeEventListener('resize', calculateLines);
-    };
-  }, [text]);
+  const { textRef, lines } = useSplitText(text);
 
   // useEffect(() => {
   //   const textElement = textRef.current;
   //   if (!textElement) return;
-
-  //   const textNode = document.createTextNode(text);
-  //   textElement.appendChild(textNode);
-  //   setLines(getLineBreaks(textNode));
 
   //   // let newText = textElement.innerHTML;
   //   // // Search for specialLine using regex

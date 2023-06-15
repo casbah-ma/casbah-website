@@ -4,23 +4,35 @@ import SpecialText from '../SpecialText';
 
 import WordWrapper from './WordWrapper';
 import { sentenceVariant } from './variants';
+import { AnimatePresence } from 'framer-motion';
 
 function PortfolioHeader({ title, description, specialLine, ...rest }) {
   const words = title.split(' ').map((word) => [...word.split(''), '\u00A0']);
 
   return (
     <Wrapper {...rest}>
-      <Title variants={sentenceVariant} initial="hidden" animate="visible">
-        {words?.map((word, i) => (
-          <WordWrapper key={i} word={word} />
-        ))}
-      </Title>
-      <SpecialText
-        text={description}
-        specialLine={specialLine}
-        uppercase={true}
-        size="lg"
-      />
+      <AnimatePresence>
+        <Title
+          variants={sentenceVariant}
+          initial="hidden"
+          animate="visible"
+          key="title"
+          exit={{ opacity: 0 }}
+        >
+          {words?.map((word, i) => (
+            <WordWrapper key={i} word={word} />
+          ))}
+        </Title>
+
+        <SpecialText
+          text={description}
+          specialLine={specialLine}
+          uppercase={true}
+          size="lg"
+          key="text"
+          exit={{ opacity: 0 }}
+        />
+      </AnimatePresence>
     </Wrapper>
   );
 }
