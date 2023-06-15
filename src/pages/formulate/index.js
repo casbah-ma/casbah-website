@@ -1,12 +1,12 @@
 import { allFormulates } from 'contentlayer/generated';
 //components
-import Header from '@/components/Header';
-import PicTop from '@/components/Articles/PicTop';
-import Pic3Left from '@/components/Articles/Pic3Left';
-import PicLeftRight from '@/components/Articles/PicLeftRight';
-import LottieText from '@/components/LottieText';
+import Header from '../../components/Header';
+import PicTop from '../../components/Articles/PicTop';
+import Pic3Left from '../../components/Articles/Pic3Left';
+import PicLeftRight from '../../components/Articles/PicLeftRight';
+import LottieText from '../../components/LottieText';
 //Lotties
-import formulate from '@/lotties/formulate.json';
+import formulate from '../../lotties/formulate.json';
 
 //get the data for the current locale
 export const getStaticProps = ({ locale }) => {

@@ -1,6 +1,14 @@
 import Facebook from '@/icons/Facebook';
 import Instagram from '@/icons/Instagram';
 import LinkedIn from '@/icons/LinkedIn';
+import FacebookSVG from 'public/icons/facebook.svg';
+import InstagramSVG from 'public/icons/instagram.svg';
+import LinkedInSVG from 'public/icons/linkedin.svg';
+import GithubSVG from 'public/icons/github.svg';
+import TwitterSVG from 'public/icons/twitter.svg';
+import DribbbleSVG from 'public/icons/dribbble.svg';
+import BehanceSVG from 'public/icons/behance.svg';
+
 // Casbah Localisation on the map
 export const cords = {
   lat: 35.775815942301875,
@@ -86,3 +94,42 @@ export const media = [
     name: 'LinkedIn',
   },
 ];
+
+
+export const socialMedia = [
+  {
+    name: 'facebook',
+    icon: FacebookSVG,
+    url: 'https://www.facebook.com/',
+  },
+  {
+    name: 'linkedin',
+    icon: LinkedInSVG,
+    url: 'https://www.linkedin.com/',
+  },
+  {
+    name: 'instagram',
+    icon: InstagramSVG,
+    url: 'https://www.instagram.com/',
+  },
+  {
+    name: 'github',
+    icon: GithubSVG,
+    url: ''
+  },
+  {
+    name: 'twitter',
+    icon: TwitterSVG,
+    url: ''
+  },
+  {
+    name: 'dribbble',
+    icon: DribbbleSVG,
+    url: ''
+  },
+  {
+    name: 'behance',
+    icon: BehanceSVG,
+    url: ''
+  },
+]
