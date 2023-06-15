@@ -19,6 +19,7 @@ import {
   titleVariant,
 } from './variants';
 import AnimatedDisplay from '../AnimatedDisplay';
+import { motion } from 'framer-motion';
 
 function ProjecSection({ image, title, tags, ...rest }) {
   return (
@@ -41,7 +42,8 @@ function ProjecSection({ image, title, tags, ...rest }) {
             </Tag>
           ))}
         </Tags>
-        <AnimatedDisplay renderAs="h1" size="lg" text={title} color="white" />
+
+        <AnimatedDisplay renderAs="h1" size="lg" text={title} />
       </Content>
     </Wrapper>
   );
