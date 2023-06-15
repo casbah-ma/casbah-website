@@ -5,7 +5,6 @@ import {
   ImageWrapper,
   Tag,
   Tags,
-  Title,
   Wrapper,
   imageStyle,
 } from './ProjecSection.styles';
@@ -19,6 +18,7 @@ import {
   tagVariant,
   titleVariant,
 } from './variants';
+import AnimatedDisplay from '../AnimatedDisplay';
 
 function ProjecSection({ image, title, tags, ...rest }) {
   return (
@@ -41,7 +41,7 @@ function ProjecSection({ image, title, tags, ...rest }) {
             </Tag>
           ))}
         </Tags>
-        <Title variants={titleVariant}>{title}</Title>
+        <AnimatedDisplay renderAs="h1" size="lg" text={title} color="white" />
       </Content>
     </Wrapper>
   );

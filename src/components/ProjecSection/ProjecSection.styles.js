@@ -21,12 +21,6 @@ export const Content = styled(motion.div)`
       lg:(left-[7.5rem] [bottom: unset] top-1/2 w-[46%] gap-28)`}
 `;
 
-export const Title = styled(motion.h1)`
-  ${tw`text-white font-made uppercase font-light 
-        text-[2rem] leading-[107.7%] md:text-[2.5rem]
-        lg:(text-[3.5rem] leading-[107.7%]) `}
-`;
-
 export const Tags = styled(motion.ul)`
   ${tw`w-full flex justify-start items-center gap-2 overflow-y-hidden`}
 `;

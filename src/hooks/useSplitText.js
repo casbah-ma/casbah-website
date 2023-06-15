@@ -1,10 +1,10 @@
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 export const useSplitText = (text) => {
   const textRef = useRef(null);
   const [lines, setLines] = useState([]);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const calculateLines = () => {
       const textElement = textRef.current;
       if (!textElement) return;
