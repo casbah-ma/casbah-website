@@ -13,9 +13,9 @@ export const Wrapper = styled(motion.h1)`
 `;
 
 export const LineWrapper = styled(motion.span)`
-  ${tw`inline-block overflow-y-hidden text-white`}
+  ${tw`inline-block overflow-y-hidden`}
 `;
 
 export const Line = styled(motion.span)`
-  ${tw`inline-block text-white`}
+  ${tw`inline-block`}
 `;

@@ -48,3 +48,16 @@ export const tagVariant = {
     },
   },
 };
+
+export const titleVariant = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      delayChildren: 0.2, // Delay before animating children
+      staggerChildren: 0.1, // Delay between each child animation
+    },
+  },
+};

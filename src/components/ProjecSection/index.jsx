@@ -42,8 +42,9 @@ function ProjecSection({ image, title, tags, ...rest }) {
             </Tag>
           ))}
         </Tags>
-
-        <AnimatedDisplay renderAs="h1" size="lg" text={title} />
+        <motion.div variants={titleVariant}>
+          <AnimatedDisplay renderAs="h1" size="lg" text={title} />
+        </motion.div>
       </Content>
     </Wrapper>
   );
