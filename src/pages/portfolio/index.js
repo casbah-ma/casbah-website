@@ -24,9 +24,10 @@ export default function Portfolio({ data }) {
   const sections = useMemo(
     () => [
       <PortfolioHeader key={0} {...data.headerProps} />,
-      <ProjecSection key={1} {...data.projectProps} />,
+      <ProjecSection key={1} isFirst={true} {...data.projectProps} />,
+      <ProjecSection key={2} {...data.projectProps2} />,
     ],
-    [data.headerProps]
+    [data]
   );
 
   useEffect(() => {

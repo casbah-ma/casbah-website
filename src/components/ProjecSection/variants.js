@@ -4,7 +4,7 @@ export const wrapperVariant = {
       staggerChildren: 1,
     },
   },
-  exit: { opacity: 1 },
+  exit: { transition: { when: 'afterChildren' } },
 };
 
 export const imageVariant = {
@@ -17,6 +17,21 @@ export const imageVariant = {
       duration: 1,
       ease: 'easeIn',
     },
+  },
+  exit: {
+    opacity: 0,
+  },
+};
+
+export const imageVariant2 = {
+  hidden: {
+    opacity: 0.9,
+  },
+  visible: {
+    opacity: 1,
+  },
+  exit: {
+    opacity: 0,
   },
 };
 
@@ -46,6 +61,9 @@ export const tagVariant = {
       duration: 0.2,
       ease: 'easeIn',
     },
+  },
+  exit: {
+    y: '-100%',
   },
 };
 

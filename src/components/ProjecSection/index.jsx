@@ -17,11 +17,12 @@ import {
   tagsVariant,
   tagVariant,
   titleVariant,
+  imageVariant2,
 } from './variants';
 import AnimatedDisplay from '../AnimatedDisplay';
 import { AnimatePresence, motion } from 'framer-motion';
 
-function ProjecSection({ image, title, tags, ...rest }) {
+function ProjecSection({ image, title, tags, isFirst, ...rest }) {
   return (
     <Wrapper
       variants={wrapperVariant}
@@ -30,7 +31,10 @@ function ProjecSection({ image, title, tags, ...rest }) {
       exit="exit"
       {...rest}
     >
-      <ImageWrapper key={image} variants={imageVariant}>
+      <ImageWrapper
+        key={image}
+        variants={isFirst ? imageVariant : imageVariant2}
+      >
         <MyImage sizes={imageStyle} src={image} alt="" />
         <Backdrop />
       </ImageWrapper>

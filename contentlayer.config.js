@@ -58,6 +58,7 @@ export const Portfolio = defineDocumentType(() => ({
   fields: {
     headerProps: { type: 'nested', of: headerV2PropsType },
     projectProps: { type: 'nested', of: projectPropsType },
+    projectProps2: { type: 'nested', of: projectPropsType },
   },
   computedFields: {
     lang: {
