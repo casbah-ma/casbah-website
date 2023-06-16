@@ -131,7 +131,6 @@ export const About = defineDocumentType(() => ({
 }));
 /* ---------------------------------------------- */
 
-
 /* ---------------------------------------------- */
 export const Build = defineDocumentType(() => ({
   name: 'Build',
@@ -227,7 +226,6 @@ export const Design = defineDocumentType(() => ({
 }));
 /* ---------------------------------------------- */
 
-
 /* ----------------------- blogs ----------------------- */
 export const Blogs = defineDocumentType(() => ({
   name: 'Blogs',
@@ -282,11 +280,56 @@ export const Lab = defineDocumentType(() => ({
   },
 }));
 /* ---------------------------------------------- */
+/* ----------------------- blogs Items ----------------------- */
+export const BlogsItems = defineDocumentType(() => ({
+  name: 'BlogsItems',
+  filePathPattern: `blogsItems/**/*.md`,
+  fields: {
+    title: {
+      type: 'string',
+      required: true,
+    },
+    description: {
+      type: 'string',
+      required: true,
+    },
+    image: {
+      type: 'string',
+      required: true,
+    },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+    slug: {
+      type: 'string',
+      resolve: (recipe) => {
+        const slug = getSlug(recipe._raw.sourceFileName);
+        return slug;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
 
 export default makeSource({
   contentDirPath: 'data',
 
-  documentTypes: [Articulate, Home, Build, Formulate, Design,  Contact, About, Blogs, Lab],
-
-
+  documentTypes: [
+    Articulate,
+    Home,
+    Build,
+    Formulate,
+    Design,
+    Contact,
+    About,
+    Blogs,
+    Lab,
+    BlogsItems,
+  ],
 });

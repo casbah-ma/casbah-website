@@ -27,7 +27,7 @@ const SimilarBlog = ({ blogs }) => {
       >
         {blogs?.map((item, i) => (
           <SwiperSlide
-            className="!w-fit md:!w-[31.813rem] !h-fit"
+            className="md:!w-[31.813rem] !h-fit"
             key={item.name + i}
           >
             <BlogsCard {...item} variant="v2" />

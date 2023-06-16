@@ -11,12 +11,12 @@ export const getStaticProps = ({ locale }) => {
 const Lab = ({ data }) => {
   const route = useRouter();
 
-  const handlClick = () => {
+  const handleClick = () => {
     route.push('/blogs/portfolio/test');
   };
   return (
     <div className="h-full flex flex-col justify-center items-center gap-36 p-[2rem] md:p-16 mb-20">
-      <BlogsSectionV2 {...data} onClick={handlClick} />
+      <BlogsSectionV2 {...data} onClick={handleClick} />
     </div>
   );
 };
