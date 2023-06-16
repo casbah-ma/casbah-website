@@ -1,4 +1,4 @@
-export const sentenceVariant = {
+export const wrapperVariant = {
   visible: {
     transition: {
       delay: 0.2,
@@ -6,9 +6,15 @@ export const sentenceVariant = {
       ease: 'easeOut',
     },
   },
-};
 
-export const Exist = {};
+  exit: {
+    y: '-200%',
+    transition: {
+      duration: 0.5,
+      ease: 'easeOut',
+    },
+  },
+};
 
 export const letterVariant = {
   hidden: {

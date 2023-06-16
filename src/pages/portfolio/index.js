@@ -4,6 +4,7 @@ import { allPortfolios } from 'contentlayer/generated';
 import { useEffect, useMemo, useState } from 'react';
 
 import { useDebounce } from '@/hooks/useDebounce';
+import { AnimatePresence } from 'framer-motion';
 
 export const getStaticProps = ({ locale }) => {
   const data = allPortfolios.find((home) => home.lang === locale);
@@ -69,5 +70,7 @@ export default function Portfolio({ data }) {
     };
   }, [sections.length]);
 
-  return <>{sections[activeSection]}</>;
+  return (
+    <AnimatePresence mode="wait">{sections[activeSection]}</AnimatePresence>
+  );
 }

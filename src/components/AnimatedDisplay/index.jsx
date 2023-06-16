@@ -17,7 +17,6 @@ const AnimatedDisplay = ({ text, renderAs, size, color, ...rest }) => {
       {lines?.map((line, index) => (
         <LineWrapper key={index}>
           <Line
-            style={{ color: 'white' }}
             initial="hidden"
             animate="visible"
             variants={lineVariants}

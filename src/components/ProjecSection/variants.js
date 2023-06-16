@@ -1,10 +1,10 @@
 export const wrapperVariant = {
   visible: {
     transition: {
-      delay: 0.2,
       staggerChildren: 1,
     },
   },
+  exit: { opacity: 1 },
 };
 
 export const imageVariant = {

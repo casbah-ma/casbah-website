@@ -19,7 +19,7 @@ import {
   titleVariant,
 } from './variants';
 import AnimatedDisplay from '../AnimatedDisplay';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 function ProjecSection({ image, title, tags, ...rest }) {
   return (
@@ -27,14 +27,15 @@ function ProjecSection({ image, title, tags, ...rest }) {
       variants={wrapperVariant}
       initial="hidden"
       animate="visible"
+      exit="exit"
       {...rest}
     >
-      <ImageWrapper variants={imageVariant}>
+      <ImageWrapper key={image} variants={imageVariant}>
         <MyImage sizes={imageStyle} src={image} alt="" />
         <Backdrop />
       </ImageWrapper>
 
-      <Content variants={contentVariant}>
+      <Content key={title + tags.join('')} variants={contentVariant}>
         <Tags variants={tagsVariant}>
           {tags.map((tag) => (
             <Tag variants={tagVariant} key={tag}>
@@ -43,7 +44,7 @@ function ProjecSection({ image, title, tags, ...rest }) {
           ))}
         </Tags>
         <motion.div variants={titleVariant}>
-          <AnimatedDisplay renderAs="h1" size="lg" text={title} />
+          <AnimatedDisplay color="white" renderAs="h1" size="lg" text={title} />
         </motion.div>
       </Content>
     </Wrapper>
