@@ -21,6 +21,17 @@ export const headerV2PropsType = defineNestedType(() => ({
 }));
 /******* HeaderV2 props types *******/
 
+/******* Project props types *******/
+export const projectPropsType = defineNestedType(() => ({
+  name: 'ProjectProps',
+  fields: {
+    title: { type: 'string' },
+    tags: { type: 'json' },
+    image: { type: 'string' },
+  },
+}));
+/******* Project props types *******/
+
 /******* PicTop props types *******/
 export const picTopPropsType = defineNestedType(() => ({
   name: 'PicTopProps',
@@ -55,7 +66,6 @@ export const pic4LeftPropsType = defineNestedType(() => ({
   },
 }));
 /******* Pic4Left props types *******/
-
 
 /******* Pic2Left props types *******/
 export const pic2LeftPropsType = defineNestedType(() => ({
@@ -174,10 +184,21 @@ export const blogsCardProps = defineNestedType(() => ({
   // title, description, imgSrc, tags
   fields: {
     title: { type: 'string' },
-    description: {type: 'string'},
-    imgSrc: {type: 'string'},
-    tags: {type: 'json'}
-  }
+    description: { type: 'string' },
+    imgSrc: { type: 'string' },
+    tags: { type: 'json' },
+  },
 }));
 /******* Blogs Card props types *******/
 
+/******* Home Section props types *******/
+export const homeSectionPropsType = defineNestedType(() => ({
+  name: 'HomeSectionProps',
+  // title, description, imgSrc, tags
+  fields: {
+    title: { type: 'string' },
+    subtitle: { type: 'string' },
+    texts: { type: 'json' },
+  },
+}));
+/******* Home Section props types *******/

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
@@ -6,9 +7,17 @@ export const sizes = {
   lg: tw`text-2xl lg:(text-[2rem] leading-[2.5rem])`,
 };
 
-export const SpecialStyle = styled.p`
+export const SpecialStyle = styled(motion.div)`
   ${tw`w-full font-mako font-normal text-base md:text-lg lg:text-2xl
-    text-darkBlue [&>span]:text-brightOrange`};
+    text-darkBlue overflow-y-hidden`};
   ${({ size }) => sizes[size]}
   ${({ uppercase }) => uppercase && tw`uppercase`}
+`;
+
+export const LineWrapper = styled(motion.p)`
+  ${tw`overflow-y-hidden`}
+`;
+
+export const Line = styled(motion.span)`
+  ${tw`inline-block`}
 `;
