@@ -9,13 +9,18 @@ export const wrapperVariant = {
 
 export const imageVariant = {
   hidden: {
+    y: '100%',
     scale: 0.5,
   },
   visible: {
-    scale: 1,
+    y: [null, 0],
+    scale: [0.5, 0.5, 1],
     transition: {
       duration: 1,
       ease: 'easeIn',
+      y: {
+        duration: 0.5,
+      },
     },
   },
   exit: {
@@ -73,9 +78,7 @@ export const titleVariant = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.4,
-      delayChildren: 0.2, // Delay before animating children
-      staggerChildren: 0.1, // Delay between each child animation
+      delayChildren: 3, // Delay before animating children
     },
   },
 };

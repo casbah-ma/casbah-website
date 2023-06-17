@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 import {
   Content,
-  LottieWrapper,
-  Subtitle,
   Texts,
   TitleWrapper,
   Wrapper,

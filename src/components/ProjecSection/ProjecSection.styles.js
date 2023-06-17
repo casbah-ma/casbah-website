@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import tw, { styled } from 'twin.macro';
 
 export const Wrapper = styled(motion.div)`
-  ${tw`fixed inset-0 h-screen z-[9999] bg-white`}
+  ${tw`absolute inset-0 h-screen z-[9999] bg-white`}
 `;
 
 export const imageStyle = tw`w-full h-full`;
