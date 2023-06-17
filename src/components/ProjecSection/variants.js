@@ -77,8 +77,5 @@ export const titleVariant = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: {
-      delayChildren: 3, // Delay before animating children
-    },
   },
 };

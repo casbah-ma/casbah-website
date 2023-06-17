@@ -20,7 +20,7 @@ import {
   imageVariant2,
 } from './variants';
 import AnimatedDisplay from '../AnimatedDisplay';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 function ProjecSection({ image, title, tags, isFirst, ...rest }) {
   return (
