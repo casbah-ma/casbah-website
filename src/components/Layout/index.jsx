@@ -1,11 +1,15 @@
+import Footer from '../Footer';
 import Navbar from '../Navbar';
-import { Wrapper } from './Layout.styles';
+import { MainWrapper, Wrapper } from './Layout.styles';
 
 const Layout = ({ children, ...rest }) => {
   return (
     <Wrapper {...rest}>
-      <Navbar />
-      {children}
+      <MainWrapper>
+        <Navbar />
+        {children}
+      </MainWrapper>
+      <Footer />
     </Wrapper>
   );
 };
