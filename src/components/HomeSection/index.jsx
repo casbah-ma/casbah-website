@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import {
   Content,
+  LottieWrapper,
   Subtitle,
   Texts,
   TitleWrapper,
@@ -15,13 +16,25 @@ import { motion } from 'framer-motion';
 function HomeSection({ title, subtitle, texts, lottie, variant, ...rest }) {
   return (
     <Wrapper variant={variant} {...rest}>
-      <Player keepLastFrame autoplay loop={false} src={lottie} />
-      <Content>
+      <motion.div className="self-center" exit={{ opacity: 0 }}>
+        <Player
+          keepLastFrame
+          autoplay
+          loop={false}
+          src={lottie}
+          style={{ height: '40vh', width: '100%' }}
+        />
+      </motion.div>
+      <Content $isCenter={variant === 'centre'}>
         <TitleWrapper>
           {subtitle && (
             <AnimatedDisplay renderAs={motion.span} text={subtitle} size="md" />
           )}
-          <Title withoutBorder={true} renderAs="h2">
+          <Title
+            withoutBorder={true}
+            renderAs="h2"
+            color={variant === 'centre' && 'white'}
+          >
             {title}
           </Title>
         </TitleWrapper>
