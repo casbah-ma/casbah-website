@@ -22,7 +22,7 @@ function AwardsSection({ title, description, cards }) {
       >
         {cards?.length > 0 &&
           cards.map((card, i) => (
-            <SwiperSlide key={i} className='!w-fit !h-fit'>
+            <SwiperSlide key={i} className="!w-fit !h-fit">
               <AwardsCard {...card} />
             </SwiperSlide>
           ))}

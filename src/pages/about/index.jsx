@@ -1,19 +1,17 @@
-import AboutSection from '../../components/AboutSection'
-import AwardsSection from '../../components/AwardsSection'
+import AboutSection from '../../components/AboutSection';
+import AwardsSection from '../../components/AwardsSection';
 import ClientsSwiper from '../../components/ClientsSwiper';
 import TeamSection from '../../components/TeamSection';
 import { allAbouts } from 'contentlayer/generated';
 
-
-
 export const getStaticProps = ({ locale }) => {
-    const data = allAbouts.find((page) => page.lang === locale);
-    return {
-      props: {
-        data,
-      },
-    };
+  const data = allAbouts.find((page) => page.lang === locale);
+  return {
+    props: {
+      data,
+    },
   };
+};
 
 const About = ({ data }) => {
   return (

@@ -11,7 +11,6 @@ function Header({
   isVertical = false,
   isSplited = false,
 }) {
-
   return (
     <Wrapper isSplited={isSplited} withLine={withLine} isVertical={isVertical}>
       <Title renderAs="h1" withoutBorder={true}>

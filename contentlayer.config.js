@@ -18,10 +18,11 @@ import {
   blogsCardProps,
   headerPropsType,
   headerV2PropsType,
-  pic2LeftPropsType,
+  homeSectionPropsType,
   pic4LeftPropsType,
   picLeftRightPropsType,
   picTopPropsType,
+  projectPropsType,
 } from './src/config/contentLayerTypes';
 
 /* ---------------------------------------------- */
@@ -29,7 +30,13 @@ export const Home = defineDocumentType(() => ({
   name: 'Home',
   filePathPattern: `home/**/*.md`,
   fields: {
-    title: { type: 'string' },
+    sectionProps: { type: 'nested', of: homeSectionPropsType },
+    sectionProps1: { type: 'nested', of: homeSectionPropsType },
+    sectionProps2: { type: 'nested', of: homeSectionPropsType },
+    sectionProps3: { type: 'nested', of: homeSectionPropsType },
+    sectionProps4: { type: 'nested', of: homeSectionPropsType },
+    sectionProps5: { type: 'nested', of: homeSectionPropsType },
+    sectionProps6: { type: 'nested', of: homeSectionPropsType },
   },
   computedFields: {
     lang: {
@@ -42,6 +49,27 @@ export const Home = defineDocumentType(() => ({
   },
 }));
 
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+export const Portfolio = defineDocumentType(() => ({
+  name: 'Portfolio',
+  filePathPattern: `portfolio/**/*.md`,
+  fields: {
+    headerProps: { type: 'nested', of: headerV2PropsType },
+    projectProps: { type: 'nested', of: projectPropsType },
+    projectProps2: { type: 'nested', of: projectPropsType },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (portfolio) => {
+        const local = getLocale(portfolio._raw.sourceFilePath);
+        return `${local}`;
+      },
+    },
+  },
+}));
 /* ---------------------------------------------- */
 
 /* ---------------------------------------------- */
@@ -130,7 +158,6 @@ export const About = defineDocumentType(() => ({
   },
 }));
 /* ---------------------------------------------- */
-
 
 /* ---------------------------------------------- */
 export const Build = defineDocumentType(() => ({
@@ -227,7 +254,6 @@ export const Design = defineDocumentType(() => ({
 }));
 /* ---------------------------------------------- */
 
-
 /* ----------------------- blogs ----------------------- */
 export const Blogs = defineDocumentType(() => ({
   name: 'Blogs',
@@ -286,7 +312,16 @@ export const Lab = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: 'data',
 
-  documentTypes: [Articulate, Home, Build, Formulate, Design,  Contact, About, Blogs, Lab],
-
-
+  documentTypes: [
+    Articulate,
+    Home,
+    Build,
+    Formulate,
+    Design,
+    Contact,
+    About,
+    Blogs,
+    Lab,
+    Portfolio,
+  ],
 });
