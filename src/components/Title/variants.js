@@ -5,4 +5,7 @@ export const lineVariants = {
   visible: {
     y: 0,
   },
+  exit: {
+    y: '-150%',
+  },
 };

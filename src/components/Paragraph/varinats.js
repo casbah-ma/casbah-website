@@ -11,4 +11,12 @@ export const paragraphVarinat = {
       ease: 'easeIn',
     },
   },
+  exit: {
+    opacity: 0,
+    y: '-150%',
+    transition: {
+      duration: 0.7,
+      ease: 'easeOut',
+    },
+  },
 };

@@ -9,6 +9,7 @@ function Paragraph({ children, size, color, ...rest }) {
       variants={paragraphVarinat}
       initial="hidden"
       animate="visible"
+      exit="exit"
       size={size}
       color={color}
       {...rest}

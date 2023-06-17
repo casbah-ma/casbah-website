@@ -10,6 +10,7 @@ import Lottie_05 from '@/lotties/Lottie_05.json';
 import Lottie_06 from '@/lotties/Lottie_06.json';
 import Lottie_07 from '@/lotties/Lottie_07.json';
 import { useDebounce } from '../hooks/useDebounce';
+import { AnimatePresence } from 'framer-motion';
 
 export const getStaticProps = ({ locale }) => {
   const data = allHomes.find((home) => home.lang === locale);
@@ -123,5 +124,7 @@ export default function Home({ data }) {
     };
   }, [sections.length]);
 
-  return <>{sections[activeSection]}</>;
+  return (
+    <AnimatePresence mode="sync">{sections[activeSection]}</AnimatePresence>
+  );
 }

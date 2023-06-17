@@ -25,6 +25,7 @@ const Title = ({
           <Line
             initial="hidden"
             animate="visible"
+            exit="exit"
             variants={lineVariants}
             transition={{ duration: 0.6, delay: index * 0.2 }}
           >
