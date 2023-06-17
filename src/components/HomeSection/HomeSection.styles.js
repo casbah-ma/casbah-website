@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import tw, { styled } from 'twin.macro';
 
 export const variants = {
@@ -13,6 +14,10 @@ export const Wrapper = styled.div(({ variant }) => [
   lg:(gap-14)`,
   ({ variant }) => variants[variant],
 ]);
+
+export const TitleWrapper = tw(motion.div)`
+   flex flex-col justify-center items-start
+`;
 
 export const Subtitle = tw.span`
  text-2xl leading-[1.875rem] uppercase text-brightOrange block

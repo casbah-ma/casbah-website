@@ -13,7 +13,7 @@ const AnimatedDisplay = ({ text, renderAs, size, color, ...rest }) => {
   const { textRef, lines } = useSplitText(text);
 
   return (
-    <Wrapper size={size} ref={textRef} level={renderAs} color={color} {...rest}>
+    <Wrapper as={renderAs} size={size} ref={textRef} color={color} {...rest}>
       {lines?.map((line, index) => (
         <LineWrapper key={index}>
           <Line

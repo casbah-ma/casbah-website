@@ -4,6 +4,7 @@ import tw, { styled } from 'twin.macro';
 export const titleLevels = {
   lg: tw`text-[2rem] leading-[107.7%] md:text-[2.5rem]
         lg:(text-[3.5rem] leading-[107.7%])`,
+  md: tw`text-2xl leading-[1.875rem] uppercase text-brightOrange block`,
 };
 
 export const Wrapper = styled(motion.h1)`
