@@ -2,7 +2,7 @@ import { allBuilds } from 'contentlayer/generated';
 //components
 import HeaderV2 from '../../components/HeaderV2';
 import PicTop from '../../components/Articles/PicTop';
-import Pic2Left from '../../components/Articles/Pic2Left';
+import PicTwoLeft from '../../components/Articles/PicTwoLeft';
 import PicLeftRight from '../../components/Articles/PicLeftRight';
 import LottieText from '../../components/LottieText';
 //Lotties
@@ -43,7 +43,7 @@ function Build({ data }) {
         variant="v3"
         className="md:pr-[13.188rem] lg:pr-0"
       />
-      <Pic2Left {...data.pic2LeftProps} className="max-w-[65rem] mx-auto" />
+      <PicTwoLeft {...data.pic2LeftProps} className="max-w-[65rem] mx-auto" />
       <PicLeftRight
         {...data.picLeftProps}
         variant="v2"
@@ -64,7 +64,7 @@ function Build({ data }) {
         variant="v2"
         className="md:pl-[13.188rem] lg:pl-0"
       />
-      <Pic2Left {...data.pic2LeftProps2} className="max-w-[65rem] mx-auto" />
+      <PicTwoLeft {...data.pic2LeftProps2} className="max-w-[65rem] mx-auto" />
     </div>
   );
 }

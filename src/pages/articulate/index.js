@@ -3,7 +3,7 @@ import { allArticulates } from 'contentlayer/generated';
 import Header from '../../components/Header';
 import PicTop from '../../components/Articles/PicTop';
 import PicLeftRight from '../../components/Articles/PicLeftRight';
-import Pic4Left from '../../components/Articles/Pic4Left';
+import PicFourLeft from '../../components/Articles/PicFourLeft';
 import LottieText from '../../components/LottieText';
 //Lotties
 import articulate from '../../lotties/aticulate.json';
@@ -34,7 +34,7 @@ function Articulate({ data }) {
       <Header {...data.headerProps} isSplited={true} />
       <PicTop {...data.picTopProps} variant="v1" />
       <PicLeftRight {...data.picLeftProps} variant="v1" />
-      <Pic4Left {...data.pic4LeftProps} />
+      <PicFourLeft {...data.pic4LeftProps} />
       <PicLeftRight {...data.picRightProps} variant="v3" />
       <PicLeftRight {...data.picLeftProps2} variant="v2" />
       <PicTop {...data.picTopProps2} variant="v1" />
