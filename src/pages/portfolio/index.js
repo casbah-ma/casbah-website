@@ -1,6 +1,6 @@
 import PortfolioHeader from '@/components/PortfolioHeader';
-import ProjecSection from '@/components/ProjecSection';
-import { allPortfolios } from 'contentlayer/generated';
+import ProjectSection from '@/components/ProjectSection';
+import { allPortfolios, allBlogs } from 'contentlayer/generated';
 import { useEffect, useMemo, useState } from 'react';
 
 import { useDebounce } from '@/hooks/useDebounce';
@@ -8,8 +8,11 @@ import { AnimatePresence } from 'framer-motion';
 
 export const getStaticProps = ({ locale }) => {
   const data = allPortfolios.find((home) => home.lang === locale);
+  const blogs = allBlogs.filter(
+    (page) => page.lang === locale && page.parent === 'portfolio'
+  );
   return {
-    props: { data },
+    props: { data: { ...data, blogs } },
   };
 };
 
@@ -24,8 +27,9 @@ export default function Portfolio({ data }) {
   const sections = useMemo(
     () => [
       <PortfolioHeader key={0} {...data.headerProps} />,
-      <ProjecSection key={1} isFirst={true} {...data.projectProps} />,
-      <ProjecSection key={2} {...data.projectProps2} />,
+      ...data.blogs.map((blog, key) => (
+        <ProjectSection key={key} isFirst={key === 0} {...blog} />
+      )),
     ],
     [data]
   );

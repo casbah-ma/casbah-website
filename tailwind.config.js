@@ -30,6 +30,9 @@ module.exports = {
         sm: '414px',
 
       },
+      listStyleType: {
+        zero: 'decimal-leading-zero;'
+      }
     },
   },
   plugins: [],

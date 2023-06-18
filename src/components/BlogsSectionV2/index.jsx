@@ -2,8 +2,14 @@ import PropTypes from 'prop-types';
 import { Grid, ReadMore, Wrapper } from './BlogsSectionV2.styles';
 import BlogsCard from '../BlogsCard';
 import Header from '../Header';
+import { useRouter } from 'next/router';
 
 function BlogsSectionV2({ title, subtitle, blogs, onClick }) {
+  const route = useRouter();
+
+  const handleClick = (slug) => {
+    route.push(`/blogs/${slug}`);
+  };
   return (
     <Wrapper>
       <Header
@@ -15,7 +21,12 @@ function BlogsSectionV2({ title, subtitle, blogs, onClick }) {
       <Grid>
         {blogs?.length > 0 &&
           blogs.map((blog, i) => (
-            <BlogsCard key={blog.title} {...blog} variant="v3" onClick={onClick} />
+            <BlogsCard
+              key={blog.title}
+              {...blog}
+              variant="v3"
+              onClick={() => handleClick(blog.slug)}
+            />
           ))}
       </Grid>
     </Wrapper>

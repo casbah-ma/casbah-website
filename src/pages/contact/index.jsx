@@ -13,6 +13,7 @@ export const getStaticProps = ({ locale }) => {
 };
 
 const ContactUsPage = ({ data }) => {
+  
   return (
     <div className="flex flex-col justify-center items-center gap-36 p-[2rem] md:p-16 lg:pt-[11.688rem] lg:pb-[14.75rem]">
       <DropUsSection

@@ -5,6 +5,13 @@ const CustomStyles = createGlobalStyle`
     body {
         ${tw`antialiased`}
     }
+    .blog > ol > li::before{
+      content: '0'counter(items);
+    }
+    
+    .blog > ol > li:nth-child(n + 10)::before {
+    content: counter(items);
+      }
     .dialog {
       ${tw`fixed bg-black/25 z-10 inset-0`}
     
@@ -18,6 +25,8 @@ const CustomStyles = createGlobalStyle`
       width: fit-content !important;
       height: fit-content !important;
     }
+
+
 `;
 
 const GlobalStyles = () => (

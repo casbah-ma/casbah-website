@@ -4,11 +4,11 @@ import tw, { styled } from 'twin.macro';
 export const variants = {
   left: tw`lg:items-start`,
   right: tw`lg:items-end`,
-  centre: tw`fixed left-0 bottom-0 h-screen px-0 pt-32 bg-[#000F9F] lg:items-center`,
+  centre: tw`fixed left-0 bottom-0 flex-1 px-0 pt-32 bg-[#000F9F] lg:items-center z-50`,
 };
 
 export const Wrapper = styled.div(() => [
-  tw`absolute left-0 top-28 bottom-10 w-full flex flex-col gap-10 px-4 justify-start items-center overflow-hidden
+  tw`absolute left-0 top-28 bottom-10 w-full flex-1 flex flex-col gap-10 px-4 justify-start items-center overflow-hidden
   md:gap-36 
   lg:(gap-14)`,
   ({ variant }) => variants[variant],

@@ -57,8 +57,6 @@ export const Portfolio = defineDocumentType(() => ({
   filePathPattern: `portfolio/**/*.md`,
   fields: {
     headerProps: { type: 'nested', of: headerV2PropsType },
-    projectProps: { type: 'nested', of: projectPropsType },
-    projectProps2: { type: 'nested', of: projectPropsType },
   },
   computedFields: {
     lang: {
@@ -254,13 +252,40 @@ export const Design = defineDocumentType(() => ({
 }));
 /* ---------------------------------------------- */
 
-/* ----------------------- blogs ----------------------- */
-export const Blogs = defineDocumentType(() => ({
-  name: 'Blogs',
-  filePathPattern: `blogs/**/*.md`,
+// /* ----------------------- blogs ----------------------- */
+// export const Blogs = defineDocumentType(() => ({
+//   name: 'Blogs',
+//   filePathPattern: `blogs/**/*.md`,
 
+//   fields: {
+//     blogs: { type: 'list', of: blogsCardProps },
+//   },
+//   computedFields: {
+//     lang: {
+//       type: 'string',
+//       resolve: (recipe) => {
+//         const local = getLocale(recipe._raw.sourceFileName);
+//         return local;
+//       },
+//     },
+//     slug: {
+//       type: 'string',
+//       resolve: (recipe) => {
+//         const slug = getSlug(recipe._raw.sourceFileName);
+//         return slug;
+//       },
+//     },
+//   },
+// }));
+// /* ---------------------------------------------- */
+
+/* ----------------------- blogs ----------------------- */
+export const Lab = defineDocumentType(() => ({
+  name: 'Lab',
+  filePathPattern: `lab/**/*.md`,
   fields: {
-    blogs: { type: 'list', of: blogsCardProps },
+    title: { type: 'string' },
+    subtitle: { type: 'string' },
   },
   computedFields: {
     lang: {
@@ -280,15 +305,25 @@ export const Blogs = defineDocumentType(() => ({
   },
 }));
 /* ---------------------------------------------- */
-
-/* ----------------------- blogs ----------------------- */
-export const Lab = defineDocumentType(() => ({
-  name: 'Lab',
-  filePathPattern: `lab/**/*.md`,
+/* ----------------------- blogs Items ----------------------- */
+export const Blogs = defineDocumentType(() => ({
+  name: 'Blogs',
+  filePathPattern: `blogs/**/*.md`,
   fields: {
-    title: { type: 'string' },
-    subtitle: { type: 'string' },
-    blogs: { type: 'list', of: blogsCardProps },
+    title: {
+      type: 'string',
+      required: true,
+    },
+    description: {
+      type: 'string',
+      required: true,
+    },
+    imgSrc: {
+      type: 'string',
+      required: true,
+    },
+    tags: { type: 'json' },
+    parent: { type: 'string' },
   },
   computedFields: {
     lang: {
@@ -320,8 +355,8 @@ export default makeSource({
     Design,
     Contact,
     About,
-    Blogs,
     Lab,
+    Blogs,
     Portfolio,
   ],
 });

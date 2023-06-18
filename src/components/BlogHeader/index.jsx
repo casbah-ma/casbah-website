@@ -3,7 +3,7 @@ import MyImage from '../MyImage';
 import Tag from '../Tag';
 import { Tags, Wrapper, imageSize } from './BlogHeaderSection.styles';
 
-const BlogHeader = ({ title, description, image, tags }) => {
+const BlogHeader = ({ title, description, imgSrc, tags }) => {
   return (
     <Wrapper>
       {tags && (
@@ -20,7 +20,7 @@ const BlogHeader = ({ title, description, image, tags }) => {
         isSplited
         withLine
       />
-      <MyImage src={image} alt={title} sizes={imageSize} />
+      <MyImage src={imgSrc} alt={title} sizes={imageSize} />
     </Wrapper>
   );
 };

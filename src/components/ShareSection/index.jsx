@@ -13,7 +13,7 @@ const ShareSection = ({ data }) => {
         {t('shareon')}
       </Title>
       <Swiper
-        className="flex-1"
+        className="w-full flex-1"
         modules={[A11y]}
         slidesPerView="auto"
         spaceBetween={15}

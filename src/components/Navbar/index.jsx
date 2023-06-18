@@ -20,10 +20,13 @@ import { useState } from 'react';
 import { links, logo, media } from '../../config/constant';
 import useTranslation from 'next-translate/useTranslation';
 import LanguageMenu from '../LanguageMenu';
+import { motion } from 'framer-motion';
+import { child, container } from './variants';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
+
   return (
     <>
       <NavbarWrapper>
@@ -50,7 +53,26 @@ const Navbar = () => {
               ) : (
                 link?.url && (
                   <Link key={index} href={link?.url}>
-                    <LinkLabel>{t(link.name)}</LinkLabel>
+                    <LinkLabel>
+                      <motion.div
+                        className="w-full flex overflow-hidden"
+                        variants={container}
+                        initial="hidden"
+                        animate="hidden"
+                        whileTap="click"
+                        whileHover="visible"
+                      >
+                        {Array.from(t(link.name)).map((letter, index) => (
+                          <motion.div
+                            key={index}
+                            variants={child}
+                            className={index == 0 && 'capitalize'}
+                          >
+                            {letter === ' ' ? '\u00A0' : letter}
+                          </motion.div>
+                        ))}
+                      </motion.div>
+                    </LinkLabel>
                   </Link>
                 )
               )

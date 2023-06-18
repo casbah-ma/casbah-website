@@ -7,6 +7,7 @@ import Pic4Left from '../../components/Articles/Pic4Left';
 import LottieText from '../../components/LottieText';
 //Lotties
 import articulate from '../../lotties/aticulate.json';
+import { useEffect, useState } from 'react';
 
 //get the data for the current locale
 export const getStaticProps = ({ locale }) => {
@@ -19,9 +20,17 @@ export const getStaticProps = ({ locale }) => {
 };
 
 function Articulate({ data }) {
+  const [lottieLoader, setLottieLoader] = useState(false);
+
+  useEffect(() => {
+    // after 1 sec set lottieLoader true
+    setTimeout(() => {
+      setLottieLoader(true);
+    }, 1905);
+  }, []);
   return (
     <div className="flex flex-col justify-center items-center gap-[120px] mb-36">
-      <LottieText lottie={articulate} />
+      {lottieLoader && <LottieText lottie={articulate} />}
       <Header {...data.headerProps} isSplited={true} />
       <PicTop {...data.picTopProps} variant="v1" />
       <PicLeftRight {...data.picLeftProps} variant="v1" />

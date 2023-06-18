@@ -4,9 +4,16 @@ import { SectionTitle, Wrapper } from './SimilarBlog.styles';
 import useTranslation from 'next-translate/useTranslation';
 import BlogsCard from '../../BlogsCard';
 import { A11y } from 'swiper';
+import { useRouter } from 'next/router';
 
 const SimilarBlog = ({ blogs }) => {
   const { t } = useTranslation();
+  const router = useRouter()
+
+  const handleClick = (slug) => {
+    router.push(`/blogs/${slug}`);
+  };
+
   return (
     <Wrapper>
       <SectionTitle>
@@ -27,10 +34,10 @@ const SimilarBlog = ({ blogs }) => {
       >
         {blogs?.map((item, i) => (
           <SwiperSlide
-            className="!w-fit md:!w-[31.813rem] !h-fit"
+            className="md:!w-[31.813rem] !h-fit"
             key={item.name + i}
           >
-            <BlogsCard {...item} variant="v2" />
+            <BlogsCard {...item} variant="v2" onClick={() => handleClick(item?.slug)} />
           </SwiperSlide>
         ))}
       </Swiper>

@@ -1,0 +1,62 @@
+:root {
+    --text: #000219;
+    --line: #275efe;
+    --font-size: 19px;
+    --duration: 0.3s;
+    --duration-line: 0.84s;
+}
+
+.linkWrapper {
+  
+    .link {
+        text-transform: capitalize;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+        div {
+            &:first-child {
+                display: flex;
+                overflow: hidden;
+                // text-shadow
+                text-shadow: 0 var(--font-size) 0 var(--text);
+
+            }
+            &:first-child:active {
+                display: flex;
+                overflow: hidden;
+                // text-shadow
+                text-shadow: 0 var(--font-size) 0 #FF5100;
+
+            }
+            &:last-child {
+                position: absolute;
+                pointer-events: none;
+                right: 0;
+                left: 0;
+                bottom: -3px;
+                height: 5px;
+            }
+            span {
+
+       
+                transition: transform var(--duration) ease;
+                transform: translateY(var(--m, 0));
+                $i: 1;
+                @while $i < 12 {
+                    &:nth-child(#{$i}) {
+                        transition-delay: $i / 20 + s;
+                    }
+                    $i: $i + 1;
+                }
+            }
+        }
+        &:hover {
+            --m: calc(var(--font-size) * -1);
+            --line-d: var(--duration-line);
+            --line-x: 65.66%;
+            --line-offset: 63.5px;
+        }
+    }
+}
