@@ -13,7 +13,7 @@ export default function LanguageMenu() {
   const { t } = useTranslation();
   return (
     <Menu as="div" className="relative inline-block">
-      <div>
+      <div className='w-full h-full flex items-center'>
         <Button>
           <span>
             <LangIcon />

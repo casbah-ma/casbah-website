@@ -7,6 +7,7 @@ import PicLeftRight from '../../components/Articles/PicLeftRight';
 import LottieText from '../../components/LottieText';
 //Lotties
 import build from '../../lotties/build.json';
+import { useEffect, useState } from 'react';
 
 //get the data for the current locale
 export const getStaticProps = ({ locale }) => {
@@ -19,6 +20,15 @@ export const getStaticProps = ({ locale }) => {
 };
 
 function Build({ data }) {
+  const [lottieLoader, setLottieLoader] = useState(false);
+
+  // useEffect(() => {
+  //   // after 1 sec set lottieLoader true
+  //   setTimeout(() => {
+  //     setLottieLoader(true);
+  //   }, 1905);
+  // }, []);
+
   return (
     <div className="flex flex-col justify-center items-center gap-[120px] mb-36">
       <LottieText lottie={build} />

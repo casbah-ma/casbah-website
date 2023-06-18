@@ -8,6 +8,7 @@ const CustomStyles = createGlobalStyle`
     .blog > ol > li::before{
       content: '0'counter(items);
     }
+    
     .blog > ol > li:nth-child(n + 10)::before {
     content: counter(items);
       }
@@ -24,6 +25,8 @@ const CustomStyles = createGlobalStyle`
       width: fit-content !important;
       height: fit-content !important;
     }
+
+
 `;
 
 const GlobalStyles = () => (
