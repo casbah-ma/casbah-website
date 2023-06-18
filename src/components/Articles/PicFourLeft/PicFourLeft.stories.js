@@ -1,21 +1,20 @@
-import Pic3Right from '.';
+import PicFourLeft from '.';
 
 export default {
-  title: 'Articles/Pic3Right',
-  component: Pic3Right,
+  title: 'Articles/PicFourLeft',
+  component: PicFourLeft,
 };
 
 const texts = [
-  'Improving trust in your organization by providing seamless and coherent digital experiences is an important tool for building better brand equity over time.',
-
-  'Putting in place organization-wide rules and guidelines for use cases, as well as design elements like typography, colors, and UI components, also boost efficiency, as end results can be reached faster with less time and resources',
+  'Creating the endogenous and exogenous conditions for a successful digital transformation.',
+  'A top-down approach often ticks all the boxes but doesn’t always have the right adhesion or comprehension of the operational challenges encountered.',
 ];
 
-const Template = (args) => <Pic3Right {...args} />;
+const Template = (args) => <PicFourLeft {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  title: 'Design Systems',
+  title: 'User Digital Journey',
   bigImg:
     'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80',
   mediumImg:

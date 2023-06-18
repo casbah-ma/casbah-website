@@ -2,7 +2,7 @@ import { allFormulates } from 'contentlayer/generated';
 //components
 import Header from '../../components/Header';
 import PicTop from '../../components/Articles/PicTop';
-import Pic3Left from '../../components/Articles/Pic3Left';
+import PicThreeLeft from '../../components/Articles/PicThreeLeft';
 import PicLeftRight from '../../components/Articles/PicLeftRight';
 import LottieText from '../../components/LottieText';
 //Lotties
@@ -23,7 +23,7 @@ function Formulate({ data }) {
     <div className="flex flex-col justify-center items-center gap-[120px] mb-36">
       <LottieText lottie={formulate} />
       <Header {...data.headerProps} isVertical={true} />
-      <Pic3Left {...data.pic3LeftProps} className="max-w-[71.8rem] ml-auto" />
+      <PicThreeLeft {...data.pic3LeftProps} className="max-w-[71.8rem] ml-auto" />
       <PicTop
         {...data.picTopProps}
         variant="v3"

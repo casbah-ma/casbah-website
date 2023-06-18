@@ -1,20 +1,21 @@
-import Pic4Left from '.';
+import PicThreeRight from '.';
 
 export default {
-  title: 'Articles/Pic4Left',
-  component: Pic4Left,
+  title: 'Articles/PicThreeRight',
+  component: PicThreeRight,
 };
 
 const texts = [
-  'Creating the endogenous and exogenous conditions for a successful digital transformation.',
-  'A top-down approach often ticks all the boxes but doesn’t always have the right adhesion or comprehension of the operational challenges encountered.',
+  'Improving trust in your organization by providing seamless and coherent digital experiences is an important tool for building better brand equity over time.',
+
+  'Putting in place organization-wide rules and guidelines for use cases, as well as design elements like typography, colors, and UI components, also boost efficiency, as end results can be reached faster with less time and resources',
 ];
 
-const Template = (args) => <Pic4Left {...args} />;
+const Template = (args) => <PicThreeRight {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  title: 'User Digital Journey',
+  title: 'Design Systems',
   bigImg:
     'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80',
   mediumImg:

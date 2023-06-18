@@ -54,9 +54,9 @@ export const picLeftRightPropsType = defineNestedType(() => ({
 }));
 /******* PicLeftRight props types *******/
 
-/******* Pic4Left props types *******/
+/******* PicFourLeft props types *******/
 export const pic4LeftPropsType = defineNestedType(() => ({
-  name: 'Pic4LeftProps',
+  name: 'PicFourLeftProps',
   fields: {
     title: { type: 'string' },
     bigImg: { type: 'string' },
@@ -65,11 +65,11 @@ export const pic4LeftPropsType = defineNestedType(() => ({
     texts: { type: 'json' },
   },
 }));
-/******* Pic4Left props types *******/
+/******* PicFourLeft props types *******/
 
-/******* Pic2Left props types *******/
+/******* PicTwoLeft props types *******/
 export const pic2LeftPropsType = defineNestedType(() => ({
-  name: 'Pic4LeftProps',
+  name: 'PicFourLeftProps',
   fields: {
     title: { type: 'string' },
     bigImg: { type: 'string' },
@@ -77,7 +77,7 @@ export const pic2LeftPropsType = defineNestedType(() => ({
     texts: { type: 'json' },
   },
 }));
-/******* Pic2Left props types *******/
+/******* PicTwoLeft props types *******/
 
 /******* Dropus props types *******/
 export const DropUsPropsType = defineNestedType(() => ({

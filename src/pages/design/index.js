@@ -2,8 +2,8 @@ import { allDesigns } from 'contentlayer/generated';
 //components
 import HeaderV2 from '../../components/HeaderV2';
 import PicTop from '../../components/Articles/PicTop';
-import Pic3Right from '../../components/Articles/Pic3Right';
-import Pic4Left from '../../components/Articles/Pic4Left';
+import PicThreeRight from '../../components/Articles/PicThreeRight';
+import PicFourLeft from '../../components/Articles/PicFourLeft';
 import PicLeftRight from '../../components/Articles/PicLeftRight';
 import LottieText from '../../components/LottieText';
 //Lotties
@@ -25,12 +25,12 @@ function Design({ data }) {
       <LottieText lottie={design} />
       <HeaderV2 {...data.headerProps} variant="v2" />
       <PicLeftRight {...data.picLeftProps} variant="v5" />
-      <Pic3Right
+      <PicThreeRight
         {...data.pic3RightProps}
         className="pl-[3.563rem] md:pl-[13.188rem] lg:(max-w-[65.125rem] mx-auto pl-0)"
       />
       <PicTop {...data.picTopProps} variant="v1" />
-      <Pic4Left {...data.pic4LeftProps} />
+      <PicFourLeft {...data.pic4LeftProps} />
       <PicLeftRight {...data.picRightProps} variant="v6" />
     </div>
   );
