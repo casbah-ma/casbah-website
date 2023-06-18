@@ -26,7 +26,6 @@
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.4",
     "framer-motion": "^10.12.16",
-    "lottie-web": "^5.12.2",
     "mapbox-gl": "^2.14.1",
     "next": "13.3.4",
     "next-contentlayer": "^0.3.2",

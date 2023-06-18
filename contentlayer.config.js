@@ -18,10 +18,11 @@ import {
   blogsCardProps,
   headerPropsType,
   headerV2PropsType,
-  pic2LeftPropsType,
+  homeSectionPropsType,
   pic4LeftPropsType,
   picLeftRightPropsType,
   picTopPropsType,
+  projectPropsType,
 } from './src/config/contentLayerTypes';
 
 /* ---------------------------------------------- */
@@ -29,7 +30,13 @@ export const Home = defineDocumentType(() => ({
   name: 'Home',
   filePathPattern: `home/**/*.md`,
   fields: {
-    title: { type: 'string' },
+    sectionProps: { type: 'nested', of: homeSectionPropsType },
+    sectionProps1: { type: 'nested', of: homeSectionPropsType },
+    sectionProps2: { type: 'nested', of: homeSectionPropsType },
+    sectionProps3: { type: 'nested', of: homeSectionPropsType },
+    sectionProps4: { type: 'nested', of: homeSectionPropsType },
+    sectionProps5: { type: 'nested', of: homeSectionPropsType },
+    sectionProps6: { type: 'nested', of: homeSectionPropsType },
   },
   computedFields: {
     lang: {
@@ -42,6 +49,27 @@ export const Home = defineDocumentType(() => ({
   },
 }));
 
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+export const Portfolio = defineDocumentType(() => ({
+  name: 'Portfolio',
+  filePathPattern: `portfolio/**/*.md`,
+  fields: {
+    headerProps: { type: 'nested', of: headerV2PropsType },
+    projectProps: { type: 'nested', of: projectPropsType },
+    projectProps2: { type: 'nested', of: projectPropsType },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (portfolio) => {
+        const local = getLocale(portfolio._raw.sourceFilePath);
+        return `${local}`;
+      },
+    },
+  },
+}));
 /* ---------------------------------------------- */
 
 /* ---------------------------------------------- */
@@ -331,5 +359,6 @@ export default makeSource({
     Blogs,
     Lab,
     BlogsItems,
+    Portfolio,
   ],
 });
