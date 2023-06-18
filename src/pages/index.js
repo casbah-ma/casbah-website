@@ -11,6 +11,7 @@ import Lottie_06 from '@/lotties/Lottie_06.json';
 import Lottie_07 from '@/lotties/Lottie_07.json';
 import { useDebounce } from '../hooks/useDebounce';
 import { AnimatePresence } from 'framer-motion';
+import Footer from '../components/Footer';
 
 export const getStaticProps = ({ locale }) => {
   const data = allHomes.find((home) => home.lang === locale);
@@ -65,12 +66,19 @@ export default function Home({ data }) {
         lottie={Lottie_06}
         variant="left"
       />,
+
       <HomeSection
         key={6}
         {...data.sectionProps6}
         lottie={Lottie_07}
         variant="centre"
       />,
+      <div
+        key={7}
+        className="absolute left-0 top-0 w-full h-full flex justify-start items-center bg-deepBlue [&>footer]:z-50"
+      >
+        <Footer />
+      </div>,
     ],
     [
       data.sectionProps,

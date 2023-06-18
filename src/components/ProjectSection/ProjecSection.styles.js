@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import tw, { styled } from 'twin.macro';
 
 export const Wrapper = styled(motion.div)`
-  ${tw`absolute inset-0 h-screen z-[9999] bg-white`}
+  ${tw`absolute inset-0 h-screen z-[9999] bg-white cursor-none`}
 `;
 
 export const imageStyle = tw`w-full h-full`;
@@ -16,7 +16,7 @@ export const Backdrop = styled.div`
 `;
 
 export const Content = styled(motion.div)`
-  ${tw`z-20 absolute left-4 bottom-[10vh] w-[80%] flex flex-col gap-28 overflow-y-hidden 
+  ${tw`z-20 absolute left-4 bottom-[10vh] w-[80%] flex flex-col gap-28 overflow-y-hidden  !cursor-none
       md:(left-[4.5rem] w-[66%] gap-32)
       lg:(left-[7.5rem] [bottom: unset] top-1/2 w-[46%] gap-28)`}
 `;

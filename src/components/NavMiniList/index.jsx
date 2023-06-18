@@ -12,6 +12,8 @@ import {
 } from './NavMiniList.styles';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
+import { child, container } from '../Navbar/variants';
 
 const useDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +48,24 @@ const NavMiniList = ({ name, options, Icon }) => {
     <DropdownContainer ref={ref} active={isOpen}>
       <DropdownButton onClick={toggle}>
         {Icon && <Icon color={isOpen ? 'white' : 'black'} />}
-        {name}
+        <motion.div
+          className="w-full flex overflow-hidden"
+          variants={container}
+          initial="hidden"
+          animate="hidden"
+          whileTap="click"
+          whileHover="visible"
+        >
+          {Array.from(t(name)).map((letter, index) => (
+            <motion.div
+              key={index}
+              variants={child}
+              className={index == 0 && 'capitalize'}
+            >
+              {letter === ' ' ? '\u00A0' : letter}
+            </motion.div>
+          ))}
+        </motion.div>
         <ToggleButton open={isOpen}>
           <ArrowDown />
         </ToggleButton>

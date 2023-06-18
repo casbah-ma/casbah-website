@@ -3,19 +3,22 @@ import tw, { styled } from 'twin.macro';
 export const DropdownContainer = styled.div`
   ${tw`relative transition-all duration-300 ease-in-out`}
   ${({ active }) =>
-    active && tw`lg:bg-transparent bg-deepBlue lg:text-black text-white`}
+    active && tw`lg:bg-transparent bg-deepBlue text-white lg:text-black `}
 `;
 
 export const DropdownButton = styled.div`
-  ${tw`lg:text-base text-lg leading-[1.257rem] capitalize font-made
+  ${tw`lg:text-base text-lg   font-made
   flex flex-row items-center cursor-pointer gap-[0.5rem]
-  lg:py-0 py-4 pl-10 lg:pl-0 text-lg
+  lg:py-0 py-4 pl-10 lg:pl-0
+  after:([content: ''] absolute bg-black h-[2px] w-0 left-0 -bottom-1 transition-[0.4s])
+  hover:after:w-full
+  active:text-brightOrange
   `}
 `;
 
 export const DropdownList = styled.ul`
-  ${tw`lg:absolute z-10 lg:p-4 lg:mt-4 lg:bg-white flex flex-col items-start gap-[1.5rem] -right-3.5
-  pl-[11rem]  pb-4
+  ${tw`lg:absolute z-10 lg:p-4 lg:mt-2 lg:bg-white flex flex-col items-start gap-[1.5rem] -right-4
+  pl-[11rem] pb-4
 
    -mt-[2.3rem]
   `}

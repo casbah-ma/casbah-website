@@ -17,5 +17,5 @@ export const ReadMore = styled.div.attrs(
     }
 )`
   ${tw`w-[10rem] h-[10rem] rounded-full flex justify-center items-center bg-brightOrange
-       fixed z-10 text-base text-white uppercase -translate-x-1/2 -translate-y-1/2 cursor-none`};
+       fixed text-base text-white uppercase -translate-x-1/2 -translate-y-1/2 cursor-none`};
 `;

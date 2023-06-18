@@ -1,7 +1,13 @@
 ---
 title: 'this can be used as our titles this can be a descriptive title with a lot of words'
 description: 'It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer optimal experiences for the targeted audiences, while conveying the right messages and staying true to the brand’s identity.'
-image: 'https://images.unsplash.com/photo-1550679193-d8ec2f2c3a25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2274&q=80'
+imgSrc: 'https://images.unsplash.com/photo-1541427468627-a89a96e5ca1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80'
+tags:
+  - "coding"
+  - "design"
+  - "development"
+  - "programming"
+parent: 'portfolio'
 ---
 
 # It is not about putting forms and colors together, but about finding the right balance between logic and aesthetic
@@ -15,7 +21,6 @@ targeted audiences, while conveying the right messages and staying true to the b
 for the targeted audiences, while conveying the right messages and staying true to the brand’s identity.
 
 > It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer optimal experiences for the targeted audiences, while conveying the right messages and staying true to the brand’s identity.
-> 
 
 It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer optimal experiences for the targeted audiences, while conveying the right messages and staying true to the brand’s identity.
 

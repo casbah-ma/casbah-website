@@ -4,12 +4,13 @@ import ShareSection from '../../components/ShareSection';
 import SimilarBlog from '../../components/Blogs/SimilarBlog';
 import { useRouter } from 'next/router';
 import BlogBody from '../../components/Blogs/BlogBody';
-import { allBlogsItems } from 'contentlayer/generated';
+import { allBlogs } from 'contentlayer/generated';
 import { useEffect } from 'react';
+import Breadcrumb from '../../components/Breadcrumb';
 
 // getStaticPath
 export const getStaticPaths = () => {
-  const paths = allBlogsItems.map((page) => ({
+  const paths = allBlogs.map((page) => ({
     params: { slug: page.slug },
     locale: page.lang,
   }));
@@ -19,14 +20,17 @@ export const getStaticPaths = () => {
   };
 };
 
-export const getStaticProps = ({ locale }) => {
-  const data = allBlogsItems.find((page) => page.lang === locale);
+export const getStaticProps = ({ locale, params }) => {
+  const data = allBlogs.find(
+    (page) => page.lang === locale && page.slug === params.slug
+  );
   return {
-    props: { data },
+    props: { data: { ...data, allBlogs } },
   };
 };
 
 const BlogInfoPage = ({ data }) => {
+  const router = useRouter();
   useEffect(() => {
     // Get the parent element of the <img> tag
     const parentElement = document.querySelector('p > img').parentNode;
@@ -49,10 +53,11 @@ const BlogInfoPage = ({ data }) => {
         'w-full flex flex-col justify-center items-center gap-16 p-[1rem] md:p-16'
       }
     >
+      <Breadcrumb parent={data.parent} slug={router.query.slug} />
       <BlogHeader {...data} />
       <BlogBody body={data.body.html} />
       <ShareSection {...StaticData.share} />
-      <SimilarBlog {...StaticData.similarBlogs} />
+      <SimilarBlog  blogs={data.allBlogs} />
     </div>
   );
 };
