@@ -61,7 +61,7 @@ function MyDisclosure({ link }) {
             <LinkLabel>{t(link.name)}</LinkLabel>
             <ArrowDown
               color="white"
-              className={open && 'rotate-180 transform transition duration-200'}
+              className={open ? 'rotate-180 transform transition duration-200' : ''}
             />
           </Disclosure.Button>
           <Disclosure.Panel className="border-l border-solid pl-4 h-fit flex flex-col justify-between mt-1 gap-2">

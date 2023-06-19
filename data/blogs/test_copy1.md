@@ -5,8 +5,6 @@ imgSrc: 'https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?ixlib=rb-4
 tags:
   - "coding"
   - "design"
-  - "development"
-  - "programming"
 parent: 'lab'
 ---
 

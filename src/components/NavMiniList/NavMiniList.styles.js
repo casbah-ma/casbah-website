@@ -3,22 +3,19 @@ import tw, { styled } from 'twin.macro';
 export const DropdownContainer = styled.div`
   ${tw`relative transition-all duration-300 ease-in-out`}
   ${({ active }) =>
-    active && tw`lg:bg-transparent bg-deepBlue text-white lg:text-black `}
+    active && tw`lg:bg-transparent bg-deepBlue lg:text-black text-white`}
 `;
 
 export const DropdownButton = styled.div`
-  ${tw`lg:text-base text-lg   font-made
-  flex flex-row items-center cursor-pointer gap-[0.5rem]
+  ${tw`lg:text-base text-lg leading-[1.257rem]  font-made
+  w-full flex  items-center cursor-pointer gap-[0.5rem]
   lg:py-0 py-4 pl-10 lg:pl-0
-  after:([content: ''] absolute bg-black h-[2px] w-0 left-0 -bottom-1 transition-[0.4s])
-  hover:after:w-full
-  active:text-brightOrange
   `}
 `;
 
 export const DropdownList = styled.ul`
-  ${tw`lg:absolute z-10 lg:p-4 lg:mt-2 lg:bg-white flex flex-col items-start gap-[1.5rem] -right-4
-  pl-[11rem] pb-4
+  ${tw`lg:absolute z-10 lg:p-4 lg:mt-4 lg:bg-white flex flex-col items-start gap-[1.5rem] -right-3.5
+  pl-[12rem]  pb-4 uppercase
 
    -mt-[2.3rem]
   `}
@@ -48,7 +45,7 @@ export const DropdownList = styled.ul`
 `;
 
 export const DropdownItem = styled.li`
-  ${tw`lg:text-[#151B1870] text-white text-base font-light leading-[1.257rem] uppercase font-made`}
+  ${tw`lg:text-[#151B1870] text-white text-base font-light leading-[1.257rem] font-made`}
   ${({ active }) =>
     active && tw`lg:text-brightOrange font-bold leading-[1.276rem]`}
 `;

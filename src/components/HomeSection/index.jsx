@@ -11,7 +11,14 @@ import Title from '../Title';
 import AnimatedDisplay from '../AnimatedDisplay';
 import Paragraph from '../Paragraph';
 import { motion } from 'framer-motion';
-function HomeSection({ title, subtitle, texts, lottie, variant, ...rest }) {
+function HomeSection({
+  title,
+  subtitle,
+  texts = '',
+  lottie,
+  variant,
+  ...rest
+}) {
   return (
     <Wrapper variant={variant} {...rest}>
       <motion.div className="self-center" exit={{ opacity: 0 }}>
@@ -31,20 +38,23 @@ function HomeSection({ title, subtitle, texts, lottie, variant, ...rest }) {
           <Title
             withoutBorder={true}
             renderAs="h2"
-            color={variant === 'centre' && 'white'}
+            color={variant === 'centre' ? 'white' : ''}
           >
             {title}
           </Title>
         </TitleWrapper>
 
-        <Texts>
-          {texts?.length > 0 &&
-            texts.map((text, i) => (
-              <Paragraph key={i} size="md">
-                {text}
-              </Paragraph>
-            ))}
-        </Texts>
+        {texts && (
+          <Texts>
+            {texts &&
+              texts?.length > 0 &&
+              texts.map((text, i) => (
+                <Paragraph key={i} size="md">
+                  {text}
+                </Paragraph>
+              ))}
+          </Texts>
+        )}
       </Content>
     </Wrapper>
   );

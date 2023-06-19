@@ -1,17 +1,17 @@
 import PropTypes from 'prop-types';
 import { StyledP } from './paragraph.styles';
 import { sizes } from './paragraph.styles';
-import { paragraphVarinat } from './varinats';
+import { paragraphVarinat as paragraphVariant } from './varinats';
 
 function Paragraph({ children, size, color, ...rest }) {
   return (
     <StyledP
-      variants={paragraphVarinat}
+      variants={paragraphVariant}
       initial="hidden"
       animate="visible"
       exit="exit"
       size={size}
-      color={color}
+      // color={color}
       {...rest}
     >
       {children}

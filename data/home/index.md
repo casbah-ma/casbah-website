@@ -27,4 +27,6 @@ sectionProps5:
 sectionProps6:
   title: 'the Casbah way'
   subtitle: "And that's one side of"
+  texts:
+    - ''
 ---
