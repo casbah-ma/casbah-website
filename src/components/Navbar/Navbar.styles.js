@@ -16,16 +16,16 @@ export const LinksWrapper = tw.nav`
 
 export const LinkLabel = styled(motion.div)`
   ${tw`
-    w-fit text-black lg:text-base text-lg leading-[2rem]  font-made  relative 
+    w-fit text-black lg:text-base text-lg leading-[2rem] font-made relative
    lg:py-0 py-4 pl-10 lg:pl-0 
-  after:([content: ''] absolute bg-black h-[2px] w-0 left-0 -bottom-1 transition-[0.4s])
-  hover:after:w-full
+  lg:after:([content: ''] absolute bg-black h-[2px] w-0 left-0 -bottom-1 transition-[0.4s])
+  lg:hover:after:w-full
   active:(text-brightOrange)
    `}
 `;
 
 export const MediaWrapper = tw.div`
-     h-full flex flex-row items-center  gap-2  p-[1.688rem]
+      w-full h-full flex items-center gap-2 p-[1.688rem] bg-[#D9D9D9] bg-opacity-10 lg:(bg-white bg-opacity-100)
      justify-between  pl-10  max-w-[20rem]
      lg:(justify-start p-0)
      xl:gap-[1.6rem]
@@ -34,11 +34,11 @@ export const MediaWrapper = tw.div`
 export const StyledMedia = tw.div``;
 
 export const DeskView = tw.div`
-  hidden lg:flex w-full flex-row items-center justify-between
+  hidden lg:flex w-full items-center justify-between
 `;
 
 export const MobileView = tw.div`
-  lg:hidden w-full flex flex-row items-center justify-between
+  lg:hidden w-full flex items-center justify-between
 `;
 export const PointerWrapper = tw.div`
  cursor-pointer
@@ -46,4 +46,4 @@ export const PointerWrapper = tw.div`
 
 export const MobileNav = tw.nav`flex flex-col mt-[4.813rem] border-y border-[#D9D9D9]`;
 
-export const MobileList = tw.ul`flex w-full flex-col  justify-center divide-y divide-[#D9D9D9]`;
+export const MobileList = tw.ul`flex w-full flex-col justify-center divide-y divide-[#D9D9D9] `;

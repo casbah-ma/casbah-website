@@ -5,8 +5,6 @@ imgSrc: 'https://images.unsplash.com/photo-1510940725340-44c002560b46?ixlib=rb-4
 tags:
   - "coding"
   - "design"
-  - "development"
-  - "programming"
 parent: 'blogs'
 ---
 

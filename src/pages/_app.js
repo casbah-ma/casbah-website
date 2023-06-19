@@ -1,6 +1,5 @@
 import GlobalStyles from '@/components/GlobalStyles';
 import '@/styles/globals.css';
-import "@/styles/animation.scss"
 import 'mapbox-gl/dist/mapbox-gl.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -73,9 +72,6 @@ export default function App({ Component, pageProps }) {
           <motion.div
             key={router.route}
             variants={variants}
-            initial="hidden"
-            animate="enter"
-            exit="exit"
             transition={{ duration: 1 }}
           >
             <Layout

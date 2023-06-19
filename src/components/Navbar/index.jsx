@@ -10,9 +10,9 @@ import {
   MobileView,
   NavbarWrapper,
   PointerWrapper,
-  StyledMedia,
 } from './Navbar.styles';
 import NavMiniList from '../NavMiniList';
+import Language from '@/icons/LanguageIcon';
 import Casbah from '@/icons/Casbah';
 import Menu from '@/icons/Menu';
 import Modal from '../Modal';
@@ -22,17 +22,21 @@ import useTranslation from 'next-translate/useTranslation';
 import LanguageMenu from '../LanguageMenu';
 import { motion } from 'framer-motion';
 import { child, container } from './variants';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
+  const router = useRouter();
 
   return (
     <>
       <NavbarWrapper>
         <MobileView>
           <PointerWrapper>
-            <Casbah />
+            <Link href="/">
+              <Casbah />
+            </Link>
           </PointerWrapper>
           <PointerWrapper onClick={() => setIsOpen(true)}>
             <Menu />
@@ -66,7 +70,7 @@ const Navbar = () => {
                           <motion.div
                             key={index}
                             variants={child}
-                            className={index == 0 && 'capitalize'}
+                            className={index == 0 ? 'capitalize' : undefined}
                           >
                             {letter === ' ' ? '\u00A0' : letter}
                           </motion.div>
@@ -101,21 +105,24 @@ const Navbar = () => {
               ) : (
                 link?.url && (
                   <Link key={index} href={link?.url}>
-                    <LinkLabel>{t(link.name)}</LinkLabel>
+                    <LinkLabel className="capitalize">{link.name}</LinkLabel>
                   </Link>
                 )
               )
             )}
-            <StyledMedia>
-              <MediaWrapper>
-                {media.map((social, index) => (
-                  <Link key={index} href={social.url}>
-                    <social.icon />
-                  </Link>
-                ))}
-              </MediaWrapper>
-            </StyledMedia>
-            <LanguageMenu />
+            <MediaWrapper>
+              {media.map((social, index) => (
+                <Link key={index} href={social.url}>
+                  <social.icon />
+                </Link>
+              ))}
+            </MediaWrapper>
+
+            <NavMiniList
+              Icon={Language}
+              languages={router.locales}
+              name={t('languages')}
+            />
           </MobileList>
         </MobileNav>
       </Modal>

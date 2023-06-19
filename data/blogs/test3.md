@@ -5,8 +5,6 @@ imgSrc: 'https://images.unsplash.com/photo-1541427468627-a89a96e5ca1d?ixlib=rb-4
 tags:
   - "coding"
   - "design"
-  - "development"
-  - "programming"
 parent: 'portfolio'
 ---
 

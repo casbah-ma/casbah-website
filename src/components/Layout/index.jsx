@@ -5,11 +5,14 @@ import { useRouter } from 'next/router';
 
 const Layout = ({ children, ...rest }) => {
   const router = useRouter();
+  const isFooter = router.route !== '/' && router.route !== '/portfolio'  && router.route !== '/404'
+  const isNotFound = router.route === '/404'
+
   return (
     <Wrapper {...rest}>
       <Navbar />
-      <MainWrapper>{children}</MainWrapper>
-      {router.route !== '/' && router.route !== '/portfolio' && <Footer />}
+      <MainWrapper isNotFound={isNotFound}>{children}</MainWrapper>
+      {isFooter && <Footer />}
     </Wrapper>
   );
 };
