@@ -39,15 +39,15 @@ export const SocialItem = tw.div`xs:w-[3.88rem] sm:w-[5.05rem] md:w-[4.5rem] lg:
 export const FooterTerms = tw.div`w-full -mt-[1px]
                                 flex flex-col justify-start items-start
                                 md:(flex-row w-[38.938rem] h-[3.688rem] border 
-                                border-solid border-white justify-between items-center px-9) 
-                                lg:(w-[71.938rem] mr-10)`;
+                                border-solid border-white justify-between items-center px-2 ) 
+                                lg:(w-[71.938rem] mr-10 px-9)`;
 export const FooterCopyright = tw.div`w-full text-xs px-2 font-mako font-normal text-white 
                                     flex justify-center items-center
                                     border border-solid border-white py-4 -mr-2
                                     sm:(w-[21.313rem] self-end text-sm px-3)
                                     md:(w-fit self-auto text-base border-0)`;
 export const FooterTermsItem = tw.div`-mt-[1px] w-full text-xs gap-8 px-8 font-mako font-normal text-white 
-                                    flex justify-center items-center
+                                    flex justify-center items-center capitalize
                                     border border-solid border-white py-4 -mr-2 
                                     [&>a]:(underline underline-offset-4 cursor-pointer)
                                     sm:(w-[21.313rem] self-start text-sm px-8)
