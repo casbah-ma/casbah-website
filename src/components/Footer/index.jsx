@@ -90,7 +90,7 @@ const Footer = ({}) => {
           </FooterLogo>
           <SocialWrapper className="md:[&>div]:-mr-[1.282rem] lg:-mr-[4.375rem] z-20">
             <FooterSocial>{t('social')}</FooterSocial>
-            <FooterSocialItems className="self-end md:self-c">
+            <FooterSocialItems className="self-end md:self-center">
               {socialMedia.slice(0, 3).map((item, index) => (
                 <SocialItem
                   key={index + item.name}

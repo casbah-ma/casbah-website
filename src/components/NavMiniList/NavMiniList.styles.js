@@ -14,7 +14,7 @@ export const DropdownButton = styled.div`
 `;
 
 export const DropdownList = styled.ul`
-  ${tw`lg:absolute z-10 lg:p-4 lg:mt-4 lg:bg-white flex flex-col items-start gap-[1.5rem] -right-3.5
+  ${tw`lg:absolute z-10 lg:p-4 lg:mt-1 lg:bg-white flex flex-col items-start gap-[1.5rem] -right-3.5
   pl-[12rem]  pb-4 uppercase
 
    -mt-[2.3rem]

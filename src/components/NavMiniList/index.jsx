@@ -57,7 +57,7 @@ const NavMiniList = ({ name, options, Icon, languages }) => {
       <DropdownButton onClick={toggle}>
         {Icon && <Icon color={isOpen ? "white" : "black"} />}
         <motion.div
-          className="flex overflow-hidden -mt-[3px]"
+          className="flex overflow-hidden"
           variants={container}
           initial="hidden"
           animate="hidden"

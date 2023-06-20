@@ -10,6 +10,7 @@ import {
   MobileView,
   NavbarWrapper,
   PointerWrapper,
+  Social,
 } from './Navbar.styles';
 import NavMiniList from '../NavMiniList';
 import Language from '@/icons/LanguageIcon';
@@ -82,14 +83,16 @@ const Navbar = () => {
               )
             )}
           </LinksWrapper>
-          <MediaWrapper>
-            {media.map((social, index) => (
-              <Link key={index} href={social.url}>
-                <social.icon />
-              </Link>
-            ))}
-          </MediaWrapper>
-          <LanguageMenu />
+          <Social>
+            <MediaWrapper>
+              {media.map((social, index) => (
+                <Link key={index} href={social.url}>
+                  <social.icon />
+                </Link>
+              ))}
+            </MediaWrapper>
+            <LanguageMenu />
+          </Social>
         </DeskView>
       </NavbarWrapper>
       <Modal isOpen={isOpen} closeModal={() => setIsOpen(false)}>
