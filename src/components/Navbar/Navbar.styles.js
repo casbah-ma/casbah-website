@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const NavbarWrapper = tw.div`
-    w-full sticky bg-white inset-0  h-[6.5rem] flex items-center justify-between flex-row  px-[2.5rem]  xl:px-[4.5rem] z-50
+    w-full sticky bg-white inset-0  h-[6.5rem] flex items-center justify-center  px-[2.5rem]  xl:px-[4.5rem] z-50
 `;
 
 export const Logo = tw.img`
@@ -11,7 +11,7 @@ export const Logo = tw.img`
 `;
 
 export const LinksWrapper = tw.nav`
-    flex items-center gap-5 xl:gap-[2.5rem]
+    flex items-center justify-center gap-5 xl:gap-[2.5rem]
 `;
 
 export const LinkLabel = styled(motion.div)`
@@ -24,9 +24,11 @@ export const LinkLabel = styled(motion.div)`
    `}
 `;
 
+export const Social = tw.div`flex gap-14`;
+
 export const MediaWrapper = tw.div`
-      w-full h-full flex items-center gap-2 p-[1.688rem] bg-[#D9D9D9] bg-opacity-10 lg:(bg-white bg-opacity-100)
-     justify-between  pl-10  max-w-[20rem]
+    flex items-center gap-2 p-[1.688rem] bg-[#D9D9D9] bg-opacity-10 lg:(bg-white self-end bg-opacity-100)
+     justify-between  pl-10  max-w-[20rem] 
      lg:(justify-start p-0)
      xl:gap-[1.6rem]
 `;

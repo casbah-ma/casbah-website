@@ -75,7 +75,7 @@ export default function Home({ data }) {
       />,
       <div
         key={7}
-        className="absolute left-0 top-[5.75rem] md:top-0 w-full h-full flex justify-start items-center bg-deepBlue [&>footer]:z-50"
+        className="absolute left-0 top-[5.75rem] bottom-0 md:(top-none ) w-full flex-1 flex justify-center items-center bg-deepBlue [&>footer]:z-50"
       >
         <Footer />
       </div>,

@@ -79,7 +79,7 @@ export const links = [
 
 export const media = [
   {
-    url: 'https://www.facebook.com/',
+    url: 'https://www.facebook.com/casbahm',
     icon: Facebook,
     name: 'facebook',
   },
@@ -89,7 +89,7 @@ export const media = [
     name: 'instagram',
   },
   {
-    url: 'https://www.linkedin.com/',
+    url: 'https://www.linkedin.com/company/casbah-tourism-development/',
     icon: LinkedIn,
     name: 'LinkedIn',
   },
@@ -100,12 +100,12 @@ export const socialMedia = [
   {
     name: 'facebook',
     icon: FacebookSVG,
-    url: 'https://www.facebook.com/',
+    url: 'https://www.facebook.com/casbahm',
   },
   {
     name: 'linkedin',
     icon: LinkedInSVG,
-    url: 'https://www.linkedin.com/',
+    url: 'https://www.linkedin.com/company/casbah-tourism-development/',
   },
   {
     name: 'instagram',
@@ -115,21 +115,21 @@ export const socialMedia = [
   {
     name: 'github',
     icon: GithubSVG,
-    url: ''
+    url: 'https://github.com/casbah-ma'
   },
   {
     name: 'twitter',
     icon: TwitterSVG,
-    url: ''
+    url: 'https://twitter.com/casbah_ma'
   },
   {
     name: 'dribbble',
     icon: DribbbleSVG,
-    url: ''
+    url: 'https://dribbble.com/casbah_ma'
   },
   {
     name: 'behance',
     icon: BehanceSVG,
-    url: ''
+    url: 'https://www.behance.net/casbahma'
   },
 ]
