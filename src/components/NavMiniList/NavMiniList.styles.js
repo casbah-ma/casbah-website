@@ -51,9 +51,8 @@ export const DropdownItem = styled.li`
 `;
 
 export const ToggleButton = styled.div(({ open }) => [
-  tw`lg:flex hidden`,
-  !open && tw`transform transition-transform duration-500 `,
-  open && tw`transform transition-transform duration-500 rotate-180 mt-2`,
+  tw`hidden lg:flex p-0 transform transition-transform duration-500 mt-1 `,
+  open && tw`rotate-180`,
 ]);
 
 export const MobileToggle = styled.div`
