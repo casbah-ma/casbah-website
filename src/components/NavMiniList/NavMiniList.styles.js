@@ -8,7 +8,7 @@ export const DropdownContainer = styled.div`
 
 export const DropdownButton = styled.div`
   ${tw`lg:text-base text-lg leading-[1.257rem]  font-made
-  w-full flex  items-center cursor-pointer gap-[0.5rem]
+  w-full flex justify-center items-center cursor-pointer 
   lg:py-0 py-4 pl-10 lg:pl-0
   `}
 `;
@@ -45,7 +45,7 @@ export const DropdownList = styled.ul`
 `;
 
 export const DropdownItem = styled.li`
-  ${tw`lg:text-[#151B1870] text-white text-base font-light leading-[1.257rem] font-made`}
+  ${tw`text-white text-base font-light leading-[1.257rem] font-made  lg:(text-blackIsh text-opacity-70 hover:(text-brightOrange !text-opacity-100 font-bold))`}
   ${({ active }) =>
     active && tw`lg:text-brightOrange font-bold leading-[1.276rem]`}
 `;
@@ -53,7 +53,7 @@ export const DropdownItem = styled.li`
 export const ToggleButton = styled.div(({ open }) => [
   tw`lg:flex hidden`,
   !open && tw`transform transition-transform duration-500 `,
-  open && tw`transform transition-transform duration-500 rotate-180`,
+  open && tw`transform transition-transform duration-500 rotate-180 mt-2`,
 ]);
 
 export const MobileToggle = styled.div`

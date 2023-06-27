@@ -1,17 +1,14 @@
-const ArrowDown = ({className, color = 'black'}) => {
+const ArrowDown = ({ className, color = 'black' }) => {
   return (
     <svg
-      width="10"
-      height="6"
-      viewBox="0 0 10 6"
+      width="8"
+      height="4"
+      viewBox="0 0 8 4"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <path
-        d="M5.00081 6.00075L0.757812 1.75775L2.17281 0.34375L5.00081 3.17275L7.82881 0.34375L9.24381 1.75775L5.00081 6.00075Z"
-        fill={color}
-      />
+      <path d="M4 4L0 0L8 0L4 4Z" fill={color} />
     </svg>
   );
 };
