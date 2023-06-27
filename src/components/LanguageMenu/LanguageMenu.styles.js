@@ -17,9 +17,9 @@ export const List = styled(Menu.Items)`
 `;
 
 export const ListItem = styled.li(({ active }) => [
-  tw`w-full flex justify-start items-center cursor-pointer px-4  py-2  rounded
-  text-start text-base  text-[#151B18] font-bold uppercase opacity-70`,
-  active && tw`text-brightOrange opacity-100`,
+  tw`w-full flex justify-start items-center cursor-pointer px-4  py-2  rounded 
+  text-start text-base  text-[#151B18] font-made font-light  uppercase opacity-70`,
+  active && tw`text-brightOrange opacity-100 font-bold`,
 ]);
 
 export const ToggleButton = styled.div(({ open }) => [
