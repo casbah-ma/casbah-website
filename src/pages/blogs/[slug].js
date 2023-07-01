@@ -50,7 +50,7 @@ const BlogInfoPage = ({ data }) => {
   return (
     <div
       className={
-        'w-full flex flex-col justify-center items-center gap-16 p-[1rem] md:p-16'
+        'w-full flex flex-col justify-center items-center gap-16 p-[1rem] md:pt-16 md:p-0'
       }
     >
       <Breadcrumb parent={data.parent} slug={router.query.slug} />

@@ -12,7 +12,7 @@ export const getStaticProps = ({ locale }) => {
 };
 const Lab = ({ data }) => {
   return (
-    <div className="h-full flex flex-col justify-center items-center gap-36 p-[2rem] md:p-16 mb-20">
+    <div className="h-full flex flex-col justify-center items-center gap-36 md:pt-16 mb-20">
       <BlogsSectionV2 {...data} />
     </div>
   );
