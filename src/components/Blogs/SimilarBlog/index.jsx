@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 
 const SimilarBlog = ({ blogs }) => {
   const { t } = useTranslation();
-  const router = useRouter()
+  const router = useRouter();
 
   const handleClick = (slug) => {
     router.push(`/blogs/${slug}`);
@@ -33,11 +33,12 @@ const SimilarBlog = ({ blogs }) => {
         }}
       >
         {blogs?.map((item, i) => (
-          <SwiperSlide
-            className="md:!w-[31.813rem] !h-fit"
-            key={item.name + i}
-          >
-            <BlogsCard {...item} variant="v2" onClick={() => handleClick(item?.slug)} />
+          <SwiperSlide className="md:!w-[31.813rem] !h-fit" key={item.name + i}>
+            <BlogsCard
+              {...item}
+              variant="v2"
+              onClick={() => handleClick(item?.slug)}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

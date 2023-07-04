@@ -9,7 +9,6 @@ export const container = {
   scroll: (i = 1) => ({
     transition: { staggerChildren: 0.05, delayChildren: i * 0 },
   }),
-  
 };
 
 export const child = {
@@ -27,7 +26,7 @@ export const child = {
       type: 'spring',
       damping: 10,
       stiffness: 200,
-    }
+    },
   },
   click: {
     y: [6, 0],

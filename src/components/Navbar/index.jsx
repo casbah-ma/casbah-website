@@ -86,7 +86,7 @@ const Navbar = () => {
           <Social>
             <MediaWrapper>
               {media.map((social, index) => (
-                <Link key={index} href={social.url} target='_blank'>
+                <Link key={index} href={social.url} target="_blank">
                   <social.icon />
                 </Link>
               ))}

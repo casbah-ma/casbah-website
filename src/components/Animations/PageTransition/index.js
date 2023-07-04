@@ -53,9 +53,7 @@ const TransitionPage = ({}) => {
   }, [router.route]);
 
   return (
-    <motion.div
-      className="w-full h-full absolute"
-    >
+    <motion.div className="w-full h-full absolute">
       <motion.div
         animate={controls}
         className="w-screen h-full text-white absolute"
