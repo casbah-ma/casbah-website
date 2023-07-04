@@ -25,8 +25,8 @@ export default function Home({ data }) {
   const [scrollDirection, setScrollDirection] = useState('');
   const [scroll, setScroll] = useState(0);
 
-  const debouncedScrollDirection = useDebounce(scrollDirection, 500);
-  const debouncedScroll = useDebounce(scroll, 500);
+  const debouncedScrollDirection = useDebounce(scrollDirection, 100);
+  const debouncedScroll = useDebounce(scroll, 100);
 
   const sections = useMemo(
     () => [
