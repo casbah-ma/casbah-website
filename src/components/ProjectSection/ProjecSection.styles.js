@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import tw, { styled } from 'twin.macro';
 
 export const Wrapper = styled(motion.div)`
-  ${tw`absolute inset-0 h-screen z-[9999] bg-white cursor-none`}
+  ${tw`absolute inset-0 h-screen z-[9999] overflow-hidden bg-white `}
 `;
 
 export const imageStyle = tw`w-full h-full`;
@@ -16,13 +16,13 @@ export const Backdrop = styled.div`
 `;
 
 export const Content = styled(motion.div)`
-  ${tw`z-20 absolute left-4 bottom-[10vh] w-[80%] flex flex-col gap-28 overflow-y-hidden  !cursor-none
-      md:(left-[4.5rem] w-[66%] gap-32)
-      lg:(left-[7.5rem] bottom-40 w-[60%] gap-28)`}
+  ${tw`z-20 absolute left-4 bottom-[7vh] w-[80%] flex flex-col overflow-y-hidden gap-8
+      md:(left-[4.5rem] bottom-[5.5rem] w-[66%])
+      lg:(left-[7.5rem]  w-[60%])`}
 `;
 
 export const Tags = styled(motion.ul)`
-  ${tw`w-full flex justify-start items-center gap-2 overflow-y-hidden`}
+  ${tw`font-inter w-full flex justify-start items-center gap-2 overflow-y-hidden`}
 `;
 
 export const Tag = styled(motion.li)`

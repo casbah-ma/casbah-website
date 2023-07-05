@@ -61,6 +61,11 @@ function ProjecSection({ imgSrc, title, tags, isFirst, slug, ...rest }) {
       onClick={handleClick}
       {...rest}
     >
+      {position.x && position.y && (
+        <ReadMore x={position.x} y={position.y} style={{ zIndex: 1000000 }}>
+          {t('fullproject')}
+        </ReadMore>
+      )}
       <ImageWrapper
         key={imgSrc}
         variants={isFirst ? imageVariant : imageVariant2}
@@ -80,11 +85,6 @@ function ProjecSection({ imgSrc, title, tags, isFirst, slug, ...rest }) {
         <motion.div variants={titleVariant}>
           <AnimatedDisplay color="white" renderAs="h1" size="lg" text={title} />
         </motion.div>
-        {position.x && position.y && (
-          <ReadMore x={position.x} y={position.y} style={{ zIndex: 1000000 }}>
-            {t('fullproject')}
-          </ReadMore>
-        )}
       </Content>
     </Wrapper>
   );

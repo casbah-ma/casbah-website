@@ -3,7 +3,7 @@ import tw, { GlobalStyles as BaseStyles } from 'twin.macro';
 
 const CustomStyles = createGlobalStyle`
     body {
-        ${tw`antialiased`}
+        ${tw`overflow-hidden`}
     }
     .blog > ol > li::before{
       content: '0'counter(items);
@@ -26,7 +26,7 @@ const CustomStyles = createGlobalStyle`
       height: fit-content !important;
     }
 
-
+  }
 `;
 
 const GlobalStyles = () => (

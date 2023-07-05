@@ -76,6 +76,6 @@ export default function Portfolio({ data }) {
   }, [sections.length]);
 
   return (
-    <AnimatePresence mode="wait">{sections[activeSection]}</AnimatePresence>
+    <AnimatePresence mode="wait"> {sections[activeSection]}</AnimatePresence>
   );
 }
