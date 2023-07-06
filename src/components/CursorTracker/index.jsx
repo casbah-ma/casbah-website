@@ -5,8 +5,8 @@ import useTranslation from 'next-translate/useTranslation';
 
 const CursorTracker = ({ text }) => {
   const { t } = useTranslation();
-  const cursorX = useMotionValue(-100);
-  const cursorY = useMotionValue(-100);
+  const cursorX = useMotionValue(-200);
+  const cursorY = useMotionValue(-200);
 
   const springConfig = { mass: 0.6 };
   const cursorXSpring = useSpring(cursorX, springConfig);
