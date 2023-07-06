@@ -76,7 +76,7 @@ const NavMiniList = ({ name, options, Icon, languages }) => {
             ))}
           </div>
           <ToggleButton open={isOpen}>
-            <ArrowDown className=""/>
+            <ArrowDown className="" />
           </ToggleButton>
         </motion.div>
         <MobileToggle>

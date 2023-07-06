@@ -5,11 +5,10 @@ export default {
   component: PortfolioGrid,
 };
 
-
 const Template = (args) => <PortfolioGrid {...args} />;
 
-export const Variant1 = Template.bind({})
-export const Variant2 = Template.bind({})
+export const Variant1 = Template.bind({});
+export const Variant2 = Template.bind({});
 
 Variant1.args = {
   variant: 'v1',
@@ -47,6 +46,6 @@ Variant1.args = {
 };
 
 Variant2.args = {
-    ...Variant1.args,
-    variant: 'v2',
-}
+  ...Variant1.args,
+  variant: 'v2',
+};

@@ -8,14 +8,14 @@ export const sizes = {
 };
 
 export const SpecialStyle = styled(motion.div)`
-  ${tw`w-full font-mako font-normal text-base md:text-lg lg:text-2xl
+  ${tw`w-full font-made font-light text-base md:text-lg lg:text-2xl
     text-darkBlue overflow-y-hidden`};
   ${({ size }) => sizes[size]}
   ${({ uppercase }) => uppercase && tw`uppercase`}
 `;
 
 export const LineWrapper = styled(motion.p)`
-  ${tw`overflow-y-hidden`}
+  ${tw`overflow-y-hidden  `}
 `;
 
 export const Line = styled(motion.span)`

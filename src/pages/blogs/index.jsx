@@ -12,11 +12,9 @@ export const getStaticProps = ({ locale }) => {
 };
 
 const Blogs = ({ data }) => {
- 
-
   return (
     <div className="flex flex-col justify-center items-center gap-36 p-[2rem] md:(p-0 pt-16)">
-      <BlogsSection blogs={data}/>
+      <BlogsSection blogs={data} />
     </div>
   );
 };

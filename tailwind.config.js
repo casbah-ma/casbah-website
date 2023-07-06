@@ -28,11 +28,10 @@ module.exports = {
         // sm: '414px',
         md: '600px',
         sm: '414px',
-
       },
       listStyleType: {
-        zero: 'decimal-leading-zero;'
-      }
+        zero: 'decimal-leading-zero;',
+      },
     },
   },
   plugins: [],

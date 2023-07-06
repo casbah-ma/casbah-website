@@ -30,8 +30,8 @@ export const imagesSize = (index, variant) => {
 export const Wrapper = tw.section`w-full flex flex-col justify-center items-center gap-24`;
 
 export const ImagesGrid = styled.div`
-    ${tw`w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3`}
-    ${({ variant }) => variant === 'v2' && tw`md:!grid-cols-3 lg:!grid-cols-4`}
+  ${tw`w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3`}
+  ${({ variant }) => variant === 'v2' && tw`md:!grid-cols-3 lg:!grid-cols-4`}
 `;
 
 export const GridContent = tw.div`w-full flex flex-col justify-start items-start md:max-w-[38.188rem] lg:(max-w-[51.813rem])  self-end gap-5 [&>div]:mt-10`;

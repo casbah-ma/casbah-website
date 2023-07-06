@@ -57,7 +57,7 @@ const BlogInfoPage = ({ data }) => {
       <BlogHeader {...data} />
       <BlogBody body={data.body.html} />
       <ShareSection {...StaticData.share} />
-      <SimilarBlog  blogs={data.allBlogs} />
+      <SimilarBlog blogs={data.allBlogs} />
     </div>
   );
 };

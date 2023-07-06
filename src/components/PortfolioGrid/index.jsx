@@ -13,7 +13,12 @@ const PortfolioGrid = ({ text, images, variant, ...rest }) => {
     <Wrapper {...rest}>
       <ImagesGrid variant={variant}>
         {images.map((image, index) => (
-          <MyImage sizes={imagesSize(index, variant)} src={image} alt={'img'+index} key={'img'+index} />
+          <MyImage
+            sizes={imagesSize(index, variant)}
+            src={image}
+            alt={'img' + index}
+            key={'img' + index}
+          />
         ))}
       </ImagesGrid>
       <GridContent>

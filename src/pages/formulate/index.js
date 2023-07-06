@@ -23,7 +23,10 @@ function Formulate({ data }) {
     <div className="flex flex-col justify-center items-center gap-[120px] mb-36">
       <LottieText lottie={formulate} />
       <Header {...data.headerProps} isVertical={true} />
-      <PicThreeLeft {...data.pic3LeftProps} className="max-w-[71.8rem] ml-auto" />
+      <PicThreeLeft
+        {...data.pic3LeftProps}
+        className="max-w-[71.8rem] ml-auto"
+      />
       <PicTop
         {...data.picTopProps}
         variant="v3"

@@ -30,7 +30,7 @@ function HomeSection({
           style={{ height: '40vh', width: '100%' }}
         />
       </motion.div>
-      <Content $isCenter={variant === 'centre'}>
+      <Content variant={variant}>
         <TitleWrapper>
           {subtitle && (
             <AnimatedDisplay renderAs={motion.span} text={subtitle} size="md" />
