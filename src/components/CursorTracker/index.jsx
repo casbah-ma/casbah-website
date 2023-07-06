@@ -15,8 +15,8 @@ const CursorTracker = ({ text }) => {
   useEffect(() => {
     const updatePosition = (e) => {
       const { clientX, clientY } = e;
-      cursorX.set(clientX - 180);
-      cursorY.set(clientY - 180);
+      cursorX.set(clientX - 80);
+      cursorY.set(clientY - 80);
     };
     window.addEventListener('mousemove', updatePosition);
 
