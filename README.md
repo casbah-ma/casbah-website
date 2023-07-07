@@ -1,5 +1,5 @@
 # casbah-website
 
-#### Components (Storybook)
+#### Components
 
 https://storybook-casbah-website.vercel.app
