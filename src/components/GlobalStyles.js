@@ -2,9 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import tw, { GlobalStyles as BaseStyles } from 'twin.macro';
 
 const CustomStyles = createGlobalStyle`
-    body {
-        ${tw`overflow-hidden`}
-    }
+  
     .blog > ol > li::before{
       content: '0'counter(items);
     }
