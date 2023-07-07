@@ -10,6 +10,6 @@ const Template = (args) => <Hero {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   title: 'this will be our hint title',
-  subtitle:
-    'this can be a small description of what casbah is doing and it market niche ',
+  description:
+    'this can be a small description of what casbah is doing and it market niche',
 };

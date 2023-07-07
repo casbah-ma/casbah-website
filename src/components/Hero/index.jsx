@@ -6,23 +6,23 @@ import Paragraph from '../Paragraph';
 import { motion } from 'framer-motion';
 import hero from '../../lotties/hero.json';
 
-function Hero({ title, subtitle, ...rest }) {
+function Hero({ title, description, ...rest }) {
   return (
     <Wrapper {...rest}>
-      <motion.div className="self-center" exit={{ opacity: 0 }}>
+      <motion.div exit={{ opacity: 0 }}>
         <Player
           keepLastFrame
           autoplay
           loop={false}
           src={hero}
-          style={{ height: '50vh', width: '100%' }}
+          style={{ height: '40vh', width: '100%' }}
         />
       </motion.div>
       <Content>
-        <Title withoutBorder={true} renderAs="h1">
+        <Title withoutBorder={true} renderAs="h2">
           {title}
         </Title>
-        <Paragraph size="md">{subtitle}</Paragraph>
+        <Paragraph size="md">{description}</Paragraph>
       </Content>
     </Wrapper>
   );
@@ -30,7 +30,7 @@ function Hero({ title, subtitle, ...rest }) {
 
 Hero.propTypes = {
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
 
 export default Hero;

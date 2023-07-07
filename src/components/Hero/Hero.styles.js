@@ -8,8 +8,7 @@ export const Wrapper = styled(motion.section)`
        lg:(gap-16 px-16 pt-28 pb-6)`}
 `;
 
-export const Content = tw.div`flex flex-col w-full gap-4 lg:(w-1/2 gap-6)`;
-
-export const Texts = tw.div`
-   flex w-full flex-col gap-3 lg:gap-4
- `;
+export const Content = tw.div`
+  flex flex-col w-full gap-4 
+  lg:(w-[34rem] gap-6)
+`;

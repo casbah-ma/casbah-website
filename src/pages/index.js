@@ -12,6 +12,7 @@ import Lottie_07 from '@/lotties/Lottie_07.json';
 import { useDebounce } from '../hooks/useDebounce';
 import { AnimatePresence } from 'framer-motion';
 import Footer from '../components/Footer';
+import Hero from '../components/Hero';
 
 export const getStaticProps = ({ locale }) => {
   const data = allHomes.find((home) => home.lang === locale);
@@ -29,6 +30,7 @@ export default function Home({ data }) {
   const debouncedScroll = useDebounce(scroll, 100);
 
   const sections = [
+    <Hero key="hero" {...data.heroProps} />,
     <HomeSection
       key={0}
       {...data.sectionProps}
