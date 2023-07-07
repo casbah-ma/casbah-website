@@ -1,4 +1,7 @@
 ---
+heroProps:
+  title: ''
+  description: ''
 sectionProps:
   title: ''
   texts:

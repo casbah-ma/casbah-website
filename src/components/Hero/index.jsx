@@ -5,8 +5,10 @@ import Title from '../Title';
 import Paragraph from '../Paragraph';
 import { motion } from 'framer-motion';
 import hero from '../../lotties/hero.json';
+import { useState } from 'react';
 
 function Hero({ title, description, ...rest }) {
+  const [showText, setShowText] = useState(false);
   return (
     <Wrapper {...rest}>
       <motion.div exit={{ opacity: 0 }}>
@@ -16,14 +18,19 @@ function Hero({ title, description, ...rest }) {
           loop={false}
           src={hero}
           style={{ height: '40vh', width: '100%' }}
+          onEvent={(e) => {
+            if (e === 'complete') setShowText(true);
+          }}
         />
       </motion.div>
-      <Content>
-        <Title withoutBorder={true} renderAs="h2">
-          {title}
-        </Title>
-        <Paragraph size="md">{description}</Paragraph>
-      </Content>
+      {showText && (
+        <Content>
+          <Title withoutBorder={true} renderAs="h2">
+            {title}
+          </Title>
+          <Paragraph size="md">{description}</Paragraph>
+        </Content>
+      )}
     </Wrapper>
   );
 }
