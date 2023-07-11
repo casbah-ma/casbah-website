@@ -14,7 +14,6 @@ import { AnimatePresence } from 'framer-motion';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 
-
 export const getStaticProps = async ({ locale }) => {
   const data = allHomes.find((home) => home.lang === locale);
   return {
@@ -126,8 +125,6 @@ export default function Home({ data }) {
   }, [sections.length]);
 
   return (
-    waitLoad(2) && (
-      <AnimatePresence mode="sync">{sections[activeSection]}</AnimatePresence>
-    )
+    <AnimatePresence mode="sync">{sections[activeSection]}</AnimatePresence>
   );
 }
