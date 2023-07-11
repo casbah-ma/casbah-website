@@ -12,7 +12,8 @@ import Lottie_07 from '@/lotties/Lottie_07.json';
 import { useDebounce } from '../hooks/useDebounce';
 import { AnimatePresence } from 'framer-motion';
 import Footer from '../components/Footer';
-import { waitLoad } from '../helpers/utils';
+import Hero from '../components/Hero';
+
 
 export const getStaticProps = async ({ locale }) => {
   const data = allHomes.find((home) => home.lang === locale);
@@ -26,73 +27,64 @@ export default function Home({ data }) {
   const [scrollDirection, setScrollDirection] = useState('');
   const [scroll, setScroll] = useState(0);
 
-  const debouncedScrollDirection = useDebounce(scrollDirection, 500);
-  const debouncedScroll = useDebounce(scroll, 500);
+  const debouncedScrollDirection = useDebounce(scrollDirection, 100);
+  const debouncedScroll = useDebounce(scroll, 100);
 
-  const sections = useMemo(
-    () => [
-      <HomeSection
-        key={0}
-        {...data.sectionProps}
-        lottie={straightLine}
-        variant="left"
-      />,
-      <HomeSection
-        key={1}
-        {...data.sectionProps1}
-        lottie={Lottie_02}
-        variant="right"
-      />,
-      <HomeSection
-        key={2}
-        {...data.sectionProps2}
-        lottie={Lottie_03}
-        variant="left"
-      />,
-      <HomeSection
-        key={3}
-        {...data.sectionProps3}
-        lottie={Lottie_04}
-        variant="right"
-      />,
-      <HomeSection
-        key={4}
-        {...data.sectionProps4}
-        lottie={Lottie_05}
-        variant="left"
-      />,
-      <HomeSection
-        key={5}
-        {...data.sectionProps5}
-        lottie={Lottie_06}
-        variant="left"
-      />,
+  const sections = [
+    <Hero key="hero" {...data.heroProps} />,
+    <HomeSection
+      key={0}
+      {...data.sectionProps}
+      lottie={straightLine}
+      variant="left"
+    />,
+    <HomeSection
+      key={1}
+      {...data.sectionProps1}
+      lottie={Lottie_02}
+      variant="right"
+    />,
+    <HomeSection
+      key={2}
+      {...data.sectionProps2}
+      lottie={Lottie_03}
+      variant="left"
+    />,
+    <HomeSection
+      key={3}
+      {...data.sectionProps3}
+      lottie={Lottie_04}
+      variant="right"
+    />,
+    <HomeSection
+      key={4}
+      {...data.sectionProps4}
+      lottie={Lottie_05}
+      variant="left"
+    />,
+    <HomeSection
+      key={5}
+      {...data.sectionProps5}
+      lottie={Lottie_06}
+      variant="left"
+    />,
 
-      <HomeSection
-        key={6}
-        {...data.sectionProps6}
-        lottie={Lottie_07}
-        variant="centre"
-      />,
-      <div
-        key={7}
-        className="absolute left-0 top-[5.75rem] bottom-0 md:(top-none ) w-full flex-1 flex justify-center items-center bg-deepBlue [&>footer]:z-50"
-      >
-        <Footer />
-      </div>,
-    ],
-    [
-      data.sectionProps,
-      data.sectionProps1,
-      data.sectionProps2,
-      data.sectionProps3,
-      data.sectionProps4,
-      data.sectionProps5,
-      data.sectionProps6,
-    ]
-  );
+    <HomeSection
+      key={6}
+      {...data.sectionProps6}
+      lottie={Lottie_07}
+      variant="centre"
+    />,
+    <div
+      key={7}
+      className="absolute left-0 top-[5.75rem] bottom-0 md:(top-none ) w-full flex-1 flex justify-center items-center bg-deepBlue [&>footer]:z-50"
+    >
+      <Footer />
+    </div>,
+  ];
 
   useEffect(() => {
+    console.log('here');
     if (debouncedScrollDirection === 'up') {
       setActiveSections((prev) => (prev > 0 ? prev - 1 : prev));
     } else if (debouncedScrollDirection === 'down') {
@@ -107,10 +99,10 @@ export default function Home({ data }) {
     const handleWheel = (e) => {
       if (e.deltaY < 0) {
         setScrollDirection('down');
-        setScroll(e.deltaY);
+        setScroll((prev) => e.deltaY - prev);
       } else if (e.deltaY > 0) {
         setScrollDirection('up');
-        setScroll(e.deltaY);
+        setScroll((prev) => e.deltaY + prev);
       }
     };
 

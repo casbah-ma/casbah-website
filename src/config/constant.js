@@ -95,7 +95,6 @@ export const media = [
   },
 ];
 
-
 export const socialMedia = [
   {
     name: 'facebook',
@@ -115,21 +114,21 @@ export const socialMedia = [
   {
     name: 'github',
     icon: GithubSVG,
-    url: 'https://github.com/casbah-ma'
+    url: 'https://github.com/casbah-ma',
   },
   {
     name: 'twitter',
     icon: TwitterSVG,
-    url: 'https://twitter.com/casbah_ma'
+    url: 'https://twitter.com/casbah_ma',
   },
   {
     name: 'dribbble',
     icon: DribbbleSVG,
-    url: 'https://dribbble.com/casbah_ma'
+    url: 'https://dribbble.com/casbah_ma',
   },
   {
     name: 'behance',
     icon: BehanceSVG,
-    url: 'https://www.behance.net/casbahma'
+    url: 'https://www.behance.net/casbahma',
   },
-]
+];

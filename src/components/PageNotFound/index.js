@@ -11,7 +11,7 @@ import useTranslation from 'next-translate/useTranslation';
 
 const PageNotFound = () => {
   const [divCount, setDivCount] = useState();
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   useEffect(() => {
     const breakpoint = (screenWidth) => {
       if (screenWidth < 768) return 37;
@@ -30,8 +30,6 @@ const PageNotFound = () => {
   // Create an array of divs
   const divs = Array.from({ length: divCount });
 
-
-
   return (
     <Wrapper>
       <DivsWrapper>
@@ -41,7 +39,7 @@ const PageNotFound = () => {
       </DivsWrapper>
       <Content>
         <Title>404</Title>
-        <SubTitle>{t("_404")}</SubTitle>
+        <SubTitle>{t('_404')}</SubTitle>
       </Content>
     </Wrapper>
   );

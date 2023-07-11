@@ -25,29 +25,24 @@ import { useEffect, useState } from 'react';
 import { ReadMore } from '../BlogsSection/BlogsSection.styles';
 import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
+import CursorTracker from '../CursorTracker';
 
 function ProjecSection({ imgSrc, title, tags, isFirst, slug, ...rest }) {
-  const [position, setPosition] = useState({ x: null, y: null });
-  const { t } = useTranslation();
   const router = useRouter();
 
-  useEffect(() => {
-    const updatePosition = (e) => {
-      const { clientX, clientY } = e;
-      setPosition({ x: clientX, y: clientY });
-    };
-    const updatePagePosition = (e) => {
-      const { pageX, pageY } = e;
-      setPosition({ x: pageX, y: pageY });
-    };
+  // useEffect(() => {
 
-    window.addEventListener('DOMContentLoaded', updatePagePosition);
-    window.addEventListener('mousemove', updatePosition);
+  //   const updatePagePosition = (e) => {
+  //     const { pageX, pageY } = e;
+  //     setPosition({ x: pageX, y: pageY });
+  //   };
 
-    return () => {
-      window.removeEventListener('mousemove', updatePosition);
-    };
-  }, []);
+  //   window.addEventListener('DOMContentLoaded', updatePagePosition);
+
+  //   return () => {
+  //     window.removeEventListener('mousemove', updatePosition);
+  //   };
+  // }, []);
 
   const handleClick = () => {
     router.push(`/blogs/${slug}`);
@@ -61,6 +56,7 @@ function ProjecSection({ imgSrc, title, tags, isFirst, slug, ...rest }) {
       onClick={handleClick}
       {...rest}
     >
+      <CursorTracker text="fullProject" />
       <ImageWrapper
         key={imgSrc}
         variants={isFirst ? imageVariant : imageVariant2}
@@ -80,17 +76,7 @@ function ProjecSection({ imgSrc, title, tags, isFirst, slug, ...rest }) {
         <motion.div variants={titleVariant}>
           <AnimatedDisplay color="white" renderAs="h1" size="lg" text={title} />
         </motion.div>
-      {position.x && position.y && (
-        <ReadMore
-          x={position.x}
-          y={position.y}
-          style={{ zIndex: 1000000 }}
-        >
-          {t('fullproject')}
-        </ReadMore>
-      )}
       </Content>
-
     </Wrapper>
   );
 }

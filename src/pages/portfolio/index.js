@@ -21,8 +21,8 @@ export default function Portfolio({ data }) {
   const [scrollDirection, setScrollDirection] = useState('');
   const [scroll, setScroll] = useState(0);
 
-  const debouncedScrollDirection = useDebounce(scrollDirection, 500);
-  const debouncedScroll = useDebounce(scroll, 500);
+  const debouncedScrollDirection = useDebounce(scrollDirection, 300);
+  const debouncedScroll = useDebounce(scroll, 300);
 
   const sections = useMemo(
     () => [
@@ -49,10 +49,10 @@ export default function Portfolio({ data }) {
     const handleWheel = (e) => {
       if (e.deltaY < 0) {
         setScrollDirection('down');
-        setScroll(e.deltaY);
+        setScroll((prev) => e.deltaY - prev);
       } else if (e.deltaY > 0) {
         setScrollDirection('up');
-        setScroll(e.deltaY);
+        setScroll((prev) => e.deltaY + prev);
       }
     };
 
@@ -76,6 +76,6 @@ export default function Portfolio({ data }) {
   }, [sections.length]);
 
   return (
-    <AnimatePresence mode="wait">{sections[activeSection]}</AnimatePresence>
+    <AnimatePresence mode="wait"> {sections[activeSection]}</AnimatePresence>
   );
 }

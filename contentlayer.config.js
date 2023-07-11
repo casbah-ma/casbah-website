@@ -30,6 +30,7 @@ export const Home = defineDocumentType(() => ({
   name: 'Home',
   filePathPattern: `home/**/*.md`,
   fields: {
+    heroProps: { type: 'nested', of: headerPropsType },
     sectionProps: { type: 'nested', of: homeSectionPropsType },
     sectionProps1: { type: 'nested', of: homeSectionPropsType },
     sectionProps2: { type: 'nested', of: homeSectionPropsType },

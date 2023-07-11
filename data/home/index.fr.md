@@ -1,4 +1,7 @@
 ---
+heroProps:
+  title: ''
+  description: ''
 sectionProps:
   title: ''
   texts:
@@ -12,19 +15,19 @@ sectionProps2:
   texts:
     - ''
 sectionProps3:
-  title: ""
+  title: ''
   subtitle: ''
   texts:
-    - ""
+    - ''
 sectionProps4:
   title: ''
   texts:
-    - ""
+    - ''
 sectionProps5:
   title: ''
   texts:
     - ''
 sectionProps6:
   title: ''
-  subtitle: ""
+  subtitle: ''
 ---

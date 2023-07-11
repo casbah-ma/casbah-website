@@ -4,19 +4,9 @@ import BlogsCard from '../BlogsCard';
 import { useEffect, useState } from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import { useRouter } from 'next/router';
+import CursorTracker from '../CursorTracker';
 
 function BlogsSection({ blogs }) {
-  const { t } = useTranslation();
-  const [position, setPosition] = useState({ x: null, y: null });
-
-  useEffect(() => {
-    const updatePosition = (e) => {
-      const { clientX, clientY } = e;
-      setPosition({ x: clientX, y: clientY });
-    };
-    window.addEventListener('mousemove', updatePosition);
-  }, []);
-
   const route = useRouter();
 
   const handleBlogClick = (slug) => {
@@ -25,6 +15,7 @@ function BlogsSection({ blogs }) {
 
   return (
     <Grid>
+      <CursorTracker text="readMore" />
       {blogs?.length > 0 &&
         blogs.map((blog, i) => (
           <BlogsCard

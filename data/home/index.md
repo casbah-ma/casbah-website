@@ -1,4 +1,7 @@
 ---
+heroProps:
+  title: 'this will be our hint title'
+  description: 'this can be a small description of what casbah is doing and it market niche'
 sectionProps:
   title: 'The brief is often clear : Starting from "A" to go to "B"'
   texts:

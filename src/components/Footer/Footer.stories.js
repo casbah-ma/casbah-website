@@ -5,9 +5,8 @@ export default {
   component: Footer,
 };
 
-
 export const Default = () => <Footer />;
 
 Default.story = {
-    name: 'default',
+  name: 'default',
 };
