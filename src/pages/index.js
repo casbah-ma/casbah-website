@@ -12,8 +12,9 @@ import Lottie_07 from '@/lotties/Lottie_07.json';
 import { useDebounce } from '../hooks/useDebounce';
 import { AnimatePresence } from 'framer-motion';
 import Footer from '../components/Footer';
+import { waitLoad } from '../helpers/utils';
 
-export const getStaticProps = ({ locale }) => {
+export const getStaticProps = async ({ locale }) => {
   const data = allHomes.find((home) => home.lang === locale);
   return {
     props: { data },
@@ -133,6 +134,8 @@ export default function Home({ data }) {
   }, [sections.length]);
 
   return (
-    <AnimatePresence mode="sync">{sections[activeSection]}</AnimatePresence>
+    waitLoad(2) && (
+      <AnimatePresence mode="sync">{sections[activeSection]}</AnimatePresence>
+    )
   );
 }

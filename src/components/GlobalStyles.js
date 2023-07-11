@@ -5,10 +5,43 @@ const CustomStyles = createGlobalStyle`
     body {
         ${tw`antialiased`}
     }
+  
+    .wave span {
+      position: relative !important;
+      display: inline-block !important;
+    }
+
+
+    .wave:hover span {
+      animation: animate 1s ease-out;
+      animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .wave:target span{
+      animation: animate 1s ease-out;
+      animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    
+    @keyframes animate {
+      0% {
+        transform: translateY(0px);
+      }
+
+      20% {
+        transform: translateY(-5px);
+      }
+
+      40%,
+      100% {
+        transform: translateY(0px);
+      
+      }
+    }
+
     .blog > ol > li::before{
       content: '0'counter(items);
     }
-    
+
     .blog > ol > li:nth-child(n + 10)::before {
     content: counter(items);
       }
@@ -26,7 +59,7 @@ const CustomStyles = createGlobalStyle`
       height: fit-content !important;
     }
 
-
+   
 `;
 
 const GlobalStyles = () => (

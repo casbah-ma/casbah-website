@@ -34,7 +34,7 @@ function BlogsSection({ blogs }) {
             onClick={() => handleBlogClick(blog.slug)}
           />
         ))}
-      {/* {position.x && position.y && (
+      {position.x && position.y && (
         <ReadMore
           x={position.x}
           y={position.y}
@@ -42,7 +42,7 @@ function BlogsSection({ blogs }) {
         >
           {t('readMore')}
         </ReadMore>
-      )} */}
+      )}
     </Grid>
   );
 }

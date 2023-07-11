@@ -59,24 +59,19 @@ const Navbar = () => {
                 link?.url && (
                   <Link key={index} href={link?.url}>
                     <LinkLabel>
-                      <motion.div
-                        className="w-full flex overflow-hidden"
-                        variants={container}
-                        initial="hidden"
-                        animate="hidden"
-                        whileTap="click"
-                        whileHover="visible"
-                      >
+                      <div className="wave w-full  ">
                         {Array.from(t(link.name)).map((letter, index) => (
-                          <motion.div
+                          <span
                             key={index}
                             variants={child}
                             className={index == 0 ? 'capitalize' : undefined}
+                            style={{ animationDelay: `${0.07 * index}s` }}
+                            data-index={index}
                           >
                             {letter === ' ' ? '\u00A0' : letter}
-                          </motion.div>
+                          </span>
                         ))}
-                      </motion.div>
+                      </div>
                     </LinkLabel>
                   </Link>
                 )
@@ -86,7 +81,7 @@ const Navbar = () => {
           <Social>
             <MediaWrapper>
               {media.map((social, index) => (
-                <Link key={index} href={social.url} target='_blank'>
+                <Link key={index} href={social.url} target="_blank">
                   <social.icon />
                 </Link>
               ))}
