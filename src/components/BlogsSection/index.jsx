@@ -25,15 +25,6 @@ function BlogsSection({ blogs }) {
             onClick={() => handleBlogClick(blog.slug)}
           />
         ))}
-      {position.x && position.y && (
-        <ReadMore
-          x={position.x}
-          y={position.y}
-          // onClick={() => handleBlogClick(blog.slug)}
-        >
-          {t('readMore')}
-        </ReadMore>
-      )}
     </Grid>
   );
 }
