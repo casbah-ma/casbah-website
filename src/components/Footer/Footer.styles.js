@@ -1,75 +1,63 @@
 import tw from 'twin.macro';
 
-export const imageSize = tw`w-[10.563rem] h-[1.143rem] lg:(w-[258px] h-[1.744rem])`;
+export const imageSize = tw`w-[8.063rem] h-3.5 lg:(w-[12.125rem] h-[1.313rem])`;
 export const socialSize = tw`w-[1.713rem] h-[1.713rem]
                             md:(w-[1.477rem] h-[1.477rem])
                             lg:(w-8 h-8)`;
 
-export const FooterWrapper = tw.footer`w-full h-[47rem] bg-deepBlue p-4 pt-6 flex flex-col justify-center items-center -z-20
-                                        md:(h-[29.438rem] )
-                                        lg:(h-[37.5rem])`;
+export const FooterWrapper = tw.footer`w-screen h-[65.375rem] bg-deepBlue flex flex-col justify-between items-center -z-20 mt-10
+                                        md:(h-[41rem] )
+                                        lg:(h-[26.688rem])`;
 
-export const FooterContainer = tw.div`w-full p-0 flex flex-col md:flex-row justify-center items-center z-30`;
+export const FooterContainer = tw.div`w-full h-full flex flex-col  justify-start items-start z-30  text-white
+                                        pt-[4.813rem] pl-4 gap-[3.666rem]
+                                        md:(px-[2.313rem] pt-[2.625rem] gap-[4.813rem])
+                                        lg:(flex-row px-[4.5rem] pt-[2.5rem] max-w-[87.5rem] gap-[15rem])
+                                        xl:(gap-[24.625rem])`;
 
-export const FooterCol = tw.div`w-full flex flex-col self-start md:(-mr-[1px] self-end w-fit)`;
+export const FooterTitle = tw.h2`text-lg font-medium font-made text-white uppercase`;
 
-export const FooterLogo = tw.div`w-full h-[5.313rem] border border-solid border-white 
-                                flex justify-center items-center py-8 px-10
-                                md:(w-[14.75rem] h-[6rem] py-7 px-8 self-end)
-                                lg:(w-[37.125rem] h-[6.75rem])`;
-export const SocialWrapper = tw.div`w-full h-fit md:w-fit flex flex-col md:self-end lg:(flex-row)`;
-export const FooterSocial = tw.label`-mt-[1px] w-[95%] h-[4.688rem] sm:w-[20.9rem] font-made font-light 
-                                    uppercase text-2xl text-white border  border-solid border-white 
-                                    flex justify-center items-center
-                                    md:(w-[17.438rem] h-[4rem] py-7 px-8 self-end)
-                                    lg:(w-[12.313rem] h-[7.688rem] )`;
+export const FooterInfo = tw.div`w-full lg:max-w-[20.125rem] flex flex-col md:(gap-[1.5rem])`;
 
-export const FooterSocialItems = tw.div`-mt-[1px] lg:-ml-[1px] w-fit h-[4rem] sm:h-[5.05rem] font-made 
-                                        font-light uppercase text-2xl text-white 
-                                        border border-solid border-white flex flex-wrap 
-                                        divide-x divide-white
-                                        md:(h-[4.5rem] self-end)
-                                        lg:(h-[7.688rem])`;
-export const SocialItem = tw.div`xs:w-[3.88rem] sm:w-[5.05rem] md:w-[4.5rem] lg:w-[7.688rem] h-full 
-                                    flex justify-center items-center 
-                                    transition duration-300 ease-in-out cursor-pointer
-                                    hover:(bg-grayIsh [&>div]:scale-150) 
-                                    border-solid border-white`;
+export const InfoSection = tw.div`flex flex-col gap-7  md:(flex-row gap-[7.688rem])  lg:(flex-col gap-7)`;
 
-export const FooterTerms = tw.div`w-full -mt-[1px]
-                                flex flex-col justify-start items-start
-                                md:(flex-row w-[38.938rem] h-[3.688rem] border 
-                                border-solid border-white justify-between items-center px-2 ) 
-                                lg:(w-[71.938rem] mr-10 px-9)`;
-export const FooterCopyright = tw.div`w-full text-xs px-2 font-mako font-normal text-white 
-                                    flex justify-center items-center
-                                    border border-solid border-white py-4 -mr-2
-                                    sm:(w-[21.313rem] self-end text-sm px-3)
-                                    md:(w-fit self-auto text-base border-0)`;
-export const FooterTermsItem = tw.div`-mt-[1px] w-full text-xs gap-8 px-8 font-mako font-normal text-white 
-                                    flex justify-center items-center capitalize
-                                    border border-solid border-white py-4 -mr-2 
-                                    [&>a]:(underline underline-offset-4 cursor-pointer)
-                                    sm:(w-[21.313rem] self-start text-sm px-8)
-                                    md:(w-fit self-auto text-base border-0 gap-8 px-5)
-                                    lg:(mr-6 gap-10)`;
+export const Info = tw.div`font-made font-light capitalize max-w-[20.125rem]`;
 
-export const FooterNavigation = tw.div`w-full h-[18.063rem] border border-solid border-white text-white
-                                        self-end -mt-[1px] flex flex-col justify-center items-center
+export const SocialWrapper = tw.div`w-full flex flex-col justify-between items-start  md:(flex-row justify-start gap-[7.688rem]) lg:(gap-[15.373rem] )`;
+
+export const SocialInfo = tw.div`flex self-start flex-col md:(gap-[1.5rem]) `;
+
+export const SocialSection = tw.div`flex flex-col gap-2 md:(flex-none grid grid-cols-2 [grid-gap: 1rem]) lg:(flex flex-col  gap-2) `;
+
+export const FooterNavigation = tw.div`h-[18.063rem]  text-white 
+                                        flex flex-col 
                                         transition-all duration-700 ease-in-out gap-3
-                                        md:(w-[24rem] h-[18.063rem] gap-2 border-l-0) 
-                                        lg:(w-[38.25rem] h-[21.188rem] pl-[11.375rem] gap-6)`;
+                                        md:(gap-[1.5rem])`;
 
-export const FooterNavigationTitle = tw.h2`font-made font-light text-xl sm:text-2xl uppercase self-center lg:self-start`;
+export const FooterNavigationTitle = tw.h2`font-made font-light text-xl sm:text-2xl uppercase self-start`;
 
-export const LinksWrapper = tw.nav`grid grid-cols-2 self-center [grid-gap: 1rem] sm:([grid-gap: 2rem] self-center)  lg:self-start
+export const LinksWrapper = tw.nav`mt-0 grid grid-cols-2 self-center [grid-gap: 1rem] sm:([grid-gap: 2rem] self-start)  lg:self-start
 `;
 
 export const LinkLabel = tw.div`
-    text-white lg:text-base text-lg leading-[1.257rem] capitalize font-made
+    text-white  text-lg lg:text-base leading-[1.257rem] capitalize font-made
     cursor-pointer hover:(text-brightOrange)
-    py-1.5 md:py-2 lg:(pl-0 py-2)`;
+    `;
 
-export const LinksCol = tw.div`col-span-1 flex flex-col`;
+export const LinksCol = tw.div`col-span-1 flex flex-col gap-4`;
 export const SubLink = tw.div`font-made font-light text-sm capitalize
                                 cursor-pointer hover:(text-brightOrange font-bold)`;
+
+export const TermsSection = tw.div`w-full h-fit flex justify-center items-center border-t border-solid border-white`;
+
+export const CopyrightSection = tw.div`w-full flex h-[10.688rem]  text-white py-6
+                                       px-6
+                                       md:(h-[7.938rem] px-[2.313rem] bg-deepBlue) 
+                                       lg:(h-[5.313rem] flex-row justify-between items-center px-[4.5rem] py-8 max-w-[87.5rem]) `;
+
+export const FooterCopyright = tw.p`font-mako font-normal text-base`;
+
+export const FooterTerms = tw.div`flex gap-[3.125rem] capitalize`;
+
+export const MobileTerms = tw.div`w-full h-full flex flex-col gap-6
+                                    md:(flex-row-reverse justify-between items-start)`;          
