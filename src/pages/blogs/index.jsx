@@ -1,5 +1,6 @@
 import BlogsSection from '../../components/BlogsSection';
 import { allBlogs } from 'contentlayer/generated';
+import Footer from '../../components/Footer';
 
 export const getStaticProps = ({ locale }) => {
   const data = allBlogs.filter(

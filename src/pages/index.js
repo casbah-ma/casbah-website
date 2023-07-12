@@ -14,7 +14,7 @@ import { AnimatePresence } from 'framer-motion';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 
-export const getStaticProps = ({ locale }) => {
+export const getStaticProps = async ({ locale }) => {
   const data = allHomes.find((home) => home.lang === locale);
   return {
     props: { data },

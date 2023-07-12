@@ -9,5 +9,5 @@ export const Wrapper = styled.div(({ withLine, isVertical, isSplited }) => [
     tw`[&>p]:w-full md:gap-6 
     lg:(flex-col gap-10 [&>p]:(self-start max-w-[70%]))`,
   isSplited &&
-    tw`md:([&>p]:(self-end w-full)) lg:(flex flex-col gap-14 [&>h1]:max-w-[80%] [&>p]:(self-end w-[60%]))`,
+    tw`md:([&>p]:(self-end w-full)) lg:(flex flex-col gap-14 [&>h1]:max-w-[80%] [&>p]:(self-end w-[60%] bg-amber-400))`,
 ]);
