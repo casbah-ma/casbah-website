@@ -7,12 +7,12 @@ export const Wrapper = tw.div`
 
 export const Content = tw.div`
   flex flex-col w-full  items-end gap-6
-  md:self-end md:gap-8 md:w-[80%] md:items-start
-  lg:w-full lg:items-start lg:gap-10
+  md:(self-end w-[80%] items-start)
+  lg:(w-full items-start )
   `;
 
 export const Texts = tw.div`
-   flex w-[84%] flex-col gap-3 md:w-full lg:gap-4
+   flex w-[84%] flex-col gap-1.5 md:w-full 
  `;
 
 export const imagesSize = {

@@ -6,13 +6,13 @@ export const Wrapper = tw.div`
 `;
 
 export const Content = tw.div`
-  flex flex-col w-full gap-7
-  md:self-start md:gap-[2.125rem] md:items-start
-  lg:w-full lg:items-start lg:gap-10 
+  flex flex-col w-full gap-6
+  md:(self-start items-start)
+  lg:(w-full items-start)
   `;
 
 export const Texts = tw.div`
-   flex w-[84%] self-end flex-col gap-3 md:w-full lg:gap-4
+   flex w-[84%] self-end flex-col gap-1.5 md:w-full 
  `;
 
 export const imagesSize = {

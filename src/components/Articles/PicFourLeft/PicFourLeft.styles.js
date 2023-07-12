@@ -2,17 +2,18 @@ import tw from 'twin.macro';
 
 export const Wrapper = tw.div`
   flex w-full flex-col gap-6 items-start pt-[7.813rem]
-  md:pt-[14.563rem] lg:pt-[13.375rem] lg:flex-row lg:gap-[21rem] 
+  md:pt-[14.563rem] 
+  lg:(pt-[13.375rem] flex-row gap-[21rem] )
 `;
 
 export const Content = tw.div`
   flex flex-col w-full gap-6
-  md:gap-8 md:items-start
-  lg:w-full lg:items-start lg:gap-10 lg:self-center
+  md:items-start
+  lg:(w-full items-start self-center)
   `;
 
 export const Texts = tw.div`
-   flex w-full flex-col gap-3 pl-10 md:pl-0 lg:gap-4
+   flex w-full flex-col gap-1.5 pl-10 md:pl-0 
  `;
 
 export const imagesSize = {
