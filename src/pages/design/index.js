@@ -21,7 +21,7 @@ export const getStaticProps = ({ locale }) => {
 
 function Design({ data }) {
   return (
-    <div className="flex flex-col justify-center items-center gap-[120px] mb-36">
+    <div className="flex flex-col justify-center items-center gap-20 mb-36">
       <LottieText lottie={design} />
       <HeaderV2 {...data.headerProps} variant="v2" />
       <PicLeftRight {...data.picLeftProps} variant="v5" />

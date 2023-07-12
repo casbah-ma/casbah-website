@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import tw, { styled } from 'twin.macro';
 
 export const Wrapper = styled(motion.div)`
-  ${tw`w-full flex flex-col justify-center items-center gap-14 lg:gap-24`}
+  ${tw`w-full flex flex-col justify-center gap-14 lg:gap-24`}
 `;
 
 export const Title = styled(motion.h1)`

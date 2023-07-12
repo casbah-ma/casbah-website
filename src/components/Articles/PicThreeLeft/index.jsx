@@ -11,6 +11,7 @@ import {
 import MyImage from '../../MyImage';
 import Title from '../../Title';
 import Paragraph from '../../Paragraph';
+
 function PicThreeLeft({ title, texts, bigImg, mediumImg, smallImg, ...rest }) {
   return (
     <Wrapper {...rest}>

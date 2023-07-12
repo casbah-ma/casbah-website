@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import {
   Content,
-  ExtraSmallImage,
   ImagesWrapper,
   MeduimImage,
   SmallImage,
@@ -12,7 +11,7 @@ import {
 import MyImage from '../../MyImage';
 import Title from '../../Title';
 import Paragraph from '../../Paragraph';
-import LitleLogo from '../../../icons/litleLogo';
+
 function PicFourLeft({ title, texts, bigImg, mediumImg, smallImg }) {
   return (
     <Wrapper>
@@ -22,9 +21,6 @@ function PicFourLeft({ title, texts, bigImg, mediumImg, smallImg }) {
           <MyImage src={mediumImg} alt={title} sizes={imagesSize.md} />
           <SmallImage>
             <MyImage src={smallImg} alt={title} sizes={imagesSize.sm} />
-            <ExtraSmallImage>
-              <LitleLogo />
-            </ExtraSmallImage>
           </SmallImage>
         </MeduimImage>
       </ImagesWrapper>

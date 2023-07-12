@@ -35,11 +35,7 @@ function HomeSection({
           {subtitle && (
             <AnimatedDisplay renderAs={motion.span} text={subtitle} size="md" />
           )}
-          <Title
-            withoutBorder={true}
-            renderAs="h2"
-            color={variant === 'centre' ? 'white' : ''}
-          >
+          <Title withoutBorder={true} renderAs="h2">
             {title}
           </Title>
         </TitleWrapper>

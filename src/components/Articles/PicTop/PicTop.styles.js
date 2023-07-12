@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const directions = {
-  v1: tw` flex-col gap-8 
+  v1: tw` flex-col gap-6
           lg:(flex-row gap-[8.438rem] items-start)`,
-  v2: tw`flex-col gap-8 items-start 
-             md:items-start lg:gap-11`,
-  v3: tw`flex-col gap-8 items-start 
-             md:items-start lg:gap-10`,
+  v2: tw`flex-col gap-6 items-start 
+             md:items-start`,
+  v3: tw`flex-col gap-6 items-start 
+             md:items-start `,
 };
 const textDirections = {
   v1: tw`w-[80%] last:self-end lg:w-full`,
@@ -31,6 +31,6 @@ export const Content = styled.div(() => [
 ]);
 
 export const Texts = styled.div(() => [
-  tw`flex flex-col gap-3 lg:gap-4`,
+  tw`flex flex-col gap-1.5`,
   ({ variant }) => textDirections[variant],
 ]);
