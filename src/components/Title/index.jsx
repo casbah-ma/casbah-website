@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { Line, LineWrapper, StyledTitle, titleLevels } from './title.styles';
 import { useSplitText } from '../../hooks/useSplitText';
 import { lineVariants } from './variants';
+import { motion } from 'framer-motion';
 
 const Title = ({
   children,
@@ -11,10 +12,23 @@ const Title = ({
   ...rest
 }) => {
   const { textRef, lines } = useSplitText(children);
+  const getTitleTag = () => {
+    switch (renderAs) {
+      case 'h1':
+        return motion.h1;
+      case 'h2':
+        return motion.h2;
+      case 'h3':
+        return motion.h3;
+      default:
+        break;
+    }
+  };
 
   return (
     <StyledTitle
       ref={textRef}
+      as={getTitleTag()}
       level={renderAs}
       color={color}
       withoutBorder={withoutBorder}
