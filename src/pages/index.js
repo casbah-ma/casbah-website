@@ -8,7 +8,7 @@ import Lottie_03 from '@/lotties/Lottie_03.json';
 import Lottie_04 from '@/lotties/Lottie_04.json';
 import Lottie_05 from '@/lotties/Lottie_05.json';
 import Lottie_06 from '@/lotties/Lottie_06.json';
-import Lottie_07 from '@/lotties/Lottie_07.json';
+import Lottie_07 from '@/lotties/dna.json';
 import { useDebounce } from '../hooks/useDebounce';
 import { AnimatePresence } from 'framer-motion';
 import Footer from '../components/Footer';
