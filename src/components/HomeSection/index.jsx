@@ -11,6 +11,8 @@ import Title from '../Title';
 import AnimatedDisplay from '../AnimatedDisplay';
 import Paragraph from '../Paragraph';
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { Fragment } from 'react';
 function HomeSection({
   title,
   subtitle,
@@ -19,43 +21,55 @@ function HomeSection({
   variant,
   ...rest
 }) {
-  return (
-    <Wrapper variant={variant} {...rest}>
-      <motion.div className="self-center" exit={{ opacity: 0 }}>
-        <Player
-          keepLastFrame
-          autoplay
-          loop={false}
-          src={lottie}
-          style={{ height: '40vh', width: '100%' }}
-        />
-      </motion.div>
-      <Content variant={variant}>
-        <TitleWrapper>
-          {subtitle && (
-            <AnimatedDisplay renderAs={motion.span} text={subtitle} size="md" />
-          )}
-          <Title
-            withoutBorder={true}
-            renderAs="h2"
-            color={variant === 'centre' ? 'white' : ''}
-          >
-            {title}
-          </Title>
-        </TitleWrapper>
+  const { ref, inView } = useInView({
+    threshold: 0.9,
+  });
 
-        {texts && (
-          <Texts>
-            {texts &&
-              texts?.length > 0 &&
-              texts.map((text, i) => (
-                <Paragraph key={i} size="md">
-                  {text}
-                </Paragraph>
-              ))}
-          </Texts>
-        )}
-      </Content>
+  return (
+    <Wrapper ref={ref} variant={variant} {...rest}>
+      {inView && (
+        <Fragment>
+          <motion.div className="self-center" exit={{ opacity: 0 }}>
+            <Player
+              keepLastFrame
+              autoplay
+              loop={false}
+              src={lottie}
+              style={{ height: '40vh', width: '100%' }}
+            />
+          </motion.div>
+          <Content variant={variant}>
+            <TitleWrapper>
+              {subtitle && (
+                <AnimatedDisplay
+                  renderAs={motion.span}
+                  text={subtitle}
+                  size="md"
+                />
+              )}
+              <Title
+                withoutBorder={true}
+                renderAs="h2"
+                color={variant === 'centre' ? 'white' : ''}
+              >
+                {title}
+              </Title>
+            </TitleWrapper>
+
+            {texts && (
+              <Texts>
+                {texts &&
+                  texts?.length > 0 &&
+                  texts.map((text, i) => (
+                    <Paragraph key={i} size="md">
+                      {text}
+                    </Paragraph>
+                  ))}
+              </Texts>
+            )}
+          </Content>
+        </Fragment>
+      )}
     </Wrapper>
   );
 }
