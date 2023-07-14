@@ -23,48 +23,21 @@ export const getStaticProps = async ({ locale }) => {
 export default function Home({ data }) {
   return (
     <Container>
-      <Hero {...data.heroProps} isScrolling={isScrolling} />
+      <Hero {...data.heroProps} />
       <HomeSection
         {...data.sectionProps}
         lottie={straightLine}
         variant="left"
-        isScrolling={isScrolling}
       />
-      <HomeSection
-        {...data.sectionProps1}
-        lottie={Lottie_02}
-        variant="right"
-        isScrolling={isScrolling}
-      />
-      <HomeSection
-        {...data.sectionProps2}
-        lottie={Lottie_03}
-        variant="left"
-        isScrolling={isScrolling}
-      />
-      <HomeSection
-        {...data.sectionProps3}
-        lottie={Lottie_04}
-        variant="right"
-        isScrolling={isScrolling}
-      />
-      <HomeSection
-        {...data.sectionProps4}
-        lottie={Lottie_05}
-        variant="left"
-        isScrolling={isScrolling}
-      />
-      <HomeSection
-        {...data.sectionProps5}
-        lottie={Lottie_06}
-        variant="left"
-        isScrolling={isScrolling}
-      />
+      <HomeSection {...data.sectionProps1} lottie={Lottie_02} variant="right" />
+      <HomeSection {...data.sectionProps2} lottie={Lottie_03} variant="left" />
+      <HomeSection {...data.sectionProps3} lottie={Lottie_04} variant="right" />
+      <HomeSection {...data.sectionProps4} lottie={Lottie_05} variant="left" />
+      <HomeSection {...data.sectionProps5} lottie={Lottie_06} variant="left" />
       <HomeSection
         {...data.sectionProps6}
         lottie={Lottie_07}
         variant="centre"
-        isScrolling={isScrolling}
       />
       <Footer />
     </Container>

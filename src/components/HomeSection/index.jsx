@@ -22,19 +22,8 @@ function HomeSection({
   isScrolling,
   ...rest
 }) {
-  const [myInView, setMyInView] = useState(false);
-  const [leaving, setIsLeaving] = useState(false);
   const { ref, inView } = useInView({
     threshold: 0.1,
-    onChange: (inView) => {
-      if (inView && !leaving) {
-        setMyInView(true);
-        setIsLeaving(false);
-      } else if (myInView) {
-        setIsLeaving(true);
-        setMyInView(false);
-      }
-    },
   });
 
   return (

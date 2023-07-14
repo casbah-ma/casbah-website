@@ -22,13 +22,27 @@ import {
 import AnimatedDisplay from '../AnimatedDisplay';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { ReadMore } from '../BlogsSection/BlogsSection.styles';
 import { useRouter } from 'next/router';
-import useTranslation from 'next-translate/useTranslation';
 import CursorTracker from '../CursorTracker';
+import { useInView } from 'react-intersection-observer';
 
 function ProjecSection({ imgSrc, title, tags, isFirst, slug, ...rest }) {
   const router = useRouter();
+
+  const [myInView, setMyInView] = useState(false);
+  const [leaving, setIsLeaving] = useState(false);
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+    onChange: (inView) => {
+      if (inView && !leaving) {
+        setMyInView(true);
+        setIsLeaving(false);
+      } else if (myInView) {
+        setIsLeaving(true);
+        setMyInView(false);
+      }
+    },
+  });
 
   // useEffect(() => {
 
