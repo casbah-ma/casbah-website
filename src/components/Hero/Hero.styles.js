@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import tw, { styled } from 'twin.macro';
 
 export const Wrapper = styled(motion.section)`
-  ${tw`w-full h-screen flex flex-col gap-10 
+  ${tw`w-full flex flex-col gap-10 
        px-4  justify-start items-center overflow-hidden text-center
-       md:gap-36 lg:(gap-16 px-16 pt-28 pb-6)`}
+       md:gap-36 lg:(gap-16 px-16 pb-6)`}
   scroll-snap-align: start;
 `;
 

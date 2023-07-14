@@ -4,7 +4,7 @@ import tw, { styled } from 'twin.macro';
 export const variants = {
   left: tw`lg:items-start`,
   right: tw`lg:items-end`,
-  centre: tw`fixed left-0 bottom-0 h-screen px-0 pt-32 bg-[#000F9F] lg:items-center`,
+  centre: tw`px-0  bg-[#000F9F] lg:items-center`,
 };
 
 export const contentVariants = {
@@ -14,7 +14,7 @@ export const contentVariants = {
 };
 
 export const Wrapper = styled.div`
-  ${tw`h-screen w-full flex flex-col gap-10 px-4 justify-start items-center
+  ${tw`h-screen w-full flex flex-col gap-10 px-4 justify-start items-center pt-28
   md:gap-36 lg:(gap-14)`};
   ${({ variant }) => variants[variant]}
   scroll-snap-align: start;

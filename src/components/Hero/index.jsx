@@ -23,7 +23,7 @@ function Hero({ title, description, ...rest }) {
   const [showArrow, setShowArrow] = useState(false);
 
   const { ref, inView } = useInView({
-    threshold: 0.9,
+    threshold: 0.85,
   });
 
   return (

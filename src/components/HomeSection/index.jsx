@@ -22,7 +22,7 @@ function HomeSection({
   ...rest
 }) {
   const { ref, inView } = useInView({
-    threshold: 0.9,
+    threshold: 0.7,
   });
 
   return (
