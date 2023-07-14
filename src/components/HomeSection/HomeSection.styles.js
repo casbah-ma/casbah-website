@@ -4,7 +4,7 @@ import tw, { styled } from 'twin.macro';
 export const variants = {
   left: tw`lg:items-start`,
   right: tw`lg:items-end`,
-  centre: tw`px-0  bg-[#000F9F] lg:items-center`,
+  centre: tw`px-0 pt-32 lg:items-center`,
 };
 
 export const contentVariants = {

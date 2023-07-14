@@ -56,31 +56,25 @@ const NavMiniList = ({ name, options, Icon, languages }) => {
     <DropdownContainer ref={ref} active={isOpen}>
       <DropdownButton onClick={toggle}>
         {Icon && <Icon color={isOpen ? 'white' : 'black'} />}
-        <motion.div
-          className="flex overflow-hidden justify-center items-center gap-2"
-          variants={container}
-          initial="hidden"
-          animate="hidden"
-          whileTap="click"
-          whileHover="visible"
-        >
-          <div className="flex">
+        <div className="flex overflow-hidden md:justify-center md:items-center gap-2">
+          <div className="flex wave">
             {Array.from(t(name)).map((letter, index) => (
-              <motion.div
+              <span
                 key={index}
                 variants={child}
                 className={index == 0 ? 'capitalize' : ''}
+                style={{ animationDelay: `${0.07 * index}s` }}
               >
                 {letter === ' ' ? '\u00A0' : letter}
-              </motion.div>
+              </span>
             ))}
           </div>
           <ToggleButton open={isOpen}>
             <ArrowDown className="" />
           </ToggleButton>
-        </motion.div>
+        </div>
         <MobileToggle>
-          <ArrowRight color={isOpen ? 'white' : 'black'} />
+          <ArrowDown color={isOpen ? 'white' : 'black'} />
         </MobileToggle>
       </DropdownButton>
       <CSSTransition in={isOpen} timeout={300} classNames="fade" unmountOnExit>

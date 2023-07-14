@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const Wrapper = tw.div`
- min-h-screen flex flex-col justify-between items-center [&>footer]:z-50 px-[2.5rem]  xl:px-[4.5rem]
+ min-h-screen flex flex-col justify-between items-center [&>footer]:z-50 px-[2.5rem]  xl:px-[4.5rem] pb-0
 `;
 
 export const MainWrapper = styled.main`

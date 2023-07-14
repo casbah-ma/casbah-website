@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import LottieText from '../../LottieText';
 import Logo from '../../../lotties/logo_casbah.json';
+import { waitLoad } from '../../../helpers/utils';
 
 const TransitionPage = ({}) => {
   const router = useRouter();
@@ -29,7 +30,7 @@ const TransitionPage = ({}) => {
       });
       setShowChildren(true);
       // await 1sec after set state
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      await waitLoad(1);
       controls2.start({
         opacity: 1,
         y: ['0vh', '-80vh', '-100vh'],
@@ -40,6 +41,7 @@ const TransitionPage = ({}) => {
 
       // // Third Animation
       await controls.start({
+        opacity: 1,
         y: ['0vh', '-20vh', '-100vh'],
         backgroundColor: '#FF5100',
         transition: { duration: 0.5 },
@@ -49,7 +51,7 @@ const TransitionPage = ({}) => {
       setShowChildren(false);
     };
 
-    sequence();
+    router.route === '/' && sequence();
   }, [router.route]);
 
   return (

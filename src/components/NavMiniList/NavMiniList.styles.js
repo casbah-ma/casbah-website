@@ -8,7 +8,7 @@ export const DropdownContainer = styled.div`
 
 export const DropdownButton = styled.div`
   ${tw`lg:text-base text-lg leading-[1.257rem]  font-made
-  w-full flex justify-center items-center cursor-pointer 
+  w-full flex lg:justify-center items-center cursor-pointer  gap-1
   lg:py-0 py-4 pl-10 lg:pl-0
   `}
 `;

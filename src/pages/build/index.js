@@ -30,7 +30,7 @@ function Build({ data }) {
   // }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center gap-[120px] mb-36">
+    <div className="flex flex-col justify-center items-center gap-20 mb-36">
       <LottieText lottie={build} />
       <HeaderV2 {...data.headerProps} />
       <PicTop

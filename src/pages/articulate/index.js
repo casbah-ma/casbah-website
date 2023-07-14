@@ -29,7 +29,7 @@ function Articulate({ data }) {
     }, 1905);
   }, []);
   return (
-    <div className="flex flex-col justify-center items-center gap-[120px] mb-36">
+    <div className="flex flex-col justify-center items-center gap-20 mb-36">
       <LottieText lottie={articulate} />
       <Header {...data.headerProps} isSplited={true} />
       <PicTop {...data.picTopProps} variant="v1" />
