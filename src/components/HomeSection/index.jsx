@@ -10,66 +10,80 @@ import { Player } from '@lottiefiles/react-lottie-player';
 import Title from '../Title';
 import AnimatedDisplay from '../AnimatedDisplay';
 import Paragraph from '../Paragraph';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 function HomeSection({
   title,
   subtitle,
   texts = '',
   lottie,
   variant,
+  isScrolling,
   ...rest
 }) {
+  const [myInView, setMyInView] = useState(false);
+  const [leaving, setIsLeaving] = useState(false);
   const { ref, inView } = useInView({
-    threshold: 0.7,
+    threshold: 0.1,
+    onChange: (inView) => {
+      if (inView && !leaving) {
+        setMyInView(true);
+        setIsLeaving(false);
+      } else if (myInView) {
+        setIsLeaving(true);
+        setMyInView(false);
+      }
+    },
   });
 
   return (
     <Wrapper ref={ref} variant={variant} {...rest}>
-      {inView && (
-        <Fragment>
-          <motion.div className="self-center" exit={{ opacity: 0 }}>
-            <Player
-              keepLastFrame
-              autoplay
-              loop={false}
-              src={lottie}
-              style={{ height: '40vh', width: '100%' }}
-            />
-          </motion.div>
-          <Content variant={variant}>
-            <TitleWrapper>
-              {subtitle && (
-                <AnimatedDisplay
-                  renderAs={motion.span}
-                  text={subtitle}
-                  size="md"
-                />
-              )}
-              <Title
-                withoutBorder={true}
-                renderAs="h2"
-                color={variant === 'centre' ? 'white' : ''}
-              >
-                {title}
-              </Title>
-            </TitleWrapper>
+      <AnimatePresence mode="sync">
+        {inView && (
+          <Fragment>
+            <motion.div
+              className="self-center"
+              initial="hidden"
+              exit={{ opacity: 0 }}
+            >
+              <Player
+                keepLastFrame
+                autoplay
+                loop={false}
+                src={lottie}
+                style={{ height: '40vh', width: '100%' }}
+              />
+            </motion.div>
+            <Content variant={variant}>
+              <TitleWrapper>
+                {subtitle && (
+                  <AnimatedDisplay
+                    renderAs={motion.span}
+                    text={subtitle}
+                    size="md"
+                  />
+                )}
+                <Title withoutBorder={true} renderAs="h2">
+                  {title}
+                </Title>
+              </TitleWrapper>
 
-            {texts && (
-              <Texts>
-                {texts &&
-                  texts?.length > 0 &&
-                  texts.map((text, i) => (
-                    <Paragraph key={i} size="md">
-                      {text}
-                    </Paragraph>
-                  ))}
-              </Texts>
-            )}
-          </Content>
-        </Fragment>
-      )}
+              {texts && (
+                <Texts>
+                  {texts &&
+                    texts?.length > 0 &&
+                    texts.map((text, i) => (
+                      <Paragraph key={i} size="md">
+                        {text}
+                      </Paragraph>
+                    ))}
+                </Texts>
+              )}
+            </Content>
+          </Fragment>
+        )}
+      </AnimatePresence>
     </Wrapper>
   );
 }

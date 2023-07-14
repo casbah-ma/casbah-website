@@ -5,9 +5,10 @@ export const socialSize = tw`w-[1.713rem] h-[1.713rem]
                             md:(w-[1.477rem] h-[1.477rem])
                             lg:(w-8 h-8)`;
 
-export const FooterWrapper = tw.footer`w-screen h-[65.375rem] bg-deepBlue flex flex-col justify-between items-center -z-20 mt-10
-                                        md:(h-[41rem] )
-                                        lg:(h-[26.688rem])`;
+export const FooterWrapper = tw.footer`
+  w-screen h-[65.375rem] bg-deepBlue flex flex-col justify-between items-center -z-20 mt-10
+   md:(h-[41rem] ) [scroll-snap-align: start]
+   lg:(h-[26.688rem])`;
 
 export const FooterContainer = tw.div`w-full h-full flex flex-col  justify-start items-start z-30  text-white
                                         pt-[4.813rem] pl-4 gap-[3.666rem]

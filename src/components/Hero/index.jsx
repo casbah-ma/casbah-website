@@ -38,7 +38,6 @@ function Hero({ title, description, ...rest }) {
               src={hero}
               style={{ height: '50vh', width: '100%' }}
               onEvent={(e) => {
-                console.log(e);
                 if (e === 'complete') {
                   setShowText(true);
                   setTimeout(() => {
