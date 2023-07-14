@@ -4,7 +4,7 @@ import tw, { styled } from 'twin.macro';
 export const variants = {
   left: tw`lg:items-start`,
   right: tw`lg:items-end`,
-  centre: tw`fixed left-0 bottom-0 h-screen px-0 pt-32 lg:items-center`,
+  centre: tw`px-0 pt-32 lg:items-center`,
 };
 
 export const contentVariants = {
@@ -13,12 +13,16 @@ export const contentVariants = {
   centre: tw`justify-center items-center text-center`,
 };
 
-export const Wrapper = styled.div(() => [
-  tw`absolute left-0 top-28 bottom-10 w-full flex flex-col gap-10 px-4 justify-start items-center overflow-hidden
-  md:gap-36 
-  lg:(gap-14)`,
-  ({ variant }) => variants[variant],
-]);
+export const Wrapper = styled.div`
+  ${tw` h-full w-full flex flex-col gap-10 px-4 
+      justify-start items-center pt-28
+
+  md:gap-36 lg:(gap-14)`};
+  ${({ variant }) => variants[variant]}
+  ${({ isFixed }) => isFixed && tw`absolute inset-0`}
+
+  scroll-snap-align: start;
+`;
 
 export const TitleWrapper = tw(motion.div)`
    flex flex-col justify-center items-start
