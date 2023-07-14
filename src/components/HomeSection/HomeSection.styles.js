@@ -14,7 +14,7 @@ export const contentVariants = {
 };
 
 export const Wrapper = styled.div`
-  ${tw`h-screen w-full flex flex-col gap-10 px-4 justify-start items-center pt-28
+  ${tw`h-full w-full flex flex-col gap-10 px-4 justify-start items-center pt-28
   md:gap-36 lg:(gap-14)`};
   ${({ variant }) => variants[variant]}
   scroll-snap-align: start;

@@ -60,4 +60,4 @@ export const FooterCopyright = tw.p`font-mako font-normal text-base`;
 export const FooterTerms = tw.div`flex gap-[3.125rem] capitalize`;
 
 export const MobileTerms = tw.div`w-full h-full flex flex-col gap-6
-                                    md:(flex-row-reverse justify-between items-start)`;          
+                                    md:(flex-row-reverse justify-between items-start)`;
