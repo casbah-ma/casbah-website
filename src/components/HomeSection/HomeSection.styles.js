@@ -13,15 +13,18 @@ export const contentVariants = {
   centre: tw`justify-center items-center text-center`,
 };
 
-export const Wrapper = styled.div`
-  ${tw` h-full w-full flex flex-col gap-10 px-4 
-      justify-start items-center pt-28
-
-  md:gap-36 lg:(gap-14)`};
-  ${({ variant }) => variants[variant]}
-  ${({ isFixed }) => isFixed && tw`absolute inset-0`}
+export const Wrapper = styled(motion.div)`
+  ${tw`relative h-full w-full `};
 
   scroll-snap-align: start;
+`;
+
+export const Container = styled(motion.div)`
+  ${tw`h-full w-full flex flex-col gap-10 
+      justify-start items-center px-4 pt-28
+  md:gap-36 lg:(gap-14)`};
+  ${({ variant }) => variants[variant]}
+  ${({ isFixed }) => isFixed && tw`fixed bottom-0 w-[99%] h-full  -z-10`}
 `;
 
 export const TitleWrapper = tw(motion.div)`

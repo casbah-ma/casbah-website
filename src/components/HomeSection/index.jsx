@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import {
+  Container,
   Content,
   Texts,
   TitleWrapper,
@@ -19,18 +20,43 @@ function HomeSection({
   texts = '',
   lottie,
   variant,
-  isScrolling,
   ...rest
 }) {
+  const [visited, setVisited] = useState(false);
+  const [isLeaving, setIsLeaving] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
+
   const { ref, inView } = useInView({
-    threshold: 0.1,
+    threshold: 1,
+    onChange: (inView) => {
+      if (inView) {
+        setVisited(true);
+        setIsFixed(false);
+        setIsLeaving(false);
+      } else if (!inView && visited) {
+        setTimeout(() => {
+          setIsLeaving(true);
+        }, 300);
+        setIsFixed(true);
+        setVisited(false);
+      }
+    },
   });
 
+  const getIsVisible = () => {
+    if (inView) {
+      return true;
+    } else {
+      if (isFixed) {
+        return !isLeaving;
+      }
+    }
+  };
   return (
-    <Wrapper ref={ref} variant={variant} {...rest}>
+    <Wrapper ref={ref} {...rest}>
       <AnimatePresence mode="sync">
-        {inView && (
-          <Fragment>
+        {getIsVisible() && (
+          <Container variant={variant} isFixed={isFixed}>
             <motion.div
               className="self-center"
               initial="hidden"
@@ -41,7 +67,10 @@ function HomeSection({
                 autoplay
                 loop={false}
                 src={lottie}
-                style={{ height: '40vh', width: '100%' }}
+                style={{
+                  height: '40vh',
+                  width: '100%',
+                }}
               />
             </motion.div>
             <Content variant={variant}>
@@ -70,7 +99,7 @@ function HomeSection({
                 </Texts>
               )}
             </Content>
-          </Fragment>
+          </Container>
         )}
       </AnimatePresence>
     </Wrapper>
