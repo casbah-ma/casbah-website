@@ -4,8 +4,12 @@ import SpecialText from '../SpecialText';
 
 import WordWrapper from './WordWrapper';
 import { wrapperVariant } from './variants';
+import { forwardRef } from 'react';
 
-function PortfolioHeader({ title, description, specialLine, ...rest }) {
+const PortfolioHeader = forwardRef(function PortfolioHeader(
+  { title, description, specialLine, ...rest },
+  ref
+) {
   const words = title.split(' ').map((word) => [...word.split(''), '\u00A0']);
 
   return (
@@ -15,6 +19,7 @@ function PortfolioHeader({ title, description, specialLine, ...rest }) {
       initial="hidden"
       animate="visible"
       exit="exit"
+      ref={ref}
     >
       <Title>
         {words?.map((word, i) => (
@@ -32,12 +37,6 @@ function PortfolioHeader({ title, description, specialLine, ...rest }) {
       />
     </Wrapper>
   );
-}
-
-PortfolioHeader.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  specialLine: PropTypes.string.isRequired,
-};
+});
 
 export default PortfolioHeader;

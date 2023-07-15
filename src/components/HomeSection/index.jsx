@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import {
+  Container,
   Content,
   Texts,
   TitleWrapper,
@@ -11,26 +12,22 @@ import Title from '../Title';
 import AnimatedDisplay from '../AnimatedDisplay';
 import Paragraph from '../Paragraph';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Fragment, useEffect, useState } from 'react';
+
+import { useLocomotive } from '@/hooks/useLocomotive';
 function HomeSection({
   title,
   subtitle,
   texts = '',
   lottie,
   variant,
-  isScrolling,
   ...rest
 }) {
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-  });
-
+  const { ref, getIsVisible, isFixed } = useLocomotive();
   return (
-    <Wrapper ref={ref} variant={variant} {...rest}>
+    <Wrapper ref={ref} {...rest}>
       <AnimatePresence mode="sync">
-        {inView && (
-          <Fragment>
+        {getIsVisible() && (
+          <Container variant={variant} isFixed={isFixed}>
             <motion.div
               className="self-center"
               initial="hidden"
@@ -41,7 +38,10 @@ function HomeSection({
                 autoplay
                 loop={false}
                 src={lottie}
-                style={{ height: '40vh', width: '100%' }}
+                style={{
+                  height: '40vh',
+                  width: '100%',
+                }}
               />
             </motion.div>
             <Content variant={variant}>
@@ -70,7 +70,7 @@ function HomeSection({
                 </Texts>
               )}
             </Content>
-          </Fragment>
+          </Container>
         )}
       </AnimatePresence>
     </Wrapper>

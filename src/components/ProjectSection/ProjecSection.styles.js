@@ -2,7 +2,13 @@ import { motion } from 'framer-motion';
 import tw, { styled } from 'twin.macro';
 
 export const Wrapper = styled(motion.div)`
-  ${tw`absolute inset-0 h-screen z-[9999] cursor-pointer overflow-hidden bg-white `}
+  ${tw`relative h-full w-full  z-[9999]`}
+  scroll-snap-align: start;
+`;
+
+export const Container = styled(motion.div)`
+  ${tw`h-full w-full  cursor-pointer overflow-hidden`}
+  ${({ isFixed }) => isFixed && tw`fixed bottom-0 w-[99%] h-full `}
 `;
 
 export const imageStyle = tw`w-full h-full`;
