@@ -4,6 +4,7 @@ import { allPortfolios, allBlogs } from 'contentlayer/generated';
 import { Container } from '../../styles/portfolio.styles';
 import CursorTracker from '../../components/CursorTracker';
 import useScrollDirection from '../../hooks/useScrollDirection';
+import { useInView } from 'react-intersection-observer';
 
 export const getStaticProps = ({ locale }) => {
   const data = allPortfolios.find((home) => home.lang === locale);
@@ -17,12 +18,13 @@ export const getStaticProps = ({ locale }) => {
 
 export default function Portfolio({ data }) {
   const { ref, scrollDirection } = useScrollDirection();
-  console.log(scrollDirection);
-
+  const { ref: headerRef, inView } = useInView({
+    threshold: 0.1,
+  });
   return (
     <Container ref={ref}>
-      <CursorTracker text="fullProject" />
-      <PortfolioHeader {...data.headerProps} />
+      {!inView && <CursorTracker text="fullProject" />}
+      <PortfolioHeader ref={headerRef} {...data.headerProps} />
       {data?.blogs?.map((blog, key) => (
         <ProjectSection
           scrollDirection={scrollDirection}
