@@ -1,7 +1,7 @@
 export const wrapperVariant = {
   visible: {
     transition: {
-      staggerChildren: 1,
+      staggerChildren: 0.5,
     },
   },
   exit: { transition: { when: 'afterChildren' } },
@@ -23,20 +23,17 @@ export const imageVariant = {
       },
     },
   },
-  exit: {
-    opacity: 0,
-  },
 };
 
 export const imageVariant2 = {
   hidden: {
-    opacity: 0.3,
+    opacity: 0.6,
   },
   visible: {
     opacity: 1,
     transition: {
-      duration: 0.3,
-      ease: 'easeIn',
+      duration: 0.5,
+      ease: 'linear',
     },
   },
   exit: {
@@ -55,7 +52,7 @@ export const contentVariant = {
 export const tagsVariant = {
   visible: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.2,
     },
   },
 };
@@ -67,8 +64,8 @@ export const tagVariant = {
   visible: {
     y: 0,
     transition: {
-      duration: 0.2,
-      ease: 'easeIn',
+      duration: 0.4,
+      ease: 'linear',
     },
   },
   exit: {
@@ -77,9 +74,13 @@ export const tagVariant = {
 };
 
 export const titleVariant = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 100 },
   visible: {
     opacity: 1,
     y: 0,
+    transition: {
+      duration: 0.5,
+      ease: 'easeIn',
+    },
   },
 };
