@@ -19,15 +19,24 @@ import {
   tagVariant,
   titleVariant,
   imageVariant2,
+  imageVariant3,
 } from './variants';
 import AnimatedDisplay from '../AnimatedDisplay';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useRouter } from 'next/router';
-import CursorTracker from '../CursorTracker';
 
 import { useLocomotive } from '../../hooks/useLocomotive';
+import useScrollDirection from '../../hooks/useScrollDirection';
 
-function ProjecSection({ imgSrc, title, tags, isFirst, slug, ...rest }) {
+function ProjecSection({
+  imgSrc,
+  title,
+  tags,
+  isFirst,
+  slug,
+  scrollDirection,
+  ...rest
+}) {
   const router = useRouter();
   const { ref, getIsVisible, isFixed } = useLocomotive(1, 100);
 
@@ -46,12 +55,15 @@ function ProjecSection({ imgSrc, title, tags, isFirst, slug, ...rest }) {
             animate="visible"
             exit="exit"
           >
-            {
-              // <CursorTracker text="fullProject" />
-            }
             <ImageWrapper
               key={imgSrc}
-              variants={isFirst ? imageVariant : imageVariant2}
+              variants={
+                isFirst
+                  ? scrollDirection === 'up'
+                    ? imageVariant3
+                    : imageVariant
+                  : imageVariant2
+              }
             >
               <MyImage sizes={imageStyle} src={imgSrc} alt="" />
               <Backdrop />

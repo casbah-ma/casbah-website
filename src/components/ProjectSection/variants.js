@@ -40,6 +40,18 @@ export const imageVariant2 = {
     opacity: 0,
   },
 };
+export const imageVariant3 = {
+  hidden: {
+    opacity: 0.6,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      ease: 'linear',
+    },
+  },
+};
 
 export const contentVariant = {
   visible: {
