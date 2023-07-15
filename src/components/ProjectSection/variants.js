@@ -30,10 +30,14 @@ export const imageVariant = {
 
 export const imageVariant2 = {
   hidden: {
-    opacity: 0.9,
+    opacity: 0.3,
   },
   visible: {
     opacity: 1,
+    transition: {
+      duration: 0.3,
+      ease: 'easeIn',
+    },
   },
   exit: {
     opacity: 0,

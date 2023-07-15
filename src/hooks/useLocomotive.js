@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-export const useLocomotive = (milliSeconds = 300) => {
+export const useLocomotive = (threshold = 1, milliSeconds = 300) => {
   const [visited, setVisited] = useState(false);
   const [isLeaving, setIsLeaving] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
 
   const { ref, inView } = useInView({
-    threshold: 1,
+    threshold,
     onChange: (inView) => {
       if (inView) {
         setVisited(true);
