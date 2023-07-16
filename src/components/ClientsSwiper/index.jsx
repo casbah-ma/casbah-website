@@ -1,6 +1,4 @@
 import PropTypes from 'prop-types';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { A11y, Autoplay, FreeMode } from 'swiper';
 import MyImage from '../MyImage';
 import {
   Carousel,

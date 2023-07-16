@@ -23,7 +23,7 @@ function Build({ data }) {
   return (
     <div className="flex flex-col justify-center items-center">
       <LottieText lottie={build} />
-      <div className="flex flex-col justify-center items-center gap-20 -mt-11 mb-20">
+      <div className="flex flex-col justify-center items-center gap-20 mt-16 mb-20">
         <HeaderV2 {...data.headerProps} />
         <PicTop
           {...data.picTopProps}

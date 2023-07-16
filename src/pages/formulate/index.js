@@ -20,9 +20,9 @@ export const getStaticProps = ({ locale }) => {
 
 function Formulate({ data }) {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center mt-52">
       <LottieText lottie={formulate} />
-      <div className="flex flex-col justify-center items-center gap-20 mb-20 -mt-20">
+      <div className="flex flex-col justify-center items-center gap-20 mb-20 mt-16">
         <Header {...data.headerProps} isVertical={true} level="h2" />
         <PicThreeLeft
           {...data.pic3LeftProps}

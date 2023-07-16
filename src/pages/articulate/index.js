@@ -27,7 +27,7 @@ function Articulate({ data }) {
       <LottieText lottie={articulate} setIsEnd={setIsEnd} />
       <div
         className={` flex flex-col justify-center items-center gap-20 mb-20 transition-all duration-700 ease-in ${
-          isEnd ? '-mt-44' : ''
+          isEnd ? '-mt-20' : ''
         }`}
       >
         <Header {...data.headerProps} isSplited={true} level="h2" />
