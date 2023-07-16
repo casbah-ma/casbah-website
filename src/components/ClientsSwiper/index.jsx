@@ -2,41 +2,39 @@ import PropTypes from 'prop-types';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { A11y, Autoplay, FreeMode } from 'swiper';
 import MyImage from '../MyImage';
-import { ImageWrapper, Wrapper, imageStyle } from './ClientsSwiper.styles';
+import {
+  Carousel,
+  Carousel2,
+  CarouselParent,
+  ImageWrapper,
+  Wrapper,
+  imageStyle,
+} from './ClientsSwiper.styles';
 import Header from '../Header';
 
 function ClientsSwiper({ title, description, images }) {
+  console.log(images.length);
   return (
     <Wrapper>
       <Header description={description} title={title} />
-      <Swiper
-        className="w-full h-full"
-        modules={[A11y, FreeMode, Autoplay]}
-        slidesPerView={5}
-        loopedSlides={images.length}
-        spaceBetween={32}
-        freeMode={true}
-        loop={true}
-        autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
-        }}
-        speed={2000}
-        breakpoints={{
-          768: {
-            spaceBetween: 42,
-          },
-        }}
-      >
-        {images?.length > 0 &&
-          images.map((image, i) => (
-            <SwiperSlide key={i}>
-              <ImageWrapper>
+      <CarouselParent>
+        <Carousel>
+          {images?.length > 0 &&
+            images.map((image, i) => (
+              <ImageWrapper key={i}>
                 <MyImage src={image.src} sizes={imageStyle} alt={image.name} />
               </ImageWrapper>
-            </SwiperSlide>
-          ))}
-      </Swiper>
+            ))}
+        </Carousel>
+        <Carousel2>
+          {images?.length > 0 &&
+            images.map((image, i) => (
+              <ImageWrapper key={i * 2}>
+                <MyImage src={image.src} sizes={imageStyle} alt={image.name} />
+              </ImageWrapper>
+            ))}
+        </Carousel2>
+      </CarouselParent>
     </Wrapper>
   );
 }
