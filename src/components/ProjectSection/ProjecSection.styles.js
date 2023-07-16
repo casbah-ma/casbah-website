@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import tw, { styled } from 'twin.macro';
 
 export const Wrapper = styled(motion.div)`
-  ${tw`relative h-full w-full  z-[9999]`}
+  ${tw`relative h-full w-full z-[9999]`}
   scroll-snap-align: start;
 `;
 
