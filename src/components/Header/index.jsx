@@ -9,10 +9,11 @@ function Header({
   withLine,
   isVertical = false,
   isSplited = false,
+  level = 'h1',
 }) {
   return (
     <Wrapper isSplited={isSplited} withLine={withLine} isVertical={isVertical}>
-      <Title renderAs="h1" withoutBorder={true}>
+      <Title renderAs={level} withoutBorder={true}>
         {title}
       </Title>
       <Paragraph size="md">{description}</Paragraph>
