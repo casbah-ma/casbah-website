@@ -24,11 +24,7 @@ function Articulate({ data }) {
 
   return (
     <div className="flex flex-col justify-center items-center ">
-      <LottieText
-        lottie={articulate}
-        setIsEnd={setIsEnd}
-        className="border border-red"
-      />
+      <LottieText lottie={articulate} setIsEnd={setIsEnd} />
       <div
         className={` flex flex-col justify-center items-center gap-20 mb-20 transition-all duration-700 ease-in ${
           isEnd ? '-mt-44' : ''
