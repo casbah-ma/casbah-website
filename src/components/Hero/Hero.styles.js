@@ -2,10 +2,15 @@ import { motion } from 'framer-motion';
 import tw, { styled } from 'twin.macro';
 
 export const Wrapper = styled(motion.section)`
+  ${tw`h-full w-full`}
+  scroll-snap-align: start;
+`;
+
+export const Container = styled(motion.div)`
   ${tw`h-full w-full flex flex-col gap-10 px-4 pt-28
         justify-start items-center text-center
-       md:gap-36 lg:(gap-16 px-16 pb-6)`}
-  scroll-snap-align: start;
+       md:gap-36 lg:(gap-16 px-16 pb-6)`};
+  ${({ isFixed }) => isFixed && tw`fixed bottom-0 w-[99%] h-full  -z-10`}
 `;
 
 export const ContentWrapper = styled(motion.div)`
