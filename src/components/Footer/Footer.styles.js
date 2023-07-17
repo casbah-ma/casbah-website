@@ -44,7 +44,7 @@ export const LinkLabel = tw.div`
     cursor-pointer hover:(text-brightOrange)
     `;
 
-export const LinksCol = tw.div`col-span-1 flex flex-col gap-4`;
+export const LinksCol = tw.div`col-span-1 flex flex-col gap-2`;
 export const SubLink = tw.div`font-made font-light text-sm capitalize
                                 cursor-pointer hover:(text-brightOrange font-bold)`;
 

@@ -3,12 +3,53 @@ import AwardsSection from '../../components/AwardsSection';
 import ClientsSwiper from '../../components/ClientsSwiper';
 import TeamSection from '../../components/TeamSection';
 import { allAbouts } from 'contentlayer/generated';
+import ClientImage from 'public/Logo_Visit_Beni_Mellal_black.png';
+
+const images = [
+  {
+    src: ClientImage,
+    name: 'about',
+  },
+  {
+    src: ClientImage,
+    name: 'about',
+  },
+  {
+    src: ClientImage,
+    name: 'about',
+  },
+  {
+    src: ClientImage,
+    name: 'about',
+  },
+  {
+    src: ClientImage,
+    name: 'about',
+  },
+  {
+    src: ClientImage,
+    name: 'about',
+  },
+  {
+    src: ClientImage,
+    name: 'about',
+  },
+  {
+    src: ClientImage,
+    name: 'about',
+  },
+  {
+    src: ClientImage,
+    name: 'about',
+  },
+];
 
 export const getStaticProps = ({ locale }) => {
   const data = allAbouts.find((page) => page.lang === locale);
+
   return {
     props: {
-      data,
+      data: { ...data, clientSection: {...data.clientSection, images} },
     },
   };
 };
