@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { Wrapper } from './Header.styles';
 import Title from '../Title';
 import Paragraph from '../Paragraph';
-import useTranslation from 'next-translate/useTranslation';
 
 function Header({
   title,
@@ -10,10 +9,11 @@ function Header({
   withLine,
   isVertical = false,
   isSplited = false,
+  level = 'h1',
 }) {
   return (
     <Wrapper isSplited={isSplited} withLine={withLine} isVertical={isVertical}>
-      <Title renderAs="h1" withoutBorder={true}>
+      <Title renderAs={level} withoutBorder={true}>
         {title}
       </Title>
       <Paragraph size="md">{description}</Paragraph>

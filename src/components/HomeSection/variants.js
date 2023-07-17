@@ -1,5 +1,5 @@
-export const lottieVariant = {
-  exit: {
-    opacity: 0,
-  },
+export const lineVariants = {
+  hidden: {},
+  visible: {},
+  exit: {},
 };

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import {
+  Container,
   Content,
   Texts,
   TitleWrapper,
@@ -10,7 +11,9 @@ import { Player } from '@lottiefiles/react-lottie-player';
 import Title from '../Title';
 import AnimatedDisplay from '../AnimatedDisplay';
 import Paragraph from '../Paragraph';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
+
+import { useLocomotive } from '@/hooks/useLocomotive';
 function HomeSection({
   title,
   subtitle,
@@ -19,43 +22,57 @@ function HomeSection({
   variant,
   ...rest
 }) {
+  const { ref, getIsVisible, isFixed } = useLocomotive();
   return (
-    <Wrapper variant={variant} {...rest}>
-      <motion.div className="self-center" exit={{ opacity: 0 }}>
-        <Player
-          keepLastFrame
-          autoplay
-          loop={false}
-          src={lottie}
-          style={{ height: '40vh', width: '100%' }}
-        />
-      </motion.div>
-      <Content variant={variant}>
-        <TitleWrapper>
-          {subtitle && (
-            <AnimatedDisplay renderAs={motion.span} text={subtitle} size="md" />
-          )}
-          <Title
-            withoutBorder={true}
-            renderAs="h2"
-            color={variant === 'centre' ? 'white' : ''}
-          >
-            {title}
-          </Title>
-        </TitleWrapper>
+    <Wrapper ref={ref} {...rest}>
+      <AnimatePresence mode="sync">
+        {getIsVisible() && (
+          <Container variant={variant} isFixed={isFixed}>
+            <motion.div
+              className="self-center"
+              initial="hidden"
+              exit={{ opacity: 0 }}
+            >
+              <Player
+                keepLastFrame
+                autoplay
+                loop={false}
+                src={lottie}
+                style={{
+                  height: '40vh',
+                  width: '100%',
+                }}
+              />
+            </motion.div>
+            <Content variant={variant}>
+              <TitleWrapper>
+                {subtitle && (
+                  <AnimatedDisplay
+                    renderAs={motion.span}
+                    text={subtitle}
+                    size="md"
+                  />
+                )}
+                <Title withoutBorder={true} renderAs="h2">
+                  {title}
+                </Title>
+              </TitleWrapper>
 
-        {texts && (
-          <Texts>
-            {texts &&
-              texts?.length > 0 &&
-              texts.map((text, i) => (
-                <Paragraph key={i} size="md">
-                  {text}
-                </Paragraph>
-              ))}
-          </Texts>
+              {texts && (
+                <Texts>
+                  {texts &&
+                    texts?.length > 0 &&
+                    texts.map((text, i) => (
+                      <Paragraph key={i} size="md">
+                        {text}
+                      </Paragraph>
+                    ))}
+                </Texts>
+              )}
+            </Content>
+          </Container>
         )}
-      </Content>
+      </AnimatePresence>
     </Wrapper>
   );
 }

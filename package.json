@@ -33,6 +33,7 @@
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-intersection-observer": "^9.5.2",
     "react-map-gl": "^7.0.23",
     "react-transition-group": "^4.4.5",
     "styled-components": "^5.3.10",
