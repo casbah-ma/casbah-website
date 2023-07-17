@@ -60,7 +60,7 @@ function ProjecSection({
               variants={
                 isFirst
                   ? scrollDirection === 'up'
-                    ? imageVariant3
+                    ? imageVariant2
                     : imageVariant
                   : imageVariant2
               }

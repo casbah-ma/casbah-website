@@ -3,7 +3,7 @@ import Footer from '../Footer';
 import { MainWrapper, Wrapper } from './Layout.styles';
 import { useRouter } from 'next/router';
 
-const Layout = ({ children, ...rest }) => {
+const Layout = ({ children, hasPadding, ...rest }) => {
   const router = useRouter();
   const isFooter =
     router.route !== '/' &&
@@ -12,7 +12,7 @@ const Layout = ({ children, ...rest }) => {
   const isNotFound = router.route === '/404';
 
   return (
-    <Wrapper {...rest}>
+    <Wrapper hasPadding={hasPadding} {...rest}>
       <Navbar />
       <MainWrapper isNotFound={isNotFound}>{children}</MainWrapper>
       {isFooter && <Footer />}
