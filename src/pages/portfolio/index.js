@@ -24,8 +24,15 @@ export default function Portfolio({ data }) {
 
   const variants = {
     hidden: { opacity: 0, y: 150 },
-    enter: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeIn' } },
-    exit: { opacity: 0, y: -100, transition: { duration: 1, ease: 'easeOut' } },
+    enter: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: 'easeIn' },
+      transitionEnd: {
+        overflowY: 'scroll',
+      },
+    },
+    exit: { opacity: 0, y: -100, transition: { duration: 1, ease: 'linear' } },
   };
 
   return (
