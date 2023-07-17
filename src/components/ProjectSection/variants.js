@@ -27,7 +27,7 @@ export const imageVariant = {
 
 export const imageVariant2 = {
   hidden: {
-    opacity: 0.6,
+    opacity: 0.8,
   },
   visible: {
     opacity: 1,
@@ -35,9 +35,6 @@ export const imageVariant2 = {
       duration: 0.5,
       ease: 'linear',
     },
-  },
-  exit: {
-    opacity: 0,
   },
 };
 export const imageVariant3 = {

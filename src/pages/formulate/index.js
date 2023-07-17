@@ -20,28 +20,30 @@ export const getStaticProps = ({ locale }) => {
 
 function Formulate({ data }) {
   return (
-    <div className="flex flex-col justify-center items-center gap-20 mb-36">
+    <div className="flex flex-col justify-center items-center mt-52">
       <LottieText lottie={formulate} />
-      <Header {...data.headerProps} isVertical={true} />
-      <PicThreeLeft
-        {...data.pic3LeftProps}
-        className="max-w-[71.8rem] ml-auto"
-      />
-      <PicTop
-        {...data.picTopProps}
-        variant="v3"
-        className="pl-14 md:pl-[13.188rem] lg:pl-[24.625rem]"
-      />
-      <PicLeftRight
-        {...data.picLeftProps}
-        variant="v4"
-        className="md:pl-[13.188rem] lg:pl-0"
-      />
-      <PicTop
-        {...data.picTopProps2}
-        variant="v3"
-        className="pl-14 md:pl-[13.188rem] lg:pl-[24.625rem]"
-      />
+      <div className="flex flex-col justify-center items-center gap-20 mb-20 mt-16">
+        <Header {...data.headerProps} isVertical={true} level="h2" />
+        <PicThreeLeft
+          {...data.pic3LeftProps}
+          className="max-w-[71.8rem] ml-auto"
+        />
+        <PicTop
+          {...data.picTopProps}
+          variant="v3"
+          className="pl-14 md:pl-[13.188rem] lg:pl-[24.625rem]"
+        />
+        <PicLeftRight
+          {...data.picLeftProps}
+          variant="v4"
+          className="md:pl-[13.188rem] lg:pl-0"
+        />
+        <PicTop
+          {...data.picTopProps2}
+          variant="v3"
+          className="pl-14 md:pl-[13.188rem] lg:pl-[24.625rem]"
+        />
+      </div>
     </div>
   );
 }

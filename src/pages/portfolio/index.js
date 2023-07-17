@@ -21,10 +21,11 @@ export default function Portfolio({ data }) {
   const { ref: headerRef, inView } = useInView({
     threshold: 0.1,
   });
+
   return (
     <Container ref={ref}>
       {!inView && <CursorTracker text="fullProject" />}
-      <PortfolioHeader ref={headerRef} {...data.headerProps} />
+      <PortfolioHeader ref={headerRef} inView={inView} {...data.headerProps} />
       {data?.blogs?.map((blog, key) => (
         <ProjectSection
           scrollDirection={scrollDirection}
