@@ -20,7 +20,6 @@ const ContactUsPage = ({ data }) => {
         specialLine={data.DropUs.specialLine}
       />
       <ContactUs />
-      <FollowUs description={data.FollowUsDescription} />
     </div>
   );
 };

@@ -7,7 +7,7 @@ export const Wrapper = tw.div`
 `;
 
 export const MainWrapper = styled.main`
-  ${tw`w-full flex-1 flex flex-col justify-center items-center pt-[5.563rem]
+  ${tw`w-full max-w-[87.5rem]  flex-1 flex flex-col justify-center items-center pt-[5.563rem]
         md:(pt-0) px-[2.5rem]  lg:px-[4.5rem] `}
   // if isNotFound pt-0
     ${({ isNotFound }) => isNotFound && tw`!pt-0`}

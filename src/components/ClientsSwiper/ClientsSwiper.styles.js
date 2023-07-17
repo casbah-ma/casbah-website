@@ -21,7 +21,7 @@ export const CarouselParent = styled.div`
 
 export const Carousel = styled.div`
   ${tw`w-full absolute left-full top-0 overflow-hidden  
-     flex items-center whitespace-nowrap gap-24`}
+     flex items-center whitespace-nowrap gap-5 md:gap-10 lg:gap-20`}
   animation: ${slide1} 30s linear infinite;
 `;
 
@@ -29,9 +29,8 @@ export const Carousel2 = styled(Carousel)`
   animation-delay: 15s;
 `;
 
-export const imageStyle = tw`w-full h-full rounded-2xl `;
+export const imageStyle = tw`w-full h-full`;
 
 export const ImageWrapper = tw.div`
-  shrink-0 w-32 h-16 rounded-2xl md:(w-[10.875rem] h-[5.438rem])
-  
+w-[6.688rem] h-[2rem] md:(w-[6rem] h-[4rem])   lg:(w-[6.688rem] h-[4.875rem])
 `;

@@ -20,7 +20,7 @@ function ClientsSwiper({ title, description, images }) {
           {images?.length > 0 &&
             images.map((image, i) => (
               <ImageWrapper key={i}>
-                <MyImage src={image.src} sizes={imageStyle} alt={image.name} />
+                <MyImage src={image.src} sizes={imageStyle} alt={image.name} objectFit='contain'/>
               </ImageWrapper>
             ))}
         </Carousel>
@@ -28,7 +28,7 @@ function ClientsSwiper({ title, description, images }) {
           {images?.length > 0 &&
             images.map((image, i) => (
               <ImageWrapper key={i * 2}>
-                <MyImage src={image.src} sizes={imageStyle} alt={image.name} />
+                <MyImage src={image.src} sizes={imageStyle} alt={image.name} objectFit='contain' />
               </ImageWrapper>
             ))}
         </Carousel2>

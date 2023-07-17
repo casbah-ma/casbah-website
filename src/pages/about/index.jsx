@@ -4,6 +4,8 @@ import ClientsSwiper from '../../components/ClientsSwiper';
 import TeamSection from '../../components/TeamSection';
 import { allAbouts } from 'contentlayer/generated';
 import ClientImage from 'public/Logo_Visit_Beni_Mellal_black.png';
+import Barcelo from 'public/barcelo.png';
+import Sheraton from 'public/sher.png';
 
 const images = [
   {
@@ -11,7 +13,11 @@ const images = [
     name: 'about',
   },
   {
-    src: ClientImage,
+    src: Barcelo,
+    name: 'about',
+  },
+  {
+    src: Sheraton,
     name: 'about',
   },
   {
@@ -19,7 +25,11 @@ const images = [
     name: 'about',
   },
   {
-    src: ClientImage,
+    src: Barcelo,
+    name: 'about',
+  },
+  {
+    src: Sheraton,
     name: 'about',
   },
   {
@@ -27,19 +37,11 @@ const images = [
     name: 'about',
   },
   {
-    src: ClientImage,
+    src: Barcelo,
     name: 'about',
   },
   {
-    src: ClientImage,
-    name: 'about',
-  },
-  {
-    src: ClientImage,
-    name: 'about',
-  },
-  {
-    src: ClientImage,
+    src: Sheraton,
     name: 'about',
   },
 ];
