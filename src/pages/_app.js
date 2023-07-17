@@ -28,6 +28,7 @@ const inter = Inter({
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
+  const hasTransition = router.route !== '/' && router.route !== '/portfolio';
 
   const variants = {
     hidden: { opacity: 0, y: 100, transition: { duration: 0.5 } },
@@ -47,17 +48,22 @@ export default function App({ Component, pageProps }) {
         <Layout
           className={`${mako.variable} ${inter.variable} ${made.variable} `}
           key={router.asPath}
+          hasPadding={hasTransition}
         >
-          <motion.main
-            variants={variants}
-            initial="hidden"
-            animate="enter"
-            exit="exit"
-            transition={{ type: 'linear' }}
-            className="w-full"
-          >
+          {hasTransition ? (
+            <motion.main
+              variants={variants}
+              initial="hidden"
+              animate="enter"
+              exit="exit"
+              transition={{ type: 'linear' }}
+              className="w-full"
+            >
+              <Component {...pageProps} />
+            </motion.main>
+          ) : (
             <Component {...pageProps} />
-          </motion.main>
+          )}
         </Layout>
       </AnimatePresence>
     </>

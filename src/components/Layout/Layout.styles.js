@@ -6,7 +6,7 @@ export const Wrapper = tw.div`
  [&>footer]:z-50
 `;
 
-export const MainWrapper = styled.main`
+export const MainWrapper = styled.div`
   ${tw`w-full flex-1 flex flex-col justify-center items-center pt-[5.563rem]
         md:(pt-0) px-[2.5rem]  lg:px-[4.5rem] `}
   // if isNotFound pt-0

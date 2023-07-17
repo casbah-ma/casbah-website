@@ -22,8 +22,20 @@ export default function Portfolio({ data }) {
     threshold: 0.1,
   });
 
+  const variants = {
+    hidden: { opacity: 0, y: 150 },
+    enter: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeIn' } },
+    exit: { opacity: 0, y: -100, transition: { duration: 1, ease: 'easeOut' } },
+  };
+
   return (
-    <Container ref={ref}>
+    <Container
+      variants={variants}
+      initial="hidden"
+      animate="enter"
+      exit="exit"
+      ref={ref}
+    >
       {!inView && <CursorTracker text="fullProject" />}
       <PortfolioHeader ref={headerRef} inView={inView} {...data.headerProps} />
       {data?.blogs?.map((blog, key) => (
