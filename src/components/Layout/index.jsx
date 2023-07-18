@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
-const Layout = ({ children, ...rest }) => {
+const Layout = ({ children, hasPadding, ...rest }) => {
   const router = useRouter();
   const isFooter =
     router.route !== '/' &&

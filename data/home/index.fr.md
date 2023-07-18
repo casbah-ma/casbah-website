@@ -30,4 +30,7 @@ sectionProps5:
 sectionProps6:
   title: ''
   subtitle: ''
+footerProps:
+  description: ''
+  email: ''
 ---
