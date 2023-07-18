@@ -14,17 +14,20 @@ export const Container = styled(motion.div)`
     top: 0;
     background: linear-gradient(
       180deg,
-      #fff 0%,
-      rgba(255, 255, 255, 0.77) 100%
+      #fff 75.56%,
+      rgba(255, 255, 255, 0.82) 89.18%,
+      rgba(255, 255, 255, 0.06) 100%
     );
   }
+
   &:after {
     height: 14%;
     bottom: 0;
     background: linear-gradient(
       180deg,
-      #fff 0%,
-      rgba(255, 255, 255, 0.77) 100%
+      #fff 24.59%,
+      rgba(255, 255, 255, 0.86) 71.37%,
+      rgba(255, 255, 255, 0) 100%
     );
   }
 `;

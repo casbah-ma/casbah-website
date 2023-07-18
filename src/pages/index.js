@@ -7,7 +7,7 @@ import Lottie_02 from '@/lotties/Lottie_02.json';
 import Lottie_03 from '@/lotties/Lottie_03.json';
 import Lottie_04 from '@/lotties/Lottie_04.json';
 import Lottie_05 from '@/lotties/Lottie_05.json';
-// import Lottie_06 from '@/lotties/Lottie_06.json';
+import Lottie_06 from '@/lotties/Lottie_06.json';
 import Lottie_07 from '@/lotties/dna.json';
 import Hero from '../components/Hero';
 import { Container, LottieWrapper } from '../styles/Home.styles';
@@ -33,7 +33,9 @@ export default function Home({ data }) {
     setCurrentStepIndex(data);
   };
 
-  const { ref, inView: footerInView } = useInView({ threshold: 0.2 });
+  const { ref: footerRef, inView: footerInView } = useInView({
+    threshold: 0.2,
+  });
   const { ref: heroRef, inView: heroInView } = useInView({
     threshold: 0.3,
   });
@@ -44,23 +46,21 @@ export default function Home({ data }) {
     Lottie_03,
     Lottie_04,
     Lottie_05,
+    Lottie_06,
     Lottie_07,
   ];
 
   return (
     <Container hasGradient={!heroInView && !footerInView}>
-      {!heroInView && !footerInView && (
-        <LottieWrapper>
-          <Player
-            keepLastFrame
-            autoplay
-            loop={false}
-            src={lotties[currentStepIndex]}
-          />
-        </LottieWrapper>
-      )}
+      <LottieWrapper>
+        <Player
+          keepLastFrame
+          autoplay
+          loop={false}
+          src={!heroInView && !footerInView && lotties[currentStepIndex]}
+        />
+      </LottieWrapper>
       <Hero {...data.heroProps} ref={heroRef} />
-
       <Scrollama offset={0.5} onStepEnter={onStepEnter}>
         <Step data={0}>
           <div style={{ zIndex: -20 }}>
@@ -98,7 +98,7 @@ export default function Home({ data }) {
           </div>
         </Step>
       </Scrollama>
-      <HomeFooter ref={ref} {...data.footerProps} />
+      <HomeFooter ref={footerRef} {...data.footerProps} />
     </Container>
   );
 }
