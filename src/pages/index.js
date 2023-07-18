@@ -33,7 +33,10 @@ export default function Home({ data }) {
     setCurrentStepIndex(data);
   };
 
-  const { ref, inView: footerInView } = useInView({ threshold: 0.3 });
+  const { ref, inView: footerInView } = useInView({ threshold: 0.2 });
+  const { ref: heroRef, inView: heroInView } = useInView({
+    threshold: 0.3,
+  });
 
   const lotties = [
     Lottie_01,
@@ -45,8 +48,8 @@ export default function Home({ data }) {
   ];
 
   return (
-    <Container>
-      {currentStepIndex !== -1 && !footerInView && (
+    <Container hasGradient={!heroInView && !footerInView}>
+      {!heroInView && !footerInView && (
         <LottieWrapper>
           <Player
             keepLastFrame
@@ -56,46 +59,41 @@ export default function Home({ data }) {
           />
         </LottieWrapper>
       )}
+      <Hero {...data.heroProps} ref={heroRef} />
+
       <Scrollama offset={0.5} onStepEnter={onStepEnter}>
-        <Step data={-1}>
-          <div>
-            <Hero {...data.heroProps} />
-          </div>
-        </Step>
         <Step data={0}>
-          <div>
+          <div style={{ zIndex: -20 }}>
             <HomeSection {...data.sectionProps} lottie={Lottie_01} />
           </div>
         </Step>
         <Step data={1}>
-          <div>
+          <div style={{ zIndex: -20 }}>
             <HomeSection {...data.sectionProps1} lottie={Lottie_02} />
           </div>
         </Step>
-
         <Step data={2}>
-          <div>
+          <div style={{ zIndex: -20 }}>
             <HomeSection {...data.sectionProps2} lottie={Lottie_03} />
           </div>
         </Step>
         <Step data={2}>
-          <div>
+          <div style={{ zIndex: -20 }}>
             <HomeSection {...data.sectionProps3} lottie={Lottie_04} />
           </div>
         </Step>
         <Step data={4}>
-          <div>
+          <div style={{ zIndex: -20 }}>
             <HomeSection {...data.sectionProps4} lottie={Lottie_05} />
           </div>
         </Step>
-
         <Step data={5}>
-          <div>
+          <div style={{ zIndex: -20 }}>
             <HomeSection {...data.sectionProps5} />
           </div>
         </Step>
         <Step data={6}>
-          <div>
+          <div style={{ zIndex: -20 }}>
             <HomeSection {...data.sectionProps6} lottie={Lottie_07} />
           </div>
         </Step>

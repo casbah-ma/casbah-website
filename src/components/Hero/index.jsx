@@ -13,16 +13,16 @@ import Paragraph from '../Paragraph';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useLocomotive } from '../../hooks/useLocomotive';
 import hero from '../../lotties/hero.json';
-import { useState } from 'react';
+import { forwardRef, useState } from 'react';
 import HeroArrow from '../../icons/HeroArrow';
 import { arrowVariant, arrowsVariant, containerVariant } from './variants';
 
-function Hero({ title, description, ...rest }) {
+const Hero = forwardRef(function Hero({ title, description, ...rest }, ref) {
   const [showText, setShowText] = useState(false);
   const [showArrow, setShowArrow] = useState(false);
 
   return (
-    <Wrapper {...rest}>
+    <Wrapper ref={ref} {...rest}>
       <Container initial="hidden" animate="visible" exit="exit">
         <motion.div exit={{ opacity: 0 }}>
           <Player
@@ -69,7 +69,7 @@ function Hero({ title, description, ...rest }) {
       </Container>
     </Wrapper>
   );
-}
+});
 
 Hero.propTypes = {
   title: PropTypes.string.isRequired,

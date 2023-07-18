@@ -14,34 +14,28 @@ import { motion } from 'framer-motion';
 function HomeSection({ title, subtitle, texts = '', lottie, ...rest }) {
   return (
     <Wrapper {...rest}>
-      <Container>
-        <Content>
-          <TitleWrapper>
-            {subtitle && (
-              <AnimatedDisplay
-                renderAs={motion.span}
-                text={subtitle}
-                size="md"
-              />
-            )}
-            <Title withoutBorder={true} renderAs="h2">
-              {title}
-            </Title>
-          </TitleWrapper>
-
-          {texts && (
-            <Texts>
-              {texts &&
-                texts?.length > 0 &&
-                texts.map((text, i) => (
-                  <Paragraph key={i} size="md">
-                    {text}
-                  </Paragraph>
-                ))}
-            </Texts>
+      <Content>
+        <TitleWrapper>
+          {subtitle && (
+            <AnimatedDisplay renderAs={motion.span} text={subtitle} size="md" />
           )}
-        </Content>
-      </Container>
+          <Title withoutBorder={true} renderAs="h2">
+            {title}
+          </Title>
+        </TitleWrapper>
+
+        {texts && (
+          <Texts>
+            {texts &&
+              texts?.length > 0 &&
+              texts.map((text, i) => (
+                <Paragraph key={i} size="md">
+                  {text}
+                </Paragraph>
+              ))}
+          </Texts>
+        )}
+      </Content>
     </Wrapper>
   );
 }
