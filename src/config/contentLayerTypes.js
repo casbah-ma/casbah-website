@@ -15,7 +15,6 @@ export const footerPropsType = defineNestedType(() => ({
   name: 'FooterProps',
   fields: {
     description: { type: 'string' },
-    email: { type: 'string' },
   },
 }));
 /******* Footer props types *******/

@@ -2,11 +2,11 @@ import { motion } from 'framer-motion';
 import tw, { styled } from 'twin.macro';
 
 export const Wrapper = styled(motion.section)`
-  ${tw`z-20 min-h-screen w-full bg-white`}
+  ${tw`z-20  min-h-screen w-full bg-white`}
 `;
 
 export const Container = styled(motion.div)`
-  ${tw`h-full w-full flex flex-col gap-10 px-4 pt-28
+  ${tw`h-full w-full max-w-[87.5rem] mx-auto flex flex-col gap-10 px-4 pt-28
         justify-start items-center text-center
        md:gap-36 lg:(gap-16 px-16 pb-6)`};
   ${({ isFixed }) => isFixed && tw`fixed bottom-0 w-[99%] h-full  -z-10`}

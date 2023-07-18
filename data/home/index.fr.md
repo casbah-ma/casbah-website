@@ -32,5 +32,4 @@ sectionProps6:
   subtitle: ''
 footerProps:
   description: ''
-  email: ''
 ---
