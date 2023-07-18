@@ -16,6 +16,7 @@ import {
   DropUsPropsType,
   TeamSectionPropsType,
   blogsCardProps,
+  footerPropsType,
   headerPropsType,
   headerV2PropsType,
   homeSectionPropsType,
@@ -38,6 +39,7 @@ export const Home = defineDocumentType(() => ({
     sectionProps4: { type: 'nested', of: homeSectionPropsType },
     sectionProps5: { type: 'nested', of: homeSectionPropsType },
     sectionProps6: { type: 'nested', of: homeSectionPropsType },
+    footerProps: { type: 'nested', of: footerPropsType },
   },
   computedFields: {
     lang: {

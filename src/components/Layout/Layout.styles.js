@@ -11,4 +11,6 @@ export const MainWrapper = styled.div`
         md:(pt-0) px-[2.5rem]  lg:px-[4.5rem] `}
   // if isNotFound pt-0
     ${({ isNotFound }) => isNotFound && tw`!pt-0`}
+    //
+  ${({ hasPadding }) => !hasPadding && tw`!p-0`}
 `;

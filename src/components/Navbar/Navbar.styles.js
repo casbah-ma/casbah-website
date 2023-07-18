@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const NavbarWrapper = tw.header`
-  fixed bg-white top-0 left-[4.5rem] right-[4.5rem] h-[6.5rem] flex items-center justify-center z-50
-
+  absolute bg-white top-0 left-[4.5rem] right-[4.5rem] h-[6.5rem] flex items-center justify-center z-50
 `;
 
 export const Logo = tw.img`

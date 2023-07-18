@@ -10,6 +10,16 @@ export const headerPropsType = defineNestedType(() => ({
 }));
 /******* Header props types *******/
 
+/******* Footer props types *******/
+export const footerPropsType = defineNestedType(() => ({
+  name: 'FooterProps',
+  fields: {
+    description: { type: 'string' },
+    email: { type: 'string' },
+  },
+}));
+/******* Footer props types *******/
+
 /******* HeaderV2 props types *******/
 export const headerV2PropsType = defineNestedType(() => ({
   name: 'HeaderV2Props',

@@ -12,9 +12,11 @@ const Layout = ({ children, hasPadding, ...rest }) => {
   const isNotFound = router.route === '/404';
 
   return (
-    <Wrapper hasPadding={hasPadding} {...rest}>
+    <Wrapper {...rest}>
       <Navbar />
-      <MainWrapper isNotFound={isNotFound}>{children}</MainWrapper>
+      <MainWrapper isNotFound={isNotFound} hasPadding={hasPadding}>
+        {children}
+      </MainWrapper>
       {isFooter && <Footer />}
     </Wrapper>
   );

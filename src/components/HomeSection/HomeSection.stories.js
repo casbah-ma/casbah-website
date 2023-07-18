@@ -1,16 +1,9 @@
 import HomeSection from '.';
 import lottie from '../../lotties/straightLine.json';
-import { variants } from './HomeSection.styles';
 
 export default {
   title: 'Sections/HomeSection',
   component: HomeSection,
-  argTypes: {
-    variants: {
-      options: Object.keys(variants),
-      control: { type: 'radio' },
-    },
-  },
 };
 
 const texts = [
@@ -23,19 +16,11 @@ export const Left = Template.bind({});
 Left.args = {
   title: 'The brief is often clear : Starting from "A" to go to "B"',
   texts,
-  variant: 'left',
   lottie,
-};
-
-export const Right = Template.bind({});
-Right.args = {
-  ...Left.args,
-  variant: 'right',
 };
 
 export const WithSubtitle = Template.bind({});
 WithSubtitle.args = {
   ...Left.args,
-  variant: 'right',
   subtitle: 'Or you know where you have to get. ',
 };
