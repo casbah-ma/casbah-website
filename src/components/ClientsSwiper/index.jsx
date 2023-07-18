@@ -15,7 +15,7 @@ function ClientsSwiper({ title, description, images }) {
   return (
     <Wrapper>
       <Header description={description} title={title} />
-      <CarouselParent>
+      <CarouselParent className='infinite-slider'>
         <Carousel>
           {images?.length > 0 &&
             images.map((image, i) => (

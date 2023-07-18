@@ -7,6 +7,24 @@ const CustomStyles = createGlobalStyle`
         ${tw`antialiased`}
     }
   
+    // client slider / agency page 
+    .infinite-slider::before,
+    .infinite-slider::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      width: 25px;
+      height: 100%;
+    }
+    .infinite-slider::before {
+      background: linear-gradient(to right, #fff 0%, rgba(250, 251, 252, 0) 100%
+      ); left: 0;
+    }
+    .infinite-slider::after {
+        background: linear-gradient(to right, rgba(250,251,252,0) 0%, #fff 100%); right: 0;
+    }
+
     .wave span {
       position: relative !important;
       display: inline-block !important;
