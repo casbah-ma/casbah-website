@@ -3,19 +3,62 @@ import AwardsSection from '../../components/AwardsSection';
 import ClientsSwiper from '../../components/ClientsSwiper';
 import TeamSection from '../../components/TeamSection';
 import { allAbouts } from 'contentlayer/generated';
+import ClientImage from 'public/Logo_Visit_Beni_Mellal_black.png';
+import Barcelo from 'public/barcelo.png';
+import Sheraton from 'public/sher.png';
+
+const images = [
+  {
+    src: ClientImage,
+    name: 'about',
+  },
+  {
+    src: Barcelo,
+    name: 'about',
+  },
+  {
+    src: Sheraton,
+    name: 'about',
+  },
+  {
+    src: ClientImage,
+    name: 'about',
+  },
+  {
+    src: Barcelo,
+    name: 'about',
+  },
+  {
+    src: Sheraton,
+    name: 'about',
+  },
+  {
+    src: ClientImage,
+    name: 'about',
+  },
+  {
+    src: Barcelo,
+    name: 'about',
+  },
+  {
+    src: Sheraton,
+    name: 'about',
+  },
+];
 
 export const getStaticProps = ({ locale }) => {
   const data = allAbouts.find((page) => page.lang === locale);
+
   return {
     props: {
-      data,
+      data: { ...data, clientSection: {...data.clientSection, images} },
     },
   };
 };
 
 const About = ({ data }) => {
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-36 lg:pt-[11.688rem] lg:pb-[14.75rem]">
+    <div className="w-full flex flex-col justify-center items-center gap-36 lg:pt-[11.688rem]">
       <AboutSection {...data.aboutSection} />
       <AwardsSection {...data.awardsSection} />
       <TeamSection {...data.teamSection} />

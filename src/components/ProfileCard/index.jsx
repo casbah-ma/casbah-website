@@ -8,9 +8,9 @@ import {
   imagesSize,
 } from './ProfileCard.styles';
 
-const ProfileCard = ({ name, post, imgSrc }) => {
+const ProfileCard = ({ name, post, imgSrc, onClick }) => {
   return (
-    <CardWrapper>
+    <CardWrapper onClick={onClick}>
       <MyImage src={imgSrc} alt={name} sizes={imagesSize} />
       <CardInfo>
         <CardTitle>{name}</CardTitle>

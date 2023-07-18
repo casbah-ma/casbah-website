@@ -79,13 +79,6 @@ const Navbar = () => {
             )}
           </LinksWrapper>
           <Social>
-            <MediaWrapper>
-              {media.map((social, index) => (
-                <Link key={index} href={social.url} target="_blank">
-                  <social.icon />
-                </Link>
-              ))}
-            </MediaWrapper>
             <LanguageMenu />
           </Social>
         </DeskView>
@@ -108,13 +101,6 @@ const Navbar = () => {
                 )
               )
             )}
-            <MediaWrapper>
-              {media.map((social, index) => (
-                <Link key={index} href={social.url}>
-                  <social.icon />
-                </Link>
-              ))}
-            </MediaWrapper>
 
             <NavMiniList
               Icon={Language}

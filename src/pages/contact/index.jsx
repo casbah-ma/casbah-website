@@ -14,13 +14,12 @@ export const getStaticProps = ({ locale }) => {
 
 const ContactUsPage = ({ data }) => {
   return (
-    <div className="flex flex-col justify-center items-center gap-36  lg:pt-[11.688rem] lg:pb-[14.75rem]">
+    <div className="flex flex-col justify-center items-center gap-36  lg:pt-[11.688rem]">
       <DropUsSection
         description={data.DropUs.description}
         specialLine={data.DropUs.specialLine}
       />
       <ContactUs />
-      <FollowUs description={data.FollowUsDescription} />
     </div>
   );
 };
