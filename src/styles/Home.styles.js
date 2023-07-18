@@ -14,18 +14,19 @@ export const Container = styled(motion.div)`
     top: 0;
     background: linear-gradient(
       180deg,
-      #fff 75.56%,
+      #fff 0%,
       rgba(255, 255, 255, 0.82) 89.18%,
       rgba(255, 255, 255, 0.06) 100%
     );
   }
 
   &:after {
+    rotate: 180deg;
     height: 14%;
     bottom: 0;
     background: linear-gradient(
       180deg,
-      #fff 24.59%,
+      #fff 0%,
       rgba(255, 255, 255, 0.86) 71.37%,
       rgba(255, 255, 255, 0) 100%
     );
