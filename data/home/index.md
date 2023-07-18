@@ -32,4 +32,7 @@ sectionProps6:
   subtitle: "And that's one side of"
   texts:
     - ''
+footerProps:
+  email: 'fake@gmail.com'
+  description: 'this is supposed to be the content thay say hey you want to work with us drop us a mail  at'
 ---
