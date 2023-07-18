@@ -129,6 +129,7 @@ export const teamCardProps = defineNestedType(() => ({
   fields: {
     name: { type: 'string' },
     post: { type: 'string' },
+    description: { type: 'string' },
     imgSrc: { type: 'string' },
   },
 }));

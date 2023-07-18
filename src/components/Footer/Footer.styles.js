@@ -6,7 +6,7 @@ export const socialSize = tw`w-[1.713rem] h-[1.713rem]
                             lg:(w-8 h-8)`;
 
 export const FooterWrapper = tw.footer`
-  w-full h-[65.375rem] bg-deepBlue flex flex-col justify-between items-center -z-20 mt-10 lg:mt-0
+  w-full h-[65.375rem] bg-deepBlue flex flex-col justify-between items-center -z-20
    md:(h-[41rem] ) [scroll-snap-align: start]
    lg:(h-[26.688rem])`;
 

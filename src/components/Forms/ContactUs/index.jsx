@@ -50,7 +50,7 @@ const ContactUs = ({}) => {
           name="message"
           value={formState.message}
           type="text"
-          label={'yourmessage'}
+          label={t('yourmessage')}
           placeholder={`${t('typein')} ${t('yourmessage')}`}
           onChange={handleInputChange}
         />

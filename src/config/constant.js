@@ -17,7 +17,7 @@ export const cords = {
 
 // Casbah informations
 export const infos = {
-  email: 'Fake@CTD.MA',
+  email: 'contact@CTD.MA',
   phone: '+212 254 485 478',
   address: 'Rue Ahfir Res Nouha Etage 7 N°49 Tanger 90000 Morocco',
 };

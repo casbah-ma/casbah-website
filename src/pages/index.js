@@ -13,6 +13,8 @@ import Hero from '../components/Hero';
 import { Container } from '../styles/Home.styles';
 import { useEffect, useRef, useState } from 'react';
 
+
+
 export const getStaticProps = async ({ locale }) => {
   const data = allHomes.find((home) => home.lang === locale);
   return {
