@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
-const Layout = ({ children, ...rest }) => {
+const Layout = ({ children, hasPadding, ...rest }) => {
   const router = useRouter();
   const isFooter =
     router.route !== '/' &&
@@ -24,8 +24,10 @@ const Layout = ({ children, ...rest }) => {
   return (
     <Wrapper {...rest}>
       <Navbar />
-      <MainWrapper isNotFound={isNotFound}>{children}</MainWrapper>
-      {isFooter && showFooter && <Footer />}
+      <MainWrapper isNotFound={isNotFound} hasPadding={hasPadding}>
+        {children}
+      </MainWrapper>
+      {isFooter && <Footer />}
     </Wrapper>
   );
 };

@@ -4,7 +4,7 @@ import tw from 'twin.macro';
 
 export const NavbarWrapper = tw.header`
   max-w-[87.5rem] w-full px-[2.5rem]  lg:px-[4.5rem]
-  fixed bg-white top-0  h-[6.5rem] flex items-center justify-center z-50
+  absolute bg-white top-0  h-[6.5rem] flex items-center justify-center z-50
 `;
 
 export const Logo = tw.img`
