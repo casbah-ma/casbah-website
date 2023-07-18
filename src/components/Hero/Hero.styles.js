@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import tw, { styled } from 'twin.macro';
 
 export const Wrapper = styled(motion.section)`
-  ${tw`min-h-screen w-full`}
+  ${tw`z-20 min-h-screen w-full bg-white`}
 `;
 
 export const Container = styled(motion.div)`
