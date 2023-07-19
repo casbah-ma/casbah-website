@@ -6,11 +6,13 @@ export const Wrapper = tw.div`
  [&>footer]:z-50
 `;
 
-export const MainWrapper = styled.main`
+
+export const MainWrapper = styled.div`
+
   ${tw`w-full max-w-[87.5rem]  flex-1 flex flex-col justify-center items-center pt-[5.563rem] pb-20
         md:(pt-0) px-[2.5rem]  lg:px-[4.5rem] `}
   // if isNotFound pt-0
     ${({ isNotFound }) => isNotFound && tw`!pt-0`}
     //
-  ${({ hasPadding }) => !hasPadding && tw`!p-0`}
+  ${({ hasPadding }) => !hasPadding && tw`!p-0 max-w-max`}
 `;

@@ -1,4 +1,7 @@
 ---
+heroProps:
+  title: ''
+  description: ''
 sectionProps:
   title: ''
   texts:
@@ -27,4 +30,6 @@ sectionProps5:
 sectionProps6:
   title: ''
   subtitle: ''
+footerProps:
+  description: ''
 ---
