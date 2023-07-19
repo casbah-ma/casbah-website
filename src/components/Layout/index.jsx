@@ -16,15 +16,18 @@ const Layout = ({ children, hasPadding, ...rest }) => {
 
   useEffect(() => {
     // show footer after 1sec
-    isFooter && setTimeout(() => {
-      setShowFooter(true);
-    }, 1000);
+    isFooter &&
+      setTimeout(() => {
+        setShowFooter(true);
+      }, 1000);
   }, [router.route]);
 
   return (
     <Wrapper {...rest}>
       <Navbar />
-      <MainWrapper isNotFound={isNotFound}>{children}</MainWrapper>
+      <MainWrapper isNotFound={isNotFound} hasPadding={hasPadding}>
+        {children}
+      </MainWrapper>
       {isFooter && showFooter && <Footer />}
     </Wrapper>
   );
