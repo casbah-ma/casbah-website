@@ -1,5 +1,5 @@
 import HomeSection from '.';
-import lottie from '../../lotties/straightLine.json';
+import lottie from '../../lotties/Lottie_01.json';
 
 export default {
   title: 'Sections/HomeSection',
