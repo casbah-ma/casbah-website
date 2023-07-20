@@ -2,7 +2,10 @@ import { motion } from 'framer-motion';
 import tw, { styled } from 'twin.macro';
 
 export const Wrapper = styled(motion.div)`
-  ${tw`relative min-h-[70vh] flex justify-center items-center ml-auto w-[40%]`};
+  ${tw`relative h-[70vh] flex justify-center items-end ml-auto w-[40%] pb-20`};
+  ${({ isFirst }) => isFirst && tw`h-screen`}
+  scroll-snap-align: end;
+  scroll-snap-stop: always;
 `;
 
 export const Content = styled.div(() => [

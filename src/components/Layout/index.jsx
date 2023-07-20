@@ -24,7 +24,6 @@ const Layout = ({ children, hasPadding, ...rest }) => {
 
   return (
     <Wrapper {...rest}>
-      <Navbar />
       <MainWrapper isNotFound={isNotFound} hasPadding={hasPadding}>
         {children}
       </MainWrapper>

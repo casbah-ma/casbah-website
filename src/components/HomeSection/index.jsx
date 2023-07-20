@@ -11,9 +11,16 @@ import AnimatedDisplay from '../AnimatedDisplay';
 import Paragraph from '../Paragraph';
 import { motion } from 'framer-motion';
 
-function HomeSection({ title, subtitle, texts = '', lottie, ...rest }) {
+function HomeSection({
+  title,
+  subtitle,
+  texts = '',
+  lottie,
+  isFirst,
+  ...rest
+}) {
   return (
-    <Wrapper {...rest}>
+    <Wrapper {...rest} isFirst={isFirst}>
       <Content>
         <TitleWrapper>
           {subtitle && (
