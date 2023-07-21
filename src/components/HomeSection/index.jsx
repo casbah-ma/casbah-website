@@ -20,7 +20,7 @@ function HomeSection({
   ...rest
 }) {
   return (
-    <Wrapper {...rest} isFirst={isFirst}>
+    <div {...rest} className="section">
       <Content>
         <TitleWrapper>
           {subtitle && (
@@ -43,7 +43,7 @@ function HomeSection({
           </Texts>
         )}
       </Content>
-    </Wrapper>
+    </div>
   );
 }
 

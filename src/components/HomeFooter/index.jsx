@@ -4,7 +4,6 @@ import Footer from '../Footer';
 import { forwardRef } from 'react';
 import { infos } from '../../config/constant';
 
-
 const HomeFooter = forwardRef(function HomeFooter(
   { description, ...rest },
   ref

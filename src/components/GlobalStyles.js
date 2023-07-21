@@ -7,6 +7,7 @@ const CustomStyles = createGlobalStyle`
         ${tw`antialiased`}
     }
   
+  
     // client slider / agency page 
     .infinite-slider::before,
     .infinite-slider::after {

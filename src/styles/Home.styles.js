@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const Container = styled(motion.div)`
-  ${tw`w-full h-screen overflow-y-scroll z-50`}
-  scroll-snap-type: y mandatory;
+  ${tw`w-full`}
 
   &:after,
   &:before {
