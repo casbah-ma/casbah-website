@@ -8,7 +8,7 @@ const CustomStyles = createGlobalStyle`
     }
 
     .fp-section.home_section {
-       ${tw`flex items-center`}
+       ${tw`flex items-center justify-end`}
     }
   
   

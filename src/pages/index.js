@@ -68,51 +68,18 @@ export default function Home({ data }) {
         scrollingSpeed={1500}
         onLeave={onLeave}
         verticalCentered={false}
+        scrollOverflow={false}
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
               <Hero className="section" {...data.heroProps} />
-              <HomeSection
-                {...data.sectionProps}
-                lottie={Lottie_01}
-                variant="left"
-                isFirst={true}
-              />
-              <HomeSection
-                {...data.sectionProps1}
-                lottie={Lottie_02}
-                variant="right"
-              />
-              <HomeSection
-                {...data.sectionProps2}
-                lottie={Lottie_03}
-                variant="left"
-              />
-              <HomeSection
-                {...data.sectionProps3}
-                lottie={Lottie_04}
-                variant="right"
-              />
-              <HomeSection
-                {...data.sectionProps4}
-                lottie={Lottie_05}
-                variant="left"
-              />
-              <HomeSection
-                {...data.sectionProps5}
-                lottie={Lottie_06}
-                variant="left"
-              />
-              <HomeSection
-                {...data.sectionProps6}
-                lottie={Lottie_07}
-                variant="centre"
-              />
-              <HomeFooter
-                ref={footerRef}
-                className="section"
-                {...data.footerProps}
-              />
+              <HomeSection {...data.sectionProps} />
+              <HomeSection {...data.sectionProps1} />
+              <HomeSection {...data.sectionProps2} />
+              <HomeSection {...data.sectionProps3} />
+              <HomeSection {...data.sectionProps4} />
+              <HomeSection {...data.sectionProps5} />
+              <HomeSection {...data.sectionProps6} />
             </ReactFullpage.Wrapper>
           );
         }}
