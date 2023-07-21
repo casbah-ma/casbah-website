@@ -15,6 +15,7 @@ import { Player } from '@lottiefiles/react-lottie-player';
 import { useInView } from 'react-intersection-observer';
 import HomeFooter from '../components/HomeFooter';
 import ReactFullpage from '@fullpage/react-fullpage';
+import Navbar from '../components/Navbar';
 
 export const getStaticProps = async ({ locale }) => {
   const data = allHomes.find((home) => home.lang === locale);
@@ -64,14 +65,14 @@ export default function Home({ data }) {
         />
       </LottieWrapper>
       <ReactFullpage
-        licenseKey="gplv3-license"
-        scrollingSpeed={1500}
+        scrollingSpeed={1300}
         onLeave={onLeave}
         verticalCentered={false}
         scrollOverflow={false}
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
+              <Navbar />
               <Hero ref={heroRef} className="section" {...data.heroProps} />
               <HomeSection {...data.sectionProps} />
               <HomeSection {...data.sectionProps1} />
