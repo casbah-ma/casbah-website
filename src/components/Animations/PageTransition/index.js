@@ -64,7 +64,7 @@ const TransitionPage = ({}) => {
         animate={controls2}
         className="w-screen h-full text-white absolute flex justify-center items-center"
       >
-        {showChildren && <LottieText lottie={Logo} />}
+        {showChildren && <LottieText lottie={Logo} isLogo={true} />}
       </motion.div>
     </motion.div>
   );

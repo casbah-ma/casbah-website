@@ -11,6 +11,10 @@ export const Container = styled(motion.div)`
        md:gap-36 lg:(gap-16 px-16 pb-6)`};
 `;
 
+export const LottierContainer = styled(motion.div)`
+  ${tw`w-full h-full`}
+`;
+
 export const ContentWrapper = styled(motion.div)`
   ${tw`flex flex-col justify-start items-center gap-7`}
 `;

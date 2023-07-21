@@ -1,5 +1,6 @@
 import HomeSection from '@/components/HomeSection';
 import { allHomes } from 'contentlayer/generated';
+
 //lotties
 import Lottie_01 from '@/lotties/Lottie_01.json';
 import Lottie_02 from '@/lotties/Lottie_02.json';
@@ -9,7 +10,7 @@ import Lottie_05 from '@/lotties/Lottie_05.json';
 import Lottie_06 from '@/lotties/Lottie_06.json';
 import Lottie_07 from '@/lotties/Lottie_07.json';
 import Hero from '../components/Hero';
-import { LottieWrapper } from '../styles/Home.styles';
+import { LottieWrapper, LottierContainer } from '../styles/Home.styles';
 import { useMemo, useState } from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 import { useInView } from 'react-intersection-observer';
@@ -57,12 +58,14 @@ export default function Home({ data }) {
   return (
     <>
       <LottieWrapper className="lottie">
-        <Player
-          keepLastFrame
-          autoplay
-          loop={false}
-          src={!heroInView && !footerInView && lotties[currentIndex]}
-        />
+        <LottierContainer>
+          <Player
+            keepLastFrame
+            autoplay
+            loop={false}
+            src={!heroInView && !footerInView && lotties[currentIndex]}
+          />
+        </LottierContainer>
       </LottieWrapper>
       <ReactFullpage
         scrollingSpeed={1300}

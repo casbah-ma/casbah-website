@@ -29,3 +29,7 @@ export const LottieWrapper = styled.div`
        transition-all duration-300`}
   ${({ isWhite }) => isWhite && tw`bg-white`}
 `;
+
+export const LottierContainer = tw.div`
+  w-full h-full
+`;

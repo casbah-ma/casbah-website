@@ -1,20 +1,27 @@
 import { Player } from '@lottiefiles/react-lottie-player';
-import { Wrapper } from './LottieText.styles';
+import { LottierContainer, Wrapper } from './LottieText.styles';
 
-export default function LottieText({ lottie, setIsEnd = null, ...rest }) {
+export default function LottieText({
+  lottie,
+  setIsEnd = null,
+  isLogo,
+  ...rest
+}) {
   return (
     <Wrapper {...rest}>
-      <Player
-        keepLastFrame
-        autoplay
-        loop={false}
-        src={lottie}
-        onEvent={(e) => {
-          if (e === 'complete' && setIsEnd) {
-            setIsEnd(true);
-          }
-        }}
-      />
+      <LottierContainer isLogo={isLogo}>
+        <Player
+          keepLastFrame
+          autoplay
+          loop={false}
+          src={lottie}
+          onEvent={(e) => {
+            if (e === 'complete' && setIsEnd) {
+              setIsEnd(true);
+            }
+          }}
+        />
+      </LottierContainer>
     </Wrapper>
   );
 }
