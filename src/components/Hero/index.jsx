@@ -5,6 +5,7 @@ import {
   Container,
   Content,
   ContentWrapper,
+  LottierContainer,
   Wrapper,
 } from './Hero.styles';
 import { Player } from '@lottiefiles/react-lottie-player';
@@ -28,7 +29,7 @@ const Hero = forwardRef(function Hero({ title, description, ...rest }, ref) {
         animate="visible"
         exit="exit"
       >
-        <motion.div exit={{ opacity: 0 }}>
+        <LottierContainer exit={{ opacity: 0 }}>
           <Player
             keepLastFrame
             autoplay
@@ -43,7 +44,7 @@ const Hero = forwardRef(function Hero({ title, description, ...rest }, ref) {
               }
             }}
           />
-        </motion.div>
+        </LottierContainer>
         {showText && (
           <ContentWrapper>
             <Content>
