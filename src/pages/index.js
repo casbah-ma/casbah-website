@@ -72,7 +72,7 @@ export default function Home({ data }) {
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
-              <Hero className="section" {...data.heroProps} />
+              <Hero ref={heroRef} className="section" {...data.heroProps} />
               <HomeSection {...data.sectionProps} />
               <HomeSection {...data.sectionProps1} />
               <HomeSection {...data.sectionProps2} />
@@ -80,6 +80,7 @@ export default function Home({ data }) {
               <HomeSection {...data.sectionProps4} />
               <HomeSection {...data.sectionProps5} />
               <HomeSection {...data.sectionProps6} />
+              <HomeFooter ref={footerRef} {...data.footerProps} />
             </ReactFullpage.Wrapper>
           );
         }}
