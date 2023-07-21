@@ -6,6 +6,11 @@ const CustomStyles = createGlobalStyle`
     body {
         ${tw`antialiased`}
     }
+
+    .fp-section.home_section {
+       ${tw`flex items-center justify-end`}
+    }
+  
   
     // client slider / agency page 
     .infinite-slider::before,

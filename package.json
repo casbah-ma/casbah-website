@@ -12,6 +12,7 @@
     "prettier": "prettier --write ."
   },
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.40",
     "@headlessui/react": "^1.7.14",
     "@lottiefiles/lottie-interactivity": "^1.6.2",
     "@lottiefiles/lottie-player": "^2.0.2",
@@ -35,7 +36,6 @@
     "react-dom": "18.2.0",
     "react-intersection-observer": "^9.5.2",
     "react-map-gl": "^7.0.23",
-    "react-scrollama": "^2.3.2",
     "react-transition-group": "^4.4.5",
     "styled-components": "^5.3.10",
     "swiper": "^9.3.0",

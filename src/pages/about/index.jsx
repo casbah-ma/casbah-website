@@ -51,7 +51,7 @@ export const getStaticProps = ({ locale }) => {
 
   return {
     props: {
-      data: { ...data, clientSection: {...data.clientSection, images} },
+      data: { ...data, clientSection: { ...data.clientSection, images } },
     },
   };
 };

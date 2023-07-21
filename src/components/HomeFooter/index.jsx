@@ -4,18 +4,16 @@ import Footer from '../Footer';
 import { forwardRef } from 'react';
 import { infos } from '../../config/constant';
 
-
-const HomeFooter = forwardRef(function HomeFooter(
-  { description, ...rest },
-  ref
-) {
+const HomeFooter = forwardRef(function HomeFooter({ description }, ref) {
   return (
-    <Wrapper ref={ref} {...rest}>
-      <Text>
-        {description} <span>{infos.email}</span>
-      </Text>
-      <Footer />
-    </Wrapper>
+    <div ref={ref} className="section">
+      <Wrapper>
+        <Text>
+          {description} <span>{infos.email}</span>
+        </Text>
+        <Footer />
+      </Wrapper>
+    </div>
   );
 });
 

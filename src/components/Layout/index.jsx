@@ -12,6 +12,8 @@ const Layout = ({ children, hasPadding, ...rest }) => {
     router.route !== '/portfolio' &&
     router.route !== '/404';
   const isNotFound = router.route === '/404';
+  const isHome = router.route === '/';
+  console.log(isHome);
   const [showFooter, setShowFooter] = useState(false);
 
   useEffect(() => {
@@ -20,11 +22,11 @@ const Layout = ({ children, hasPadding, ...rest }) => {
       setTimeout(() => {
         setShowFooter(true);
       }, 1000);
-  }, [router.route]);
+  }, [router.route, isFooter]);
 
   return (
     <Wrapper {...rest}>
-      <Navbar />
+      {!isHome && <Navbar />}
       <MainWrapper isNotFound={isNotFound} hasPadding={hasPadding}>
         {children}
       </MainWrapper>

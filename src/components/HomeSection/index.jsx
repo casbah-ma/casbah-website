@@ -1,19 +1,13 @@
 import PropTypes from 'prop-types';
-import {
-  Container,
-  Content,
-  Texts,
-  TitleWrapper,
-  Wrapper,
-} from './HomeSection.styles';
+import { Content, Texts, TitleWrapper } from './HomeSection.styles';
 import Title from '../Title';
 import AnimatedDisplay from '../AnimatedDisplay';
 import Paragraph from '../Paragraph';
 import { motion } from 'framer-motion';
 
-function HomeSection({ title, subtitle, texts = '', lottie, ...rest }) {
+function HomeSection({ title, subtitle, texts = '' }) {
   return (
-    <Wrapper {...rest}>
+    <div className="section home_section">
       <Content>
         <TitleWrapper>
           {subtitle && (
@@ -24,26 +18,23 @@ function HomeSection({ title, subtitle, texts = '', lottie, ...rest }) {
           </Title>
         </TitleWrapper>
 
-        {texts && (
-          <Texts>
-            {texts &&
-              texts?.length > 0 &&
-              texts.map((text, i) => (
-                <Paragraph key={i} size="md">
-                  {text}
-                </Paragraph>
-              ))}
-          </Texts>
-        )}
+        <Texts>
+          {texts?.length > 0 &&
+            texts.map((text, i) => (
+              <Paragraph key={i} size="md">
+                {text}
+              </Paragraph>
+            ))}
+        </Texts>
       </Content>
-    </Wrapper>
+    </div>
   );
 }
 
 HomeSection.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
-  texts: PropTypes.arrayOf(PropTypes.string).isRequired,
+  texts: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default HomeSection;
