@@ -20,7 +20,7 @@ function HomeSection({
   ...rest
 }) {
   return (
-    <div {...rest} className="section">
+    <div {...rest} className="section home_section">
       <Content>
         <TitleWrapper>
           {subtitle && (
