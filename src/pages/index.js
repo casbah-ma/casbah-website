@@ -1,6 +1,5 @@
 import HomeSection from '@/components/HomeSection';
 import { allHomes } from 'contentlayer/generated';
-
 //lotties
 import Lottie_01 from '@/lotties/Lottie_01.json';
 import Lottie_02 from '@/lotties/Lottie_02.json';
@@ -8,7 +7,7 @@ import Lottie_03 from '@/lotties/Lottie_03.json';
 import Lottie_04 from '@/lotties/Lottie_04.json';
 import Lottie_05 from '@/lotties/Lottie_05.json';
 import Lottie_06 from '@/lotties/Lottie_06.json';
-import Lottie_07 from '@/lotties/dna.json';
+import Lottie_07 from '@/lotties/Lottie_07.json';
 import Hero from '../components/Hero';
 import { LottieWrapper } from '../styles/Home.styles';
 import { useMemo, useState } from 'react';
@@ -68,6 +67,7 @@ export default function Home({ data }) {
         licenseKey="gplv3-license"
         scrollingSpeed={1500}
         onLeave={onLeave}
+        verticalCentered={false}
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>

@@ -1,8 +1,7 @@
 import tw, { styled } from 'twin.macro';
 
 export const Wrapper = styled.div`
-  ${tw`w-full h-screen flex flex-col items-start gap-32 justify-end  bg-white`};
-  scroll-snap-align: end;
+  ${tw`w-full h-full flex flex-col items-start gap-32 justify-end  bg-white`};
 `;
 
 export const Text = styled.p`

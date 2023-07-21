@@ -9,12 +9,14 @@ const HomeFooter = forwardRef(function HomeFooter(
   ref
 ) {
   return (
-    <Wrapper ref={ref} {...rest}>
-      <Text>
-        {description} <span>{infos.email}</span>
-      </Text>
-      <Footer />
-    </Wrapper>
+    <div ref={ref} {...rest}>
+      <Wrapper>
+        <Text>
+          {description} <span>{infos.email}</span>
+        </Text>
+        <Footer />
+      </Wrapper>
+    </div>
   );
 });
 
