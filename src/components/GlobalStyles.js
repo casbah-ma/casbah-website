@@ -4,7 +4,8 @@ import tw, { GlobalStyles as BaseStyles } from 'twin.macro';
 const CustomStyles = createGlobalStyle`
     
     body {
-        ${tw`antialiased`}
+        ${tw`antialiased`};
+        -webkit-font-smoothing: antialiased;
     }
   
     // client slider / agency page 

@@ -1,8 +1,15 @@
 import {
+  Address,
+  AddressItem,
+  AddressName,
+  AddressText,
+  AddressWrapper,
   CopyrightSection,
+  EmailText,
   FooterContainer,
   FooterCopyright,
   FooterInfo,
+  FooterLabel,
   FooterNavigation,
   FooterNavigationTitle,
   FooterTerms,
@@ -15,15 +22,19 @@ import {
   LinksWrapper,
   MobileTerms,
   SocialInfo,
+  SocialItem,
+  SocialLinks,
   SocialSection,
   SocialWrapper,
   SubLink,
+  TermsItem,
   TermsSection,
+  TermsWrapper,
   imageSize,
 } from './Footer.styles';
 import MyImage from '../MyImage';
 import logo from '../../../public/logo.png';
-import { links, socialMedia, infos } from '../../config/constant';
+import { links, socialMedia, infos, Addresses } from '../../config/constant';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import { Disclosure } from '@headlessui/react';
@@ -77,110 +88,54 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <FooterContainer>
-        <FooterInfo>
-          <FooterTitle>contact info</FooterTitle>
-          <InfoSection>
-            <div className="w-[14.25rem] flex flex-col gap-7">
-              <Info>{infos?.phone}</Info>
-              <Info>{infos?.email}</Info>
-            </div>
-            <Info>{infos?.address}</Info>
-          </InfoSection>
-        </FooterInfo>
-
         <SocialWrapper>
-          <FooterNavigation>
-            <FooterTitle>{t('quicknavigation')}</FooterTitle>
-            <LinksWrapper>
-              <LinksCol>
-                {links.slice(0, 3).map((link, index) =>
-                  link?.options ? (
-                    <MyDisclosure link={link} key={index} />
-                  ) : (
-                    link?.url && (
-                      <Link
-                        key={index}
-                        href={link?.url}
-                        className="cursor-pointer"
-                      >
-                        <LinkLabel>{t(link.name)}</LinkLabel>
-                      </Link>
-                    )
-                  )
-                )}
-              </LinksCol>
-              <LinksCol>
-                {links.slice(3).map((link, index) =>
-                  link?.options ? (
-                    <MyDisclosure link={link} key={index} />
-                  ) : (
-                    link?.url && (
-                      <Link
-                        key={index}
-                        href={link?.url}
-                        className="cursor-pointer"
-                      >
-                        <LinkLabel>{t(link.name)}</LinkLabel>
-                      </Link>
-                    )
-                  )
-                )}
-              </LinksCol>
-            </LinksWrapper>
-          </FooterNavigation>
-          <SocialInfo>
-            <FooterTitle>{t('social')}</FooterTitle>
-            <SocialSection>
-              {socialMedia.map((item, index) => {
-                return (
-                  <Link href={item?.url} key={index} target="_blank">
-                    <Info>{item?.name}</Info>
-                  </Link>
-                );
-              })}
-            </SocialSection>
-          </SocialInfo>
+          <SocialItem>
+            <FooterLabel>{t('email')}</FooterLabel>
+            <EmailText>{infos.email}</EmailText>
+          </SocialItem>
+          <SocialItem>
+            <FooterLabel>{t('followus')}</FooterLabel>
+            <SocialLinks>
+              {socialMedia.map((social, index) => (
+                <Link
+                  href={social.url}
+                  target="_blank"
+                  key={social.name + index}
+                >
+                  {social.name}
+                </Link>
+              ))}
+            </SocialLinks>
+          </SocialItem>
         </SocialWrapper>
+        <AddressWrapper>
+          <FooterLabel>{t('address')}</FooterLabel>
+          <Address>
+            {Addresses.map((adr, index) => (
+              <AddressItem key={index + adr.name}>
+                <AddressName>{adr.name}</AddressName>
+                <AddressText>{adr.address}</AddressText>
+              </AddressItem>
+            ))}
+          </Address>
+        </AddressWrapper>
       </FooterContainer>
-      <TermsSection>
-        <CopyrightSection>
-          {!isMobile ? (
-            <>
-              <FooterCopyright>
-                {`${t('copyright')} ${year}. ${t('allrightsreserved')}`}
-              </FooterCopyright>
-              <Link href="/">
-                <MyImage src={logo} alt="casbah" sizes={imageSize} />
-              </Link>
-              <FooterTerms>
-                <a href="/privacy" target="_blank">
-                  {t('privacypolicy')}
-                </a>
-                <a href="/terms" target="_blank">
-                  {t('termsconditions')}
-                </a>
-              </FooterTerms>
-            </>
-          ) : (
-            <MobileTerms>
-              <MyImage src={logo} alt="casbah" sizes={imageSize} />
-              <div className="flex flex-col gap-6">
-                <FooterCopyright>
-                  {`${t('copyright')} ${year}. ${t('allrightsreserved')}`}
-                </FooterCopyright>
-                <FooterTerms>
-                  <a href="/privacy" target="_blank">
-                    {t('privacypolicy')}
-                  </a>
-                  <a href="/terms" target="_blank">
-                    {t('termsconditions')}
-                  </a>
-                </FooterTerms>
-              </div>
-            </MobileTerms>
-          )}
-        </CopyrightSection>
-      </TermsSection>
+      <FooterTerms>
+        <Link href="/">
+          <MyImage src={logo} alt="casbah" sizes={imageSize} />
+        </Link>
+        <TermsWrapper>
+          <TermsItem>Copyright © 2023. All Rights Reserved.</TermsItem>
+          <Link href="/privacy" target="_blank">
+            <TermsItem className="underline">privacy policy</TermsItem>
+          </Link>
+        </TermsWrapper>
+        <Link href="/terms" target="_blank">
+          <TermsItem className="underline -mt-10 md:-mt-5 lg:mt-0">
+            terms & conditions
+          </TermsItem>
+        </Link>
+      </FooterTerms>
     </FooterWrapper>
   );
 };

@@ -1,6 +1,6 @@
 import tw from 'twin.macro';
 
-export const Wrapper = tw.div`w-full h-screen flex flex-col justify-between items-center pt-28 lg:pt-32 text-white`;
+export const Wrapper = tw.div`w-full h-screen flex flex-col justify-between items-center pt-28 lg:pt-64 text-white `;
 
 export const DivsWrapper = tw.div`w-full flex gap-10 md:gap-[3.83rem] lg:gap-24 bg-white self-start`;
 export const StyledDiv = tw.div`w-[3.125rem] h-[3.125rem] bg-brightOrange
