@@ -5,8 +5,9 @@ export const Wrapper = styled.div`
 `;
 
 export const Text = styled.p`
-  ${tw`pl-[4.5rem] w-[80%] max-w-[87.5rem] mx-auto text-black font-made uppercase font-light  text-2xl 
-  leading-[1.875rem] md:text-[2rem] md:leading-[2.5rem]`}
+  ${tw`w-full pl-4 text-black font-made uppercase font-light  text-2xl leading-[1.875rem]
+  md:(text-[2rem] leading-[2.5rem])
+  lg:(pl-[4.5rem] w-[80%] max-w-[87.5rem])`}
   span {
     ${tw`text-brightOrange`}
   }

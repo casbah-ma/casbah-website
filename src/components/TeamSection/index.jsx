@@ -52,7 +52,6 @@ function TeamSection({ title, description, cards }) {
     const grid = document.getElementsByClassName('grid');
 
     const clickedCard = event.target;
-    console.log(bp);
     const cols = bp === 'md' ? 2 : 3;
     const rowIndex = Math.floor(
       Array.prototype.indexOf.call(

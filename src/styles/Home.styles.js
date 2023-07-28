@@ -24,7 +24,7 @@ export const Container = styled(motion.div)`
 `;
 
 export const LottieWrapper = styled.div`
-  ${tw`hidden md:flex fixed top-0 left-0 bottom-0 w-[60%]  -z-20
+  ${tw`hidden lg:flex fixed top-0 left-0 bottom-0 w-[60%]  -z-20
        justify-center items-center  bg-[#000F9F] p-48 pt-52
        transition-all duration-300`}
   ${({ isWhite }) => isWhite && tw`bg-white`}
