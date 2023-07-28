@@ -12,13 +12,27 @@ import AnimatedDisplay from '../AnimatedDisplay';
 import Paragraph from '../Paragraph';
 import { motion } from 'framer-motion';
 import { Player } from '@lottiefiles/react-lottie-player';
+import { useEffect, useRef } from 'react';
 
-function HomeSection({ title, subtitle, lottie, texts = '' }) {
+function HomeSection({
+  id,
+  activeSectionId,
+  title,
+  subtitle,
+  lottie,
+  texts = '',
+}) {
+  const playerRef = useRef(null);
+  useEffect(() => {
+    if (playerRef && id === activeSectionId) {
+      playerRef.current.play();
+    }
+  }, [activeSectionId, id]);
   return (
-    <div className="section home_section">
+    <div id={id} className="section home_section">
       <LottieWrapper>
         <LottieContainer>
-          <Player keepLastFrame autoplay loop={false} src={lottie} />
+          <Player ref={playerRef} keepLastFrame loop={false} src={lottie} />
         </LottieContainer>
       </LottieWrapper>
       <Content>

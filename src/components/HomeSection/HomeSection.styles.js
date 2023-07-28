@@ -12,7 +12,7 @@ export const LottieContainer = tw.div`
 
 export const Content = styled.div(() => [
   tw`w-full flex flex-col gap-4 px-4 md:px-[4.313rem]
-    lg:(gap-6 pl-16 pr-[4.5rem]  w-[40%])`,
+    lg:(gap-6 pl-16 pr-[4.5rem] w-[40%])`,
 ]);
 
 export const TitleWrapper = tw(motion.div)`
