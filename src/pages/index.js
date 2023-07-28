@@ -72,23 +72,23 @@ export default function Home({ data }) {
         onLeave={onLeave}
         verticalCentered={false}
         scrollOverflow={false}
-        render={({ state, fullpageApi }) => {
+        render={() => {
           return (
             <ReactFullpage.Wrapper>
               <Navbar />
               <Hero ref={heroRef} className="section" {...data.heroProps} />
-              <HomeSection {...data.sectionProps} />
-              <HomeSection {...data.sectionProps1} />
-              <HomeSection {...data.sectionProps2} />
-              <HomeSection {...data.sectionProps3} />
-              <HomeSection {...data.sectionProps4} />
-              <HomeSection {...data.sectionProps5} />
-              <HomeSection {...data.sectionProps6} />
+              <HomeSection {...data.sectionProps} lottie={Lottie_01} />
+              <HomeSection {...data.sectionProps1} lottie={Lottie_02} />
+              <HomeSection {...data.sectionProps2} lottie={Lottie_03} />
+              <HomeSection {...data.sectionProps3} lottie={Lottie_04} />
+              <HomeSection {...data.sectionProps4} lottie={Lottie_05} />
+              <HomeSection {...data.sectionProps5} lottie={Lottie_06} />
+              <HomeSection {...data.sectionProps6} lottie={Lottie_07} />
               <HomeFooter ref={footerRef} {...data.footerProps} />
             </ReactFullpage.Wrapper>
           );
         }}
-      ></ReactFullpage>
+      />
     </>
   );
 }
