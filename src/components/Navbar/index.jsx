@@ -4,7 +4,6 @@ import {
   LinkLabel,
   LinksWrapper,
   Logo,
-  MediaWrapper,
   MobileList,
   MobileNav,
   MobileView,
@@ -17,22 +16,42 @@ import Language from '@/icons/LanguageIcon';
 import Casbah from '@/icons/Casbah';
 import Menu from '@/icons/Menu';
 import Modal from '../Modal';
-import { useState } from 'react';
-import { links, logo, media } from '../../config/constant';
+import { useEffect, useState } from 'react';
+import { links, logo } from '../../config/constant';
 import useTranslation from 'next-translate/useTranslation';
 import LanguageMenu from '../LanguageMenu';
 import { motion } from 'framer-motion';
 import { child, container } from './variants';
 import { useRouter } from 'next/router';
-
+import useScrollPosition from '@/hooks/useScrollPosition';
+import { useScrollDirection } from 'react-use-scroll-direction';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+
   const { t } = useTranslation();
   const router = useRouter();
 
+  //change the navbar on scroll
+  const scrollPosition = useScrollPosition();
+  const { scrollDirection } = useScrollDirection();
+
+  useEffect(() => {
+    const delta = 20;
+    if (scrollPosition > 100 && scrollDirection === 'DOWN') {
+      setIsHidden(true);
+    }
+
+    if (scrollDirection === 'DOWN' && scrollPosition > delta) {
+      setIsHidden(true);
+    } else if (scrollDirection === 'UP') {
+      setIsHidden(false);
+    }
+  }, [scrollPosition, scrollDirection]);
+
   return (
     <>
-      <NavbarWrapper>
+      <NavbarWrapper id="navbar" $isHidden={isHidden}>
         <MobileView>
           <PointerWrapper>
             <Link href="/">

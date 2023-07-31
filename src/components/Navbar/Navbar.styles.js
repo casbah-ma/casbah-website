@@ -2,10 +2,11 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-export const NavbarWrapper = tw.header`
-   absolute left-1/2 -translate-x-1/2 top-0  w-full h-[6.5rem] max-w-[87.5rem]   px-[2.5rem]  lg:px-[4.5rem]
-   bg-white  flex items-center justify-center z-50
-`;
+export const NavbarWrapper = styled.header(({ $isHidden }) => [
+  tw`fixed left-1/2 -translate-x-1/2 top-0  w-full h-[6.5rem] max-w-[87.5rem]   px-[2.5rem]  lg:px-[4.5rem]
+  bg-white  flex items-center justify-center z-50`,
+  $isHidden && tw`hidden`,
+]);
 
 export const Logo = tw.img`
  max-w-[14.5rem] max-h-[1.563rem]
