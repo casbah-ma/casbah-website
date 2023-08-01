@@ -11,7 +11,6 @@ import {
 import Header from '../Header';
 
 function ClientsSwiper({ title, description, images }) {
-  console.log(images.length);
   return (
     <Wrapper>
       <Header description={description} title={title} />

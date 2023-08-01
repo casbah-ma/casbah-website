@@ -13,7 +13,7 @@ const Layout = ({ children, hasPadding, ...rest }) => {
     router.route !== '/404';
   const isNotFound = router.route === '/404';
   const isHome = router.route === '/';
-  console.log(isHome);
+
   const [showFooter, setShowFooter] = useState(false);
 
   useEffect(() => {

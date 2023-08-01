@@ -38,6 +38,7 @@
     "react-intersection-observer": "^9.5.2",
     "react-map-gl": "^7.0.23",
     "react-transition-group": "^4.4.5",
+    "react-use-scroll-direction": "^0.1.0",
     "styled-components": "^5.3.10",
     "swiper": "^9.3.0",
     "tailwindcss": "3.3.2",

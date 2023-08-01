@@ -73,22 +73,61 @@ export default function Home({ data }) {
         verticalCentered={false}
         scrollOverflow={false}
         render={({ state, fullpageApi }) => {
+          let activeSectionId;
+          if (state.initialized)
+            activeSectionId = fullpageApi.getActiveSection().item.id;
+
           return (
             <ReactFullpage.Wrapper>
               <Navbar />
               <Hero ref={heroRef} className="section" {...data.heroProps} />
-              <HomeSection {...data.sectionProps} />
-              <HomeSection {...data.sectionProps1} />
-              <HomeSection {...data.sectionProps2} />
-              <HomeSection {...data.sectionProps3} />
-              <HomeSection {...data.sectionProps4} />
-              <HomeSection {...data.sectionProps5} />
-              <HomeSection {...data.sectionProps6} />
+              <HomeSection
+                id="1"
+                activeSectionId={activeSectionId}
+                {...data.sectionProps}
+                lottie={Lottie_01}
+              />
+              <HomeSection
+                id="2"
+                activeSectionId={activeSectionId}
+                {...data.sectionProps1}
+                lottie={Lottie_02}
+              />
+              <HomeSection
+                id="3"
+                activeSectionId={activeSectionId}
+                {...data.sectionProps2}
+                lottie={Lottie_03}
+              />
+              <HomeSection
+                id="4"
+                activeSectionId={activeSectionId}
+                {...data.sectionProps3}
+                lottie={Lottie_04}
+              />
+              <HomeSection
+                id="5"
+                activeSectionId={activeSectionId}
+                {...data.sectionProps4}
+                lottie={Lottie_05}
+              />
+              <HomeSection
+                id="6"
+                activeSectionId={activeSectionId}
+                {...data.sectionProps5}
+                lottie={Lottie_06}
+              />
+              <HomeSection
+                id="7"
+                activeSectionId={activeSectionId}
+                {...data.sectionProps6}
+                lottie={Lottie_07}
+              />
               <HomeFooter ref={footerRef} {...data.footerProps} />
             </ReactFullpage.Wrapper>
           );
         }}
-      ></ReactFullpage>
+      />
     </>
   );
 }

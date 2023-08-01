@@ -1,13 +1,40 @@
 import PropTypes from 'prop-types';
-import { Content, Texts, TitleWrapper } from './HomeSection.styles';
+import {
+  Content,
+  LottieContainer,
+  LottieWrapper,
+  Texts,
+  TitleWrapper,
+  Wrapper,
+} from './HomeSection.styles';
 import Title from '../Title';
 import AnimatedDisplay from '../AnimatedDisplay';
 import Paragraph from '../Paragraph';
 import { motion } from 'framer-motion';
+import { Player } from '@lottiefiles/react-lottie-player';
+import { useEffect, useRef } from 'react';
 
-function HomeSection({ title, subtitle, texts = '' }) {
+function HomeSection({
+  id,
+  activeSectionId,
+  title,
+  subtitle,
+  lottie,
+  texts = '',
+}) {
+  const playerRef = useRef(null);
+  useEffect(() => {
+    if (playerRef && id === activeSectionId) {
+      playerRef.current.play();
+    }
+  }, [activeSectionId, id]);
   return (
-    <div className="section home_section">
+    <div id={id} className="section home_section">
+      <LottieWrapper>
+        <LottieContainer>
+          <Player ref={playerRef} keepLastFrame loop={false} src={lottie} />
+        </LottieContainer>
+      </LottieWrapper>
       <Content>
         <TitleWrapper>
           {subtitle && (
@@ -17,7 +44,6 @@ function HomeSection({ title, subtitle, texts = '' }) {
             {title}
           </Title>
         </TitleWrapper>
-
         <Texts>
           {texts?.length > 0 &&
             texts.map((text, i) => (

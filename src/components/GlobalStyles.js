@@ -9,7 +9,8 @@ const CustomStyles = createGlobalStyle`
     }
 
     .fp-section.home_section {
-       ${tw`flex items-center justify-end`}
+       ${tw`flex flex-col items-center justify-start gap-12
+             md:gap-24 lg:(justify-center items-end)`}
     }
   
   

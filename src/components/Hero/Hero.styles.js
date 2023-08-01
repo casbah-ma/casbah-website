@@ -2,13 +2,12 @@ import { motion } from 'framer-motion';
 import tw, { styled } from 'twin.macro';
 
 export const Wrapper = styled(motion.section)`
-  ${tw`z-20 bg-white`}
+  ${tw`z-20 bg-white h-full w-full flex items-center justify-center`}
 `;
 
 export const Container = styled(motion.div)`
-  ${tw`z-20 bg-white h-full w-full max-w-[87.5rem] mx-auto flex flex-col gap-10 px-4 pt-28
-        justify-start items-center text-center
-       md:gap-36 lg:(gap-16 px-16 pb-6)`};
+  ${tw`z-20 bg-white max-w-[87.5rem] mx-auto flex flex-col justify-start items-center  
+      text-center gap-10 px-4 pt-28 md:gap-36 lg:(gap-16 px-16 pb-6)`};
 `;
 
 export const LottierContainer = styled(motion.div)`

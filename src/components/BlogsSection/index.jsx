@@ -15,7 +15,6 @@ function BlogsSection({ blogs }) {
 
   return (
     <Grid>
-      <CursorTracker text="readMore" />
       {blogs?.length > 0 &&
         blogs.map((blog, i) => (
           <BlogsCard
