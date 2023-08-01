@@ -4,6 +4,7 @@ import Title from '../../Title';
 import { useState } from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import Button from '../../Button';
+import { sendFormContact } from '../../../lib/api';
 
 const ContactUs = ({}) => {
   const { t } = useTranslation();
@@ -20,8 +21,18 @@ const ContactUs = ({}) => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    try {
+      await sendFormContact(formState);
+      setFormState({
+        name: '',
+        email: '',
+        message: '',
+      });
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (

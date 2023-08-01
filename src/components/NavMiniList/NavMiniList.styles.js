@@ -45,9 +45,9 @@ export const DropdownList = styled.ul`
 `;
 
 export const DropdownItem = styled.li`
-  ${tw`text-white text-base font-light leading-[1.257rem] font-made  lg:(text-blackIsh text-opacity-70 hover:(text-brightOrange !text-opacity-100 font-bold))`}
+  ${tw`text-white text-base font-light leading-[1.257rem] font-made  lg:(text-blackIsh text-opacity-70 hover:(text-brightOrange !text-opacity-100 font-medium))`}
   ${({ active }) =>
-    active && tw`lg:text-brightOrange font-bold leading-[1.276rem]`}
+    active && tw`lg:text-brightOrange font-medium leading-[1.276rem]`}
 `;
 
 export const ToggleButton = styled.div(({ open }) => [

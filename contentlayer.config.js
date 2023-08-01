@@ -346,6 +346,38 @@ export const Blogs = defineDocumentType(() => ({
   },
 }));
 /* ---------------------------------------------- */
+/* ----------------------- Privacy Items ----------------------- */
+export const Privacy = defineDocumentType(() => ({
+  name: 'Privacy',
+  filePathPattern: `privacy/**/*.md`,
+  fields: {},
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
+/* ----------------------- Terms Items ----------------------- */
+export const Terms = defineDocumentType(() => ({
+  name: 'Terms',
+  filePathPattern: `terms/**/*.md`,
+  fields: {},
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (recipe) => {
+        const local = getLocale(recipe._raw.sourceFileName);
+        return local;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
 
 export default makeSource({
   contentDirPath: 'data',
@@ -361,5 +393,7 @@ export default makeSource({
     Lab,
     Blogs,
     Portfolio,
+    Privacy,
+    Terms,
   ],
 });
