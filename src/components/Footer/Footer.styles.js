@@ -7,7 +7,7 @@ export const socialSize = tw`w-[1.713rem] h-[1.713rem]
 
 export const FooterWrapper = tw.footer`
   w-full  bg-deepBlue flex flex-col justify-start items-start -z-20
-  gap-20
+  gap-20 lg:(justify-center items-center) 
    [scroll-snap-align: start]`;
 
 export const FooterContainer = tw.div`w-full h-full flex flex-col justify-start items-start z-30  text-white
