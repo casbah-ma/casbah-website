@@ -3,7 +3,7 @@ headerProps:
   title: 'Connect the dots and devise innovative approaches to enhance the performance of your organization.'
   description: 'Developing strategic frameworks for day-to-day operations is fundamental and essential in aligning your teams and resources towards achieving clear long-term goals. Our approach to strategic initiatives revolves around prioritizing the most crucial element in the process: the end user.'
 picTopProps:
-  title: 'Digital transformation'
+  title: ''
   texts:
     - 'Creating the endogenous and exogenous conditions for a successful digital transformation. While a top-down approach often covers all the necessary aspects, it may lack the necessary understanding of the operational challenges faced. Interestingly, the most effective ideas for transformation often arise internally. The digital layer serves as an enabling factor to move from ideas to actionable blueprints.'
     - ''
@@ -29,7 +29,7 @@ picRightProps:
     - ''
   imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286538/PORTFOLIO/Expertise/A_digital_bill_is_always_paid_qbtzvw.png'
 picLeftProps2:
-  title: 'Branding & Identity'
+  title: ''
   article:
     - 'In order to thrive, brands have to be more than what they sell. Users and customers seek to identify themselves with the brand’s promise and the values it carries. Defining or updating your understanding of who you are, why you exist, and how you engage with the world will empower you to have greater control over your positioning and perception among your audience.'
     - ''

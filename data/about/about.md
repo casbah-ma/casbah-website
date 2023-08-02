@@ -1,7 +1,7 @@
 ---
 heroProps:
-  title: "EMPOWERING TERRITORIES"
-  description: "This can be a small description of what casbah is doing and it market niche"
+  title: 'EMPOWERING TERRITORIES'
+  description: 'This can be a small description of what casbah is doing and it market niche'
 aboutSection:
   header:
     title: 'ABOUT'
@@ -25,10 +25,10 @@ aboutSection:
     title: 'OUR VALUES'
     text:
       - '•   Embracing change as a constant'
-      - '•   Tailoring to uniqueness' 
+      - '•   Tailoring to uniqueness'
       - '•   Kindness'
       - '•   Transparency and Openness'
-      - '•   Mistakes are part of the ride' 
+      - '•   Mistakes are part of the ride'
       - '•   Lead with empathy and recognition'
   extraText2:
     title: 'OUR CULTURE'
@@ -98,7 +98,7 @@ teamSection:
       imgSrc: '/team/Soufiane.png'
 clientSection:
   title: 'OUR CLIENTS'
-  description: "At Casbah, our clients are at the heart of everything we do. We are committed to delivering tailored solutions and exceptional service to meet their unique needs and exceed their expectations."
+  description: 'At Casbah, our clients are at the heart of everything we do. We are committed to delivering tailored solutions and exceptional service to meet their unique needs and exceed their expectations.'
   images:
     - name: ''
       src: ''

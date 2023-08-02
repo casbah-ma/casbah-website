@@ -3,7 +3,7 @@ headerProps:
   title: 'Brands can better leverage their avenues of expression through effective design.'
   description: 'It is not merely about combining shapes and colors, but about finding the right balance between logic and aesthetics. This allows brands to offer exceptional experiences to their target audiences while effectively conveying the intended messages and remaining true to their brand identity.'
 picLeftProps:
-  title: 'User Experience / User Interface'
+  title: ''
   article:
     - "The key focus here is the user. The challenge lies in blending the right elements to create a practical user experience that is grounded in benchmarking best practices and user analysis. Additionally, it should feature a pleasing interface that doesn't distract from the core experience but instead complements it by integrating visual elements seamlessly."
     - ''
@@ -15,7 +15,7 @@ picRightProps:
     - ''
   imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286539/PORTFOLIO/Expertise/Design_Systems_is9ofl.png'
 picTopProps:
-  title: 'Visual Identity'
+  title: ''
   texts:
     - 'The visual expression of what a brand is and what it stands for. Your visual identity is about more than a logo. It is about what image you want your users to remember when your brand comes up. A branding strategy and a visual identity are complementary components, as one partially guides the other. The personality of your brand should be reflected in the typography, the angles, and the colors... No detail is insignificant.'
     - ''

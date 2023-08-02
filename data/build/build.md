@@ -1,6 +1,6 @@
 ---
 headerProps:
-  title: "Developing products, interfaces, tools, and architectures that facilitate the organization in achieving its mission and connecting with its audiences."
+  title: 'Developing products, interfaces, tools, and architectures that facilitate the organization in achieving its mission and connecting with its audiences.'
   description: 'These will have a tailored set of functionalities to empower both users and the organization itself, ensuring they find the perfect solution for their informational, promotional, or practical requirements.'
 picTopProps:
   title: 'Digital Ecosystems'
@@ -9,7 +9,7 @@ picTopProps:
     - ''
   img: 'https://res.cloudinary.com/casbah/image/upload/v1696286539/PORTFOLIO/Expertise/Digital_Ecosystems_cmam3u.png'
 picRightProps:
-  title: 'Web & App Development'
+  title: ''
   article:
     - 'A cornerstone and constantly evolving field of software. Continuous advancement in programming languages and frameworks opens the way to more innovative and performing digital experiences. This enables organizations to redefine their digital presence and explore a wider range of technological possibilities.'
     - ''
@@ -28,7 +28,7 @@ picLeftProps:
     - ''
   imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286538/PORTFOLIO/Expertise/Augmented_Reality_kffibl.png'
 picRightProps2:
-  title: 'API & Scalability'
+  title: ''
   article:
     - "An Application Programming Interface (API) has become a necessary component in organizations' digital agility, enhancing the flexibility and adaptability of their data for various use cases. Remarkable scalability often accompanies an excellent API, which is why your architecture should be capable of effortlessly handling any number of requests, ranging from 0 to 1, 10, or even 100 million."
     - ''
@@ -40,7 +40,7 @@ picTopProps3:
     - ''
   img: 'https://res.cloudinary.com/casbah/image/upload/v1696286539/PORTFOLIO/Expertise/Data_Science_and_Artificial_Intelligence_rcvjcr.png'
 picLeftProps2:
-  title: 'Content Management System'
+  title: ''
   article:
     - 'Whether you have specific needs for which you want your CMS to be custom-made or a headless CMS adapted to suit your workflow, managing your content should not be painful. A bonus is connecting your CMS to an API and making the creation, editing, and management of your content cross-channels as easy as publishing it.'
     - ''
