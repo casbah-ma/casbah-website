@@ -3,7 +3,7 @@ import tw, { styled } from 'twin.macro';
 
 export const Wrapper = styled(motion.div)`
   ${tw`flex flex-col justify-center gap-14 
-  lg:(gap-24)`};
+  lg:(gap-24 pl-[4.5rem] pr-14)`};
 `;
 
 export const Title = styled(motion.h1)`

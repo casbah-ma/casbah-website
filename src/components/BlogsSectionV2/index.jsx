@@ -23,7 +23,7 @@ function BlogsSectionV2({ title, subtitle, blogs, isPortfolio }) {
           isVertical={true}
         />
       )}
-      <Grid>
+      <Grid $isPortfolio={isPortfolio}>
         {blogs?.length > 0 &&
           blogs.map((blog) => (
             <BlogsCard
