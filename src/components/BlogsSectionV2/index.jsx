@@ -3,24 +3,29 @@ import { Grid, ReadMore, Wrapper } from './BlogsSectionV2.styles';
 import BlogsCard from '../BlogsCard';
 import Header from '../Header';
 import { useRouter } from 'next/router';
+import PortfolioHeader from '../PortfolioHeader';
 
-function BlogsSectionV2({ title, subtitle, blogs, onClick }) {
+function BlogsSectionV2({ title, subtitle, blogs, isPortfolio }) {
   const route = useRouter();
 
   const handleClick = (slug) => {
     route.push(`/blogs/${slug}`);
   };
   return (
-    <Wrapper>
-      <Header
-        title={title}
-        description={subtitle}
-        withLine={true}
-        isVertical={true}
-      />
+    <Wrapper $isPortfolio={isPortfolio}>
+      {isPortfolio ? (
+        <PortfolioHeader title={title} description={subtitle} />
+      ) : (
+        <Header
+          title={title}
+          description={subtitle}
+          withLine={true}
+          isVertical={true}
+        />
+      )}
       <Grid>
         {blogs?.length > 0 &&
-          blogs.map((blog, i) => (
+          blogs.map((blog) => (
             <BlogsCard
               key={blog.title}
               {...blog}

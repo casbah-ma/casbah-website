@@ -59,7 +59,9 @@ export const Portfolio = defineDocumentType(() => ({
   name: 'Portfolio',
   filePathPattern: `portfolio/**/*.md`,
   fields: {
-    headerProps: { type: 'nested', of: headerV2PropsType },
+    title: { type: 'string' },
+    subtitle: { type: 'string' },
+    specialLine: { type: 'string' },
   },
   computedFields: {
     lang: {
