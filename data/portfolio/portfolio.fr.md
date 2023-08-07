@@ -1,6 +1,5 @@
 ---
-headerProps:
-  title: ''
-  description: ''
-  specialLine: ''
+title: ''
+subtitle: ''
+specialLine: ''
 ---
