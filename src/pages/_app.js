@@ -32,18 +32,14 @@ export default function App({ Component, pageProps }) {
 
   const variants = {
     hidden: { opacity: 0, y: 100, transition: { duration: 0.5 } },
-    enter: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
     exit: { opacity: 0, y: -100, transition: { duration: 0.5 } },
   };
 
   return (
     <>
       <GlobalStyles />
-      <AnimatePresence
-        mode="wait"
-        initial={false}
-        onExitComplete={() => window.scrollTo(0, 0)}
-      >
+      <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
         {
           // <TransitionPage />
         }
@@ -56,7 +52,7 @@ export default function App({ Component, pageProps }) {
             <motion.main
               variants={variants}
               initial="hidden"
-              animate="enter"
+              animate="visible"
               exit="exit"
               transition={{ type: 'linear' }}
               className="w-full"

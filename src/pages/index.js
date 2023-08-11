@@ -85,12 +85,7 @@ export default function Home({ data }) {
           return (
             <ReactFullpage.Wrapper>
               <Navbar />
-              <Hero
-                ref={heroRef}
-                className="section"
-                isInitialized={init}
-                {...data.heroProps}
-              />
+              <Hero ref={heroRef} className="section" {...data.heroProps} />
               <HomeSection
                 id="1"
                 activeSectionId={activeSectionId}
