@@ -27,6 +27,7 @@ export const getStaticProps = async ({ locale }) => {
 
 export default function Home({ data }) {
   const [currentIndex, setCurrentIndex] = useState(null);
+  const [init, setInit] = useState(false);
   const { ref: footerRef, inView: footerInView } = useInView({
     threshold: 0.2,
   });
@@ -34,7 +35,7 @@ export default function Home({ data }) {
     threshold: 0.3,
   });
 
-  const onLeave = (origin, destination, direction, trigger) => {
+  const onLeave = (destination) => {
     if (destination.index === 0) {
       setCurrentIndex(null);
     } else {
@@ -57,16 +58,18 @@ export default function Home({ data }) {
 
   return (
     <>
-      <LottieWrapper className="lottie">
-        <LottierContainer>
-          <Player
-            keepLastFrame
-            autoplay
-            loop={false}
-            src={!heroInView && !footerInView && lotties[currentIndex]}
-          />
-        </LottierContainer>
-      </LottieWrapper>
+      {init && (
+        <LottieWrapper className="lottie">
+          <LottierContainer>
+            <Player
+              keepLastFrame
+              autoplay
+              loop={false}
+              src={!heroInView && !footerInView && lotties[currentIndex]}
+            />
+          </LottierContainer>
+        </LottieWrapper>
+      )}
       <ReactFullpage
         scrollingSpeed={1300}
         onLeave={onLeave}
@@ -74,13 +77,20 @@ export default function Home({ data }) {
         scrollOverflow={false}
         render={({ state, fullpageApi }) => {
           let activeSectionId;
-          if (state.initialized)
+          if (state.initialized) {
+            setInit(true);
             activeSectionId = fullpageApi.getActiveSection().item.id;
+          }
 
           return (
             <ReactFullpage.Wrapper>
               <Navbar />
-              <Hero ref={heroRef} className="section" {...data.heroProps} />
+              <Hero
+                ref={heroRef}
+                className="section"
+                isInitialized={init}
+                {...data.heroProps}
+              />
               <HomeSection
                 id="1"
                 activeSectionId={activeSectionId}

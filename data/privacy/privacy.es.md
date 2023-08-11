@@ -217,9 +217,9 @@ Any data that relates to an identifiable or identified individual. GDPR covers a
 The Data Protection Principles include requirements such as:
 
 - Personal data collected must be processed in a fair, legal, and transparent way and should only be used in a way that a person would reasonably expect.
--Personal data should only be collected to fulfil a specific purpose and it should only be used for that purpose. Organizations must specify why they need the personal data when they collect it.
--Personal data should be held no longer than necessary to fulfil its purpose.
--People covered by the GDPR have the right to access their own personal data. They can also request a copy of their data, and that their data be updated, deleted, restricted, or moved to another organization.
+  -Personal data should only be collected to fulfil a specific purpose and it should only be used for that purpose. Organizations must specify why they need the personal data when they collect it.
+  -Personal data should be held no longer than necessary to fulfil its purpose.
+  -People covered by the GDPR have the right to access their own personal data. They can also request a copy of their data, and that their data be updated, deleted, restricted, or moved to another organization.
 
 Why is GDPR important?
 
@@ -238,9 +238,9 @@ The California Consumer Privacy Act (CCPA) requires us to disclose categories of
 We are also required to communicate information about rights California residents have under California law. You may exercise the following rights:
 
 - Right to Know and Access. You may submit a verifiable request for information regarding the: (1) categories of Personal Information we collect, use, or share; (2) purposes for which categories of Personal Information are collected or used by us; (3) categories of sources from which we collect Personal Information; and (4) specific pieces of Personal Information we have collected about you.
--Right to Equal Service. We will not discriminate against you if you exercise your privacy rights.
--Right to Delete. You may submit a verifiable request to close your account and we will delete Personal Information about you that we have collected.
--Request that a business that sells a consumer's personal data, not sell the consumer's personal data.
+  -Right to Equal Service. We will not discriminate against you if you exercise your privacy rights.
+  -Right to Delete. You may submit a verifiable request to close your account and we will delete Personal Information about you that we have collected.
+  -Request that a business that sells a consumer's personal data, not sell the consumer's personal data.
 
 If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
 We do not sell the Personal Information of our users.

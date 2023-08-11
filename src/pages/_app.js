@@ -44,7 +44,9 @@ export default function App({ Component, pageProps }) {
         initial={false}
         onExitComplete={() => window.scrollTo(0, 0)}
       >
-        <TransitionPage />
+        {
+          // <TransitionPage />
+        }
         <Layout
           className={`${mako.variable} ${inter.variable} ${made.variable} `}
           key={router.asPath}

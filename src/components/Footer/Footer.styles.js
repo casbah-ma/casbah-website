@@ -37,7 +37,7 @@ export const SocialLinks = tw.div`w-full flex flex-col gap-2 capitalize font-mak
 export const AddressWrapper = tw.div`w-full flex flex-col  gap-4`;
 export const Address = tw.div`w-full flex gap-[3rem] md:(gap-[12.6rem]) lg:(gap-[4rem])`;
 
-export const AddressName = tw.h2`uppercase font-made font-light text-sm`
+export const AddressName = tw.h2`uppercase font-made font-light text-sm`;
 export const AddressItem = tw.div`w-full flex flex-col gap-4`;
 
 export const AddressText = tw.p`max-w-[8.375rem] md:max-w-max lg:max-w-[13.063rem] font-mako text-sm`;

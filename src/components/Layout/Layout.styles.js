@@ -12,5 +12,5 @@ export const MainWrapper = styled.div`
   // if isNotFound pt-0
     ${({ isNotFound }) => isNotFound && tw`max-w-max !p-0 !px-0`}
     //
-  ${({ hasPadding }) => !hasPadding && tw`!p-0 max-w-max`}
+  ${({ hasPadding }) => !hasPadding && tw`!p-0 max-w-[unset]`}
 `;
