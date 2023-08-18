@@ -4,7 +4,7 @@ import WordWrapper from './WordWrapper';
 import { wrapperVariant } from './variants';
 import { AnimatePresence } from 'framer-motion';
 
-const PortfolioHeader = ({ title, description, specialLine, ...rest }) => {
+const PortfolioHeader = ({ title, subtitle, specialLine, ...rest }) => {
   const words = title.split(' ').map((word) => [...word.split(''), '\u00A0']);
 
   return (
@@ -22,7 +22,7 @@ const PortfolioHeader = ({ title, description, specialLine, ...rest }) => {
       </Title>
 
       <SpecialText
-        text={description}
+        text={subtitle}
         specialLine={specialLine}
         uppercase={true}
         size="lg"
