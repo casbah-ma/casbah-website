@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const sizes = {
-  md: tw`text-base leading-[1.688rem]`,
+  md: tw`text-base `,
   lg: tw`text-lg  leading-[1.875rem]`,
 };
 export const StyledP = styled(motion.p)`

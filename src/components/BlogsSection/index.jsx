@@ -21,6 +21,7 @@ function BlogsSection({ blogs }) {
             key={blog.title}
             {...blog}
             variant={i === 0 ? 'v2' : 'v1'}
+            isFirst={i === 0}
             onClick={() => handleBlogClick(blog.slug)}
           />
         ))}
