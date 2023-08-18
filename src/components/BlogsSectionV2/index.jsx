@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
-import { Grid, ReadMore, Wrapper } from './BlogsSectionV2.styles';
+import { Grid, Wrapper } from './BlogsSectionV2.styles';
 import BlogsCard from '../BlogsCard';
 import Header from '../Header';
 import { useRouter } from 'next/router';
-import PortfolioHeader from '../PortfolioHeader';
 
 function BlogsSectionV2({ title, subtitle, blogs, isPortfolio }) {
   const route = useRouter();
@@ -13,16 +12,13 @@ function BlogsSectionV2({ title, subtitle, blogs, isPortfolio }) {
   };
   return (
     <Wrapper $isPortfolio={isPortfolio}>
-      {isPortfolio ? (
-        <PortfolioHeader title={title} description={subtitle} />
-      ) : (
-        <Header
-          title={title}
-          description={subtitle}
-          withLine={true}
-          isVertical={true}
-        />
-      )}
+      <Header
+        title={title}
+        description={subtitle}
+        withLine={true}
+        isVertical={true}
+      />
+
       <Grid $isPortfolio={isPortfolio}>
         {blogs?.length > 0 &&
           blogs.map((blog) => (
