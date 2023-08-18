@@ -7,14 +7,14 @@ import { useRouter } from 'next/router';
 import CursorTracker from '../CursorTracker';
 
 function BlogsSection({ blogs }) {
-  const route = useRouter();
-
+  const router = useRouter();
+  const isPortfolio = router.pathname.includes('portfolio');
   const handleBlogClick = (slug) => {
-    route.push(`/blogs/${slug}`);
+    router.push(`/blogs/${slug}`);
   };
 
   return (
-    <Grid>
+    <Grid $isPortfolio={isPortfolio}>
       {blogs?.length > 0 &&
         blogs.map((blog, i) => (
           <BlogsCard

@@ -7,10 +7,7 @@ import { useEffect } from 'react';
 
 const Layout = ({ children, hasPadding, ...rest }) => {
   const router = useRouter();
-  const isFooter =
-    router.route !== '/' &&
-    router.route !== '/portfolio' &&
-    router.route !== '/404';
+  const isFooter = router.route !== '/' && router.route !== '/404';
   const isNotFound = router.route === '/404';
   const isHome = router.route === '/';
 
