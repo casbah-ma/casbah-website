@@ -19,8 +19,8 @@ const AboutSection = ({
   return (
     <AboutWrapper>
       <Header {...header} />
+      {image && <MyImage src={image} sizes={imagesSize} alt="about" />}
       <AboutContent>
-        {image && <MyImage src={image} sizes={imagesSize} alt="about" />}
         <AboutParagraph {...ourVision} />
         <AboutParagraph {...ourMission} />
         <ExtraContent>

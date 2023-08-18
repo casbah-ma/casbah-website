@@ -1,7 +1,8 @@
 import tw, { styled } from 'twin.macro';
 
 export const DropdownContainer = styled.div`
-  ${tw`relative transition-all duration-300 ease-in-out`}
+  ${tw`relative transition-all duration-300 ease-in-out lg:after:([content: ''] absolute bg-black h-[2px] w-0 left-0 -bottom-1 transition-[0.4s])
+  lg:hover:after:w-full`}
   ${({ active }) =>
     active && tw`lg:bg-transparent bg-deepBlue lg:text-black text-white`}
 `;
