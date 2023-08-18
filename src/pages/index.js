@@ -66,6 +66,14 @@ export default function Home({ data }) {
               autoplay
               loop={false}
               src={!heroInView && !footerInView && lotties[currentIndex]}
+              style={{
+                width: '100%',
+                height: '100%',
+                position: 'absolute',
+                left: '50%',
+                top: '50%',
+                transform: 'translate3d(-50%, -50%, 0)',
+              }}
             />
           </LottierContainer>
         </LottieWrapper>
