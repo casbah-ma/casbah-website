@@ -7,7 +7,7 @@ import ClientImage from 'public/Logo_Visit_Beni_Mellal_black.png';
 import Barcelo from 'public/barcelo.png';
 import Sheraton from 'public/sher.png';
 import { allHomes } from 'contentlayer/generated';
-import Hero from '../../components/Hero';
+import AboutHero from '../../components/AboutHero';
 
 const images = [
   {
@@ -65,8 +65,8 @@ export const getStaticProps = ({ locale }) => {
 
 const About = ({ data }) => {
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-36 lg:pt-[11.688rem]">
-      {/* <Hero  className="" {...data.heroProps} /> */}
+    <div className="w-full flex flex-col justify-center items-center gap-36 lg:pt-[10rem]">
+      <AboutHero  className="" {...data.heroProps} />
       <AboutSection {...data.aboutSection} />
       <AwardsSection {...data.awardsSection} />
       <TeamSection {...data.teamSection} />

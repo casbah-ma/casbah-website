@@ -22,7 +22,7 @@ const Hero = forwardRef(function Hero({ title, description }, ref) {
   const [showArrow, setShowArrow] = useState(false);
 
   return (
-    <Wrapper ref={ref} className="">
+    <Wrapper ref={ref} className="section">
       <Container variants={containerVariant}>
         <LottierContainer exit={{ opacity: 0 }}>
           <Player
