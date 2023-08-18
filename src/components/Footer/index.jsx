@@ -32,7 +32,9 @@ const Footer = () => {
         <SocialWrapper>
           <SocialItem>
             <FooterLabel>{t('email')}</FooterLabel>
-            <EmailText>{infos.email}</EmailText>
+            <EmailText href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@ctd.ma" target="_blank">
+              {infos.email}
+            </EmailText>
           </SocialItem>
           <SocialItem>
             <FooterLabel>{t('followus')}</FooterLabel>
@@ -74,7 +76,7 @@ const Footer = () => {
           </Link>
         </TermsWrapper>
         <Link href="/terms" target="_blank">
-          <TermsItem className="underline -mt-10 md:-mt-5 lg:mt-0">
+          <TermsItem className="underline -mt-10 md:-mt-5 lg:mt-0 lg:ml-1.5">
             {t('termsconditions')}
           </TermsItem>
         </Link>
