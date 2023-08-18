@@ -14,7 +14,6 @@ export const getStaticProps = ({ locale }) => {
 };
 
 export default function Portfolio({ data }) {
-  console.log(data.header);
   return (
     <Container>
       <PortfolioHeader {...data.header} />
