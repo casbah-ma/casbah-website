@@ -11,7 +11,7 @@ import Lottie_06 from '@/lotties/Lottie_06.json';
 import Lottie_07 from '@/lotties/Lottie_07.json';
 import Hero from '../components/Hero';
 import { LottieWrapper, LottierContainer } from '../styles/Home.styles';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 import { useInView } from 'react-intersection-observer';
 import HomeFooter from '../components/HomeFooter';
@@ -35,8 +35,8 @@ export default function Home({ data }) {
     threshold: 0.3,
   });
 
-  const onLeave = (destination) => {
-    if (destination.index === 0) {
+  const onLeave = (_, destination, direction) => {
+    if (destination.index === 0 && direction === 'up') {
       setCurrentIndex(null);
     } else {
       setCurrentIndex(destination.index - 1);
