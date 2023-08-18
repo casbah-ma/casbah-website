@@ -1,4 +1,4 @@
-import { Letter, Word } from './PortfolioHeader.styles';
+import { Letter, Word } from './BlogsHero.styles';
 import { letterVariant } from './variants';
 
 const WordWrapper = ({ word }) => {

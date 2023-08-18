@@ -46,7 +46,6 @@ export default function App({ Component, pageProps }) {
         <Layout
           className={`${mako.variable} ${inter.variable} ${made.variable} `}
           key={router.asPath}
-          hasPadding={hasTransition}
         >
           {hasTransition ? (
             <motion.main

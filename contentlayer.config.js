@@ -76,6 +76,27 @@ export const Portfolio = defineDocumentType(() => ({
 /* ---------------------------------------------- */
 
 /* ---------------------------------------------- */
+export const BlogPage = defineDocumentType(() => ({
+  name: 'BlogPage',
+  filePathPattern: `blogPage/**/*.md`,
+  fields: {
+    title: { type: 'string' },
+    subtitle: { type: 'string' },
+    specialLine: { type: 'string' },
+  },
+  computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (blogPage) => {
+        const local = getLocale(blogPage._raw.sourceFilePath);
+        return `${local}`;
+      },
+    },
+  },
+}));
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
 export const Articulate = defineDocumentType(() => ({
   name: 'Articulate',
   filePathPattern: `articulate/**/*.md`,
@@ -393,8 +414,9 @@ export default makeSource({
     Contact,
     About,
     Lab,
-    Blogs,
+    BlogPage,
     Portfolio,
+    Blogs,
     Privacy,
     Terms,
   ],

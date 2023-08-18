@@ -5,11 +5,15 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
-const Layout = ({ children, hasPadding, ...rest }) => {
+const withoutLAyoutPaddingRoutes = ['lab', 'portfolio', 'blogs'];
+const Layout = ({ children, ...rest }) => {
   const router = useRouter();
   const isFooter = router.route !== '/' && router.route !== '/404';
   const isNotFound = router.route === '/404';
   const isHome = router.route === '/';
+  const hasPadding = !withoutLAyoutPaddingRoutes.includes(
+    router.route.replace('/', '')
+  );
 
   const [showFooter, setShowFooter] = useState(false);
 

@@ -1,10 +1,9 @@
-import { Container, Title, Wrapper } from './PortfolioHeader.styles';
+import { Title, Wrapper } from './BlogsHero.styles';
 import SpecialText from '../SpecialText';
 import WordWrapper from './WordWrapper';
 import { wrapperVariant } from './variants';
-import { AnimatePresence } from 'framer-motion';
 
-const PortfolioHeader = ({ title, subtitle, specialLine, ...rest }) => {
+const BlogsHero = ({ title, subtitle, specialLine, ...rest }) => {
   const words = title.split(' ').map((word) => [...word.split(''), '\u00A0']);
 
   return (
@@ -33,4 +32,4 @@ const PortfolioHeader = ({ title, subtitle, specialLine, ...rest }) => {
   );
 };
 
-export default PortfolioHeader;
+export default BlogsHero;

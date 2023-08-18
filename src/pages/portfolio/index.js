@@ -1,7 +1,7 @@
-import PortfolioHeader from '@/components/PortfolioHeader';
 import { allPortfolios, allBlogs } from 'contentlayer/generated';
 import { Container } from '../../styles/portfolio.styles';
 import BlogsSection from '../../components/BlogsSection';
+import BlogsHero from '../../components/BlogsHero';
 
 export const getStaticProps = ({ locale }) => {
   const header = allPortfolios.find((portfolio) => portfolio.lang === locale);
@@ -16,7 +16,7 @@ export const getStaticProps = ({ locale }) => {
 export default function Portfolio({ data }) {
   return (
     <Container>
-      <PortfolioHeader {...data.header} />
+      <BlogsHero {...data.header} />
       <BlogsSection blogs={data.blogs} />
     </Container>
   );
