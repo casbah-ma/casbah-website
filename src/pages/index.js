@@ -10,13 +10,19 @@ import Lottie_05 from '@/lotties/Lottie_05.json';
 import Lottie_06 from '@/lotties/Lottie_06.json';
 import Lottie_07 from '@/lotties/Lottie_07.json';
 import Hero from '../components/Hero';
-import { LottieWrapper, LottierContainer } from '../styles/Home.styles';
+import {
+  LottieWrapper,
+  LottierContainer,
+  ScrollTopBtn,
+} from '../styles/Home.styles';
 import { useEffect, useMemo, useState } from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 import { useInView } from 'react-intersection-observer';
 import HomeFooter from '../components/HomeFooter';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Navbar from '../components/Navbar';
+import TopButton from '../components/TopButton';
+import TopIcon from '../icons/TopIcon';
 
 export const getStaticProps = async ({ locale }) => {
   const data = allHomes.find((home) => home.lang === locale);
@@ -79,6 +85,7 @@ export default function Home({ data }) {
         </LottieWrapper>
       )}
       <ReactFullpage
+        fixedElements="#scrollTop"
         scrollingSpeed={1300}
         onLeave={onLeave}
         verticalCentered={false}
@@ -93,6 +100,15 @@ export default function Home({ data }) {
           return (
             <ReactFullpage.Wrapper>
               <Navbar />
+              <ScrollTopBtn
+                id="scrollTop"
+                $isHidden={heroInView}
+                onClick={() => {
+                  console.log('here');
+                }}
+              >
+                <TopIcon />
+              </ScrollTopBtn>
               <Hero ref={heroRef} className="section" {...data.heroProps} />
               <HomeSection
                 id="1"
