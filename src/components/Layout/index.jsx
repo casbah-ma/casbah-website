@@ -4,6 +4,7 @@ import { MainWrapper, Wrapper } from './Layout.styles';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import TopButton from '../TopButton';
 
 const withoutLAyoutPaddingRoutes = ['lab', 'portfolio', 'blogs'];
 const Layout = ({ children, ...rest }) => {
@@ -16,7 +17,7 @@ const Layout = ({ children, ...rest }) => {
   );
 
   const [showFooter, setShowFooter] = useState(false);
-
+  console.log(hasPadding);
   useEffect(() => {
     // show footer after 1sec
     isFooter &&
@@ -32,6 +33,7 @@ const Layout = ({ children, ...rest }) => {
         {children}
       </MainWrapper>
       {isFooter && showFooter && <Footer />}
+      {!isHome && <TopButton />}
     </Wrapper>
   );
 };

@@ -1,7 +1,5 @@
 import BlogsSection from '../../components/BlogsSection';
-
 import { allLabs, allBlogs } from 'contentlayer/generated';
-import Header from '../../components/Header';
 import BlogsHero from '../../components/BlogsHero';
 
 export const getStaticProps = ({ locale }) => {
