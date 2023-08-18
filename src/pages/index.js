@@ -11,7 +11,7 @@ import Lottie_06 from '@/lotties/Lottie_06.json';
 import Lottie_07 from '@/lotties/Lottie_07.json';
 import Hero from '../components/Hero';
 import { LottieWrapper, LottierContainer } from '../styles/Home.styles';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 import { useInView } from 'react-intersection-observer';
 import HomeFooter from '../components/HomeFooter';
@@ -27,6 +27,7 @@ export const getStaticProps = async ({ locale }) => {
 
 export default function Home({ data }) {
   const [currentIndex, setCurrentIndex] = useState(null);
+  const [init, setInit] = useState(false);
   const { ref: footerRef, inView: footerInView } = useInView({
     threshold: 0.2,
   });
@@ -34,8 +35,8 @@ export default function Home({ data }) {
     threshold: 0.3,
   });
 
-  const onLeave = (origin, destination, direction, trigger) => {
-    if (destination.index === 0) {
+  const onLeave = (_, destination, direction) => {
+    if (destination.index === 0 && direction === 'up') {
       setCurrentIndex(null);
     } else {
       setCurrentIndex(destination.index - 1);
@@ -57,16 +58,26 @@ export default function Home({ data }) {
 
   return (
     <>
-      <LottieWrapper className="lottie">
-        <LottierContainer>
-          <Player
-            keepLastFrame
-            autoplay
-            loop={false}
-            src={!heroInView && !footerInView && lotties[currentIndex]}
-          />
-        </LottierContainer>
-      </LottieWrapper>
+      {init && (
+        <LottieWrapper className="lottie">
+          <LottierContainer>
+            <Player
+              keepLastFrame
+              autoplay
+              loop={false}
+              src={!heroInView && !footerInView && lotties[currentIndex]}
+              style={{
+                width: '100%',
+                height: '100%',
+                position: 'absolute',
+                left: '50%',
+                top: '50%',
+                transform: 'translate3d(-50%, -50%, 0)',
+              }}
+            />
+          </LottierContainer>
+        </LottieWrapper>
+      )}
       <ReactFullpage
         scrollingSpeed={1300}
         onLeave={onLeave}
@@ -74,8 +85,10 @@ export default function Home({ data }) {
         scrollOverflow={false}
         render={({ state, fullpageApi }) => {
           let activeSectionId;
-          if (state.initialized)
+          if (state.initialized) {
+            setInit(true);
             activeSectionId = fullpageApi.getActiveSection().item.id;
+          }
 
           return (
             <ReactFullpage.Wrapper>

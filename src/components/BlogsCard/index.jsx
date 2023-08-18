@@ -10,7 +10,15 @@ import {
   imagesSizes,
 } from './BlogsCard.styles';
 
-const BlogsCard = ({ variant, title, description, imgSrc, tags, ...rest }) => {
+const BlogsCard = ({
+  variant,
+  title,
+  description,
+  imgSrc,
+  tags,
+  isFirst,
+  ...rest
+}) => {
   return (
     <CardWrapper variant={variant} {...rest}>
       {tags && (
@@ -22,7 +30,7 @@ const BlogsCard = ({ variant, title, description, imgSrc, tags, ...rest }) => {
       )}
       <MyImage sizes={imagesSizes[variant]} src={imgSrc} alt={title} />
       <CardInfo>
-        <CardTitle>{title}</CardTitle>
+        <CardTitle $isFirst={isFirst}>{title}</CardTitle>
         <Paragraph size="md">{description}</Paragraph>
       </CardInfo>
     </CardWrapper>

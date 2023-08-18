@@ -25,4 +25,4 @@ export const PrivacyWrapper = tw.section`w-full pt-24 mt-10
                                 lg:(!h-[28.294rem]))
                             [&>ol]:(w-full flex flex-col  gap-5
                             [&>li]:([counter-increment: items] font-mako flex justify-start items-center before:(font-made font-bold text-xl uppercase) gap-10))                        
-`
+`;

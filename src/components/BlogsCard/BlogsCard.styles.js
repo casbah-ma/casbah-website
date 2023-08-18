@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-import tw from 'twin.macro';
+import tw, { styled } from 'twin.macro';
 
 export const imagesSizes = {
   v1: tw`w-full h-[19.375rem] md:h-[15.625rem] lg:h-[22.875rem]`,
@@ -28,7 +27,10 @@ export const CardWrapper = styled.div`
 
 export const CardInfo = tw.div`w-full flex flex-col justify-center items-start gap-4`;
 
-export const CardTitle = tw.h3`text-black font-made uppercase font-light text-lg md:leading-[166.02%]`;
+export const CardTitle = styled.h2(({ $isFirst }) => [
+  tw`text-[#000219] font-made uppercase font-light text-lg md:leading-[166.02%]`,
+  $isFirst && tw`text-[2rem] leading-normal`,
+]);
 
 export const CardTags = tw.div`flex justify-start items-start gap-2 absolute top-4 left-4 z-10
                                lg:(top-6 left-6)`;

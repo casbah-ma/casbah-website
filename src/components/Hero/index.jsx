@@ -11,24 +11,19 @@ import {
 import { Player } from '@lottiefiles/react-lottie-player';
 import Title from '../Title';
 import Paragraph from '../Paragraph';
-import { AnimatePresence, motion } from 'framer-motion';
+
 import hero from '../../lotties/hero.json';
 import { forwardRef, useState } from 'react';
 import HeroArrow from '../../icons/HeroArrow';
 import { arrowVariant, arrowsVariant, containerVariant } from './variants';
 
-const Hero = forwardRef(function Hero({ title, description, ...rest }, ref) {
+const Hero = forwardRef(function Hero({ title, description }, ref) {
   const [showText, setShowText] = useState(false);
   const [showArrow, setShowArrow] = useState(false);
 
   return (
     <Wrapper ref={ref} className="section">
-      <Container
-        variants={containerVariant}
-        initial="hidden"
-        animate="visible"
-        exit="exit"
-      >
+      <Container variants={containerVariant}>
         <LottierContainer exit={{ opacity: 0 }}>
           <Player
             keepLastFrame
