@@ -56,8 +56,8 @@ const NavMiniList = ({ name, options, Icon, languages }) => {
     <DropdownContainer ref={ref} active={isOpen}>
       <DropdownButton onClick={toggle}>
         {Icon && <Icon color={isOpen ? 'white' : 'black'} />}
-        <div className="flex overflow-hidden md:justify-center md:items-center gap-2">
-          <div className="flex wave">
+        <div className="flex overflow-hidden md:justify-center md:items-center gap-2 ">
+          <div className="flex wave ">
             {Array.from(t(name)).map((letter, index) => (
               <span
                 key={index}
