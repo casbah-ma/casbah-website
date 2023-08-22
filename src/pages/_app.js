@@ -26,10 +26,13 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
+const withoutLAyoutPaddingRoutes = ['lab', 'portfolio', 'blogs', ''];
 export default function App({ Component, pageProps }) {
   const router = useRouter();
   const hasTransition = router.route !== '/' && router.route !== '/portfolio';
-
+  const hasPadding = !withoutLAyoutPaddingRoutes.includes(
+    router.route.replace('/', '')
+  );
   const variants = {
     hidden: { opacity: 0, y: 100, transition: { duration: 0.5 } },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -44,6 +47,7 @@ export default function App({ Component, pageProps }) {
           // <TransitionPage />
         }
         <Layout
+          hasPadding={hasPadding}
           className={`${mako.variable} ${inter.variable} ${made.variable} `}
           key={router.asPath}
         >
