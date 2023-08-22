@@ -17,7 +17,7 @@ const Layout = ({ children, ...rest }) => {
   );
 
   const [showFooter, setShowFooter] = useState(false);
-  console.log(hasPadding);
+
   useEffect(() => {
     // show footer after 1sec
     isFooter &&
@@ -26,10 +26,12 @@ const Layout = ({ children, ...rest }) => {
       }, 1000);
   }, [router.route, isFooter]);
 
+  console.log(isHome);
+
   return (
     <Wrapper initial="hidden" animate="visible" exit="exit" {...rest}>
       {!isHome && <Navbar />}
-      <MainWrapper isNotFound={isNotFound} hasPadding={hasPadding}>
+      <MainWrapper isNotFound={isNotFound} hasPadding={!isHome && hasPadding}>
         {children}
       </MainWrapper>
       {isFooter && showFooter && <Footer />}

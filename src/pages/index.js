@@ -21,7 +21,6 @@ import { useInView } from 'react-intersection-observer';
 import HomeFooter from '../components/HomeFooter';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Navbar from '../components/Navbar';
-import TopButton from '../components/TopButton';
 import TopIcon from '../icons/TopIcon';
 
 export const getStaticProps = async ({ locale }) => {
