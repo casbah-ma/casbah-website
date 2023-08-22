@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import TopButton from '../TopButton';
 
-const withoutLAyoutPaddingRoutes = ['lab', 'portfolio', 'blogs'];
+const withoutLAyoutPaddingRoutes = ['lab', 'portfolio', 'blogs', ''];
 const Layout = ({ children, ...rest }) => {
   const router = useRouter();
   const isFooter = router.route !== '/' && router.route !== '/404';
@@ -26,12 +26,10 @@ const Layout = ({ children, ...rest }) => {
       }, 1000);
   }, [router.route, isFooter]);
 
-  console.log(isHome);
-
   return (
     <Wrapper initial="hidden" animate="visible" exit="exit" {...rest}>
       {!isHome && <Navbar />}
-      <MainWrapper isNotFound={isNotFound} hasPadding={!isHome && hasPadding}>
+      <MainWrapper isNotFound={isNotFound} hasPadding={hasPadding}>
         {children}
       </MainWrapper>
       {isFooter && showFooter && <Footer />}
