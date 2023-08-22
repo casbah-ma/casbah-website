@@ -1,11 +1,11 @@
-import Hero from '.';
+import AboutHero from '.';
 
 export default {
-  title: 'Sections/Hero',
-  component: Hero,
+  title: 'Sections/AboutHero',
+  component: AboutHero,
 };
 
-const Template = (args) => <Hero {...args} />;
+const Template = (args) => <AboutHero {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

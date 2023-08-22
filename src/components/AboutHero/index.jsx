@@ -18,9 +18,15 @@ import HeroArrow from '../../icons/HeroArrow';
 import { arrowVariant, arrowsVariant, containerVariant } from './variants';
 
 const AboutHero = ({ title, description }) => {
-  const [showText, setShowText] = useState(false);
-  const [showArrow, setShowArrow] = useState(false);
+  // keep it here for now
+  // const [showText, setShowText] = useState(false);
+  // const [showArrow, setShowArrow] = useState(false);
 
+  const handleEvent = (e) => {
+    if (e === 'complete') {
+      // setShowArrow(true);
+    }
+  };
   return (
     <Container variants={containerVariant}>
       <LottierContainer exit={{ opacity: 0 }}>
@@ -29,11 +35,7 @@ const AboutHero = ({ title, description }) => {
           autoplay
           loop={false}
           src={hero}
-          onEvent={(e) => {
-            if (e === 'complete') {
-              setShowArrow(true);
-            }
-          }}
+          onEvent={handleEvent}
         />
       </LottierContainer>
 
