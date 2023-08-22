@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Text, Wrapper } from './HomeFooter.styles';
+import { Text, TextWrapper, Wrapper } from './HomeFooter.styles';
 import Footer from '../Footer';
 import { forwardRef } from 'react';
 import { infos } from '../../config/constant';
@@ -8,9 +8,11 @@ const HomeFooter = forwardRef(function HomeFooter({ description }, ref) {
   return (
     <div ref={ref} className="section">
       <Wrapper>
-        <Text>
-          {description} <span>{infos.email}</span>
-        </Text>
+        <TextWrapper>
+          <Text>
+            {description} <span>{infos.email}</span>
+          </Text>
+        </TextWrapper>
         <Footer />
       </Wrapper>
     </div>
