@@ -7,7 +7,6 @@ import PicLeftRight from '../../components/Articles/PicLeftRight';
 import LottieText from '../../components/LottieText';
 //Lotties
 import build from '../../lotties/build.json';
-import { useEffect, useState } from 'react';
 
 //get the data for the current locale
 export const getStaticProps = ({ locale }) => {

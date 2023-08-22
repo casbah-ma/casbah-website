@@ -4,6 +4,7 @@ import { MainWrapper, Wrapper } from './Layout.styles';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import TopButton from '../TopButton';
 
 const Layout = ({ children, hasPadding, ...rest }) => {
   const router = useRouter();
@@ -12,6 +13,10 @@ const Layout = ({ children, hasPadding, ...rest }) => {
   const isHome = router.route === '/';
 
   const [showFooter, setShowFooter] = useState(false);
+
+  useEffect(() => {
+    console.log(hasPadding);
+  }, [hasPadding]);
 
   useEffect(() => {
     // show footer after 1sec
@@ -28,6 +33,7 @@ const Layout = ({ children, hasPadding, ...rest }) => {
         {children}
       </MainWrapper>
       {isFooter && showFooter && <Footer />}
+      {!isHome && <TopButton />}
     </Wrapper>
   );
 };

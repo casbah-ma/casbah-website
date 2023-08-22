@@ -1,11 +1,11 @@
-import PortfolioHeader from '.';
+import BlogsHero from '.';
 
 export default {
-  title: 'Components/PortfolioHeader',
-  component: PortfolioHeader,
+  title: 'Components/BlogsHero',
+  component: BlogsHero,
 };
 
-const Template = (args) => <PortfolioHeader {...args}>hey</PortfolioHeader>;
+const Template = (args) => <BlogsHero {...args}>hey</BlogsHero>;
 
 export const Default = Template.bind({});
 Default.args = {

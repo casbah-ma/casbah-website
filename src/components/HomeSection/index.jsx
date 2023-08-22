@@ -3,9 +3,9 @@ import {
   Content,
   LottieContainer,
   LottieWrapper,
+  ScrollTopBtn,
   Texts,
   TitleWrapper,
-  Wrapper,
 } from './HomeSection.styles';
 import Title from '../Title';
 import AnimatedDisplay from '../AnimatedDisplay';
@@ -35,6 +35,7 @@ function HomeSection({
           <Player ref={playerRef} keepLastFrame loop={false} src={lottie} />
         </LottieContainer>
       </LottieWrapper>
+
       <Content>
         <TitleWrapper>
           {subtitle && (

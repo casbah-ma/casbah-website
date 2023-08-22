@@ -33,3 +33,9 @@ export const LottieWrapper = styled.div`
 export const LottierContainer = styled.div`
   ${tw`relative w-full h-full`};
 `;
+
+export const ScrollTopBtn = styled.button(({ $isHidden }) => [
+  tw`fixed z-50 bottom-8 right-[4.5rem] 
+  w-[2.063rem]  flex justify-center items-center`,
+  $isHidden && tw`hidden`,
+]);
