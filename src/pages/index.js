@@ -15,7 +15,7 @@ import {
   LottierContainer,
   ScrollTopBtn,
 } from '../styles/Home.styles';
-import { useEffect, useMemo, useState } from 'react';
+import { Fragment, useEffect, useMemo, useState } from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 import { useInView } from 'react-intersection-observer';
 import HomeFooter from '../components/HomeFooter';
@@ -32,6 +32,7 @@ export const getStaticProps = async ({ locale }) => {
 };
 
 export default function Home({ data }) {
+  const [fullPageapi, setFullPageapi] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(null);
   const [init, setInit] = useState(false);
   const { ref: footerRef, inView: footerInView } = useInView({
@@ -65,24 +66,35 @@ export default function Home({ data }) {
   return (
     <>
       {init && (
-        <LottieWrapper className="lottie">
-          <LottierContainer>
-            <Player
-              keepLastFrame
-              autoplay
-              loop={false}
-              src={!heroInView && !footerInView && lotties[currentIndex]}
-              style={{
-                width: '100%',
-                height: '100%',
-                position: 'absolute',
-                left: '50%',
-                top: '50%',
-                transform: 'translate3d(-50%, -50%, 0)',
-              }}
-            />
-          </LottierContainer>
-        </LottieWrapper>
+        <Fragment>
+          <ScrollTopBtn
+            $isHidden={heroInView}
+            onClick={() => {
+              fullPageapi?.moveTo(1, 0);
+            }}
+          >
+            <TopIcon />
+          </ScrollTopBtn>
+
+          <LottieWrapper className="lottie">
+            <LottierContainer>
+              <Player
+                keepLastFrame
+                autoplay
+                loop={false}
+                src={!heroInView && !footerInView && lotties[currentIndex]}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  position: 'absolute',
+                  left: '50%',
+                  top: '50%',
+                  transform: 'translate3d(-50%, -50%, 0)',
+                }}
+              />
+            </LottierContainer>
+          </LottieWrapper>
+        </Fragment>
       )}
       <ReactFullpage
         fixedElements="#scrollTop"
@@ -94,21 +106,14 @@ export default function Home({ data }) {
           let activeSectionId;
           if (state.initialized) {
             setInit(true);
+            setFullPageapi(fullpageApi);
             activeSectionId = fullpageApi.getActiveSection().item.id;
           }
 
           return (
             <ReactFullpage.Wrapper>
               <Navbar />
-              <ScrollTopBtn
-                id="scrollTop"
-                $isHidden={heroInView}
-                onClick={() => {
-                  console.log('here');
-                }}
-              >
-                <TopIcon />
-              </ScrollTopBtn>
+
               <Hero ref={heroRef} className="section" {...data.heroProps} />
               <HomeSection
                 id="1"
