@@ -179,7 +179,7 @@ const handler = async (req, res) => {
     try {
       await transporter.sendMail({
         from: data.email,
-        to: process.env.EMAIL,
+        to: "contact@ctd.ma",
         ...generateEmailContent(data),
         subject: `Message from ${data.name}`,
         replyTo: data.email,

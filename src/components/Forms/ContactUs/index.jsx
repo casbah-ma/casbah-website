@@ -5,15 +5,21 @@ import { useState } from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import Button from '../../Button';
 import { sendFormContact } from '../../../lib/api';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+import Loader from '@/icons/Loader';
 
 const ContactUs = ({}) => {
+  const MySwal = withReactContent(Swal);
   const { t } = useTranslation();
   const [formState, setFormState] = useState({
     name: '',
     email: '',
     message: '',
   });
+  const [loading, setLoading] = useState(false);
 
+  // handle state form change function
   const handleInputChange = (e) => {
     setFormState((prevState) => ({
       ...prevState,
@@ -21,15 +27,36 @@ const ContactUs = ({}) => {
     }));
   };
 
+  // handle send email form function
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await sendFormContact(formState);
-      setFormState({
-        name: '',
-        email: '',
-        message: '',
-      });
+      // check if form not empty
+      if (formState.name && formState.email && formState.message) {
+        setLoading(true);
+        sendFormContact(formState).then((res) => {
+          if (res.success) {
+            setLoading(false);
+            MySwal.fire({
+              title: <strong>{t('thankyou')}</strong>,
+              html: <p>{t('contactsuccess')}</p>,
+              icon: 'success',
+            }).then((result) => {
+                setFormState({
+                  name: '',
+                  email: '',
+                  message: '',
+                });
+            });
+          }
+        });
+      } else {
+        MySwal.fire({
+          title: <strong>{t('oops')}</strong>,
+          html: <p>{t('contacterror')}</p>,
+          icon: 'error',
+        });
+      }
     } catch (error) {
       console.log(error);
     }
@@ -65,8 +92,8 @@ const ContactUs = ({}) => {
           placeholder={`${t('typein')} ${t('yourmessage')}`}
           onChange={handleInputChange}
         />
-        <Button type="submit" variant="primary">
-          {t('send')}
+        <Button type="submit" variant="primary" disabled={loading}>
+          {loading ? <Loader /> : t('send')}
         </Button>
       </ContactForm>
     </Wrapper>

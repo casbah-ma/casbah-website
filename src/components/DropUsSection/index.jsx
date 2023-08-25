@@ -23,7 +23,6 @@ const DropUsSection = ({ description, specialLine }) => {
           <Title renderAs="h1" withoutBorder={true}>
             {t('dropus')}
           </Title>
-          <HeaderLine />
         </HeaderTitle>
         <SpecialText text={description} specialLine={specialLine} />
       </Header>
