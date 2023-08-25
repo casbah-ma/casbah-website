@@ -1,20 +1,22 @@
 import PropTypes from 'prop-types';
-import { Grid, ReadMore } from './BlogsSection.styles';
+import { Grid } from './BlogsSection.styles';
 import BlogsCard from '../BlogsCard';
-import { useEffect, useState } from 'react';
-import useTranslation from 'next-translate/useTranslation';
+import { useContext } from 'react';
+
 import { useRouter } from 'next/router';
-import CursorTracker from '../CursorTracker';
+
+import { CursorContext } from '../../store/CursorContext';
 
 function BlogsSection({ blogs }) {
   const router = useRouter();
+  const { toggleVisible } = useContext(CursorContext);
 
   const handleBlogClick = (slug) => {
     router.push(`/blogs/${slug}`);
   };
 
   return (
-    <Grid>
+    <Grid onMouseEnter={toggleVisible} onMouseLeave={toggleVisible}>
       {blogs?.length > 0 &&
         blogs.map((blog, i) => (
           <BlogsCard

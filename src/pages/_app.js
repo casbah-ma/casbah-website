@@ -9,6 +9,8 @@ import Layout from '../components/Layout';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/router';
 import TransitionPage from '../components/Animations/PageTransition';
+import CursorTracker from '../components/CursorTracker';
+import CursorProvider from '../store/CursorProvider';
 
 const made = localFont({
   src: '../../public/fonts/made.otf',
@@ -29,7 +31,7 @@ const inter = Inter({
 const withoutLAyoutPaddingRoutes = ['lab', 'portfolio', 'blogs', ''];
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-  const hasTransition = router.route !== '/' && router.route !== '/portfolio';
+  const hasTransition = router.route !== '/';
   const hasPadding = !withoutLAyoutPaddingRoutes.includes(
     router.route.replace('/', '')
   );
@@ -40,8 +42,10 @@ export default function App({ Component, pageProps }) {
   };
 
   return (
-    <>
+    <CursorProvider>
       <GlobalStyles />
+      <CursorTracker text="readMore" />
+
       <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
         {
           // <TransitionPage />
@@ -67,6 +71,6 @@ export default function App({ Component, pageProps }) {
           )}
         </Layout>
       </AnimatePresence>
-    </>
+    </CursorProvider>
   );
 }

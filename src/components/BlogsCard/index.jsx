@@ -9,6 +9,8 @@ import {
   CardWrapper,
   imagesSizes,
 } from './BlogsCard.styles';
+import { useContext } from 'react';
+import { CursorContext } from '../../store/CursorContext';
 
 const BlogsCard = ({
   variant,
@@ -19,8 +21,15 @@ const BlogsCard = ({
   isFirst,
   ...rest
 }) => {
+  const { toggleExpand } = useContext(CursorContext);
+
   return (
-    <CardWrapper variant={variant} {...rest}>
+    <CardWrapper
+      variant={variant}
+      onMouseEnter={toggleExpand}
+      onMouseLeave={toggleExpand}
+      {...rest}
+    >
       {tags && (
         <CardTags>
           {tags.map((tag, index) => (

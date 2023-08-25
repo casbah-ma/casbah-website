@@ -15,10 +15,6 @@ const Layout = ({ children, hasPadding, ...rest }) => {
   const [showFooter, setShowFooter] = useState(false);
 
   useEffect(() => {
-    console.log(hasPadding);
-  }, [hasPadding]);
-
-  useEffect(() => {
     // show footer after 1sec
     isFooter &&
       setTimeout(() => {
