@@ -41,6 +41,8 @@
     "react-transition-group": "^4.4.5",
     "react-use-scroll-direction": "^0.1.0",
     "styled-components": "^5.3.10",
+    "sweetalert2": "^11.7.27",
+    "sweetalert2-react-content": "^5.0.7",
     "swiper": "^9.3.0",
     "tailwindcss": "3.3.2",
     "twin.macro": "^3.3.1",

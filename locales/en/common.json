@@ -36,5 +36,8 @@
   "fullproject": "full project",
   "blogs": "blogs",
   "languages": "languages",
-  "_404": "this page is nowhere to be found"
+  "_404": "this page is nowhere to be found",
+  "thankyou": "Thank You",
+  "contactsuccess": "Your submission has been sent.",
+  "contacterror": "Please fill out the form"
 }
