@@ -1,6 +1,7 @@
 import { allBlogs, allBlogPages } from 'contentlayer/generated';
 import BlogsSection from '../../components/BlogsSection';
 import BlogsHero from '../../components/BlogsHero';
+import { Container } from '../../styles/blogs.style';
 
 export const getStaticProps = ({ locale }) => {
   const header = allBlogPages.find((blogPage) => blogPage.lang === locale);
@@ -15,10 +16,10 @@ export const getStaticProps = ({ locale }) => {
 
 const Blogs = ({ data }) => {
   return (
-    <div className="flex flex-col justify-center items-center gap-36 p-[2rem]  md:p-0 md:mt-28">
+    <Container>
       <BlogsHero {...data.header} />
       <BlogsSection blogs={data.blogs} />
-    </div>
+    </Container>
   );
 };
 

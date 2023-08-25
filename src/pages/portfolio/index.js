@@ -3,8 +3,6 @@ import { Container } from '../../styles/portfolio.styles';
 import BlogsSection from '../../components/BlogsSection';
 import BlogsHero from '../../components/BlogsHero';
 
-import { useRef } from 'react';
-
 export const getStaticProps = ({ locale }) => {
   const header = allPortfolios.find((portfolio) => portfolio.lang === locale);
   const blogs = allBlogs.filter(
@@ -16,9 +14,8 @@ export const getStaticProps = ({ locale }) => {
 };
 
 export default function Portfolio({ data }) {
-  const ref = useRef(null);
   return (
-    <Container ref={ref}>
+    <Container>
       <BlogsHero {...data.header} />
       <BlogsSection blogs={data.blogs} />
     </Container>

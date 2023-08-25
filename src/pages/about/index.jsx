@@ -66,7 +66,7 @@ export const getStaticProps = ({ locale }) => {
 const About = ({ data }) => {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-36 lg:pt-[10rem]">
-      <AboutHero  className="" {...data.heroProps} />
+      <AboutHero className="" {...data.heroProps} />
       <AboutSection {...data.aboutSection} />
       <AwardsSection {...data.awardsSection} />
       <TeamSection {...data.teamSection} />

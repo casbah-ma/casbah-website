@@ -11,7 +11,7 @@ import {
 const ProfileCard = ({ name, post, imgSrc, onClick }) => {
   return (
     <CardWrapper onClick={onClick}>
-      <MyImage src={imgSrc} alt={name} sizes={imagesSize} objectFit='contain' />
+      <MyImage src={imgSrc} alt={name} sizes={imagesSize} objectFit="contain" />
       <CardInfo>
         <CardTitle>{name}</CardTitle>
         <CardText>{post}</CardText>

@@ -24,11 +24,11 @@ function Design({ data }) {
   const [isEnd, setIsEnd] = useState(false);
 
   return (
-    <div className="flex flex-col justify-center items-center mt-36">
+    <div className="flex flex-col justify-center items-center mt-[10.75rem]">
       <LottieText lottie={design} setIsEnd={setIsEnd} />
       <div
         className={`flex flex-col justify-center items-center gap-20 mb-20 transition-all duration-700 ${
-          isEnd ? '-mt-[8rem]' : 'mt-20'
+          isEnd ? '-mt-[12.625rem]' : 'mt-20'
         }`}
       >
         <HeaderV2 {...data.headerProps} variant="v2" />

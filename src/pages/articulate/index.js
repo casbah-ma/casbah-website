@@ -23,11 +23,15 @@ function Articulate({ data }) {
   const [isEnd, setIsEnd] = useState(false);
 
   return (
-    <div className="flex flex-col justify-center items-center ">
+    <div
+      className={`flex flex-col justify-center items-center transition-all duration-700 ease-in ${
+        isEnd ? '-mt-[4rem]' : ''
+      }`}
+    >
       <LottieText lottie={articulate} setIsEnd={setIsEnd} />
       <div
-        className={` flex flex-col justify-center items-center gap-20 mb-20 transition-all duration-700 ease-in ${
-          isEnd ? '-mt-20' : ''
+        className={`flex flex-col justify-center items-center gap-20 mb-20 transition-all duration-700 ease-in ${
+          isEnd ? '-mt-32' : ''
         }`}
       >
         <Header {...data.headerProps} isSplited={true} level="h2" />
