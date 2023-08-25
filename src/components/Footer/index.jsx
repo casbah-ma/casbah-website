@@ -32,7 +32,10 @@ const Footer = () => {
         <SocialWrapper>
           <SocialItem>
             <FooterLabel>{t('email')}</FooterLabel>
-            <EmailText href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@ctd.ma" target="_blank">
+            <EmailText
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@ctd.ma"
+              target="_blank"
+            >
               {infos.email}
             </EmailText>
           </SocialItem>

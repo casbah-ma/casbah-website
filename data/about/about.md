@@ -79,7 +79,7 @@ teamSection:
       imgSrc: '/team/Khawla.png'
     - name: 'YASSIR Bolles'
       post: 'Full Stack developer'
-      description: "Loading..."
+      description: 'Loading...'
       imgSrc: '/team/Yassir.png'
     - name: 'Reda baha'
       post: 'front-end developer'

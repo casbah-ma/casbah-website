@@ -15,7 +15,7 @@ import QuoteIcon from 'public/icons/quote.png';
 const ProfileCardInfo = ({ name, post, imgSrc, description }) => {
   return (
     <CardWrapper>
-      <MyImage src={imgSrc} alt={name} sizes={imagesSize} objectFit='contain' />
+      <MyImage src={imgSrc} alt={name} sizes={imagesSize} objectFit="contain" />
       <CardInfo>
         <MyImage src={QuoteIcon} alt={name} sizes={quoteSize} />
         <CardText>{description}</CardText>
