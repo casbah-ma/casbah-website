@@ -37,10 +37,10 @@ function Articulate({ data }) {
         <Header {...data.headerProps} isSplited={true} level="h2" />
         <PicTop {...data.picTopProps} variant="v1" />
         <PicLeftRight {...data.picLeftProps} variant="v1" />
-        <PicFourLeft {...data.pic4LeftProps} />
+        <PicTop {...data.picTopProps2} variant="v1" />
         <PicLeftRight {...data.picRightProps} variant="v3" />
         <PicLeftRight {...data.picLeftProps2} variant="v2" />
-        <PicTop {...data.picTopProps2} variant="v1" />
+        <PicTop {...data.picTopProps3} variant="v1" />
       </div>
     </div>
   );

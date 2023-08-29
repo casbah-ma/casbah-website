@@ -15,13 +15,12 @@ picRightProps:
     - ''
     - ''
   imgSrc: ''
-pic2LeftProps:
+picTopProps2:
   title: ''
   texts:
     - ''
     - ''
-  bigImg: ''
-  mediumImg: ''
+  img: ''
 picLeftProps:
   title: ''
   article:
@@ -35,7 +34,7 @@ picRightProps2:
     - ''
     - ''
   imgSrc: ''
-picTopProps2:
+picTopProps3:
   title: ''
   texts:
     - ''
@@ -47,11 +46,10 @@ picLeftProps2:
     - ''
     - ''
   imgSrc: ''
-pic2LeftProps2:
+picRightProps3:
   title: ''
-  texts:
+  article:
     - ''
     - ''
-  bigImg: ''
-  mediumImg: ''
+  imgSrc: ''
 ---

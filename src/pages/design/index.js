@@ -33,13 +33,10 @@ function Design({ data }) {
       >
         <HeaderV2 {...data.headerProps} variant="v2" />
         <PicLeftRight {...data.picLeftProps} variant="v5" />
-        <PicThreeRight
-          {...data.pic3RightProps}
-          className="pl-[3.563rem] md:pl-[13.188rem] lg:(max-w-[65.125rem] mx-auto pl-0)"
-        />
-        <PicTop {...data.picTopProps} variant="v1" />
-        <PicFourLeft {...data.pic4LeftProps} />
         <PicLeftRight {...data.picRightProps} variant="v6" />
+        <PicTop {...data.picTopProps} variant="v1" />
+        <PicLeftRight {...data.picLeftProps2} variant="v5" />
+        <PicLeftRight {...data.picRightProps2} variant="v6" />
       </div>
     </div>
   );

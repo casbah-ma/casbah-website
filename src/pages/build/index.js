@@ -34,7 +34,11 @@ function Build({ data }) {
           variant="v3"
           className="md:pr-[13.188rem] lg:pr-0"
         />
-        <PicTwoLeft {...data.pic2LeftProps} className="max-w-[65rem] mx-auto" />
+         <PicTop
+          {...data.picTopProps2}
+          variant="v3"
+          className="pl-14 md:pl-[13.188rem] lg:pl-[24.625rem]"
+        />
         <PicLeftRight
           {...data.picLeftProps}
           variant="v2"
@@ -46,7 +50,7 @@ function Build({ data }) {
           className="md:pr-[13.188rem] lg:pr-0"
         />
         <PicTop
-          {...data.picTopProps2}
+          {...data.picTopProps3}
           variant="v3"
           className="pl-14 md:pl-[13.188rem] lg:pl-[24.625rem]"
         />
@@ -55,9 +59,10 @@ function Build({ data }) {
           variant="v2"
           className="md:pl-[13.188rem] lg:pl-0"
         />
-        <PicTwoLeft
-          {...data.pic2LeftProps2}
-          className="max-w-[65rem] mx-auto"
+        <PicLeftRight
+          {...data.picRightProps3}
+          variant="v3"
+          className="md:pl-[13.188rem] lg:pl-0"
         />
       </div>
     </div>
