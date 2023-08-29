@@ -9,29 +9,25 @@ picLeftProps:
     - ''
     - ''
   imgSrc: ''
-pic3RightProps:
+picRightProps:
   title: ''
-  texts:
+  article:
     - ''
     - ''
-  bigImg: ''
-  mediumImg: ''
-  smallImg: ''
+  imgSrc: ''
 picTopProps:
   title: ''
   texts:
     - ''
     - ''
   img: ''
-pic4LeftProps:
+picLeftProps2:
   title: ''
-  texts:
+  article:
     - ''
     - ''
-  bigImg: ''
-  mediumImg: ''
-  smallImg: ''
-picRightProps:
+  imgSrc: ''
+picRightProps2:
   title: ''
   article:
     - ''

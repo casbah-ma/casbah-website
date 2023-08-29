@@ -24,9 +24,11 @@ function Formulate({ data }) {
       <LottieText lottie={formulate} />
       <div className="flex flex-col justify-center items-center gap-20 mb-20 mt-14">
         <Header {...data.headerProps} isVertical={true} level="h2" />
-        <PicThreeLeft
-          {...data.pic3LeftProps}
-          className="max-w-[71.8rem] ml-auto"
+
+        <PicLeftRight
+          {...data.picLeftProps}
+          variant="v4"
+          className="md:pl-[13.188rem] lg:pl-0"
         />
         <PicTop
           {...data.picTopProps}
@@ -34,7 +36,7 @@ function Formulate({ data }) {
           className="pl-14 md:pl-[13.188rem] lg:pl-[24.625rem]"
         />
         <PicLeftRight
-          {...data.picLeftProps}
+          {...data.picLeftProps2}
           variant="v4"
           className="md:pl-[13.188rem] lg:pl-0"
         />

@@ -15,8 +15,8 @@ const MapCard = ({ latitude, longitude, zoom = 14 }) => {
   return (
     <MapWrapper>
       <Map
-        mapStyle="mapbox://styles/mapbox/dark-v9"
-        mapboxAccessToken="pk.eyJ1IjoiY29tZXBpYyIsImEiOiJjbGJwaGhvbmcwNHJjM3BwOW1hZXFwY2E3In0.VCNQYlo9n0ZodfebeSNjQA"
+        mapStyle="mapbox://styles/ysrbolles/clgpd5m7w00hy01qmff5q8t77"
+        mapboxAccessToken="pk.eyJ1IjoieXNyYm9sbGVzIiwiYSI6ImNsNW03dm9qcjBienAzY3F2M2Q0cTFnbWMifQ.gFNmLudp0JkoMZj7dRQPKw"
         width="100%"
         height="100%"
         initialViewState={viewport}

@@ -2,22 +2,19 @@
 headerProps:
   title: ''
   description: ''
-pic3LeftProps:
+picLeftProps:
   title: ''
-  texts:
+  article:
     - ''
     - ''
-  bigImg: ''
-  mediumImg: ''
-  smallImg: ''
+  imgSrc: ''
 picTopProps:
   title: ''
   texts:
     - ''
     - ''
   img: ''
-
-picLeftProps:
+picLeftProps2:
   title: ''
   article:
     - ''
