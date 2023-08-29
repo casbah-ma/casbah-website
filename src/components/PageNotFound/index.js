@@ -16,7 +16,8 @@ const PageNotFound = () => {
     const breakpoint = (screenWidth) => {
       if (screenWidth < 768) return 37;
       if (screenWidth < 1024) return 50;
-      if (screenWidth >= 1024) return 96;
+      if (screenWidth >= 1024) return 90;
+      if (screenWidth >= 1400) return 96;
     };
 
     const screenWidth =

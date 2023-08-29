@@ -4,6 +4,7 @@ import { Wrapper } from './SahreSection.styles';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { A11y } from 'swiper';
 import ShareButton from '../ShareButton';
+import CopyLink from '../../icons/CopyLink';
 
 const ShareSection = ({ data }) => {
   const { t } = useTranslation();
@@ -23,6 +24,9 @@ const ShareSection = ({ data }) => {
             <ShareButton {...item} />
           </SwiperSlide>
         ))}
+        <SwiperSlide className="!w-fit !h-auto">
+          <ShareButton Icon={CopyLink} copyLink>{t("copylink")}</ShareButton>
+        </SwiperSlide>
       </Swiper>
     </Wrapper>
   );

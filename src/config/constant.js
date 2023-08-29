@@ -9,6 +9,10 @@ import TwitterSVG from 'public/icons/twitter.svg';
 import DribbbleSVG from 'public/icons/dribbble.svg';
 import BehanceSVG from 'public/icons/behance.svg';
 
+
+// base URL o Casbah
+export const baseURL = 'https://casbah-website.vercel.app';
+
 // Casbah Localisation on the map
 export const cords = {
   lat: 35.775815942301875,

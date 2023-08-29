@@ -39,5 +39,7 @@
   "_404": "this page is nowhere to be found",
   "thankyou": "Thank You",
   "contactsuccess": "Your submission has been sent.",
-  "contacterror": "Please fill out the form"
+  "contacterror": "Please fill out the form",
+  "copylink": "Copy Link",
+  "linkcopied": "Link Copied"
 }
