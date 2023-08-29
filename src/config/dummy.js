@@ -1,5 +1,7 @@
 import Twitter from '@/icons/Twitter';
-
+import Facebook from '@/icons/Facebook'
+import LinkedIn from '@/icons/LinkedIn'
+ 
 export const data = {
   header: {
     title:
@@ -92,32 +94,24 @@ export const data = {
   share: {
     data: [
       {
-        children: 'twitter',
-        Icon: Twitter,
+        children: 'facebook',
+        Icon: Facebook,
         message:
           'salam http://localhost:6006/?path=/story/common-sharebutton--default',
-        link: 'https://twitter.com/intent/tweet?text=',
+        link: 'https://www.facebook.com/sharer/sharer.php?u=',
       },
       {
         children: 'twitter',
         Icon: Twitter,
         message:
           'salam http://localhost:6006/?path=/story/common-sharebutton--default',
-        link: 'https://twitter.com/intent/tweet?text=',
+        link: 'https://twitter.com/intent/tweet?url=',
       },
       {
-        children: 'twitter',
-        Icon: Twitter,
-        message:
-          'salam http://localhost:6006/?path=/story/common-sharebutton--default',
-        link: 'https://twitter.com/intent/tweet?text=',
-      },
-      {
-        children: 'twitter',
-        Icon: Twitter,
-        message:
-          'salam http://localhost:6006/?path=/story/common-sharebutton--default',
-        link: 'https://twitter.com/intent/tweet?text=',
+        children: 'linkedin',
+        Icon: LinkedIn,
+        message: 'salam',
+        link: 'https://www.linkedin.com/sharing/share-offsite/?url=',
       },
     ],
   },

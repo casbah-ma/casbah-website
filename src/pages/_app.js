@@ -12,6 +12,7 @@ import TransitionPage from '../components/Animations/PageTransition';
 import CursorTracker from '../components/CursorTracker';
 import CursorProvider from '../store/CursorProvider';
 
+
 const made = localFont({
   src: '../../public/fonts/made.otf',
   variable: '--font-made',
