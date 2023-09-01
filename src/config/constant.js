@@ -9,7 +9,6 @@ import TwitterSVG from 'public/icons/twitter.svg';
 import DribbbleSVG from 'public/icons/dribbble.svg';
 import BehanceSVG from 'public/icons/behance.svg';
 
-
 // base URL o Casbah
 export const baseURL = 'https://casbah-website.vercel.app';
 

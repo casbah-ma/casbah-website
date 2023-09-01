@@ -6,12 +6,13 @@ export const Wrapper = styled.div`
 
 export const TextWrapper = tw.div`
   w-full flex-1 flex items-center pl-4 max-w-[87.5rem] mx-auto
-  lg:(pl-[4.5rem] w-[80%])
+  lg:(pl-[4.5rem])
 `;
 
 export const Text = styled.p`
   ${tw`text-black font-made uppercase font-light  text-2xl leading-[1.875rem]
        md:(text-[2rem] leading-[2.5rem])
+       lg:(w-[70%])
   `}
   span {
     ${tw` text-brightOrange`}

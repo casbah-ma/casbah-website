@@ -23,10 +23,6 @@ export const Content = styled(motion.div)`
        lg:(w-[34rem] gap-2)`}
 `;
 
-export const Arrows = styled(motion.div)`
-  ${tw`flex flex-col justify-center items-center`}
-`;
-
-export const Arraow = styled(motion.span)`
-  ${tw`w-7`}
+export const ArrowsWrapper = styled(motion.div)`
+  ${tw`w-full h-full`}
 `;

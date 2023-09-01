@@ -42,11 +42,11 @@ const ContactUs = ({}) => {
               html: <p>{t('contactsuccess')}</p>,
               icon: 'success',
             }).then((result) => {
-                setFormState({
-                  name: '',
-                  email: '',
-                  message: '',
-                });
+              setFormState({
+                name: '',
+                email: '',
+                message: '',
+              });
             });
           }
         });
