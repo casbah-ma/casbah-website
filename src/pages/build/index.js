@@ -34,7 +34,7 @@ function Build({ data }) {
           variant="v3"
           className="md:pr-[13.188rem] lg:pr-0"
         />
-         <PicTop
+        <PicTop
           {...data.picTopProps2}
           variant="v3"
           className="pl-14 md:pl-[13.188rem] lg:pl-[24.625rem]"

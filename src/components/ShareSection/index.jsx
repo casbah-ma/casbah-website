@@ -25,7 +25,9 @@ const ShareSection = ({ data }) => {
           </SwiperSlide>
         ))}
         <SwiperSlide className="!w-fit !h-auto">
-          <ShareButton Icon={CopyLink} copyLink>{t("copylink")}</ShareButton>
+          <ShareButton Icon={CopyLink} copyLink>
+            {t('copylink')}
+          </ShareButton>
         </SwiperSlide>
       </Swiper>
     </Wrapper>

@@ -1,7 +1,7 @@
 import Twitter from '@/icons/Twitter';
-import Facebook from '@/icons/Facebook'
-import LinkedIn from '@/icons/LinkedIn'
- 
+import Facebook from '@/icons/Facebook';
+import LinkedIn from '@/icons/LinkedIn';
+
 export const data = {
   header: {
     title:

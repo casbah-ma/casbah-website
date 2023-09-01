@@ -1,7 +1,7 @@
+import { forwardRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import {
-  Arraow,
-  Arrows,
+  ArrowsWrapper,
   Container,
   Content,
   ContentWrapper,
@@ -13,8 +13,8 @@ import Title from '../Title';
 import Paragraph from '../Paragraph';
 
 import hero from '../../lotties/hero.json';
-import { forwardRef, useState } from 'react';
-import HeroArrow from '../../icons/HeroArrow';
+import animationDown from '../../lotties/animation_down.json';
+
 import { arrowVariant, arrowsVariant, containerVariant } from './variants';
 
 const Hero = forwardRef(function Hero({ title, description }, ref) {
@@ -51,17 +51,14 @@ const Hero = forwardRef(function Hero({ title, description }, ref) {
               </Paragraph>
             </Content>
             {showArrow && (
-              <Arrows variants={arrowsVariant}>
-                <Arraow variants={arrowVariant}>
-                  <HeroArrow />
-                </Arraow>
-                <Arraow variants={arrowVariant}>
-                  <HeroArrow />
-                </Arraow>
-                <Arraow variants={arrowVariant}>
-                  <HeroArrow />
-                </Arraow>
-              </Arrows>
+              <ArrowsWrapper variants={arrowVariant}>
+                <Player
+                  autoplay
+                  loop
+                  src={animationDown}
+                  style={{ width: 64 }}
+                />
+              </ArrowsWrapper>
             )}
           </ContentWrapper>
         )}

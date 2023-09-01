@@ -33,7 +33,7 @@ const ShareButton = ({ Icon, children, link, message, copyLink }) => {
         as={copyLink ? 'button' : 'a'}
         href={copyLink ? null : url}
         target={copyLink ? null : '_blank'}
-        data-tooltip-id={copyLink ? "my-tooltip": ""}
+        data-tooltip-id={copyLink ? 'my-tooltip' : ''}
         data-tooltip-place="right"
       >
         {Icon && <Icon />}
