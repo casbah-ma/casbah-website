@@ -96,7 +96,7 @@ export default function Home({ data }) {
         </Fragment>
       )}
       <ReactFullpage
-        fixedElements="#scrollTop"
+        fixedElements="#scrollTop, #navbar"
         scrollingSpeed={1300}
         onLeave={onLeave}
         verticalCentered={false}
@@ -111,7 +111,7 @@ export default function Home({ data }) {
 
           return (
             <ReactFullpage.Wrapper>
-              <Navbar />
+              <Navbar hidden={!heroInView} />
 
               <Hero ref={heroRef} className="section" {...data.heroProps} />
               <HomeSection
