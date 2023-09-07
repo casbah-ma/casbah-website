@@ -24,7 +24,7 @@ function Design({ data }) {
   const [isEnd, setIsEnd] = useState(false);
 
   return (
-    <div className="flex flex-col justify-center items-center mt-14 md:mt-[10.75rem]">
+    <div className="flex flex-col justify-center items-center mt-14 md:mt-[9.75rem] lg:mt-[10.75rem]">
       <LottieText lottie={design} setIsEnd={setIsEnd} />
       <div
         className={`flex flex-col justify-center items-center gap-20 mb-20 transition-all duration-700 ${
