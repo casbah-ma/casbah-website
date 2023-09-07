@@ -8,7 +8,7 @@ export const variants = {
 };
 
 export const Wrapper = styled.div(() => [
-  tw`w-full flex flex-col gap-12 justify-center`,
+  tw`w-full flex flex-col justify-center gap-[2.625rem] lg:gap-12 `,
 ]);
 
 export const MyParagraph = styled(Paragraph)`

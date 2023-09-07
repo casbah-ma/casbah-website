@@ -25,13 +25,13 @@ function Articulate({ data }) {
   return (
     <div
       className={`flex flex-col justify-center items-center transition-all duration-700 ease-in ${
-        isEnd ? '-mt-[4rem]' : ''
+        isEnd ? 'lg:-mt-[4rem]' : ''
       }`}
     >
       <LottieText lottie={articulate} setIsEnd={setIsEnd} />
       <div
         className={`flex flex-col justify-center items-center gap-20 mb-20 transition-all duration-700 ease-in ${
-          isEnd ? '-mt-32' : ''
+          isEnd ? 'lg:-mt-32' : ''
         }`}
       >
         <Header {...data.headerProps} isSplited={true} level="h2" />
