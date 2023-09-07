@@ -6,7 +6,7 @@ import { infos } from '../../config/constant';
 
 const HomeFooter = forwardRef(function HomeFooter({ description }, ref) {
   return (
-    <div ref={ref} className="section">
+    <div ref={ref} className="section home_section fp-auto-height-responsive">
       <Wrapper>
         <TextWrapper>
           <Text>

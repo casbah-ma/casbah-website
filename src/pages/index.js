@@ -15,7 +15,7 @@ import {
   LottierContainer,
   ScrollTopBtn,
 } from '../styles/Home.styles';
-import { Fragment, useEffect, useMemo, useState } from 'react';
+import { Fragment, useMemo, useState } from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 import { useInView } from 'react-intersection-observer';
 import HomeFooter from '../components/HomeFooter';
@@ -98,6 +98,7 @@ export default function Home({ data }) {
       <ReactFullpage
         fixedElements="#scrollTop, #navbar"
         scrollingSpeed={1300}
+        responsiveWidth={640}
         onLeave={onLeave}
         verticalCentered={false}
         scrollOverflow={false}

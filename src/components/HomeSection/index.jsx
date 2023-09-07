@@ -28,8 +28,9 @@ function HomeSection({
       playerRef.current.play();
     }
   }, [activeSectionId, id]);
+
   return (
-    <div id={id} className="section home_section">
+    <div id={id} className="section home_section fp-auto-height-responsive">
       <LottieWrapper>
         <LottieContainer>
           <Player ref={playerRef} keepLastFrame loop={false} src={lottie} />
