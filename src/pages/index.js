@@ -112,7 +112,7 @@ export default function Home({ data }) {
 
           return (
             <ReactFullpage.Wrapper>
-              <Navbar hidden={!heroInView} />
+              <Navbar hiddenFromHome={!heroInView} />
 
               <Hero ref={heroRef} className="section" {...data.heroProps} />
               <HomeSection

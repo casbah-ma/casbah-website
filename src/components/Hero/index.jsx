@@ -1,4 +1,4 @@
-import { forwardRef, useState } from 'react';
+import { forwardRef, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import {
   ArrowsWrapper,
@@ -6,13 +6,15 @@ import {
   Content,
   ContentWrapper,
   LottierContainer,
+  LottierContainerMobile,
   Wrapper,
 } from './Hero.styles';
 import { Player } from '@lottiefiles/react-lottie-player';
 import Title from '../Title';
 import Paragraph from '../Paragraph';
-
 import hero from '../../lotties/hero.json';
+import heroMob from '../../lotties/hero_mob.json';
+
 import animationDown from '../../lotties/animation_down.json';
 
 import { arrowVariant, arrowsVariant, containerVariant } from './variants';
@@ -20,6 +22,21 @@ import { arrowVariant, arrowsVariant, containerVariant } from './variants';
 const Hero = forwardRef(function Hero({ title, description }, ref) {
   const [showText, setShowText] = useState(false);
   const [showArrow, setShowArrow] = useState(false);
+
+  const [width, setWidth] = useState();
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+    function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+    }
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    };
+  }, [setWidth]);
+
+  const isMobile = width <= 768;
 
   return (
     <Wrapper ref={ref} className="section">
@@ -29,7 +46,7 @@ const Hero = forwardRef(function Hero({ title, description }, ref) {
             keepLastFrame
             autoplay
             loop={false}
-            src={hero}
+            src={isMobile ? heroMob : hero}
             onEvent={(e) => {
               if (e === 'complete') {
                 setShowText(true);
@@ -40,6 +57,7 @@ const Hero = forwardRef(function Hero({ title, description }, ref) {
             }}
           />
         </LottierContainer>
+
         {showText && (
           <ContentWrapper>
             <Content>

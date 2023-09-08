@@ -25,7 +25,7 @@ import { child, container } from './variants';
 import { useRouter } from 'next/router';
 import useScrollPosition from '@/hooks/useScrollPosition';
 import { useScrollDirection } from 'react-use-scroll-direction';
-const Navbar = ({ hidden = false }) => {
+const Navbar = ({ hiddenFromHome = false }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
 
@@ -51,7 +51,11 @@ const Navbar = ({ hidden = false }) => {
 
   return (
     <>
-      <NavbarWrapper id="navbar" $isHidden={isHidden || hidden}>
+      <NavbarWrapper
+        id="navbar"
+        $isHidden={isHidden}
+        $hiddenFromHome={hiddenFromHome}
+      >
         <MobileView>
           <PointerWrapper>
             <Link href="/">
