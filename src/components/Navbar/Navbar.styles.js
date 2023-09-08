@@ -45,8 +45,9 @@ export const DeskView = tw.div`
 export const MobileView = tw.div`
   lg:hidden w-full flex items-center justify-between
 `;
-export const PointerWrapper = tw.div`
- cursor-pointer
+
+export const PointerWrapper = tw.button`
+    relative
 `;
 
 export const MobileNav = tw.nav`flex flex-col mt-[4.813rem] border-y border-[#D9D9D9]`;
