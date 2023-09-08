@@ -33,7 +33,20 @@ function HomeSection({
     <div id={id} className="section home_section fp-auto-height-responsive">
       <LottieWrapper>
         <LottieContainer>
-          <Player ref={playerRef} keepLastFrame loop={false} src={lottie} />
+          <Player
+            ref={playerRef}
+            keepLastFrame
+            loop={false}
+            src={lottie}
+            style={{
+              width: '100%',
+              height: '100%',
+              position: 'absolute',
+              left: '50%',
+              top: '50%',
+              transform: 'translate3d(-50%, -50%, 0)',
+            }}
+          />
         </LottieContainer>
       </LottieWrapper>
 

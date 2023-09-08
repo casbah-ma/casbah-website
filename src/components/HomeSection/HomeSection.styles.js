@@ -7,7 +7,7 @@ export const LottieWrapper = tw.div`
 `;
 
 export const LottieContainer = tw.div`
- w-full h-full
+ relative w-full h-full
 `;
 
 export const Content = styled.div(() => [

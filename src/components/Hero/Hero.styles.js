@@ -7,7 +7,7 @@ export const Wrapper = styled(motion.section)`
 
 export const Container = styled(motion.div)`
   ${tw`z-20 bg-white max-w-[87.5rem] mx-auto flex flex-col justify-start items-center  
-      text-center gap-10 px-4 pt-28 md:gap-36 lg:(gap-16 px-16 pb-6)`};
+      text-center gap-10 px-4 pt-28  lg:(gap-16 px-16 pb-6)`};
 `;
 
 export const LottierContainer = styled(motion.div)`

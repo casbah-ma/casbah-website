@@ -36,7 +36,7 @@ const Hero = forwardRef(function Hero({ title, description }, ref) {
     };
   }, [setWidth]);
 
-  const isMobile = width <= 768;
+  const isMobile = width <= 820;
 
   return (
     <Wrapper ref={ref} className="section">
