@@ -20,12 +20,11 @@ import { useEffect, useState } from 'react';
 import { links, logo } from '../../config/constant';
 import useTranslation from 'next-translate/useTranslation';
 import LanguageMenu from '../LanguageMenu';
-import { motion } from 'framer-motion';
-import { child, container } from './variants';
+import { child } from './variants';
 import { useRouter } from 'next/router';
 import useScrollPosition from '@/hooks/useScrollPosition';
 import { useScrollDirection } from 'react-use-scroll-direction';
-const Navbar = () => {
+const Navbar = ({ hiddenFromHome = false }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
 
@@ -51,13 +50,12 @@ const Navbar = () => {
 
   return (
     <>
-      <NavbarWrapper id="navbar" $isHidden={isHidden}>
+      <NavbarWrapper $isHidden={isHidden} $hiddenFromHome={hiddenFromHome}>
         <MobileView>
-          <PointerWrapper>
-            <Link href="/">
-              <Casbah />
-            </Link>
-          </PointerWrapper>
+          <Link href="/">
+            <Casbah />
+          </Link>
+
           <PointerWrapper onClick={() => setIsOpen(true)}>
             <Menu />
           </PointerWrapper>
@@ -97,9 +95,8 @@ const Navbar = () => {
               )
             )}
           </LinksWrapper>
-          <Social>
-            <LanguageMenu />
-          </Social>
+
+          <LanguageMenu />
         </DeskView>
       </NavbarWrapper>
       <Modal isOpen={isOpen} closeModal={() => setIsOpen(false)}>

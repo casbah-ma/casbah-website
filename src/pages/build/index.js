@@ -20,9 +20,9 @@ export const getStaticProps = ({ locale }) => {
 
 function Build({ data }) {
   return (
-    <div className="flex flex-col justify-center items-center mt-2">
+    <div className="flex flex-col justify-center items-center mt-3.5 md:mt-[3.75rem] lg:mt-2">
       <LottieText lottie={build} />
-      <div className="flex flex-col justify-center items-center gap-20 -mt-[2.125rem] mb-20">
+      <div className="flex flex-col justify-center items-center gap-20 mt-2.5 md:-mt-1 lg:-mt-[2.125rem] mb-20">
         <HeaderV2 {...data.headerProps} />
         <PicTop
           {...data.picTopProps}

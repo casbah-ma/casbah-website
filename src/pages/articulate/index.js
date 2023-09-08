@@ -25,13 +25,13 @@ function Articulate({ data }) {
   return (
     <div
       className={`flex flex-col justify-center items-center transition-all duration-700 ease-in ${
-        isEnd ? '-mt-[4rem]' : ''
+        isEnd ? 'md:mt-5 lg:-mt-[4rem]' : 'md:mt-[10.125rem] lg:mt-[unset]'
       }`}
     >
       <LottieText lottie={articulate} setIsEnd={setIsEnd} />
       <div
         className={`flex flex-col justify-center items-center gap-20 mb-20 transition-all duration-700 ease-in ${
-          isEnd ? '-mt-32' : ''
+          isEnd ? '-mt-2.5 md:-mt-[3.875rem] lg:-mt-32' : ''
         }`}
       >
         <Header {...data.headerProps} isSplited={true} level="h2" />

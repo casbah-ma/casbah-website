@@ -15,7 +15,7 @@ import {
   LottierContainer,
   ScrollTopBtn,
 } from '../styles/Home.styles';
-import { Fragment, useEffect, useMemo, useState } from 'react';
+import { Fragment, useMemo, useState } from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 import { useInView } from 'react-intersection-observer';
 import HomeFooter from '../components/HomeFooter';
@@ -66,6 +66,7 @@ export default function Home({ data }) {
     <>
       {init && (
         <Fragment>
+          <Navbar hiddenFromHome={!heroInView} />
           <ScrollTopBtn
             $isHidden={heroInView}
             onClick={() => {
@@ -74,7 +75,6 @@ export default function Home({ data }) {
           >
             <TopIcon />
           </ScrollTopBtn>
-
           <LottieWrapper className="lottie">
             <LottierContainer>
               <Player
@@ -96,8 +96,8 @@ export default function Home({ data }) {
         </Fragment>
       )}
       <ReactFullpage
-        fixedElements="#scrollTop"
         scrollingSpeed={1300}
+        responsiveWidth={640}
         onLeave={onLeave}
         verticalCentered={false}
         scrollOverflow={false}
@@ -111,8 +111,6 @@ export default function Home({ data }) {
 
           return (
             <ReactFullpage.Wrapper>
-              <Navbar />
-
               <Hero ref={heroRef} className="section" {...data.heroProps} />
               <HomeSection
                 id="1"
