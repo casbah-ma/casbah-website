@@ -69,7 +69,7 @@ const Hero = forwardRef(function Hero({ title, description }, ref) {
               </Paragraph>
             </Content>
             {showArrow && (
-              <ArrowsWrapper variants={arrowVariant}>
+              <ArrowsWrapper variants={arrowVariant} exit={{ opacity: 0 }}>
                 <Player
                   autoplay
                   loop
