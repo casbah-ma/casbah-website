@@ -83,8 +83,8 @@ export default function Home({ data }) {
                 loop={false}
                 src={!heroInView && !footerInView && lotties[currentIndex]}
                 style={{
-                  width: '100%',
-                  height: '100%',
+                  // width: '100%',
+                  // height: '100%',
                   position: 'absolute',
                   left: '50%',
                   top: '50%',
