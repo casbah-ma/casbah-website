@@ -23,7 +23,7 @@ function ClientsSwiper({ title, description, images }) {
         <Marquee gradient gradientWidth={30} autoFill pauseOnHover>
           {images?.length > 0 &&
             images.map((image, i) => (
-              <ImageWrapper>
+              <ImageWrapper key={i}> 
                 <MyImage
                   src={image.src}
                   sizes={imageStyle}
