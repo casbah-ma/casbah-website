@@ -33,18 +33,18 @@ const BlogInfoPage = ({ data }) => {
   const router = useRouter();
   useEffect(() => {
     // Get the parent element of the <img> tag
-    const parentElement = document.querySelector('p > img').parentNode;
+    const parentElement = document.querySelector('p > img')?.parentNode;
 
     // Move the <img> element outside the <p> element
-    while (parentElement.firstChild) {
-      parentElement.parentNode.insertBefore(
-        parentElement.firstChild,
+    while (parentElement?.firstChild) {
+      parentElement?.parentNode.insertBefore(
+        parentElement?.firstChild,
         parentElement
       );
     }
 
     // Remove the now empty <p> element
-    parentElement.parentNode.removeChild(parentElement);
+    parentElement?.parentNode.removeChild(parentElement);
   }, []);
 
   return (

@@ -6205,6 +6205,11 @@ grid-index@^1.1.0:
   resolved "https://registry.yarnpkg.com/grid-index/-/grid-index-1.1.0.tgz#97f8221edec1026c8377b86446a7c71e79522ea7"
   integrity sha512-HZRwumpOGUrHyxO5bqKZL0B0GlUpwtCAzZ42sgxUPniu33R1LSFH5yrIcBCHjkctCAh3mtWKcKd9J4vDDdeVHA==
 
+gsap@^3.12.2:
+  version "3.12.2"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.12.2.tgz#6e88203eed360761cbf2a2cb3a8d702aa87f3f6d"
+  integrity sha512-EkYnpG8qHgYBFAwsgsGEqvT1WUidX0tt/ijepx7z8EUJHElykg91RvW1XbkT59T0gZzzszOpjQv7SE41XuIXyQ==
+
 gunzip-maybe@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/gunzip-maybe/-/gunzip-maybe-1.4.2.tgz#b913564ae3be0eda6f3de36464837a9cd94b98ac"
@@ -9072,6 +9077,11 @@ react-element-to-jsx-string@^15.0.0:
     "@base2/pretty-print-object" "1.0.1"
     is-plain-object "5.0.0"
     react-is "18.1.0"
+
+react-fast-marquee@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/react-fast-marquee/-/react-fast-marquee-1.6.1.tgz#38ee8a8725a98eac3e8a16da914b04b6f7d0e5cc"
+  integrity sha512-SFY+FQectFXsuCrcJuIxrh34YzJ+TKH0Lp6BqZaalVhjdmu6Sx11rKKGQiC6vvC/q9ySXYVn9sozoOvPXFSMoQ==
 
 react-inspector@^6.0.0:
   version "6.0.1"

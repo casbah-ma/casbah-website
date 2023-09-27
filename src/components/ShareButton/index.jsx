@@ -17,7 +17,6 @@ const ShareButton = ({ Icon, children, link, message, copyLink }) => {
     e.preventDefault();
     clipboardCopy(baseURL + router.asPath)
       .then(() => {
-        console.log('Text copied to clipboard');
         setTooltipVisible(true); // Show the tooltip
         setTimeout(() => setTooltipVisible(false), 2000);
       })

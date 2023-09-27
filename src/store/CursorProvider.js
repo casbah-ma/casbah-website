@@ -27,7 +27,6 @@ function cursorReducuer(state, action) {
     case 'TOGGLE_VISIBLE':
       return { ...state, isVisible: !state.isVisible };
     case 'TOGGLE_EXPAND':
-      console.log('hereeeeeee');
       return { ...state, isExpanded: !state.isExpanded };
     default: {
       throw Error('Unknown action: ' + action.type);
