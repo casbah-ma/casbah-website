@@ -37,6 +37,9 @@ const CustomStyles = createGlobalStyle`
       display: inline-block !important;
     }
 
+    .lineMask {
+      overflow: hidden;
+    }
 
     .wave:hover span {
       animation: animate 1s ease-out;

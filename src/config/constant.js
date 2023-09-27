@@ -77,14 +77,14 @@ export const links = [
     name: 'portfolio',
     url: '/portfolio',
   },
-  {
-    name: 'lab',
-    url: '/lab',
-  },
-  {
-    name: 'blogs',
-    url: '/blogs',
-  },
+  // {
+  //   name: 'lab',
+  //   url: '/lab',
+  // },
+  // {
+  //   name: 'blogs',
+  //   url: '/blogs',
+  // },
   {
     name: 'contact',
     url: '/contact',

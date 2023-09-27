@@ -75,7 +75,7 @@ function TeamSection({ title, description, cards }) {
               <React.Fragment key={card.name + index}>
                 <ProfileCard
                   {...card}
-                  onClick={(e) => handleClick(e, card, index)}
+                  // onClick={(e) => handleClick(e, card, index)}
                 />
                 {index === ClickedIndex && (
                   <ProfileCardInfo {...selectedCard} />

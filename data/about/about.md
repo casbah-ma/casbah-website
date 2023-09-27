@@ -74,7 +74,7 @@ teamSection:
       description: 'It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer It is not about'
       imgSrc: '/team/Souhail.png'
     - name: 'Khaoula zouggar'
-      post: 'UX Ui designer'
+      post: 'Full Stack developer'
       description: 'It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer It is not about'
       imgSrc: '/team/Khawla.png'
     - name: 'YASSIR Bolles'

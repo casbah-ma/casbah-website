@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import MyImage from '../MyImage';
 import {
+  Box,
+  Boxes,
   Carousel,
   Carousel2,
   CarouselParent,
@@ -10,15 +12,18 @@ import {
 } from './ClientsSwiper.styles';
 import Header from '../Header';
 
+import Marquee from 'react-fast-marquee';
+
 function ClientsSwiper({ title, description, images }) {
   return (
     <Wrapper>
       <Header description={description} title={title} />
-      <CarouselParent className="infinite-slider">
-        <Carousel>
+
+      <CarouselParent>
+        <Marquee gradient gradientWidth={30} autoFill pauseOnHover>
           {images?.length > 0 &&
             images.map((image, i) => (
-              <ImageWrapper key={i}>
+              <ImageWrapper>
                 <MyImage
                   src={image.src}
                   sizes={imageStyle}
@@ -27,20 +32,7 @@ function ClientsSwiper({ title, description, images }) {
                 />
               </ImageWrapper>
             ))}
-        </Carousel>
-        <Carousel2>
-          {images?.length > 0 &&
-            images.map((image, i) => (
-              <ImageWrapper key={i * 2}>
-                <MyImage
-                  src={image.src}
-                  sizes={imageStyle}
-                  alt={image.name}
-                  objectFit="contain"
-                />
-              </ImageWrapper>
-            ))}
-        </Carousel2>
+        </Marquee>
       </CarouselParent>
     </Wrapper>
   );
