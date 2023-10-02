@@ -21,7 +21,7 @@ picLeftProps2:
     - ''
   imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286561/PORTFOLIO/Expertise/copywriting_iqbuwy.png'
 picTopProps2:
-  title: ''
+  title: 'Content production'
   texts:
     - 'Whether it is creating written content, such as white papers, case studies, blog posts, or print materials, or audiovisual content such as videos, pictures, or podcasts, putting together the right content mix is an effective way to engage a diverse range of audiences and cater to their preferences.'
     - ''
