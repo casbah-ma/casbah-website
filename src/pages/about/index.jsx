@@ -3,48 +3,53 @@ import AwardsSection from '../../components/AwardsSection';
 import ClientsSwiper from '../../components/ClientsSwiper';
 import TeamSection from '../../components/TeamSection';
 import { allAbouts } from 'contentlayer/generated';
-import ClientImage from 'public/Logo_Visit_Beni_Mellal_black.png';
-import Barcelo from 'public/barcelo.png';
-import Sheraton from 'public/sher.png';
+import Barcelo from 'public/clients/Barcelo.png';
+import BMK from 'public/clients/BMK.png';
+import Chamal from 'public/clients/Chamal.png';
+import CR_Fes from 'public/clients/CR_Fes.png';
+import Draa from 'public/clients/Draa.png';
+import Farah from 'public/clients/Farah.png';
+import Mandarian from 'public/clients/Mandarian.png';
+import Widiane from 'public/clients/Widiane.png';
+import Hayatt from 'public/clients/Hayatt.png';
 import { allHomes } from 'contentlayer/generated';
-import AboutHero from '../../components/AboutHero';
 
 const images = [
   {
-    src: ClientImage,
-    name: 'about',
+    src: BMK,
+    name: 'bmk',
   },
   {
     src: Barcelo,
-    name: 'about',
+    name: 'Barcelo',
   },
   {
-    src: Sheraton,
-    name: 'about',
+    src: Chamal,
+    name: 'chamal',
   },
   {
-    src: ClientImage,
-    name: 'about',
+    src: CR_Fes,
+    name: 'cr_fes',
   },
   {
-    src: Barcelo,
-    name: 'about',
+    src: Draa,
+    name: 'Draa',
   },
   {
-    src: Sheraton,
-    name: 'about',
+    src: Farah,
+    name: 'Farah',
   },
   {
-    src: ClientImage,
-    name: 'about',
+    src: Hayatt,
+    name: 'Hayatt',
   },
   {
-    src: Barcelo,
-    name: 'about',
+    src: Mandarian,
+    name: 'Mandarian',
   },
   {
-    src: Sheraton,
-    name: 'about',
+    src: Widiane,
+    name: 'Widiane',
   },
 ];
 

@@ -16,7 +16,7 @@ export const versions = {
 };
 
 export const CardWrapper = styled.div`
-  ${tw`flex flex-col justify-center items-center gap-6  relative pb-6 border-b border-solid border-darkBlue `}
+  ${tw`w-full flex flex-col justify-center items-center gap-6  relative pb-6 border-b border-solid border-darkBlue `}
   // variant
   ${({ variant }) => versions[variant]}
   :nth-child(2n-2) {
