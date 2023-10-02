@@ -77,10 +77,10 @@ export const links = [
     name: 'portfolio',
     url: '/portfolio',
   },
-  // {
-  //   name: 'lab',
-  //   url: '/lab',
-  // },
+  {
+    name: 'lab',
+    url: '/lab',
+  },
   // {
   //   name: 'blogs',
   //   url: '/blogs',

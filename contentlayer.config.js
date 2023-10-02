@@ -350,6 +350,7 @@ export const Blogs = defineDocumentType(() => ({
     },
     tags: { type: 'json' },
     parent: { type: 'string' },
+    githubLink: { type: 'string' },
   },
   computedFields: {
     lang: {

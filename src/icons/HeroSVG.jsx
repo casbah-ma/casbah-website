@@ -1,8 +1,13 @@
 import { motion } from 'framer-motion';
+import { forwardRef } from 'react';
 
-const HeroSVG = ({ className, variants, initial, animate, exit }) => {
+const HeroSVG = forwardRef(function HeroSVG(
+  { className, variants, initial, animate, exit, ...rest },
+  ref
+) {
   return (
     <motion.svg
+      ref={ref}
       width="700"
       height="1068"
       viewBox="0 0 700 1068"
@@ -13,6 +18,7 @@ const HeroSVG = ({ className, variants, initial, animate, exit }) => {
       initial={initial}
       animate={animate}
       exit={exit}
+      {...rest}
     >
       <path d="M435.93 102L511.93 64L513 142L435.93 102Z" fill="#000F9F" />
       <path d="M582.93 155L637.93 120L641 197L582.93 155Z" fill="#000F9F" />
@@ -28,6 +34,6 @@ const HeroSVG = ({ className, variants, initial, animate, exit }) => {
       <path d="M269.93 113L192 64L190 142L269.93 113Z" fill="#FF5100" />
     </motion.svg>
   );
-};
+});
 
 export default HeroSVG;

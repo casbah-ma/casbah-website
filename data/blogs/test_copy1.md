@@ -6,6 +6,7 @@ tags:
   - 'coding'
   - 'design'
 parent: 'lab'
+githubLink: 'https://github.com/casbah-ma'
 ---
 
 # It is not about putting forms and colors together, but about finding the right balance between logic and aesthetic

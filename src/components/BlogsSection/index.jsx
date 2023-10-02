@@ -11,8 +11,11 @@ function BlogsSection({ blogs }) {
   const router = useRouter();
   const { toggleVisible } = useContext(CursorContext);
 
-  const handleBlogClick = (slug) => {
-    router.push(`/blogs/${slug}`);
+  const handleBlogClick = (blog) => {
+    console.clear()
+    console.log(blog)
+    if (blog.githubLink) window.open(blog.githubLink, '_blank');
+    else router.push(`/blogs/${blog.slug}`);
   };
 
   return (
@@ -24,7 +27,7 @@ function BlogsSection({ blogs }) {
             {...blog}
             variant={i === 0 ? 'v2' : 'v1'}
             isFirst={i === 0}
-            onClick={() => handleBlogClick(blog.slug)}
+            onClick={() => handleBlogClick(blog)}
           />
         ))}
     </Grid>
