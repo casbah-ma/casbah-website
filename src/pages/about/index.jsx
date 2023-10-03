@@ -72,7 +72,7 @@ const About = ({ data }) => {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-36 mt-[5.438rem] md:mt-[11.5rem]">
       <AboutSection {...data.aboutSection} />
-      <AwardsSection {...data.awardsSection} />
+      {/* <AwardsSection {...data.awardsSection} /> */}
       <TeamSection {...data.teamSection} />
       <ClientsSwiper {...data.clientSection} />
     </div>

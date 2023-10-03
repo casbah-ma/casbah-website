@@ -19,13 +19,29 @@ aboutSection:
       - ''
       - ''
   extraText1:
-    title: ''
+    title: 'OUR VALUES'
     text:
-      - ''
+      - '•   Embracing change as a constant'
+
+      - '•   Tailoring to uniqueness' 
+      
+      - '•   Kindness'
+
+      - '•   Transparency and Openness'
+      
+      - '•   Mistakes are part of the ride' 
+      
+      - '•   Lead with empathy and recognition'
   extraText2:
-    title: ''
+    title: 'OUR CULTURE'
     text:
-      - ''
+      - '•   Hakuna Matata'
+      
+      - '•   Stay hungry, stay foolish'
+      
+      - '•   We care about our partners'
+      
+      - '•   We believe we can disrupt practices to make territories better'
 awardsSection:
   title: 'awards'
   description: ''
