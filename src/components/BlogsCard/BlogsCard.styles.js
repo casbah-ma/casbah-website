@@ -11,12 +11,12 @@ export const versions = {
   v1: tw`w-full col-span-1`,
   v2: tw`w-full gap-4 pb-4 
          md:(col-span-2 gap-6 pb-10 mb-2) 
-         lg:(gap-12 pb-8 mb-0)`,
+         lg:(gap-12 pb-8 mb-0 h-[700px])`,
   v3: tw`w-full`,
 };
 
 export const CardWrapper = styled.div`
-  ${tw`flex flex-col justify-center items-center gap-6  relative pb-6 border-b border-solid border-darkBlue `}
+  ${tw`w-full flex flex-col justify-start items-start gap-6  relative pb-6 border-b border-solid border-darkBlue `}
   // variant
   ${({ variant }) => versions[variant]}
   :nth-child(2n-2) {

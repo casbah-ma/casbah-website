@@ -1,46 +1,44 @@
 ---
 headerProps:
-  title: 'Connect the dots and come up with new ways to make your organization more performant.'
-  description: 'Putting together strategic frameworks for day-to-day operations is a basic and crucial condition for aligning your teams and your resources toward clear long-term goals. We approach strategic endeavors by keeping in mind who’s the most important entity in the process: the end user.'
+  title: 'Connect the dots and devise innovative approaches to enhance the performance of your organization.'
+  description: 'Developing strategic frameworks for day-to-day operations is fundamental and essential in aligning your teams and resources towards achieving clear long-term goals. Our approach to strategic initiatives revolves around prioritizing the most crucial element in the process: the end user.'
 picTopProps:
   title: 'Digital transformation'
   texts:
-    - 'Creating the endogenous and exogenous conditions for a successful digital transformation.'
-    - A top-down approach often ticks all the boxes but doesn’t always have the right adhesion or comprehension of the operational challenges encountered. "
-    - ' (Un)surprisingly, the right ideas for how the transformation comes from within. The digital layer is added as an enabler to go from ideas to blueprints.'
-  img: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Creating the endogenous and exogenous conditions for a successful digital transformation. While a top-down approach often covers all the necessary aspects, it may lack the necessary understanding of the operational challenges faced. Interestingly, the most effective ideas for transformation often arise internally. The digital layer serves as an enabling factor to move from ideas to actionable blueprints.'
+    - ''
+    - ''
+  img: 'https://res.cloudinary.com/casbah/image/upload/v1696286540/PORTFOLIO/Expertise/Digital_transformation_dc6wvv.png'
 picLeftProps:
-  title: 'Competitive analysis and benchmark'
+  title: 'Competitive analysis and benchmarking'
   article:
-    - 'Creating the endogenous and exogenous conditions for a successful digital transformation.'
-    - A top-down approach often ticks all the boxes but doesn’t always have the right adhesion or comprehension of the operational challenges encountered. "
-    - ' (Un)surprisingly, the right ideas for how the transformation comes from within. The digital layer is added as an enabler to go from ideas to blueprints.'
-  imgSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Knowing your competitors (direct or indirect) is not necessarily enough to... well, know your competitors. It begins by committing to a method of identifying them objectively and continuously. Then, you can choose your approach, either by periodically benchmarking or by setting up monitoring and market intelligence systems that provide the right Key Performance Indicators (KPIs).'
+    - ''
+    - ''
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286538/PORTFOLIO/Expertise/Competitive_analysis_and_benchmark_b0alwq.png'
 picTopProps2:
-  title: 'Campaign Development'
+  title: 'User Digital Journey'
   texts:
-    - 'Whether to work on brand/product recognition, convey certain brand attributes, or move your users up in the funnel, we dig into our collective grey matter to give substance to your campaign'
-    - 'Identifying the right targets, adopting the messaging, creating the creative concept, and defining the right channels to maximize impact, while staying in line with the brand’s personality and attributes'
-
-  img: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Tech audit:Not all users are at the same stage in their interaction with your brand. Treating them with a one-size-fits-all approach is a missed opportunity, especially when in this digital age, the personal needs of target users can be answered in particular and precise ways. Defining your funnels (whether you’re selling a product or an idea) should be at top of the priorities in order to get through the existing noise.'
+    - ''
+  img: 'https://res.cloudinary.com/casbah/image/upload/v1696286540/PORTFOLIO/Expertise/User_Digital_Journey_qzimup.png'
 picRightProps:
-  title: 'A digital bill is always paid'
+  title: 'Tech audit'
   article:
-    - 'Often, by inaction. Between the tech stack, the hosting and computation, the security risks, the conformity with data protection regulations, and the maintenance imperative, organizations have to keep an analytical eye on their costs, risks, and threats. '
-    - 'You can always go the “free” route by having a limited stack. Then again, think of the person-hours lost, the missed opportunities, and other shortfalls.'
-  imgSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - "A digital bill is always paid, often through inaction. Between managing the complexity of the tech stack, the hosting and computation, the security risks, compliance with data protection regulations, and the imperative of ongoing maintenance, organizations have to keep an analytical eye on their costs, risks, and threats. One option is to choose the 'free' route by having a limited stack. Then again, think of the person-hours lost, missed opportunities for growth, and other potential shortfalls."
+    - ''
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286538/PORTFOLIO/Expertise/A_digital_bill_is_always_paid_qbtzvw.png'
 picLeftProps2:
   title: 'Branding & Identity'
   article:
-    - 'In order to thrive, brands have to be about more than what they sell.'
-    - 'Users and customers want to recognize themselves in the brand’s promise and the values it carries. Defining or updating your definition of who you are, why you exist, and how you interact with the world'
-    - 'will help you be more in control of how you’re positioned and perceived by your audience.'
-  imgSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'In order to thrive, brands have to be more than what they sell. Users and customers seek to identify themselves with the brand’s promise and the values it carries. Defining or updating your understanding of who you are, why you exist, and how you engage with the world will empower you to have greater control over your positioning and perception among your audience.'
+    - ''
+    - ''
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286539/PORTFOLIO/Expertise/Branding_Identity_uljxw6.png'
 picTopProps3:
   title: 'Campaign Development'
   texts:
-    - 'Whether to work on brand/product recognition, convey certain brand attributes, or move your users up in the funnel, we dig into our collective grey matter to give substance to your campaign'
-    - 'Identifying the right targets, adopting the messaging, creating the creative concept, and defining the right channels to maximize impact, while staying in line with the brand’s personality and attributes'
-
-  img: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Whether your goal is to enhance brand/product recognition, convey specific brand attributes, or guide your users further along the sales funnel, we leverage our collective expertise to give substance to your campaigns. This involves identifying the right targets, crafting the messaging, developing creative concepts, and defining the most effective channels to maximize impact, all while maintaining alignment with the brand’s personality and attributes.'
+    - ''
+  img: 'https://res.cloudinary.com/casbah/image/upload/v1696286538/PORTFOLIO/Expertise/Campaign_Development_zjtirr.png'
 ---

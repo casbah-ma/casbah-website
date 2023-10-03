@@ -1,4 +1,4 @@
-import { forwardRef } from 'react';
+import { forwardRef, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import {
   SubTitle,
@@ -45,6 +45,7 @@ const Hero = forwardRef(function Hero({ title, description }, ref) {
             </div>
           </Infos>
           <HeroSVG
+            id="your-svg-id"
             className={SVGStyle}
             variants={ImageAnimation}
             initial="initial"

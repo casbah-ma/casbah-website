@@ -15,11 +15,9 @@ The Draa Tafilalet Regional Tourism Council is an association whose role is to p
 Our tourist documentation project for the Draa Tafilalet region is the result of our deep commitment to authentic exploration and the promotion of local territories. These nine unique guides reflect our passion for this exceptional region.
 
 The 'General Guide' is a total gateway, while the 'Nature' Guide takes you into the heart of breathtaking landscapes. The 'Live Draa Tafilalet like a Local' Guide provides unique experiences, and the 'Guide to the Local Gastronomy' indulges you in local flavors.
-
 The provincial guides for Errachidia, Tinghir, Ouarzazate, Midelt, and Zagora immerse you in the region's diversity.
 
 All these brochures embody our dedication to discovering hidden treasures and creating memorable experiences.
-
 Our talented graphic designer has implemented captivating graphic designs for each of them.
 
 Discover the Draa Tafilalet region through these guides!
@@ -69,3 +67,4 @@ Discover the Draa Tafilalet region through these guides!
 ![https://res.cloudinary.com/casbah/image/upload/v1695769325/PORTFOLIO/DocuDT/Guide-Comm-Ang_CompressPdf-24_page-0001_rrj4oz.jpg](https://res.cloudinary.com/casbah/image/upload/v1695769325/PORTFOLIO/DocuDT/Guide-Comm-Ang_CompressPdf-24_page-0001_rrj4oz.jpg)
 
 ![https://res.cloudinary.com/casbah/image/upload/v1695769322/PORTFOLIO/DocuDT/Guide-General-Pages-HD-V-Ang_CompressPdf-46_page-0001_qvdun5.jpg](https://res.cloudinary.com/casbah/image/upload/v1695769322/PORTFOLIO/DocuDT/Guide-General-Pages-HD-V-Ang_CompressPdf-46_page-0001_qvdun5.jpg)
+

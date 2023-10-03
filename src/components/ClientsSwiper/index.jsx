@@ -20,7 +20,7 @@ function ClientsSwiper({ title, description, images }) {
       <Header description={description} title={title} />
 
       <CarouselParent>
-        <Marquee gradient gradientWidth={30} autoFill pauseOnHover>
+        <Marquee gradient gradientWidth={100} autoFill pauseOnHover>
           {images?.length > 0 &&
             images.map((image, i) => (
               <ImageWrapper key={i}> 

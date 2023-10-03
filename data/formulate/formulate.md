@@ -1,29 +1,29 @@
 ---
 headerProps:
-  title: 'Constructing the brand’s narrative and putting together the right multi-format content, to be distributed in the appropriate channels, should be among any organization’s top priorities to get the word out.'
-  description: 'A quality-controlled and output-optimized process should be put in place, in order to stay on-brand, while also speaking the audience’s language'
+  title: 'Formulating the brand’s narrative and creating the appropriate multi-format content, to be distributed in the appropriate channels, are essential priorities for any organization to effectively communicate its message.'
+  description: 'A quality-controlled and output-optimized process should be established, in order to stay on-brand, while also speaking the audience’s language.'
 picLeftProps:
-  title: 'copywriting'
+  title: 'Content direction and audit'
   article:
-    - 'Writing clear and effective material is an important part of creating campaigns or putting together messaging adapted to channels.'
-    - 'The focus is to get users to take specific actions depending on the goals set for marketing initiatives taken by the brand'
-  imgSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Making sure that the content expresses your brand’s personality, while also finding common ground with your audiences is a stepping-stone to better communication. If you’re already invested in such effort, conducting a content audit and refining it to improve visibility, understandability, and SEO optimization can yield direct results.'
+    - ''
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286562/PORTFOLIO/Expertise/Content_direction_and_audit_fl2dx1.png'
 picTopProps:
-  title: 'storytelling'
+  title: 'Storytelling'
   texts:
-    - 'Our brains love stories.'
-    - 'That is why storytelling industries keep booming. Connecting with audiences, engaging with them through different mediums, and putting together the right messaging and the optimal way of delivering it can come in handy in order to convey information in an entertaining and more digestible format.'
-  img: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Our brains love stories. That is why storytelling industries keep booming. Connecting with audiences, engaging with them through different mediums, and putting together the right messaging and the optimal way of delivering it can be advantageous communicating information in an entertaining and easier-to-understand format.'
+    - ''
+  img: 'https://res.cloudinary.com/casbah/image/upload/v1696286561/PORTFOLIO/Expertise/storytelling_zxphrr.png'
 picLeftProps2:
-  title: 'copywriting'
+  title: 'Copywriting'
   article:
-    - 'Writing clear and effective material is an important part of creating campaigns or putting together messaging adapted to channels.'
-    - 'The focus is to get users to take specific actions depending on the goals set for marketing initiatives taken by the brand'
-  imgSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Writing clear and effective material is an important part of creating campaigns or assembling messaging tailored for specific channels. The focus is to get users to take specific actions depending on the marketing goals implemented by the brand.'
+    - ''
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286561/PORTFOLIO/Expertise/copywriting_iqbuwy.png'
 picTopProps2:
   title: 'Content production'
   texts:
-    - 'Whether it is creating written content, such as white papers, case studies, blog posts, or print content. '
-    - 'Or whether it is audiovisual content such as videos, pictures, or podcasts, putting together the right content mix is an effective way to speak to the diversity of targets and preferences of your key targets.'
-  img: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Whether it is creating written content, such as white papers, case studies, blog posts, or print materials, or audiovisual content such as videos, pictures, or podcasts, putting together the right content mix is an effective way to engage a diverse range of audiences and cater to their preferences.'
+    - ''
+  img: 'https://res.cloudinary.com/casbah/image/upload/v1696286561/PORTFOLIO/Expertise/Content_production_wmqj4g.png'
 ---

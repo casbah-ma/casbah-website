@@ -30,10 +30,10 @@ export const Addresses = [
     name: 'Tanger',
     address: 'Rue Ahfir Res Nouha Etage 7 N°49 Tanger 90000 Morocco',
   },
-  {
-    name: 'Casablanca',
-    address: 'Rue Ahfir Res Nouha Etage 7 N°49 Tanger 90000 Morocco',
-  },
+  // {
+  //   name: 'Casablanca',
+  //   address: 'Rue Ahfir Res Nouha Etage 7 N°49 Tanger 90000 Morocco',
+  // },
 ];
 
 export const logo =
@@ -77,10 +77,10 @@ export const links = [
     name: 'portfolio',
     url: '/portfolio',
   },
-  // {
-  //   name: 'lab',
-  //   url: '/lab',
-  // },
+  {
+    name: 'lab',
+    url: '/lab',
+  },
   // {
   //   name: 'blogs',
   //   url: '/blogs',

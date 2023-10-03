@@ -1,36 +1,35 @@
 ---
 headerProps:
-  title: 'brands can better invest their territories of expression by virtue of design.'
-  description: 'It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer optimal experiences for the targeted audiences, while conveying the right messages and staying true to the brand’s identity.'
-  specialLine: 'better invest'
+  title: 'Brands can better leverage their avenues of expression through effective design.'
+  description: 'It is not merely about combining shapes and colors, but about finding the right balance between logic and aesthetics. This allows brands to offer exceptional experiences to their target audiences while effectively conveying the intended messages and remaining true to their brand identity.'
 picLeftProps:
   title: 'User Experience / User Interface'
   article:
-    - 'The keyword is the user.'
-    - 'The challenge is combining the right ingredients to have a practical user experience that has solid logic, built on the basis of practices benchmarking and user analysis, but also a pleasant interface that doesn’t take the attention away from what matters in the experience but completes it by making the visual an ingredient of the practical.'
-  imgSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - "The key focus here is the user. The challenge lies in blending the right elements to create a practical user experience that is grounded in benchmarking best practices and user analysis. Additionally, it should feature a pleasing interface that doesn't distract from the core experience but instead complements it by integrating visual elements seamlessly."
+    - ''
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286573/PORTFOLIO/Expertise/User_Interface_rs9kh1.png'
 picRightProps:
-  title: '3D Modeling'
+  title: 'Design Systems'
   article:
-    - 'The keyword is the user.'
-    - 'The challenge is combining the right ingredients to have a practical user experience that has solid logic, built on the basis of practices benchmarking and user analysis, but also a pleasant interface that doesn’t take the attention away from what matters in the experience but completes it by making the visual an ingredient of the practical.'
-  imgSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Improving trust within your organization by providing seamless and cohesive digital experiences is an essential tool for building better brand equity over time. Implementing organization-wide rules and guidelines for use cases, as well as design elements such as typography, colors, and UI components, also enhances efficiency, enabling faster achievement of end results with fewer time and resource requirements.'
+    - ''
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286539/PORTFOLIO/Expertise/Design_Systems_is9ofl.png'
 picTopProps:
   title: 'Visual Identity'
   texts:
-    - 'The visual expression of what a brand is and what it stands for. Your visual identity is about more than a logo. It is about what image you want your users to remember when your brand comes up. '
-    - 'A branding strategy and a visual identity are complementary components, as one partially dictates the other. The personality of your brand has to be seen in the typography, the angles, and the colors... No detail is insignificant.'
-  img: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'The visual expression of what a brand is and what it stands for. Your visual identity is about more than a logo. It is about what image you want your users to remember when your brand comes up. A branding strategy and a visual identity are complementary components, as one partially guides the other. The personality of your brand should be reflected in the typography, the angles, and the colors... No detail is insignificant.'
+    - ''
+  img: 'https://res.cloudinary.com/casbah/image/upload/v1696286540/PORTFOLIO/Expertise/Visual_Identity_gqpprc.png'
 picLeftProps2:
-  title: 'User Experience / User Interface'
+  title: '2D/Illustrations'
   article:
-    - 'The keyword is the user.'
-    - 'The challenge is combining the right ingredients to have a practical user experience that has solid logic, built on the basis of practices benchmarking and user analysis, but also a pleasant interface that doesn’t take the attention away from what matters in the experience but completes it by making the visual an ingredient of the practical.'
-  imgSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Creating visual representations of ideas, creative concepts, and messages that the organization wants to communicate is made easier by mastering the craft of illustration. Whether it is for an internal or external campaign, harnessing the power of digital artistry can result in appealing and engaging content.'
+    - ''
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286546/PORTFOLIO/Expertise/Illustrations_yvuygy.png'
 picRightProps2:
   title: '3D Modeling'
   article:
-    - 'The keyword is the user.'
-    - 'The challenge is combining the right ingredients to have a practical user experience that has solid logic, built on the basis of practices benchmarking and user analysis, but also a pleasant interface that doesn’t take the attention away from what matters in the experience but completes it by making the visual an ingredient of the practical.'
-  imgSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Whether to be used for Augmented or Virtual Reality, as a component in User Interfaces or to be printed, 3D objects are now a necessity in many digital experiences. Their new-found novelty, thanks to the rapidly multiplying web experiences, mobile apps, and games that make use of the technology places it on top of design trends that will shape the way we interact with digital platforms.'
+    - ''
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286538/PORTFOLIO/Expertise/3D_Modeling_op1kki.png'
 ---

@@ -31,5 +31,5 @@ sectionProps6:
   title: 'the Casbah way'
   subtitle: "And that's one side of"
 footerProps:
-  description: 'this is supposed to be the content thay say hey you want to work with us drop us a mail  at'
+  description: 'SERVING TERRITORIES &  DESTINATIONS'
 ---

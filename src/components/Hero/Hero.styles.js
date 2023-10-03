@@ -41,7 +41,7 @@ export const HeroTitle = styled(motion.h1)`
 `;
 
 //  w-[699.86px] h-[440px]
-export const imageSize = tw`absolute -bottom-[10rem] left-1/2 -translate-x-1/2 w-[390px] h-[592px] object-contain`;
+export const imageSize = tw`absolute -bottom-[10rem] left-1/2 -translate-x-1/2 w-[390px] h-[592px] object-contain `;
 
 export const SVGStyle =
   'absolute -bottom-[28rem] left-1/2  w-full z-20 lg:w-[700px] lg:-bottom-[43.9rem]';

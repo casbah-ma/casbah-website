@@ -10,7 +10,8 @@ const HomeFooter = forwardRef(function HomeFooter({ description }, ref) {
       <Wrapper>
         <TextWrapper>
           <Text>
-            {description} <span>{infos.email}</span>
+            {description} 
+            {/* <span>{infos.email}</span> */}
           </Text>
         </TextWrapper>
         <Footer />

@@ -1,55 +1,54 @@
 ---
 headerProps:
-  title: 'Creating the products, interfaces, tools, and architectures that will help the organization fulfill its mission and reach its audiences,'
-  description: 'with a specific set of functionalities that will enable the users, but also the organization itself, to find the right match to their needs, whether they are informative, promotional or practical.'
-  specialLine: 'help the organization fulfill its mission'
+  title: "Developing products, interfaces, tools, and architectures that facilitate the organization in achieving its mission and connecting with its audiences."
+  description: 'These will have a tailored set of functionalities to empower both users and the organization itself, ensuring they find the perfect solution for their informational, promotional, or practical requirements.'
 picTopProps:
-  title: 'Digital transformation'
+  title: 'Digital Ecosystems'
   texts:
-    - 'Organizations miss opportunities when they treat their digital presence as static and unrelated to the rest of what the digital world has to offer.'
-    - 'By making way for an evolving and open company, entities can benefit from what the internet has the best to offer, whether it is by interconnecting their very own tools, or by making use of several connectable technologies that can push their digital presence forward.'
-  img: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Organizations miss opportunities when they treat their digital presence as static and unrelated to the rest of what the digital world has to offer. By making way for an evolving and open company, entities can benefit from what the internet has the best to offer, whether it is by interconnecting their very own tools, or by making use of several connectable technologies that can push their digital presence forward.'
+    - ''
+  img: 'https://res.cloudinary.com/casbah/image/upload/v1696286539/PORTFOLIO/Expertise/Digital_Ecosystems_cmam3u.png'
 picRightProps:
   title: 'Web & App Development'
   article:
-    - 'The classics and perpetually reinvented software development. '
-    - 'Continuous advancement in programming languages and frameworks opens the way to more innovative and performing digital experiences, which helps redefine the format that can be used by organizations in their digital presence and the depth of technological possibilities they want to explore'
-  imgSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'A cornerstone and constantly evolving field of software. Continuous advancement in programming languages and frameworks opens the way to more innovative and performing digital experiences. This enables organizations to redefine their digital presence and explore a wider range of technological possibilities.'
+    - ''
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286540/PORTFOLIO/Expertise/Web_App_Development_bd2u6c.png'
 picTopProps2:
-  title: 'Digital transformation'
+  title: 'Internet of Things'
   texts:
-    - 'Organizations miss opportunities when they treat their digital presence as static and unrelated to the rest of what the digital world has to offer.'
-    - 'By making way for an evolving and open company, entities can benefit from what the internet has the best to offer, whether it is by interconnecting their very own tools, or by making use of several connectable technologies that can push their digital presence forward.'
-  img: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Connected objects continue revolutionizing different areas in our lives, from homes to territories. Whatever wasn’t connected in the past can now become “smart”, capable of communicating information and often receiving commands. With sensors and batteries that can last for years, new ways of collecting and acting on data are being invented every day.'
+    - ''
+  img: 'https://res.cloudinary.com/casbah/image/upload/v1696286540/PORTFOLIO/Expertise/Internet_of_Things_gj7dlr.png'
 picLeftProps:
-  title: 'Competitive analysis and benchmark'
+  title: 'Augmented Reality'
   article:
-    - 'Blending in the virtual with the real was the promise held by augmented reality technologies for years. '
-    - 'That vision has become a reality, with the development of cameras on smartphones, that can now detect and measure in three dimensions, but also with the introduction of new headsets.'
-    - ' This type of technology can kickstart a revolution in how humans will interact with the new blended spaces they’ll exist in.'
-  imgSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Blending the virtual with the real has been the long-standing promise of augmented reality technologies. This vision has finally become a reality, with the development of smartphone cameras that can now detect and measure objects in three dimensions, as well as the introduction of new headsets. This transformative technology has the potential to start a revolution in human interaction within the new blended spaces they’ll inhabit.'
+    - ''
+    - ''
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286538/PORTFOLIO/Expertise/Augmented_Reality_kffibl.png'
 picRightProps2:
   title: 'API & Scalability'
   article:
-    - 'Application Programming Interface has become a necessary component in organizations’ digital agility, by making their data more flexible and adaptable to different use cases.'
-    - 'With great API, may come great scalability, which is why your architecture should be able to handle going from 0 to 1, 10, or 100 million requests effortlessly.'
-  imgSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - "An Application Programming Interface (API) has become a necessary component in organizations' digital agility, enhancing the flexibility and adaptability of their data for various use cases. Remarkable scalability often accompanies an excellent API, which is why your architecture should be capable of effortlessly handling any number of requests, ranging from 0 to 1, 10, or even 100 million."
+    - ''
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286538/PORTFOLIO/Expertise/API_Scalability_ze4hcr.png'
 picTopProps3:
   title: 'Data Science and Artificial Intelligence'
   texts:
-    - 'Many organizations are sitting on treasure mines of data that are often unused, or worse, un-digitalized.'
-    - 'Creating a data strategy is no longer a choice in competitive territories and markets, where its use is not limited to what is collected, but expanded to the understanding of future trends and challenges, by leveraging the power of Artificial Intelligence.'
-  img: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Many organizations are sitting on treasure mines of data that often go unused or, worse, remain un-digitized. Creating a data strategy is no longer optional in competitive territories and markets. Its use extends beyond merely collecting data; it also involves harnessing the power of Artificial Intelligence to comprehend future trends and tackle upcoming challenges.'
+    - ''
+  img: 'https://res.cloudinary.com/casbah/image/upload/v1696286539/PORTFOLIO/Expertise/Data_Science_and_Artificial_Intelligence_rcvjcr.png'
 picLeftProps2:
   title: 'Content Management System'
   article:
-    - 'Whether you have specific needs for which your want your CMS to be custom-made or a headless CMS repurposed for your workflow, managing your content should not be painful.'
-    - 'A bonus is connecting your CMS to an API and making the creation, editing, and management of your content cross-channels as easy as publishing it.'
-  imgSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Whether you have specific needs for which you want your CMS to be custom-made or a headless CMS adapted to suit your workflow, managing your content should not be painful. A bonus is connecting your CMS to an API and making the creation, editing, and management of your content cross-channels as easy as publishing it.'
+    - ''
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286539/PORTFOLIO/Expertise/Content_Management_System_xagi2q.png'
 picRightProps3:
-  title: 'Content Management System'
+  title: 'IT Operations'
   article:
-    - 'Whether you have specific needs for which your want your CMS to be custom-made or a headless CMS repurposed for your workflow, managing your content should not be painful.'
-    - 'A bonus is connecting your CMS to an API and making the creation, editing, and management of your content cross-channels as easy as publishing it.'
-  imgSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80'
+    - 'Putting the Ops back in DevOps is no easy challenge. Managing access levels, ensuring data security, using appropriate infrastructures to handle the workload, and ensuring optimal performance. Rigorous processes should be in place to ensure well-planned and easily scalable resources, avoiding excessive allocation solely for the sake of safety.'
+    - ''
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286540/PORTFOLIO/Expertise/IT_Operations_ypmajm.png'
 ---
