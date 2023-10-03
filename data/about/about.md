@@ -3,7 +3,7 @@ aboutSection:
   header:
     title: 'ABOUT'
     description: 'The Casbah is a concept that reflects our values: we draw inspiration from the strength of our roots and push back the boundaries of what is possible. A symbol of resistance, the Casbah stands as a proud witness to what has been and what is yet to come. We embody this Casbah: proof of endurance and persistence, authenticity, beauty, security, affinity and detail.'
-  image: ''
+  image: 'https://images.unsplash.com/photo-1513759565286-20e9c5fad06b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3570&q=80'
   ourVision:
     title: 'OUR VISION'
     text:
