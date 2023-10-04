@@ -39,6 +39,7 @@ function HomeSection({
             loop={false}
             src={lottie}
             style={{
+              backgroundColor: 'red',
               width: '100%',
               height: '100%',
               position: 'absolute',
