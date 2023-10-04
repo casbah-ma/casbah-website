@@ -22,25 +22,17 @@ aboutSection:
     title: 'OUR VALUES'
     text:
       - '•   Embracing change as a constant'
-
       - '•   Tailoring to uniqueness' 
-      
       - '•   Kindness'
-
       - '•   Transparency and Openness'
-      
       - '•   Mistakes are part of the ride' 
-      
       - '•   Lead with empathy and recognition'
   extraText2:
     title: 'OUR CULTURE'
     text:
       - '•   Hakuna Matata'
-      
       - '•   Stay hungry, stay foolish'
-      
       - '•   We care about our partners'
-      
       - '•   We believe we can disrupt practices to make territories better'
 awardsSection:
   title: 'awards'
@@ -73,8 +65,8 @@ teamSection:
       post: 'Chief Technology Officer'
       description: 'It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer It is not about'
       imgSrc: '/team/Youssef.png'
-    - name: 'Soufiane Manahi'
-      post: 'Product Designer'
+    - name: 'Majdeline Naciri'
+      post: 'Account Executive'
       description: 'It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer It is not about'
       imgSrc: '/team/Majdo.png'
     - name: 'Soufiane Manahi'
