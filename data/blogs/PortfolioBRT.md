@@ -8,7 +8,7 @@ tags:
 parent: 'portfolio'
 ---
 
-# TANGIER-TETOUAN-AL HOCEIMA Regional Tourism Council - 2018
+# TANGIER-TETOUAN-AL HOCEIMA - Regional Council of Tourism - 2018
 
 In 2018, the Regional Tourism Exchange, organized by Casbah for the CRT of Tanger-Tétouan-Al Hoceima, took place at the Palais Moulay Hafid in Tangier on October 19 and 20. This event aspired to illuminate the dynamism and diversity of local tourism. Interactive workshops, B2B meetings, SpeedNetworking, and guided tours emphasized the region’s rich heritage and diverse landscapes, attracting a host of visitors and tourism professionals.
 

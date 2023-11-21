@@ -9,7 +9,7 @@ tags:
 parent: 'portfolio'
 ---
 
-# Regional Council of Tourism of of Draa Tafilalet - 2021
+# DRAA TAFILALET - Regional Council of Tourism - 2021
 
 The Draa Tafilalet Regional Tourism Council is an association whose role is to promote the tourist destination, targeting both local and international tourists. To do so, the CRT develops a range of promotional tools designed to enable tourists to discover the destination and explore the tourism offering available.
 
