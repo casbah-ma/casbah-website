@@ -39,3 +39,6 @@ storybook-static
 
 # contentlayer
 .contentlayer
+
+# yarn
+.yarn/
