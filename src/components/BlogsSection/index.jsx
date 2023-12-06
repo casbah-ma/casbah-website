@@ -12,8 +12,8 @@ function BlogsSection({ blogs }) {
   const { toggleVisible } = useContext(CursorContext);
 
   const handleBlogClick = (blog) => {
-    console.clear()
-    console.log(blog)
+    console.clear();
+    console.log(blog);
     if (blog.githubLink) window.open(blog.githubLink, '_blank');
     else router.push(`/blogs/${blog.slug}`);
   };
@@ -25,7 +25,7 @@ function BlogsSection({ blogs }) {
           <BlogsCard
             key={blog.title}
             {...blog}
-            variant={i === 0 ? 'v2' : 'v1'}
+            variant={'v1'}
             isFirst={i === 0}
             onClick={() => handleBlogClick(blog)}
           />

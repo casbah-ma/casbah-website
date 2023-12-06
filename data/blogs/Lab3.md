@@ -1,4 +1,5 @@
 ---
+createdAt: '2023-10-24'
 title: 'HOTEL_UI'
 description: ''
 githubLink: 'https://github.com/casbah-ma/hotel-ui'

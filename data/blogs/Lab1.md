@@ -1,4 +1,5 @@
 ---
+createdAt: '2023-10-21'
 title: 'CineDantan'
 description: ''
 githubLink: 'https://github.com/casbah-ma/cinedantan'
