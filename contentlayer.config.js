@@ -159,6 +159,7 @@ export const About = defineDocumentType(() => ({
   name: 'About',
   filePathPattern: `about/**/*.md`,
   fields: {
+    heroProps: { type: 'nested', of: headerPropsType },
     aboutSection: { type: 'nested', of: AboutSectionPropsType },
     awardsSection: { type: 'nested', of: AwardsSectionPropsType },
     teamSection: { type: 'nested', of: TeamSectionPropsType },

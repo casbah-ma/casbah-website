@@ -1,4 +1,7 @@
 ---
+heroProps:
+  title: "EMPOWERING TERRITORIES"
+  description: "This can be a small description of what casbah is doing and it market niche"
 aboutSection:
   header:
     title: 'ABOUT'

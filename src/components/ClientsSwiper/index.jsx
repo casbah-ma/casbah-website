@@ -1,10 +1,6 @@
 import PropTypes from 'prop-types';
 import MyImage from '../MyImage';
 import {
-  Box,
-  Boxes,
-  Carousel,
-  Carousel2,
   CarouselParent,
   ImageWrapper,
   Wrapper,
@@ -18,16 +14,15 @@ function ClientsSwiper({ title, description, images }) {
   return (
     <Wrapper>
       <Header description={description} title={title} />
-
       <CarouselParent>
         <Marquee gradient gradientWidth={100} autoFill pauseOnHover>
           {images?.length > 0 &&
             images.map((image, i) => (
               <ImageWrapper key={i}> 
                 <MyImage
-                  src={image.src}
+                  src={image?.src}
                   sizes={imageStyle}
-                  alt={image.name}
+                  alt={image?.name}
                   objectFit="contain"
                 />
               </ImageWrapper>

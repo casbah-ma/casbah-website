@@ -13,6 +13,7 @@ import Mandarian from 'public/clients/Mandarian.png';
 import Widiane from 'public/clients/Widiane.png';
 import Hayatt from 'public/clients/Hayatt.png';
 import { allHomes } from 'contentlayer/generated';
+import AboutHero from '../../components/AboutHero';
 
 const images = [
   {
@@ -62,7 +63,7 @@ export const getStaticProps = ({ locale }) => {
       data: {
         ...data,
         clientSection: { ...data.clientSection, images },
-        heroProps: dataHome.heroProps,
+        heroProps: data.heroProps,
       },
     },
   };
@@ -70,7 +71,8 @@ export const getStaticProps = ({ locale }) => {
 
 const About = ({ data }) => {
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-36 mt-[5.438rem] md:mt-[11.5rem]">
+    <div className="w-full flex flex-col justify-center items-center gap-36 mt-[5.438rem] md:mt-[6rem]">
+      <AboutHero {...data.heroProps}/>
       <AboutSection {...data.aboutSection} />
       {/* <AwardsSection {...data.awardsSection} /> */}
       <TeamSection {...data.teamSection} />
