@@ -15,7 +15,7 @@ import Paragraph from '../Paragraph';
 import hero from '../../lotties/hero.json';
 import { forwardRef, useState } from 'react';
 import HeroArrow from '../../icons/HeroArrow';
-import { arrowVariant, arrowsVariant, containerVariant } from './variants';
+import { arrowVariant, arrowsVariant } from './variants';
 
 const AboutHero = ({ title, description }) => {
   // keep it here for now
@@ -28,7 +28,7 @@ const AboutHero = ({ title, description }) => {
     }
   };
   return (
-    <Container variants={containerVariant}>
+    <Container>
       <LottierContainer exit={{ opacity: 0 }}>
         <Player
           keepLastFrame

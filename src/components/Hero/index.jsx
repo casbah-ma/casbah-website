@@ -10,13 +10,13 @@ import {
   SVGStyle,
 } from './Hero.styles';
 
-import { ImageAnimation, containerVariant, textAnimate } from './variants';
+import { ImageAnimation, textAnimate } from './variants';
 import HeroSVG from '../../icons/HeroSVG';
 
 const Hero = forwardRef(function Hero({ title, description }, ref) {
   return (
     <Wrapper ref={ref} className="section">
-      <Container variants={containerVariant}>
+      <Container >
         <Content>
           <Infos>
             <div className="overflow-hidden">

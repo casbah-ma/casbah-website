@@ -6,8 +6,8 @@ export const Wrapper = styled(motion.section)`
 `;
 
 export const Container = styled(motion.div)`
-  ${tw`w-full bg-white flex flex-col justify-start items-center  
-      text-center gap-10  md:gap-36 lg:(gap-16)`};
+  ${tw`w-full bg-white flex flex-col justify-start items-center 
+      text-center gap-10  md:gap-36 lg:(gap-11)`};
 `;
 
 export const LottierContainer = styled(motion.div)`
@@ -15,11 +15,11 @@ export const LottierContainer = styled(motion.div)`
 `;
 
 export const ContentWrapper = styled(motion.div)`
-  ${tw`flex flex-col justify-start items-center gap-7`}
+  ${tw`flex flex-col justify-start items-center gap-6`}
 `;
 
 export const Content = styled(motion.div)`
-  ${tw`flex flex-col w-full gap-4 justify-start items-center [&>h1]:text-brightOrange`}
+  ${tw`flex flex-col w-full gap-2 justify-start items-center [&>h1]:text-brightOrange`}
 `;
 
 export const Arrows = styled(motion.div)`
