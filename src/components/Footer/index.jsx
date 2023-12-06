@@ -54,17 +54,18 @@ const Footer = () => {
             </SocialLinks>
           </SocialItem>
         </SocialWrapper>
-        <AddressWrapper>
+        {/* <AddressWrapper>
           <FooterLabel>{t('address')}</FooterLabel>
-          <Address>
+            <Address>
             {Addresses.map((adr, index) => (
               <AddressItem key={index + adr.name}>
                 <AddressName>{adr.name}</AddressName>
                 <AddressText>{adr.address}</AddressText>
               </AddressItem>
             ))}
-          </Address>
+            </Address> 
         </AddressWrapper>
+        */}
       </FooterContainer>
       <FooterTerms>
         <Link href="/">
