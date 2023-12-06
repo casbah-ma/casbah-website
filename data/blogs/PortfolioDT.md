@@ -1,4 +1,5 @@
 ---
+createdAt: '2023-10-22'
 title: 'Draa Tafilalet Tourist Documentation'
 description: 'Production of complete tourist documentation for the Draa Tafilalet region. This collection includes a general tourist guide, five detailed provincial guides and three thematic guides, offering a rich and diverse exploration of this magnificent region.'
 imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1695806940/PORTFOLIO/DocuDT/AJ100078_1_xfube1.jpg'
@@ -67,4 +68,3 @@ Discover the Draa Tafilalet region through these guides!
 ![https://res.cloudinary.com/casbah/image/upload/v1695769325/PORTFOLIO/DocuDT/Guide-Comm-Ang_CompressPdf-24_page-0001_rrj4oz.jpg](https://res.cloudinary.com/casbah/image/upload/v1695769325/PORTFOLIO/DocuDT/Guide-Comm-Ang_CompressPdf-24_page-0001_rrj4oz.jpg)
 
 ![https://res.cloudinary.com/casbah/image/upload/v1695769322/PORTFOLIO/DocuDT/Guide-General-Pages-HD-V-Ang_CompressPdf-46_page-0001_qvdun5.jpg](https://res.cloudinary.com/casbah/image/upload/v1695769322/PORTFOLIO/DocuDT/Guide-General-Pages-HD-V-Ang_CompressPdf-46_page-0001_qvdun5.jpg)
-

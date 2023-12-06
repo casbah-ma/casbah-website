@@ -5,9 +5,13 @@ import { Container } from '../../styles/lab.styles';
 
 export const getStaticProps = ({ locale }) => {
   const header = allLabs.find((page) => page.lang === locale);
-  const blogs = allBlogs.filter(
-    (page) => page.lang === locale && page.parent === 'lab'
-  );
+  const blogs = allBlogs
+    .filter((page) => page.lang === locale && page.parent === 'lab')
+    .sort((a, b) => {
+      const dateA = new Date(a.createdAt).getTime();
+      const dateB = new Date(b.createdAt).getTime();
+      return dateB - dateA;
+    });
   return {
     props: { data: { header, blogs } },
   };

@@ -24,7 +24,7 @@ export const FooterTerms = tw.div`w-full h-full flex flex-col justify-start item
                                        `;
 
 export const FooterLabel = tw.label`font-made font-light text-white text-opacity-50 uppercase`;
-export const EmailText = tw.a`font-mako font-normal text-lg uppercase md:text-xl`;
+export const EmailText = tw.a`font-mako text-base first-letter:capitalize`;
 export const SocialWrapper = tw.div`w-full flex justify-start items-start gap-[3rem]
                                   md:(gap-[13.313rem])
                                   lg:(gap-[13.375rem])`;
