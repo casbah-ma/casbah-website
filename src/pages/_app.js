@@ -8,7 +8,6 @@ import localFont from 'next/font/local';
 import Layout from '../components/Layout';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/router';
-import TransitionPage from '../components/Animations/PageTransition';
 import CursorTracker from '../components/CursorTracker';
 import CursorProvider from '../store/CursorProvider';
 
@@ -47,9 +46,6 @@ export default function App({ Component, pageProps }) {
       <CursorTracker text="readMore" />
 
       <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
-        {
-          // <TransitionPage />
-        }
         <Layout
           hasPadding={hasPadding}
           className={`${mako.variable} ${inter.variable} ${made.variable} `}
