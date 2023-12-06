@@ -42,3 +42,4 @@ storybook-static
 
 # yarn
 .yarn/
+.yarnrc.yml
