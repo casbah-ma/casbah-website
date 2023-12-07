@@ -9,6 +9,11 @@ import {
 import Header from '../Header';
 
 import Marquee from 'react-fast-marquee';
+import dynamic from 'next/dynamic';
+
+// Assuming 'images' is the array of image objects
+
+const LazyImageComponent = dynamic(() => import('next/image'));
 
 function ClientsSwiper({ title, description, images }) {
   return (
@@ -19,11 +24,10 @@ function ClientsSwiper({ title, description, images }) {
           {images?.length > 0 &&
             images.map((image, i) => (
               <ImageWrapper key={i}> 
-                <MyImage
+                <LazyImageComponent
                   src={image?.src}
                   sizes={imageStyle}
                   alt={image?.name}
-                  objectFit="contain"
                 />
               </ImageWrapper>
             ))}

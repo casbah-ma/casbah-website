@@ -1,5 +1,5 @@
 import AboutSection from '../../components/AboutSection';
-import AwardsSection from '../../components/AwardsSection';
+// import AwardsSection from '../../components/AwardsSection';
 import ClientsSwiper from '../../components/ClientsSwiper';
 import TeamSection from '../../components/TeamSection';
 import { allAbouts } from 'contentlayer/generated';
@@ -56,7 +56,6 @@ const images = [
 
 export const getStaticProps = ({ locale }) => {
   const data = allAbouts.find((page) => page.lang === locale);
-  const dataHome = allHomes.find((page) => page.lang === locale);
 
   return {
     props: {
@@ -72,7 +71,7 @@ export const getStaticProps = ({ locale }) => {
 const About = ({ data }) => {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-36 mt-[5.438rem] md:mt-[6rem]">
-      <AboutHero {...data.heroProps}/>
+      <AboutHero {...data.heroProps} />
       <AboutSection {...data.aboutSection} />
       {/* <AwardsSection {...data.awardsSection} /> */}
       <TeamSection {...data.teamSection} />

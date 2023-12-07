@@ -21,10 +21,32 @@ import logo from '../../../public/logo.png';
 import { socialMedia, infos, Addresses } from '../../config/constant';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
 const Footer = () => {
+  const MySwal = withReactContent(Swal);
   const year = new Date().getFullYear();
   const { t } = useTranslation();
+
+  const handleClick = () => {
+    // Get the text field
+    var copyText = infos.email;
+
+    // // Select the text field
+    // copyText.select();
+    // copyText.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(infos.email);
+
+    // Alert the copied text
+    MySwal.fire({
+      title: <strong>{t('thankyou')}</strong>,
+      html: <p>{t('emailcopied')}</p>,
+      icon: 'success',
+    });
+  };
 
   return (
     <FooterWrapper>
@@ -32,10 +54,7 @@ const Footer = () => {
         <SocialWrapper>
           <SocialItem>
             <FooterLabel>{t('email')}</FooterLabel>
-            <EmailText
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@ctd.ma"
-              target="_blank"
-            >
+            <EmailText id="email" onClick={handleClick}>
               {infos.email}
             </EmailText>
           </SocialItem>

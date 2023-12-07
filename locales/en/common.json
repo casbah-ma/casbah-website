@@ -41,5 +41,6 @@
   "contactsuccess": "Your submission has been sent.",
   "contacterror": "Please fill out the form",
   "copylink": "Copy Link",
-  "linkcopied": "Link Copied"
+  "linkcopied": "Link Copied",
+  "emailcopied": "Email copied to clipboard! You can now paste it wherever needed."
 }
