@@ -67,6 +67,13 @@ const CustomStyles = createGlobalStyle`
       }
     }
 
+    @keyframes smooth-appear {
+      to{
+        bottom: 1.87rem;
+        opacity:1;
+      }
+    }
+
 
     .blog > ol > li::before{
       content: '0'counter(items);

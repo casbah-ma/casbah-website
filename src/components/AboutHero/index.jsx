@@ -12,7 +12,7 @@ import { Player } from '@lottiefiles/react-lottie-player';
 import Title from '../Title';
 import Paragraph from '../Paragraph';
 
-import hero from '../../lotties/hero.json';
+import hero from '../../lotties/AboutHero.json';
 import { forwardRef, useState } from 'react';
 import HeroArrow from '../../icons/HeroArrow';
 import { arrowVariant, arrowsVariant } from './variants';
