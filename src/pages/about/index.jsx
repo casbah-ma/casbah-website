@@ -12,6 +12,13 @@ import Farah from 'public/clients/Farah.png';
 import Mandarian from 'public/clients/Mandarian.png';
 import Widiane from 'public/clients/Widiane.png';
 import Hayatt from 'public/clients/Hayatt.png';
+import majliss from 'public/clients/majliss.png';
+import FNRT from 'public/clients/FNRT.png';
+import FNIH from 'public/clients/FNIH.png';
+import Dixil from 'public/clients/Dixil.png';
+import CNT from 'public/clients/CNT.png';
+import VisitCasa from 'public/clients/visit-casa.png';
+
 import { allHomes } from 'contentlayer/generated';
 import AboutHero from '../../components/AboutHero';
 
@@ -51,6 +58,30 @@ const images = [
   {
     src: Widiane,
     name: 'Widiane',
+  },
+  {
+    src: VisitCasa,
+    name: 'visit-casa',
+  },
+  {
+    src: majliss,
+    name: 'majliss',
+  },
+  {
+    src: FNRT,
+    name: 'FNRT',
+  },
+  {
+    src: FNIH,
+    name: 'FNIH',
+  },
+  {
+    src: Dixil,
+    name: 'Dixil',
+  },
+  {
+    src: CNT,
+    name: 'CNT',
   },
 ];
 
