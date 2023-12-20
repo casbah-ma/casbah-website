@@ -1,6 +1,6 @@
 ---
 title: 'Treasure Hunt Chamal'
-description: "The Treasure Hunt Chamal project embarked on a dual mission. It aimed to redefine tourism promotion in the region while pioneering augmented reality to create an immersive adventure showcasing the cultural richness of the destination"
+description: 'The Treasure Hunt Chamal project embarked on a dual mission. It aimed to redefine tourism promotion in the region while pioneering augmented reality to create an immersive adventure showcasing the cultural richness of the destination'
 imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1700611021/PORTFOLIO/kuximdcej6drjpepkf7f.jpg'
 tags:
   - 'Web Development'
@@ -10,8 +10,9 @@ tags:
   - 'Graphic Design'
   - '3D'
 
-parent: 'blogs'
+parent: 'portfolio'
 ---
+
 # TANGIER-TETOUAN-AL HOCEIMA Regional Tourism Council - 2023
 
 The Treasure Hunt Tanger Tetouan Al Hoceima represents a major innovation in the field of tourist promotion, addressing the crucial challenge of capturing travelers' attention.

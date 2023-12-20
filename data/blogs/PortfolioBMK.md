@@ -1,14 +1,15 @@
 ---
 title: 'The digital ecosystem of Beni Mellal Khenifra Destination'
-description: 'Creating four innovative solutions within the destination's digital ecosystem, aiming to enhance the tourist experience in this splendid region. These solutions seek to transform the way visitors engage and explore, elevating their journey.'
+description: "Creating four innovative solutions within the destination's digital ecosystem, aiming to enhance the tourist experience in this splendid region. These solutions seek to transform the way visitors engage and explore, elevating their journey."
 imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1700607957/PORTFOLIO/lmpje45h73rwmtvcc6km.jpg'
 tags:
   - 'Digital EcoSystem'
   - 'Web Development'
   - 'App Development'
   - 'UX/UI Design'
-parent: 'blogs'
+parent: 'portfolio'
 ---
+
 # BENI MELLAL KHENIFRA - Regional Council of Tourism - 2023
 
 The Regional Council of Tourism of Béni Mellal-Khénifra (CRT-BMK) serves as the focal point for the promotion of regional tourism. This dedicated council has launched a strategic action plan designed to revitalize and enhance the tourism sector across the five provinces of Béni Mellal, Khouribga, Khénifra, Azilal, and Fqih Bensaleh. The primary objective is to transform the region into a compelling and sought-after destination, showcasing its cultural richness and diverse attractions.
