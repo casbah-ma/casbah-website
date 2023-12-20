@@ -8,6 +8,7 @@ import {
   FooterContainer,
   FooterLabel,
   FooterTerms,
+  FooterToast,
   FooterWrapper,
   SocialItem,
   SocialLinks,
@@ -21,10 +22,24 @@ import logo from '../../../public/logo.png';
 import { socialMedia, infos, Addresses } from '../../config/constant';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
+import withReactContent from 'sweetalert2-react-content';
+import CheckedIcon from '../../icons/CheckedIcon';
+import { useState } from 'react';
 
 const Footer = () => {
   const year = new Date().getFullYear();
   const { t } = useTranslation();
+  const [copied, setCopied] = useState(false);
+
+  const handleClick = () => {
+    navigator.clipboard.writeText(infos.email);
+
+    // alert copied and hide it after 3sec
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 3000);
+  };
 
   return (
     <FooterWrapper>
@@ -32,10 +47,7 @@ const Footer = () => {
         <SocialWrapper>
           <SocialItem>
             <FooterLabel>{t('email')}</FooterLabel>
-            <EmailText
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@ctd.ma"
-              target="_blank"
-            >
+            <EmailText id="email" onClick={handleClick}>
               {infos.email}
             </EmailText>
           </SocialItem>
@@ -84,6 +96,11 @@ const Footer = () => {
           </TermsItem>
         </Link>
       </FooterTerms>
+      {copied && (
+        <FooterToast>
+          <CheckedIcon /> Email copied to clipboard
+        </FooterToast>
+      )}
     </FooterWrapper>
   );
 };
