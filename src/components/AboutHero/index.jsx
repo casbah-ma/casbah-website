@@ -44,9 +44,9 @@ const AboutHero = ({ title, description }) => {
           <Title withoutBorder={true} renderAs="h1">
             {title}
           </Title>
-          <Paragraph size="md" className="max-w-sm">
+          {/* <Paragraph size="md" className="max-w-sm">
             {description}
-          </Paragraph>
+          </Paragraph> */}
         </Content>
 
         <Arrows variants={arrowsVariant}>
