@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 
+
 # testing
 /coverage
 
@@ -42,3 +43,4 @@ storybook-static
 
 # yarn
 .yarn/
+.yarnrc.yml
