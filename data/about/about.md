@@ -1,7 +1,7 @@
 ---
 heroProps:
-  title: "EMPOWERING TERRITORIES"
-  description: "This can be a small description of what casbah is doing and it market niche"
+  title: 'EMPOWERING TERRITORIES'
+  description: 'This can be a small description of what casbah is doing and it market niche'
 aboutSection:
   header:
     title: 'ABOUT'
@@ -25,10 +25,10 @@ aboutSection:
     title: 'OUR VALUES'
     text:
       - '•   Embracing change as a constant'
-      - '•   Tailoring to uniqueness' 
+      - '•   Tailoring to uniqueness'
       - '•   Kindness'
       - '•   Transparency and Openness'
-      - '•   Mistakes are part of the ride' 
+      - '•   Mistakes are part of the ride'
       - '•   Lead with empathy and recognition'
   extraText2:
     title: 'OUR CULTURE'
@@ -72,22 +72,14 @@ teamSection:
       post: 'Account Executive'
       description: 'It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer It is not about'
       imgSrc: '/team/Majdo.png'
-    - name: 'Soufiane Manahi'
-      post: 'UX Ui designer'
-      description: 'It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer It is not about'
-      imgSrc: '/team/Soufiane.png'
-    - name: 'Boutaina El Khamlichi'
-      post: 'Project Manager'
-      description: 'It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer It is not about'
-      imgSrc: '/team/Boutaina.png'
     - name: 'Souhail Rharbal'
       post: 'Creative Lead'
       description: 'It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer It is not about'
       imgSrc: '/team/Souhail.png'
-    - name: 'Khaoula Zouggar'
-      post: 'Full Stack Developer'
+    - name: 'Boutaina El Khamlichi'
+      post: 'Project Manager'
       description: 'It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer It is not about'
-      imgSrc: '/team/Khawla.png'
+      imgSrc: '/team/Boutaina.png'
     - name: 'Yassir Bolles'
       post: 'Full Stack Developer'
       description: 'Loading...'
@@ -96,9 +88,17 @@ teamSection:
       post: 'Front-End Developer'
       description: 'It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer It is not about'
       imgSrc: '/team/Reda.png'
+    - name: 'Khaoula Zouggar'
+      post: 'Full Stack Developer'
+      description: 'It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer It is not about'
+      imgSrc: '/team/Khawla.png'
+    - name: 'Soufiane Manahi'
+      post: 'UX Ui designer'
+      description: 'It is not about putting forms and colors together, but about finding the right balance between logic and aesthetics, in order to offer It is not about'
+      imgSrc: '/team/Soufiane.png'
 clientSection:
   title: 'OUR CLIENTS'
-  description: "At Casbah, our clients are at the heart of everything we do. We are committed to delivering tailored solutions and exceptional service to meet their unique needs and exceed their expectations."
+  description: 'At Casbah, our clients are at the heart of everything we do. We are committed to delivering tailored solutions and exceptional service to meet their unique needs and exceed their expectations.'
   images:
     - name: ''
       src: ''

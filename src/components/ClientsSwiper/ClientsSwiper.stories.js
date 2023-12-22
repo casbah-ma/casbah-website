@@ -1,4 +1,5 @@
 import ClientsSwiper from '.';
+import Widiane from 'public/clients/Widiane.png';
 
 export default {
   title: 'Sections/ClientsSwiper',
@@ -8,27 +9,27 @@ export default {
 const Template = (args) => <ClientsSwiper {...args} />;
 const images = [
   {
-    src: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80',
+    src: Widiane,
     name: 'bolles gank',
   },
   {
-    src: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80',
+    src: Widiane,
     name: 'bolles gank',
   },
   {
-    src: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80',
+    src: Widiane,
     name: 'bolles gank',
   },
   {
-    src: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80',
+    src: Widiane,
     name: 'bolles gank',
   },
   {
-    src: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80',
+    src: Widiane,
     name: 'bolles gank',
   },
   {
-    src: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80',
+    src: Widiane,
     name: 'bolles gank',
   },
 ];

@@ -1,14 +1,15 @@
 ---
+createdAt: '2023-10-22'
 title: 'Draa Tafilalet Tourist Documentation'
 description: 'Production of complete tourist documentation for the Draa Tafilalet region. This collection includes a general tourist guide, five detailed provincial guides and three thematic guides, offering a rich and diverse exploration of this magnificent region.'
 imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1695806940/PORTFOLIO/DocuDT/AJ100078_1_xfube1.jpg'
 tags:
-  - 'Copyright'
+  - 'Copywriting'
   - 'Design'
 parent: 'portfolio'
 ---
 
-# Regional Council of Tourism of of Draa Tafilalet - 2021
+# DRAA TAFILALET - Regional Council of Tourism - 2021
 
 The Draa Tafilalet Regional Tourism Council is an association whose role is to promote the tourist destination, targeting both local and international tourists. To do so, the CRT develops a range of promotional tools designed to enable tourists to discover the destination and explore the tourism offering available.
 
@@ -67,4 +68,3 @@ Discover the Draa Tafilalet region through these guides!
 ![https://res.cloudinary.com/casbah/image/upload/v1695769325/PORTFOLIO/DocuDT/Guide-Comm-Ang_CompressPdf-24_page-0001_rrj4oz.jpg](https://res.cloudinary.com/casbah/image/upload/v1695769325/PORTFOLIO/DocuDT/Guide-Comm-Ang_CompressPdf-24_page-0001_rrj4oz.jpg)
 
 ![https://res.cloudinary.com/casbah/image/upload/v1695769322/PORTFOLIO/DocuDT/Guide-General-Pages-HD-V-Ang_CompressPdf-46_page-0001_qvdun5.jpg](https://res.cloudinary.com/casbah/image/upload/v1695769322/PORTFOLIO/DocuDT/Guide-General-Pages-HD-V-Ang_CompressPdf-46_page-0001_qvdun5.jpg)
-

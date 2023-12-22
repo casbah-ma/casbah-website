@@ -39,7 +39,7 @@ const BlogsCard = ({
       )}
       <MyImage sizes={imagesSizes[variant]} src={imgSrc} alt={title} />
       <CardInfo>
-        <CardTitle $isFirst={isFirst}>{title}</CardTitle>
+        <CardTitle>{title}</CardTitle>
         <Paragraph size="md">{description}</Paragraph>
       </CardInfo>
     </CardWrapper>

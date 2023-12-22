@@ -1,5 +1,5 @@
 import AboutSection from '../../components/AboutSection';
-import AwardsSection from '../../components/AwardsSection';
+// import AwardsSection from '../../components/AwardsSection';
 import ClientsSwiper from '../../components/ClientsSwiper';
 import TeamSection from '../../components/TeamSection';
 import { allAbouts } from 'contentlayer/generated';
@@ -12,6 +12,13 @@ import Farah from 'public/clients/Farah.png';
 import Mandarian from 'public/clients/Mandarian.png';
 import Widiane from 'public/clients/Widiane.png';
 import Hayatt from 'public/clients/Hayatt.png';
+import majliss from 'public/clients/majliss.png';
+import FNRT from 'public/clients/FNRT.png';
+import FNIH from 'public/clients/FNIH.png';
+import Dixil from 'public/clients/Dixil.png';
+import CNT from 'public/clients/CNT.png';
+import VisitCasa from 'public/clients/visit-casa.png';
+
 import { allHomes } from 'contentlayer/generated';
 import AboutHero from '../../components/AboutHero';
 
@@ -52,11 +59,34 @@ const images = [
     src: Widiane,
     name: 'Widiane',
   },
+  {
+    src: VisitCasa,
+    name: 'visit-casa',
+  },
+  {
+    src: majliss,
+    name: 'majliss',
+  },
+  {
+    src: FNRT,
+    name: 'FNRT',
+  },
+  {
+    src: FNIH,
+    name: 'FNIH',
+  },
+  {
+    src: Dixil,
+    name: 'Dixil',
+  },
+  {
+    src: CNT,
+    name: 'CNT',
+  },
 ];
 
 export const getStaticProps = ({ locale }) => {
   const data = allAbouts.find((page) => page.lang === locale);
-  const dataHome = allHomes.find((page) => page.lang === locale);
 
   return {
     props: {
@@ -72,7 +102,7 @@ export const getStaticProps = ({ locale }) => {
 const About = ({ data }) => {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-36 mt-[5.438rem] md:mt-[6rem]">
-      <AboutHero {...data.heroProps}/>
+      <AboutHero {...data.heroProps} />
       <AboutSection {...data.aboutSection} />
       {/* <AwardsSection {...data.awardsSection} /> */}
       <TeamSection {...data.teamSection} />
