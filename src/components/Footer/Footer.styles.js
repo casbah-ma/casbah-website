@@ -19,7 +19,7 @@ export const FooterContainer = tw.div`w-full h-full flex flex-col justify-start 
 export const FooterTerms = tw.div`w-full h-full flex flex-col justify-start items-start z-30  text-white
                                          pl-4 gap-[3.666rem] pb-16
                                         md:(px-[2.313rem] pb-20)
-                                        lg:(flex-row px-[4.5rem]  max-w-[87.5rem] gap-[11.5rem])
+                                        lg:(flex-row px-[4.5rem]  max-w-[87.5rem] gap-[10rem])
                            
                                        `;
 
@@ -42,7 +42,7 @@ export const AddressItem = tw.div`w-full flex flex-col gap-4`;
 
 export const AddressText = tw.p`max-w-[8.375rem] md:max-w-max lg:max-w-[13.063rem] font-mako text-sm`;
 
-export const TermsWrapper = tw.div`w-fit flex flex-col gap-4 justify-between md:(flex-row gap-[11.5rem]) lg:(gap-[8.4rem])`;
+export const TermsWrapper = tw.div`w-fit flex flex-col gap-4 justify-between md:(flex-row gap-[11.5rem]) lg:(gap-[9.9rem])`;
 
 export const TermsItem = tw.p`font-mako font-normal text-base capitalize`;
 
