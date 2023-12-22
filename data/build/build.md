@@ -1,6 +1,6 @@
 ---
 headerProps:
-  title: "Developing products, interfaces, tools, and architectures that facilitate the organization in achieving its mission and connecting with its audiences."
+  title: 'Developing products, interfaces, tools, and architectures that facilitate the organization in achieving its mission and connecting with its audiences.'
   description: 'These will have a tailored set of functionalities to empower both users and the organization itself, ensuring they find the perfect solution for their informational, promotional, or practical requirements.'
 picTopProps:
   title: 'Digital Ecosystems'

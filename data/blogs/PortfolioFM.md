@@ -9,7 +9,7 @@ tags:
 parent: 'portfolio'
 ---
 
-# Regional Council of Tourism of Fes Meknes - 2021
+# FES MEKNES - Regional Council of Tourism - 2021
 
 The CRT is an association dedicated to promoting the tourist destination to both local and international visitors. For that, the CRT creates a variety of promotional resources aimed at facilitating tourists' exploration of the destination and its available tourism offerings.
 
