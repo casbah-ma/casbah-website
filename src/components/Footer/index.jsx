@@ -22,12 +22,12 @@ import { socialMedia, infos, Addresses } from '../../config/constant';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 
-const Footer = () => {
+const Footer = ({ ...rest }) => {
   const year = new Date().getFullYear();
   const { t } = useTranslation();
 
   return (
-    <FooterWrapper>
+    <FooterWrapper {...rest}>
       <FooterContainer>
         <SocialWrapper>
           <SocialItem>

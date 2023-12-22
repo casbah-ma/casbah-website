@@ -31,5 +31,5 @@ sectionProps6:
   title: 'the Casbah way'
   subtitle: "And that's one side of"
 footerProps:
-  description: 'SERVING TERRITORIES &  DESTINATIONS'
+  description: 'be ahead of the future'
 ---
