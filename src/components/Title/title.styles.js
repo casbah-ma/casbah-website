@@ -10,7 +10,7 @@ export const titleLevels = {
 };
 
 export const StyledTitle = styled(motion.h1)`
-  ${tw`text-black font-made uppercase font-light border-l border-brightOrange pl-6 whitespace-pre-line`};
+  ${tw`text-black font-made uppercase font-light border-l-2 border-brightOrange pl-6 whitespace-pre-line`};
   ${({ level }) => titleLevels[level]};
   ${({ withoutBorder }) => withoutBorder && tw`pl-0 lg:pl-0 border-0`};
   ${({ color }) => color && `color: ${color}`};

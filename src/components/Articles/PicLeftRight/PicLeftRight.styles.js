@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const imageVariants = {
-  v1: tw`(w-full h-[14.5rem] 
-        md:(!h-[19.938rem])
-        lg:(!w-[38.25rem]))`,
-  v2: tw`(w-full h-[19.375rem]
-    md:(!h-[19.938rem])
-    lg:(!w-[38.25rem]) !h-[21.875rem])`,
+  v1: tw`w-full h-[13rem]
+    md:(!h-[20.5rem])
+    lg:(!w-[38.25rem] !h-[24.5rem])`,
+  v2: tw`w-full h-[13rem]
+    md:(!h-[20.5rem])
+    lg:(!w-[38.25rem] !h-[24.5rem])`,
   v3: tw`(w-full h-[19.375rem]
     md:(!h-[19.938rem])
     lg:(!w-[38.25rem]) !h-[21.875rem])`,
@@ -27,16 +27,16 @@ export const versions = {
   v1: tw`
     // update text container
     [&>section]:(w-[95%] gap-6 [&>div]:(w-full max-w-[16.438rem] self-end)
-        md:( max-w-[80%] self-end [&>div]:max-w-full)
+        md:( max-w-[80%] self-center [&>div]:max-w-full)
         lg:(!max-w-[38.25rem] !ml-0 ))
     lg:flex-row`,
   // Version 2
   v2: tw`
     // update text container
-    [&>section]:(w-[95%] gap-6 [&>div]:(w-full max-w-[19.5rem] self-end)
-        md:(!w-full  [&>div]:max-w-full)
-        lg:(max-w-[38.25rem] ))
-    lg:flex-row`,
+    [&>section]:(w-[95%] gap-6 [&>div]:(w-full max-w-[16.438rem] self-end)
+        md:( max-w-[80%] self-center [&>div]:max-w-full)
+        lg:(!max-w-[38.25rem] !ml-0 ))
+    lg:flex-row-reverse`,
   //  Version 3
   v3: tw`
     // update text container
@@ -72,4 +72,4 @@ export const StyledPicLeft = styled.div`
 
 export const StyledText = tw.section`flex flex-col justify-start items-start`;
 
-export const StyledArticle = tw.div`w-full flex flex-col gap-1.5`;
+export const StyledArticle = tw.div`w-full flex flex-col`;
