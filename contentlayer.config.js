@@ -225,9 +225,9 @@ export const Formulate = defineDocumentType(() => ({
   fields: {
     headerProps: { type: 'nested', of: headerPropsType },
     picLeftProps: { type: 'nested', of: picLeftRightPropsType },
-    picTopProps: { type: 'nested', of: picTopPropsType },
     picLeftProps2: { type: 'nested', of: picLeftRightPropsType },
-    picTopProps2: { type: 'nested', of: picTopPropsType },
+    picLeftProps3: { type: 'nested', of: picLeftRightPropsType },
+    picLeftProps4: { type: 'nested', of: picLeftRightPropsType },
   },
   computedFields: {
     lang: {
