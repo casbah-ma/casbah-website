@@ -1,6 +1,6 @@
 # Privacy Policy
 
-UPOUI (“we,” “our,” or “us”) is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by UPOUI.
+CASBAH Tourism Development (“we,” “our,” or “us”) is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by UPOUI.
 
 This Privacy Policy applies to our website, and its associated subdomains (collectively, our “Service”) alongside our application, UPOUI. By accessing or using our Service, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy and our Terms of Service.
 
@@ -250,4 +250,4 @@ Contact Us
 
 Don't hesitate to contact us if you have any questions.
 
-- Via Email: [contact@upoui.com](mailto:contact@upoui.com)
+- Via Email: [contact@ctd.ma](mailto:contact@ctd.ma)
