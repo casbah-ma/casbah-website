@@ -10,7 +10,7 @@ export const directions = {
              md:items-start `,
 };
 const textDirections = {
-  v1: tw`w-[80%] last:self-end lg:w-full`,
+  v1: tw`w-[80%] last:self-end lg:w-[38.25rem]`,
   v2: tw`w-full pl-10 last:self-end md:(pl-0 w-full)`,
   v3: tw`w-full pl-10 md:pl-0  md:w-full`,
 };
@@ -26,7 +26,7 @@ export const Wrapper = tw.div`
 `;
 
 export const Content = styled.div(() => [
-  tw`flex w-full`,
+  tw`flex w-full justify-between`,
   ({ variant }) => directions[variant],
 ]);
 
