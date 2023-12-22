@@ -191,13 +191,13 @@ export const Build = defineDocumentType(() => ({
   fields: {
     headerProps: { type: 'nested', of: headerV2PropsType },
     picTopProps: { type: 'nested', of: picTopPropsType },
-    picRightProps: { type: 'nested', of: picLeftRightPropsType },
+    picProps: { type: 'nested', of: picLeftRightPropsType },
+    picProps1: { type: 'nested', of: picLeftRightPropsType },
+    picProps2: { type: 'nested', of: picLeftRightPropsType },
+    picProps3: { type: 'nested', of: picLeftRightPropsType },
     picTopProps2: { type: 'nested', of: picTopPropsType },
-    picLeftProps: { type: 'nested', of: picLeftRightPropsType },
-    picRightProps2: { type: 'nested', of: picLeftRightPropsType },
+    picProps4: { type: 'nested', of: picLeftRightPropsType },
     picTopProps3: { type: 'nested', of: picTopPropsType },
-    picLeftProps2: { type: 'nested', of: picLeftRightPropsType },
-    picRightProps3: { type: 'nested', of: picLeftRightPropsType },
   },
   computedFields: {
     lang: {

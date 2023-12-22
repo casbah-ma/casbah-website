@@ -24,46 +24,14 @@ function Build({ data }) {
       <LottieText lottie={build} />
       <div className="flex flex-col justify-center items-center gap-20 mt-2.5 md:-mt-1 lg:-mt-[2.125rem] mb-20">
         <HeaderV2 {...data.headerProps} />
-        <PicTop
-          {...data.picTopProps}
-          variant="v3"
-          className="pl-14 md:pl-[13.188rem] lg:pl-[24.625rem]"
-        />
-        <PicLeftRight
-          {...data.picRightProps}
-          variant="v3"
-          className="md:pr-[13.188rem] lg:pr-0"
-        />
-        <PicTop
-          {...data.picTopProps2}
-          variant="v3"
-          className="pl-14 md:pl-[13.188rem] lg:pl-[24.625rem]"
-        />
-        <PicLeftRight
-          {...data.picLeftProps}
-          variant="v2"
-          className="md:pl-[13.188rem] lg:pl-0"
-        />
-        <PicLeftRight
-          {...data.picRightProps2}
-          variant="v3"
-          className="md:pr-[13.188rem] lg:pr-0"
-        />
-        <PicTop
-          {...data.picTopProps3}
-          variant="v3"
-          className="pl-14 md:pl-[13.188rem] lg:pl-[24.625rem]"
-        />
-        <PicLeftRight
-          {...data.picLeftProps2}
-          variant="v2"
-          className="md:pl-[13.188rem] lg:pl-0"
-        />
-        <PicLeftRight
-          {...data.picRightProps3}
-          variant="v3"
-          className="md:pl-[13.188rem] lg:pl-0"
-        />
+        <PicTop {...data.picTopProps} variant="v1" />
+        <PicLeftRight {...data.picProps} variant="v2" />
+        <PicLeftRight {...data.picProps1} variant="v1" />
+        <PicLeftRight {...data.picProps2} variant="v2" />
+        <PicLeftRight {...data.picProps3} variant="v1" />
+        <PicTop {...data.picTopProps3} variant="v1" />
+        <PicLeftRight {...data.picProps4} variant="v2" />
+        <PicTop {...data.picTopProps2} variant="v1" />
       </div>
     </div>
   );
