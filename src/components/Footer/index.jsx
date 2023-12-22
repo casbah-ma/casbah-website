@@ -26,7 +26,7 @@ import withReactContent from 'sweetalert2-react-content';
 import CheckedIcon from '../../icons/CheckedIcon';
 import { useState } from 'react';
 
-const Footer = () => {
+const Footer = ({ ...rest }) => {
   const year = new Date().getFullYear();
   const { t } = useTranslation();
   const [copied, setCopied] = useState(false);
@@ -42,7 +42,7 @@ const Footer = () => {
   };
 
   return (
-    <FooterWrapper>
+    <FooterWrapper {...rest}>
       <FooterContainer>
         <SocialWrapper>
           <SocialItem>
