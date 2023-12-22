@@ -72,4 +72,4 @@ export const StyledPicLeft = styled.div`
 
 export const StyledText = tw.section`flex flex-col justify-start items-start`;
 
-export const StyledArticle = tw.div`w-full flex flex-col gap-1.5`;
+export const StyledArticle = tw.div`w-full flex flex-col`;

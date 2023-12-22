@@ -103,11 +103,11 @@ export const Articulate = defineDocumentType(() => ({
   fields: {
     headerProps: { type: 'nested', of: headerPropsType },
     picTopProps: { type: 'nested', of: picTopPropsType },
-    picLeftProps: { type: 'nested', of: picLeftRightPropsType },
+    picProps: { type: 'nested', of: picLeftRightPropsType },
+    picProps1: { type: 'nested', of: picLeftRightPropsType },
     picTopProps2: { type: 'nested', of: picTopPropsType },
-    picRightProps: { type: 'nested', of: picLeftRightPropsType },
-    picLeftProps2: { type: 'nested', of: picLeftRightPropsType },
-    picTopProps3: { type: 'nested', of: picTopPropsType },
+    picProps2: { type: 'nested', of: picLeftRightPropsType },
+    picProps3: { type: 'nested', of: picLeftRightPropsType },
   },
   computedFields: {
     lang: {
@@ -224,10 +224,10 @@ export const Formulate = defineDocumentType(() => ({
   filePathPattern: `formulate/**/*.md`,
   fields: {
     headerProps: { type: 'nested', of: headerPropsType },
-    picLeftProps: { type: 'nested', of: picLeftRightPropsType },
-    picLeftProps2: { type: 'nested', of: picLeftRightPropsType },
-    picLeftProps3: { type: 'nested', of: picLeftRightPropsType },
-    picLeftProps4: { type: 'nested', of: picLeftRightPropsType },
+    picProps: { type: 'nested', of: picLeftRightPropsType },
+    picProps2: { type: 'nested', of: picLeftRightPropsType },
+    picProps3: { type: 'nested', of: picLeftRightPropsType },
+    picProps4: { type: 'nested', of: picLeftRightPropsType },
   },
   computedFields: {
     lang: {
