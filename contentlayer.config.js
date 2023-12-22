@@ -254,11 +254,11 @@ export const Design = defineDocumentType(() => ({
   filePathPattern: `design/**/*.md`,
   fields: {
     headerProps: { type: 'nested', of: headerV2PropsType },
-    picLeftProps: { type: 'nested', of: picLeftRightPropsType },
-    picRightProps: { type: 'nested', of: picLeftRightPropsType },
     picTopProps: { type: 'nested', of: picTopPropsType },
-    picLeftProps2: { type: 'nested', of: picLeftRightPropsType },
-    picRightProps2: { type: 'nested', of: picLeftRightPropsType },
+    picProps: { type: 'nested', of: picLeftRightPropsType },
+    picProps1: { type: 'nested', of: picLeftRightPropsType },
+    picProps2: { type: 'nested', of: picLeftRightPropsType },
+    picProps3: { type: 'nested', of: picLeftRightPropsType },
   },
   computedFields: {
     lang: {

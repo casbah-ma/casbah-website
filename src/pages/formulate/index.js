@@ -25,10 +25,10 @@ function Formulate({ data }) {
       <div className="flex flex-col justify-center items-center gap-20 mb-20 mt-8 md:mt-[2.625rem]  lg:mt-14">
         <Header {...data.headerProps} isVertical={true} level="h2" />
 
-        <PicLeftRight {...data.picLeftProps} variant="v1" />
-        <PicLeftRight {...data.picLeftProps2} variant="v2" />
-        <PicLeftRight {...data.picLeftProps3} variant="v1" />
-        <PicLeftRight {...data.picLeftProps4} variant="v2" />
+        <PicLeftRight {...data.picProps} variant="v1" />
+        <PicLeftRight {...data.picProps2} variant="v2" />
+        <PicLeftRight {...data.picProps3} variant="v1" />
+        <PicLeftRight {...data.picProps4} variant="v2" />
       </div>
     </div>
   );

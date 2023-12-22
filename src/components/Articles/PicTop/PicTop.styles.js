@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 
 export const directions = {
   v1: tw` flex-col gap-6
-          lg:(flex-row gap-[8.438rem] items-start)`,
+          lg:(flex-row items-start)`,
   v2: tw`flex-col gap-6 items-start 
              md:items-start`,
   v3: tw`flex-col gap-6 items-start 
@@ -26,7 +26,7 @@ export const Wrapper = tw.div`
 `;
 
 export const Content = styled.div(() => [
-  tw`flex w-full justify-between`,
+  tw`flex w-full justify-between [&>h2]:flex-1`,
   ({ variant }) => directions[variant],
 ]);
 

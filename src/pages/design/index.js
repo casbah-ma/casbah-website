@@ -34,11 +34,11 @@ function Design({ data }) {
         }`}
       >
         <HeaderV2 {...data.headerProps} variant="v2" />
-        <PicLeftRight {...data.picLeftProps} variant="v5" />
-        <PicLeftRight {...data.picRightProps} variant="v6" />
         <PicTop {...data.picTopProps} variant="v1" />
-        <PicLeftRight {...data.picLeftProps2} variant="v5" />
-        <PicLeftRight {...data.picRightProps2} variant="v6" />
+        <PicLeftRight {...data.picProps} variant="v2" />
+        <PicLeftRight {...data.picProps1} variant="v1" />
+        <PicLeftRight {...data.picProps2} variant="v2" />
+        <PicLeftRight {...data.picProps3} variant="v1" />
       </div>
     </div>
   );
