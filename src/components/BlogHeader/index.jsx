@@ -8,7 +8,7 @@ const BlogHeader = ({ title, description, imgSrc, tags }) => {
     <Wrapper>
       {tags && (
         <Tags>
-          {tags.map((tag, index) => (
+          {tags.slice(0.5).map((tag, index) => (
             <Tag key={tag + index} title={tag} />
           ))}
         </Tags>
