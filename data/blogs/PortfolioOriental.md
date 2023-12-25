@@ -1,7 +1,7 @@
 ---
 title: 'The digital strategy of the Oriental region'
 description: 'The CRT-O project had dual objectives: firstly, to furnish the Oriental region with a roadmap for tourism promotion. Secondly, it aimed to design a suite of monitoring and evaluation tools.'
-imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1700606237/PORTFOLIO/oriental/mux3wlumjpicf2ajafvw.png'
+imgSrc: ''
 tags:
   - 'Digital Strategy'
   - 'Benchmarking'
@@ -23,12 +23,12 @@ Additionally, we explored global best practices through a detailed operational b
 
 In summary, our collaboration with the Regional Council of Tourism of the Oriental has resulted in a well-crafted digital strategy and a refined organizational identity. These efforts are poised to usher in a new era for the Oriental tourism region, emphasizing a comprehensive approach to digital presence and promotional practices.
 
-![Recap Etude Oriental-1_page-0001.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/5273c88f-f8a0-4066-95f2-b65fef13c11b/c73647f3-888f-4c83-816e-22e7e1afca85/Recap_Etude_Oriental-1_page-0001.jpg)
+![https://res.cloudinary.com/casbah/image/upload/v1703501309/PORTFOLIO/oriental/Recap_Etude_Oriental-1_page-0001_gkxjhw.jpg](https://res.cloudinary.com/casbah/image/upload/v1703501309/PORTFOLIO/oriental/Recap_Etude_Oriental-1_page-0001_gkxjhw.jpg)
 
-![Recap Etude Oriental-3_page-0001.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/5273c88f-f8a0-4066-95f2-b65fef13c11b/b0b6396f-2cb3-4751-adef-d6bf622aca3a/Recap_Etude_Oriental-3_page-0001.jpg)
+![https://res.cloudinary.com/casbah/image/upload/v1703501316/PORTFOLIO/oriental/Recap_Etude_Oriental-3_page-0001_atfjzu.jpg](https://res.cloudinary.com/casbah/image/upload/v1703501316/PORTFOLIO/oriental/Recap_Etude_Oriental-3_page-0001_atfjzu.jpg)
 
-![Recap Etude Oriental-4_page-0001.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/5273c88f-f8a0-4066-95f2-b65fef13c11b/920854ba-fcb6-45e9-bbd7-4d8e756ea44b/Recap_Etude_Oriental-4_page-0001.jpg)
+![https://res.cloudinary.com/casbah/image/upload/v1703501312/PORTFOLIO/oriental/Recap_Etude_Oriental-4_page-0001_isfm5x.jpg](https://res.cloudinary.com/casbah/image/upload/v1703501312/PORTFOLIO/oriental/Recap_Etude_Oriental-4_page-0001_isfm5x.jpg)
 
-![Recap Etude Oriental-6_page-0001.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/5273c88f-f8a0-4066-95f2-b65fef13c11b/7d97a59c-0e85-4b3a-83c0-3d17962ec433/Recap_Etude_Oriental-6_page-0001.jpg)
+![https://res.cloudinary.com/casbah/image/upload/v1703501309/PORTFOLIO/oriental/Recap_Etude_Oriental-6_page-0001_orhrol.jpg](https://res.cloudinary.com/casbah/image/upload/v1703501309/PORTFOLIO/oriental/Recap_Etude_Oriental-6_page-0001_orhrol.jpg)
 
-![Benchmark Opérationnel.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/5273c88f-f8a0-4066-95f2-b65fef13c11b/ad6f8333-4341-435f-90f7-da2654fc7453/Benchmark_Operationnel.jpg)
+![https://res.cloudinary.com/casbah/image/upload/v1703501308/PORTFOLIO/oriental/Benchmark_Ope%CC%81rationnel_wucran.jpg](https://res.cloudinary.com/casbah/image/upload/v1703501308/PORTFOLIO/oriental/Benchmark_Ope%CC%81rationnel_wucran.jpg)
