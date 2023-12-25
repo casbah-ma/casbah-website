@@ -9,7 +9,7 @@ const CustomStyles = createGlobalStyle`
     }
 
     .fp-section.home_section {
-       ${tw`flex flex-col items-center justify-start gap-12 pb-12
+       ${tw`flex flex-col items-center justify-start gap-12 pb-12 last:pb-0
              md:gap-24 lg:(justify-center items-end pb-0)`}
     }
 
