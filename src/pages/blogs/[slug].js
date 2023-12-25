@@ -29,6 +29,9 @@ export const getStaticProps = ({ locale, params }) => {
   };
 };
 
+
+
+
 const BlogInfoPage = ({ data }) => {
   const router = useRouter();
   useEffect(() => {
