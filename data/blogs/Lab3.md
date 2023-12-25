@@ -7,6 +7,6 @@ imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696249706/PORTFOLIO/Ca
 tags:
   - 'Coding'
   - 'Design'
-  - 'Copyright'
+  - 'Copywriting'
 parent: 'lab'
 ---
