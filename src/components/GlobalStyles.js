@@ -12,6 +12,10 @@ const CustomStyles = createGlobalStyle`
        ${tw`flex flex-col items-center justify-start gap-12 pb-12
              md:gap-24 lg:(justify-center items-end pb-0)`}
     }
+
+    .fp-watermark {
+      ${tw`hidden`}
+    }
   
   
     // client slider / agency page 
