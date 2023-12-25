@@ -1,4 +1,4 @@
 ---
 title: 'OUR WORK'
-subtitle: 'Explore our lab page, a hub for innovative open-source projects on GitHub.'
+subtitle: 'EXPLORE OUR PORTFOLIO PAGE, FEATURING A DIVERSE COLLECTION OF CUTTING-EDGE PROJECTS AND INNOVATIVE SOLUTIONS.'
 ---

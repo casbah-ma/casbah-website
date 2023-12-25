@@ -78,7 +78,7 @@ export const links = [
     url: '/portfolio',
   },
   {
-    name: 'lab',
+    name: 'open Source',
     url: '/lab',
   },
   // {
