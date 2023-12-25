@@ -15,8 +15,8 @@ export const StyledTitle = styled(motion.h1)`
   ${({ isHome }) =>
     isHome &&
     tw`
-  xxl:(text-[2.5rem] leading-[100%])
-  xxxl:(text-5xl leading-[100%])
+  xxl:(text-[2.7rem] leading-[120%])
+  xxxl:(text-5xl leading-[120%])
   `};
   ${({ withoutBorder }) => withoutBorder && tw`pl-0 lg:pl-0 border-0`};
   ${({ color }) => color && `color: ${color}`};
