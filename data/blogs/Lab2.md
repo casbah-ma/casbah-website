@@ -1,9 +1,9 @@
 ---
 createdAt: '2023-10-22'
 title: 'Checkpose'
-description: 'https://res.cloudinary.com/casbah/image/upload/v1703605653/PORTFOLIO/checkpose_copy_dya8jh.jpg'
+description: ''
 githubLink: 'https://github.com/casbah-ma/checkpose'
-imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696252247/PORTFOLIO/Capture_d_%C3%A9cran_2023-10-02_%C3%A0_15.09.47_fiw40z.png'
+imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703605653/PORTFOLIO/checkpose_copy_dya8jh.jpg'
 tags:
   - 'Coding'
 parent: 'lab'
