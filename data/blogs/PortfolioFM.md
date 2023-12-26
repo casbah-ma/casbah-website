@@ -2,7 +2,7 @@
 createdAt: '2023-10-21'
 title: 'The Ecosystem of Fes Meknes Destination'
 description: 'Development of a new, modern portal, with an offline version and geolocation of the Fes Meknes region www.visitfesmeknes.ma. As well as the ‘Visit Fes Meknes’ mobile application.'
-imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1695823528/PORTFOLIO/VisitFM/Screenshot_2023-09-27_13.32.12_1_nbur34.png'
+imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703605656/PORTFOLIO/Fes_Mknes_copy_hzqeoz.jpg'
 tags:
   - 'Design'
   - 'Coding'

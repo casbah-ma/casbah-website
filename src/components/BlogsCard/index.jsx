@@ -32,7 +32,7 @@ const BlogsCard = ({
     >
       {tags && (
         <CardTags>
-          {tags.map((tag, index) => (
+          {tags.slice(0,2).map((tag, index) => (
             <Tag key={tag + index} title={tag} />
           ))}
         </CardTags>

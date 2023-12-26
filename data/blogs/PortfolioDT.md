@@ -2,10 +2,10 @@
 createdAt: '2023-10-22'
 title: 'Draa Tafilalet Tourist Documentation'
 description: 'Production of complete tourist documentation for the Draa Tafilalet region. This collection includes a general tourist guide, five detailed provincial guides and three thematic guides, offering a rich and diverse exploration of this magnificent region.'
-imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1695806940/PORTFOLIO/DocuDT/AJ100078_1_xfube1.jpg'
+imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703605655/PORTFOLIO/Draa_Documentation_copy_cmriss.jpg'
 tags:
   - 'Copywriting'
-  - 'Design'
+  - 'Graphic Design'
 parent: 'portfolio'
 ---
 

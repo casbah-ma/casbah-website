@@ -30,6 +30,8 @@ export const getStaticProps = async ({ locale }) => {
   };
 };
 
+
+
 export default function Home({ data }) {
   const [fullPageapi, setFullPageapi] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(null);
