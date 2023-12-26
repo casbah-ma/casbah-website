@@ -8,6 +8,7 @@ const Title = ({
   children,
   renderAs,
   color,
+  isHome,
   withoutBorder = false,
   ...rest
 }) => {
@@ -32,6 +33,7 @@ const Title = ({
       level={renderAs}
       color={color}
       withoutBorder={withoutBorder}
+      isHome={isHome}
       {...rest}
     >
       {lines?.map((line, index) => (

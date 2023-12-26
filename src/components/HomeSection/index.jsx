@@ -53,16 +53,20 @@ function HomeSection({
       <Content>
         <TitleWrapper>
           {subtitle && (
-            <AnimatedDisplay renderAs={motion.span} text={subtitle} size="md" />
+            <AnimatedDisplay
+              renderAs={motion.span}
+              text={subtitle}
+              size="home"
+            />
           )}
-          <Title withoutBorder={true} renderAs="h2">
+          <Title withoutBorder={true} renderAs="h2" isHome={true}>
             {title}
           </Title>
         </TitleWrapper>
         <Texts>
           {texts?.length > 0 &&
             texts.map((text, i) => (
-              <Paragraph key={i} size="md">
+              <Paragraph key={i} size="home">
                 {text}
               </Paragraph>
             ))}

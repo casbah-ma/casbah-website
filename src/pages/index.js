@@ -98,6 +98,10 @@ export default function Home({ data }) {
         </Fragment>
       )}
       <ReactFullpage
+        licenseKey="gplv3-license"
+        credits={{
+          enabled: false,
+        }}
         scrollingSpeed={1300}
         responsiveWidth={640}
         onLeave={onLeave}

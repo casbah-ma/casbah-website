@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Grid } from './BlogsSection.styles';
 import BlogsCard from '../BlogsCard';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 
 import { useRouter } from 'next/router';
 
@@ -9,11 +9,10 @@ import { CursorContext } from '../../store/CursorContext';
 
 function BlogsSection({ blogs }) {
   const router = useRouter();
-  const { toggleVisible } = useContext(CursorContext);
+  const { toggleVisible, reset } = useContext(CursorContext);
 
   const handleBlogClick = (blog) => {
     console.clear();
-    console.log(blog);
     if (blog.githubLink) window.open(blog.githubLink, '_blank');
     else router.push(`/blogs/${blog.slug}`);
   };
