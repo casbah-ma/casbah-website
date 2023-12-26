@@ -1,7 +1,7 @@
 ---
 title: 'The digital strategy of the Oriental region'
 description: 'The CRT-O project had dual objectives: firstly, to furnish the Oriental region with a roadmap for tourism promotion. Secondly, it aimed to design a suite of monitoring and evaluation tools.'
-imgSrc: ''
+imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703605671/PORTFOLIO/THE_DIGITAL_STRATEGY_OF_THE_ORIENTAL_REGION_copy_ft8k1l.jpg'
 tags:
   - 'Digital Strategy'
   - 'Benchmarking'
