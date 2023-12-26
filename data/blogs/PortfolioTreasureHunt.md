@@ -1,7 +1,7 @@
 ---
 title: 'Treasure Hunt Chamal'
 description: 'The Treasure Hunt Chamal project embarked on a dual mission. It aimed to redefine tourism promotion in the region while pioneering augmented reality to create an immersive adventure showcasing the cultural richness of the destination'
-imgSrc: ''
+imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703605652/PORTFOLIO/Chasse_au_tresor_Chamal_copy_k0ufde.jpg'
 tags:
   - 'Augmented Reality'
   - 'Graphic Design'
