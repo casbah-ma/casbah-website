@@ -21,6 +21,7 @@ import VisitCasa from 'public/clients/visit-casa.png';
 
 import { allHomes } from 'contentlayer/generated';
 import AboutHero from '../../components/AboutHero';
+import { NextSeo } from 'next-seo';
 
 const images = [
   {
@@ -99,7 +100,7 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
-export const meta = {
+const metadata = {
   title: 'Casbah - Shaping Future with Innovation and Authenticity',
   description:
     "Explore Casbah's philosophy of blending strength from roots with forward-thinking innovation. Discover our dedication to creating sustainable, smart territories driven by technology and human empathy.",
@@ -107,13 +108,16 @@ export const meta = {
 
 const About = ({ data }) => {
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-36 mt-[5.438rem] md:mt-[6rem]">
-      <AboutHero {...data.heroProps} />
-      <AboutSection {...data.aboutSection} />
-      {/* <AwardsSection {...data.awardsSection} /> */}
-      <TeamSection {...data.teamSection} />
-      <ClientsSwiper {...data.clientSection} />
-    </div>
+    <>
+      <NextSeo {...metadata} />
+      <div className="w-full flex flex-col justify-center items-center gap-36 mt-[5.438rem] md:mt-[6rem]">
+        <AboutHero {...data.heroProps} />
+        <AboutSection {...data.aboutSection} />
+        {/* <AwardsSection {...data.awardsSection} /> */}
+        <TeamSection {...data.teamSection} />
+        <ClientsSwiper {...data.clientSection} />
+      </div>
+    </>
   );
 };
 

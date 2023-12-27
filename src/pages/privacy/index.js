@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import { PrivacyWrapper } from '../../components/Blogs/BlogBody/BlogBody.styles';
 import { allPrivacies } from 'contentlayer/generated';
 
@@ -9,7 +10,7 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
-export const meta = {
+const metadata = {
   title: 'Privacy Policy',
   description:
     "Learn about Casbah's commitment to your privacy. Our Privacy Policy details our data collection, usage, and security practices",
@@ -17,10 +18,13 @@ export const meta = {
 
 const Privacy = ({ data }) => {
   return (
-    <PrivacyWrapper
-      dangerouslySetInnerHTML={{ __html: data?.body.html }}
-      className="blog"
-    />
+    <>
+      <NextSeo {...metadata} />
+      <PrivacyWrapper
+        dangerouslySetInnerHTML={{ __html: data?.body.html }}
+        className="blog"
+      />
+    </>
   );
 };
 

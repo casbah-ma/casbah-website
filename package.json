@@ -34,6 +34,7 @@
     "mapbox-gl": "^2.14.1",
     "next": "13.3.4",
     "next-contentlayer": "^0.3.2",
+    "next-seo": "^6.4.0",
     "next-translate": "^2.0.5",
     "nodemailer": "^6.9.4",
     "postcss": "8.4.23",
