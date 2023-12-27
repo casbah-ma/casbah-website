@@ -7,6 +7,7 @@ import PicLeftRight from '../../components/Articles/PicLeftRight';
 import LottieText from '../../components/LottieText';
 //Lotties
 import build from '../../lotties/build.json';
+import { NextSeo } from 'next-seo';
 
 //get the data for the current locale
 export const getStaticProps = ({ locale }) => {
@@ -18,7 +19,7 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
-export const metadata = {
+const metadata = {
   title: 'Advanced Digital Solutions by Casbah - Web, App, IoT Solutions',
   description:
     "Discover Casbah's expertise in building advanced digital solutions including web and app development, IoT implementations, and augmented reality technologies. We focus on creating interconnected, smart digital environments.",
@@ -26,20 +27,23 @@ export const metadata = {
 
 function Build({ data }) {
   return (
-    <div className="flex flex-col justify-center items-center mt-3.5 md:mt-[3.75rem] lg:mt-2">
-      <LottieText lottie={build} />
-      <div className="flex flex-col justify-center items-center gap-20 mt-2.5 md:-mt-1 lg:-mt-[2.125rem] mb-20">
-        <HeaderV2 {...data.headerProps} />
-        <PicTop {...data.picTopProps} variant="v1" />
-        <PicLeftRight {...data.picProps} variant="v2" />
-        <PicLeftRight {...data.picProps1} variant="v1" />
-        <PicLeftRight {...data.picProps2} variant="v2" />
-        <PicLeftRight {...data.picProps3} variant="v1" />
-        <PicTop {...data.picTopProps3} variant="v1" />
-        <PicLeftRight {...data.picProps4} variant="v2" />
-        <PicTop {...data.picTopProps2} variant="v1" />
+    <>
+      <NextSeo {...metadata} />
+      <div className="flex flex-col justify-center items-center mt-3.5 md:mt-[3.75rem] lg:mt-2">
+        <LottieText lottie={build} />
+        <div className="flex flex-col justify-center items-center gap-20 mt-2.5 md:-mt-1 lg:-mt-[2.125rem] mb-20">
+          <HeaderV2 {...data.headerProps} />
+          <PicTop {...data.picTopProps} variant="v1" />
+          <PicLeftRight {...data.picProps} variant="v2" />
+          <PicLeftRight {...data.picProps1} variant="v1" />
+          <PicLeftRight {...data.picProps2} variant="v2" />
+          <PicLeftRight {...data.picProps3} variant="v1" />
+          <PicTop {...data.picTopProps3} variant="v1" />
+          <PicLeftRight {...data.picProps4} variant="v2" />
+          <PicTop {...data.picTopProps2} variant="v1" />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

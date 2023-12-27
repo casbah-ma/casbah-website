@@ -22,6 +22,7 @@ import HomeFooter from '../components/HomeFooter';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Navbar from '../components/Navbar';
 import TopIcon from '../icons/TopIcon';
+import { NextSeo } from 'next-seo';
 
 export const getStaticProps = async ({ locale }) => {
   const data = allHomes.find((home) => home.lang === locale);
@@ -30,11 +31,11 @@ export const getStaticProps = async ({ locale }) => {
   };
 };
 
-
-export const metadata = {
+const metadata = {
   title: 'CASBAH - Be Ahead of the Future',
-  description: 'Unlock the potential of your projects with Casbah. Our dedicated team offers guidance, support, and innovative solutions to bring your vision to life',
-}
+  description:
+    'Unlock the potential of your projects with Casbah. Our dedicated team offers guidance, support, and innovative solutions to bring your vision to life',
+};
 
 export default function Home({ data }) {
   const [fullPageapi, setFullPageapi] = useState(null);
@@ -70,6 +71,7 @@ export default function Home({ data }) {
 
   return (
     <>
+      <NextSeo {...metadata} />
       {init && (
         <Fragment>
           <Navbar hiddenFromHome={!heroInView} />

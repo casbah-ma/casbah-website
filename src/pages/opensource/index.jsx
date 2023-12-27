@@ -2,6 +2,7 @@ import BlogsSection from '../../components/BlogsSection';
 import { allLabs, allBlogs } from 'contentlayer/generated';
 import BlogsHero from '../../components/BlogsHero';
 import { Container } from '../../styles/lab.styles';
+import { NextSeo } from 'next-seo';
 
 export const getStaticProps = ({ locale }) => {
   const header = allLabs.find((page) => page.lang === locale);
@@ -17,16 +18,20 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
-export const metadata = {
+const metadata = {
   title: "Casbah's Open Source Projects - A Hub of Innovation",
-  description: "Explore Casbah Open Source Lab, where we show our commitment to a more open internet. Discover some of our innovative projects, showcasing the expertise of our teams in various domains of Product Development.",
-}
+  description:
+    'Explore Casbah Open Source Lab, where we show our commitment to a more open internet. Discover some of our innovative projects, showcasing the expertise of our teams in various domains of Product Development.',
+};
 const OpenSource = ({ data }) => {
   return (
-    <Container>
-      <BlogsHero {...data.header} />
-      <BlogsSection blogs={data.blogs} />
-    </Container>
+    <>
+      <NextSeo {...metadata} />
+      <Container>
+        <BlogsHero {...data.header} />
+        <BlogsSection blogs={data.blogs} />
+      </Container>
+    </>
   );
 };
 

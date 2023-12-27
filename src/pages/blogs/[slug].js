@@ -8,6 +8,7 @@ import { allBlogs } from 'contentlayer/generated';
 import { useEffect } from 'react';
 import Breadcrumb from '../../components/Breadcrumb';
 import { data } from 'autoprefixer';
+import { NextSeo } from 'next-seo';
 
 let metaData = [];
 
@@ -33,15 +34,6 @@ export const getStaticProps = ({ locale, params }) => {
   };
 };
 
-export const metadata = {
-  title:
-    data.title ||
-    'Casbah Blog - Discover the Latest Trends in Digital Transformation',
-  description:
-    data.description ||
-    "Explore Casbah's blog to discover the latest trends in digital transformation, including web and app development, IoT implementations, and augmented reality technologies. We focus on creating interconnected, smart digital environments.",
-};
-
 const BlogInfoPage = ({ data }) => {
   const router = useRouter();
   useEffect(() => {
@@ -61,17 +53,20 @@ const BlogInfoPage = ({ data }) => {
   }, []);
 
   return (
-    <div
-      className={
-        'w-full flex flex-col justify-center items-center gap-16 p-[1rem] md:pt-32 md:p-0'
-      }
-    >
-      <Breadcrumb parent={data.parent} slug={router.query.slug} />
-      <BlogHeader {...data} />
-      <BlogBody body={data.body.html} />
-      <ShareSection {...StaticData.share} />
-      <SimilarBlog blogs={data.allBlogs} />
-    </div>
+    <>
+      <NextSeo {...data} />
+      <div
+        className={
+          'w-full flex flex-col justify-center items-center gap-16 p-[1rem] md:pt-32 md:p-0'
+        }
+      >
+        <Breadcrumb parent={data.parent} slug={router.query.slug} />
+        <BlogHeader {...data} />
+        <BlogBody body={data.body.html} />
+        <ShareSection {...StaticData.share} />
+        <SimilarBlog blogs={data.allBlogs} />
+      </div>
+    </>
   );
 };
 

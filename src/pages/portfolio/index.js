@@ -2,6 +2,7 @@ import { allPortfolios, allBlogs } from 'contentlayer/generated';
 import { Container } from '../../styles/portfolio.styles';
 import BlogsSection from '../../components/BlogsSection';
 import BlogsHero from '../../components/BlogsHero';
+import { NextSeo } from 'next-seo';
 
 export const getStaticProps = ({ locale }) => {
   const header = allPortfolios.find((portfolio) => portfolio.lang === locale);
@@ -16,17 +17,21 @@ export const getStaticProps = ({ locale }) => {
     props: { data: { header, blogs } },
   };
 };
-
-export const metadata = {
+ 
+const metadata = {
   title: 'Casbah Portfolio - Showcasing our Innovative Solutions',
   description:
     'Explore our cutting-edge solutions at Casbah, featuring dynamic web and app development, immersive augmented reality projects, and impactful territories development and digital strategies. Witness our commitment to innovation and excellence.',
 };
+
 export default function Portfolio({ data }) {
   return (
-    <Container>
-      <BlogsHero {...data.header} />
-      <BlogsSection blogs={data.blogs} />
-    </Container>
+    <>
+      <NextSeo {...metadata} />
+      <Container>
+        <BlogsHero {...data.header} />
+        <BlogsSection blogs={data.blogs} />
+      </Container>
+    </>
   );
 }
