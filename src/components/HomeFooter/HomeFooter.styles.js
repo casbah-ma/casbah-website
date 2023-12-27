@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = tw.div`
- w-full flex flex-col justify-center items-center text-center flex-1
+ hidden w-full lg:flex flex-col justify-center items-center text-center flex-1
 `;
 
 export const Logo = tw.span`

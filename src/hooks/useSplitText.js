@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 export const useSplitText = (text) => {
   const textRef = useRef(null);
   const [lines, setLines] = useState([]);
-
+  const [prevWidth, setPrevWidth] = useState();
   useEffect(() => {
     const calculateLines = () => {
       const textElement = textRef.current;
@@ -16,11 +16,18 @@ export const useSplitText = (text) => {
     };
 
     calculateLines();
-    window.addEventListener('resize', calculateLines);
-    return () => {
-      window.removeEventListener('resize', calculateLines);
+    const handleWidthResize = () => {
+      const newWidth = window.innerWidth;
+      if (newWidth !== prevWidth) {
+        calculateLines();
+        setPrevWidth(newWidth);
+      }
     };
-  }, [text]);
+    window.addEventListener('resize', handleWidthResize);
+    return () => {
+      window.removeEventListener('resize', handleWidthResize);
+    };
+  }, [text, prevWidth]);
 
   return { lines, textRef };
 };
