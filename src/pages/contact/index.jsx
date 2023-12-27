@@ -12,7 +12,7 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
-export const meta = {
+export const metadata = {
   title: 'Contact Casbah - Connect with Our Expert Team',
   description: "Contact Casbah using our phone, email, or direct message. We're eager to discuss how we can help bring your project to life.",
 }

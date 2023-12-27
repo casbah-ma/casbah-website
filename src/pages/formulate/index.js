@@ -18,7 +18,7 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
-export const meta = {
+export const metadata = {
   title:
     "Casbah's Creative Content Creation - Connecting Brands with Audiences",
   description:

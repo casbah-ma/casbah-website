@@ -9,7 +9,7 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
-export const meta = {
+export const metadata = {
   title: 'Privacy Policy',
   description:
     "Learn about Casbah's commitment to your privacy. Our Privacy Policy details our data collection, usage, and security practices",

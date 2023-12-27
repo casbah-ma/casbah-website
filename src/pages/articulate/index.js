@@ -19,7 +19,7 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
-export const meta = {
+export const metadata = {
   title: 'Articulate Your Marketing and Digital Strategy with Casbah',
   description: "Discover Casbah's strategic approach to digital transformation. We focus on aligning teams, resources, and operations with long-term goals, prioritizing end-user experience and effective digital frameworks.",
 };

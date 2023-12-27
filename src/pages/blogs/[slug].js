@@ -33,7 +33,7 @@ export const getStaticProps = ({ locale, params }) => {
   };
 };
 
-export const meta = {
+export const metadata = {
   title:
     data.title ||
     'Casbah Blog - Discover the Latest Trends in Digital Transformation',

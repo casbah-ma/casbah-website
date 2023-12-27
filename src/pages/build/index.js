@@ -18,7 +18,7 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
-export const meta = {
+export const metadata = {
   title: 'Advanced Digital Solutions by Casbah - Web, App, IoT Solutions',
   description:
     "Discover Casbah's expertise in building advanced digital solutions including web and app development, IoT implementations, and augmented reality technologies. We focus on creating interconnected, smart digital environments.",

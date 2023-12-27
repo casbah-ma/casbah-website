@@ -17,7 +17,7 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
-export const meta = {
+export const metadata = {
   title: 'Casbah Portfolio - Showcasing our Innovative Solutions',
   description:
     'Explore our cutting-edge solutions at Casbah, featuring dynamic web and app development, immersive augmented reality projects, and impactful territories development and digital strategies. Witness our commitment to innovation and excellence.',

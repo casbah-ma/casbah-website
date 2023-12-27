@@ -20,7 +20,7 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
-export const meta = {
+export const metadata = {
   title: 'Design Excellence at Casbah - Where Creativity Meets Functionality',
   description:
     "Explore Casbah's approach to design, blending logic with aesthetics to create exceptional user experiences. From user interface design to cohesive digital experiences, our design strategies enhance brand identity and user engagement.",

@@ -31,7 +31,7 @@ export const getStaticProps = async ({ locale }) => {
 };
 
 
-export const meta = {
+export const metadata = {
   title: 'CASBAH - Be Ahead of the Future',
   description: 'Unlock the potential of your projects with Casbah. Our dedicated team offers guidance, support, and innovative solutions to bring your vision to life',
 }

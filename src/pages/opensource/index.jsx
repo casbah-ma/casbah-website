@@ -17,7 +17,7 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
-export const meta = {
+export const metadata = {
   title: "Casbah's Open Source Projects - A Hub of Innovation",
   description: "Explore Casbah Open Source Lab, where we show our commitment to a more open internet. Discover some of our innovative projects, showcasing the expertise of our teams in various domains of Product Development.",
 }
