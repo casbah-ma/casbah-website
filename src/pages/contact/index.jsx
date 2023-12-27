@@ -12,6 +12,11 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
+export const meta = {
+  title: 'Contact Casbah - Connect with Our Expert Team',
+  description: "Contact Casbah using our phone, email, or direct message. We're eager to discuss how we can help bring your project to life.",
+}
+
 const ContactUsPage = ({ data }) => {
   return (
     <div className="flex flex-col justify-center items-center gap-36 mt-[5.438rem]  md:mt-[11.5rem]">

@@ -17,7 +17,11 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
-const Lab = ({ data }) => {
+export const meta = {
+  title: "Casbah's Open Source Projects - A Hub of Innovation",
+  description: "Explore Casbah Open Source Lab, where we show our commitment to a more open internet. Discover some of our innovative projects, showcasing the expertise of our teams in various domains of Product Development.",
+}
+const OpenSource = ({ data }) => {
   return (
     <Container>
       <BlogsHero {...data.header} />
@@ -26,4 +30,4 @@ const Lab = ({ data }) => {
   );
 };
 
-export default Lab;
+export default OpenSource;

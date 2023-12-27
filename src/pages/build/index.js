@@ -18,6 +18,12 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
+export const meta = {
+  title: 'Advanced Digital Solutions by Casbah - Web, App, IoT Solutions',
+  description:
+    "Discover Casbah's expertise in building advanced digital solutions including web and app development, IoT implementations, and augmented reality technologies. We focus on creating interconnected, smart digital environments.",
+};
+
 function Build({ data }) {
   return (
     <div className="flex flex-col justify-center items-center mt-3.5 md:mt-[3.75rem] lg:mt-2">

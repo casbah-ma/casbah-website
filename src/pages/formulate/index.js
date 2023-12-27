@@ -18,6 +18,13 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
+export const meta = {
+  title:
+    "Casbah's Creative Content Creation - Connecting Brands with Audiences",
+  description:
+    "Join Casbah in shaping compelling brand stories. Our expertise in content production, from copywriting to multimedia content, is tailored to engage diverse audiences and articulate your brand's unique identity.",
+};
+
 function Formulate({ data }) {
   return (
     <div className="flex flex-col justify-center items-center mt-[3.25rem] md:mt-[9.375rem] lg:mt-[10rem]">

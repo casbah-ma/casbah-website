@@ -1,7 +1,7 @@
 ---
 headerProps:
   title: 'Connect the dots and devise innovative approaches to enhance the performance of your organization.'
-  description: 'Developing strategic frameworks for day-to-day operations is fundamental and essential in aligning your teams and resources towards achieving clear long-term goals. Our approach to strategic initiatives revolves around prioritizing the most crucial element in the process: the end user.'
+  description: ''
 picTopProps:
   title: 'Digital transformation'
   texts:

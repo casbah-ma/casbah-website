@@ -9,6 +9,12 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
+export const meta = {
+  title: 'Privacy Policy',
+  description:
+    "Learn about Casbah's commitment to your privacy. Our Privacy Policy details our data collection, usage, and security practices",
+};
+
 const Privacy = ({ data }) => {
   return (
     <PrivacyWrapper
