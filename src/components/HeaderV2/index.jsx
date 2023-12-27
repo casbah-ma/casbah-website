@@ -11,9 +11,9 @@ function HeaderV2({ title, specialLine, description, variant = 'v1' }) {
         uppercase={true}
         size="lg"
       />
-      <MyParagraph variant={variant} size="md">
+      {/* <MyParagraph variant={variant} size="md">
         {description}
-      </MyParagraph>
+      </MyParagraph> */}
     </Wrapper>
   );
 }
