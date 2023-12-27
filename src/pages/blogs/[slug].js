@@ -28,9 +28,17 @@ export const getStaticProps = ({ locale, params }) => {
   const data = allBlogs.find(
     (page) => page.lang === locale && page.slug === params.slug
   );
+
+  const portfolioBlogs = allBlogs.filter(
+    (page) =>
+      page.lang === locale &&
+      page.parent === 'portfolio' &&
+      page.slug !== params.slug
+  );
+
   metaData = data;
   return {
-    props: { data: { ...data, allBlogs } },
+    props: { data: { ...data, portfolioBlogs } },
   };
 };
 
