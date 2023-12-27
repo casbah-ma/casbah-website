@@ -22,13 +22,13 @@ export const cords = {
 export const infos = {
   email: 'contact@ctd.ma',
   phone: '+212 254 485 478',
-  address: 'Rue Ahfir Res Nouha Etage 7 N°49 Tanger 90000 Morocco',
+  address: "Ahfir Street, Nouha Residence Floor 7, N°49, Tangier 90000 - Morocco",
 };
 
 export const Addresses = [
   {
     name: 'Tanger',
-    address: 'Rue Ahfir Res Nouha Etage 7 N°49 Tanger 90000 Morocco',
+    address:  "Ahfir Street, Nouha Residence Floor 7, N°49, Tangier 90000 - Morocco",
   },
   // {
   //   name: 'Casablanca',
@@ -79,7 +79,7 @@ export const links = [
   },
   {
     name: 'open Source',
-    url: '/lab',
+    url: '/opensource',
   },
   // {
   //   name: 'blogs',

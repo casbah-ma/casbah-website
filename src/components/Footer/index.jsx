@@ -90,11 +90,11 @@ const Footer = ({ ...rest }) => {
             <TermsItem className="underline">{t('privacypolicy')}</TermsItem>
           </Link>
         </TermsWrapper>
-        {/* <Link href="/terms" target="_blank">
+        <Link href="https://github.com/casbah-ma/casbah-website" target="_blank">
           <TermsItem className="underline -mt-10 md:-mt-5 lg:mt-0 lg:ml-1.5">
-            {t('termsconditions')}
+            {t('siteopensource')}
           </TermsItem>
-        </Link> */}
+        </Link>
       </FooterTerms>
       {copied && (
         <FooterToast>

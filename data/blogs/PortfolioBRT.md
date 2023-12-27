@@ -2,7 +2,7 @@
 createdAt: '2023-10-21'
 title: 'La Bourse Régionale du Tourisme'
 description: "The Regional Tourism Exchange, a flagship project spearheaded by Casbah Tourism Development for the CRT of Tanger-Tétouan-Al Hoceima, aimed to synergize local stakeholders and showcase the region's abundant tourism opportunities, fostering economic growth and cultural appreciation."
-imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703605669/PORTFOLIO/LA_BOURSE_RE%CC%81GIONALE_DU_TOURISME_copy_tbsmsr.jpg'
+imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703673403/PORTFOLIO/LA_BOURSE_RE%CC%81GIONALE_DU_TOURISME_copy_cshaor.jpg'
 tags:
   - 'MICE'
 parent: 'portfolio'

@@ -31,6 +31,10 @@ export const getStaticProps = async ({ locale }) => {
 };
 
 
+export const meta = {
+  title: 'CASBAH - Be Ahead of the Future',
+  description: 'Unlock the potential of your projects with Casbah. Our dedicated team offers guidance, support, and innovative solutions to bring your vision to life',
+}
 
 export default function Home({ data }) {
   const [fullPageapi, setFullPageapi] = useState(null);

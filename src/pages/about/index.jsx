@@ -99,6 +99,12 @@ export const getStaticProps = ({ locale }) => {
   };
 };
 
+export const meta = {
+  title: 'Casbah - Shaping Future with Innovation and Authenticity',
+  description:
+    "Explore Casbah's philosophy of blending strength from roots with forward-thinking innovation. Discover our dedication to creating sustainable, smart territories driven by technology and human empathy.",
+};
+
 const About = ({ data }) => {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-36 mt-[5.438rem] md:mt-[6rem]">

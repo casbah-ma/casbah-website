@@ -16,7 +16,7 @@ function Header({
       <Title renderAs={level} withoutBorder={true}>
         {title}
       </Title>
-      <Paragraph size="md">{description}</Paragraph>
+      {/* <Paragraph size="md">{description}</Paragraph> */}
     </Wrapper>
   );
 }

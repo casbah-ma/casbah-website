@@ -7,6 +7,9 @@ import BlogBody from '../../components/Blogs/BlogBody';
 import { allBlogs } from 'contentlayer/generated';
 import { useEffect } from 'react';
 import Breadcrumb from '../../components/Breadcrumb';
+import { data } from 'autoprefixer';
+
+let metaData = [];
 
 // getStaticPath
 export const getStaticPaths = () => {
@@ -24,13 +27,20 @@ export const getStaticProps = ({ locale, params }) => {
   const data = allBlogs.find(
     (page) => page.lang === locale && page.slug === params.slug
   );
+  metaData = data;
   return {
     props: { data: { ...data, allBlogs } },
   };
 };
 
-
-
+export const meta = {
+  title:
+    data.title ||
+    'Casbah Blog - Discover the Latest Trends in Digital Transformation',
+  description:
+    data.description ||
+    "Explore Casbah's blog to discover the latest trends in digital transformation, including web and app development, IoT implementations, and augmented reality technologies. We focus on creating interconnected, smart digital environments.",
+};
 
 const BlogInfoPage = ({ data }) => {
   const router = useRouter();
