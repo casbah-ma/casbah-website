@@ -5,28 +5,28 @@ heroProps:
 sectionProps:
   title: 'The brief is often clear : Starting from "A" to go to "B"'
   texts:
-    - "We're here to make your project a success! Let's set clear goals together, understand your vision, and improve where needed. With aligned objectives, our team will ensure your project thrives. Let's collaborate for your desired outcomes."
+    - 'Detailing the needs and kicking-off the project is generally a straightforward, although at times challenging, process. Having eyes on the prize makes the domino pieces fall, at least  mentally, in the right place at the right time.'
 sectionProps1:
   title: 'But the process is often tricky'
   texts:
-    - "Our team helps keep your project on track! We're proactive in identifying and addressing any potential obstacles that might come up, and we have the expertise and creativity to find effective solutions quickly. We strive to respond to your cues."
+    - 'What starts as a project with clear-cut end-results can face headwinds. Sometimes, the goal is known, but the way to get there is never clearly defined. Or it is defined, but the roadmap ends up giving all the wrong answers to the multiple challenges.'
 sectionProps2:
-  title: 'In the heat of the action, sometimes you lose sight of your goal'
+  title: 'Sometimes, you lose sight of the goal'
   texts:
-    - "Our team provides you with support and guidance to ensure that you stay focused and on track with your goals. We'll work closely with you, keeping you updated throughout the project so that you're always in the loop."
+    - 'In the heat of the actions, and even if defined from the get-go, any brand can lose sight of the goal, and ends up in an inward-looking process, instead of working on answering the end-users’ wants and needs.'
 sectionProps3:
   title: "You're just not sure how to get there"
   subtitle: 'Or you know where you have to get.'
   texts:
-    - "We'd love to work with you to find the perfect solutions for your project and resources. Let's collaborate to create a plan tailored to your specific needs and goals. We're here to help every step of the way!"
+    - 'Depending on the complexity of the project, sometimes you have a specific idea on the end-result, and your goals are aligned with your strategies. But you just don’t exactly know what steps to implement along the way to get there.'
 sectionProps4:
-  title: 'We untangle this whole mess of questions with you'
+  title: 'And that’s why we’re here!'
   texts:
-    - "We help you make navigating project complexities easier! We'll work closely with you to identify the right questions, prioritize communication to keep everyone aligned, and help you reach your desired outcomes. Let's work together to make this project a success!"
+    - 'We untangle this whole mess of complications with you. Whether you’re defining a perfectible end-result, carrying the wrong KPIs, or you simply lost track of your goals, we help you identify the right questions, then the convenient answers, while aligning resources with outcomes. '
 sectionProps5:
-  title: 'Then we make sure our solutions become implemented '
+  title: 'Then we work on implementing the solutions'
   texts:
-    - 'We want to make sure that our solutions are implemented effectively and that you have ongoing support to address any issues. Our team is here to assist you every step of the way, ensuring a smooth and efficient implementation that meets or exceeds your expectations.'
+    - 'The solutions we’ll find, create and implement have to be effectively carried. That is why, not only do we always think of the end-user, inside and outside your organization, but we also offer emphatic and proactive support to address any questions or issues that can show up along the way'
 sectionProps6:
   title: 'the Casbah way'
   subtitle: "And that's one side of"
