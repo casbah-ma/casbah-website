@@ -10,6 +10,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/router';
 import CursorTracker from '../components/CursorTracker';
 import CursorProvider from '../store/CursorProvider';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { useEffect } from 'react';
 
 const made = localFont({
   src: '../../public/fonts/made.otf',
@@ -41,11 +44,26 @@ export default function App({ Component, pageProps }) {
     exit: { opacity: 0, y: -100, transition: { duration: 0.5 } },
   };
 
+  useEffect(() => {
+    (function (c, l, a, r, i, t, y) {
+      c[a] =
+        c[a] ||
+        function () {
+          (c[a].q = c[a].q || []).push(arguments);
+        };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = 'https://www.clarity.ms/tag/' + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+    })(window, document, 'clarity', 'script', 'kd2nxyey3h');
+  }),
+    [];
+
   return (
     <CursorProvider>
       <GlobalStyles />
       <CursorTracker text="readMore" />
-
       <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
         <Layout
           hasPadding={hasPadding}
@@ -66,6 +84,8 @@ export default function App({ Component, pageProps }) {
           ) : (
             <Component {...pageProps} />
           )}
+          <Analytics />
+          <SpeedInsights />
         </Layout>
       </AnimatePresence>
     </CursorProvider>
