@@ -10,13 +10,14 @@ function Header({
   isVertical = false,
   isSplited = false,
   level = 'h1',
+  hasDesc = false,
 }) {
   return (
     <Wrapper isSplited={isSplited} withLine={withLine} isVertical={isVertical}>
       <Title renderAs={level} withoutBorder={true}>
         {title}
       </Title>
-      {/* <Paragraph size="md">{description}</Paragraph> */}
+      {hasDesc && <Paragraph size="md">{description}</Paragraph>}
     </Wrapper>
   );
 }

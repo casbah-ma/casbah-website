@@ -22,7 +22,6 @@ import logo from '../../../public/logo.png';
 import { socialMedia, infos, Addresses } from '../../config/constant';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
-import withReactContent from 'sweetalert2-react-content';
 import CheckedIcon from '../../icons/CheckedIcon';
 import { useState } from 'react';
 

@@ -98,12 +98,12 @@ export const media = [
     name: 'facebook',
   },
   {
-    url: 'https://www.instagram.com/',
+    url: 'https://www.instagram.com/casbahmor',
     icon: Instagram,
     name: 'instagram',
   },
   {
-    url: 'https://www.linkedin.com/company/casbah-tourism-development/',
+    url: 'https://www.linkedin.com/company/casbahmor',
     icon: LinkedIn,
     name: 'LinkedIn',
   },
@@ -116,30 +116,26 @@ export const socialMedia = [
     url: 'https://www.facebook.com/casbahm',
   },
   {
-    name: 'linkedin',
-    icon: LinkedInSVG,
-    url: 'https://www.linkedin.com/company/casbah-tourism-development/',
-  },
-  {
-    name: 'instagram',
-    icon: InstagramSVG,
-    url: 'https://www.instagram.com/',
-  },
-  {
     name: 'github',
     icon: GithubSVG,
     url: 'https://github.com/casbah-ma',
   },
   {
-    name: 'twitter',
-    icon: TwitterSVG,
-    url: 'https://twitter.com/casbah_ma',
+    name: 'instagram',
+    icon: InstagramSVG,
+    url: 'https://www.instagram.com/casbahmor',
   },
   {
     name: 'dribbble',
     icon: DribbbleSVG,
     url: 'https://dribbble.com/casbah_ma',
   },
+  {
+    name: 'linkedin',
+    icon: LinkedInSVG,
+    url: 'https://www.linkedin.com/company/casbahmor',
+  },
+
   {
     name: 'behance',
     icon: BehanceSVG,
