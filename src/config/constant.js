@@ -116,9 +116,9 @@ export const socialMedia = [
     url: 'https://www.facebook.com/casbahm',
   },
   {
-    name: 'linkedin',
-    icon: LinkedInSVG,
-    url: 'https://www.linkedin.com/company/casbahmor',
+    name: 'github',
+    icon: GithubSVG,
+    url: 'https://github.com/casbah-ma',
   },
   {
     name: 'instagram',
@@ -126,20 +126,16 @@ export const socialMedia = [
     url: 'https://www.instagram.com/casbahmor',
   },
   {
-    name: 'github',
-    icon: GithubSVG,
-    url: 'https://github.com/casbah-ma',
-  },
-  {
-    name: 'twitter',
-    icon: TwitterSVG,
-    url: 'https://twitter.com/casbah_ma',
-  },
-  {
     name: 'dribbble',
     icon: DribbbleSVG,
     url: 'https://dribbble.com/casbah_ma',
   },
+  {
+    name: 'linkedin',
+    icon: LinkedInSVG,
+    url: 'https://www.linkedin.com/company/casbahmor',
+  },
+
   {
     name: 'behance',
     icon: BehanceSVG,

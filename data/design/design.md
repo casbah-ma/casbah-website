@@ -7,7 +7,7 @@ picTopProps:
   texts:
     - "The key focus here is the user. The challenge lies in blending the right elements to create a practical user experience that is grounded in benchmarking best practices and user analysis. Additionally, it should feature a pleasing interface that doesn't distract from the core experience but instead complements it by integrating visual elements seamlessly."
     - ''
-  img: 'https://res.cloudinary.com/casbah/image/upload/v1703775844/PORTFOLIO/Expertise/ui_ux_copy_gpmd5b.jpg'
+  img: 'https://res.cloudinary.com/casbah/image/upload/v1703779557/PORTFOLIO/Expertise/ui_ux_copy_1_islzkv.jpg'
 picProps:
   title: 'Design Systems'
   article:
