@@ -98,12 +98,12 @@ export const media = [
     name: 'facebook',
   },
   {
-    url: 'https://www.instagram.com/',
+    url: 'https://www.instagram.com/casbahmor',
     icon: Instagram,
     name: 'instagram',
   },
   {
-    url: 'https://www.linkedin.com/company/casbah-tourism-development/',
+    url: 'https://www.linkedin.com/company/casbahmor',
     icon: LinkedIn,
     name: 'LinkedIn',
   },
@@ -118,12 +118,12 @@ export const socialMedia = [
   {
     name: 'linkedin',
     icon: LinkedInSVG,
-    url: 'https://www.linkedin.com/company/casbah-tourism-development/',
+    url: 'https://www.linkedin.com/company/casbahmor',
   },
   {
     name: 'instagram',
     icon: InstagramSVG,
-    url: 'https://www.instagram.com/',
+    url: 'https://www.instagram.com/casbahmor',
   },
   {
     name: 'github',

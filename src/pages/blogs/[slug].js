@@ -7,10 +7,7 @@ import BlogBody from '../../components/Blogs/BlogBody';
 import { allBlogs } from 'contentlayer/generated';
 import { useEffect } from 'react';
 import Breadcrumb from '../../components/Breadcrumb';
-import { data } from 'autoprefixer';
 import { NextSeo } from 'next-seo';
-
-let metaData = [];
 
 // getStaticPath
 export const getStaticPaths = () => {
@@ -36,7 +33,6 @@ export const getStaticProps = ({ locale, params }) => {
       page.slug !== params.slug
   );
 
-  metaData = data;
   return {
     props: { data: { ...data, portfolioBlogs } },
   };

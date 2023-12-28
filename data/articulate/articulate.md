@@ -34,7 +34,7 @@ picProps2:
     - 'In order to thrive, brands have to be more than what they sell. Users and customers seek to identify themselves with the brand’s promise and the values it carries. Defining or updating your understanding of who you are, why you exist, and how you engage with the world will empower you to have greater control over your positioning and perception among your audience.'
     - ''
     - ''
-  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703759244/PORTFOLIO/Expertise/BRANDING_IDENTITY_copy_nqrzv9.jpg'
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703770280/PORTFOLIO/Expertise/BRANDING_IDENTITY_copy_2_xz1rle.jpg'
 picProps3:
   title: 'Campaign Development'
   article:
