@@ -1,3 +1,8 @@
+
+<p align="center">
+ <img  src="https://github.com/casbah-ma/casbah-website/assets/37486496/42f82b11-8fa8-46c6-b4ae-2d618e0d58b1" alt="casbah" />
+</p>
+
 <h1 align="center">Welcome to CASBAH 👋</h1>
 
 ![casbah website copy](https://github.com/casbah-ma/casbah-website/assets/37486496/f9c6c337-0e85-4589-8ad5-c7edc86350df)
