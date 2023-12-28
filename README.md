@@ -5,7 +5,7 @@
 
 <h1 align="center">Welcome to CASBAH 👋</h1>
 
-![casbah website copy](https://github.com/casbah-ma/casbah-website/assets/37486496/f9c6c337-0e85-4589-8ad5-c7edc86350df)
+![casbah website](https://github.com/casbah-ma/casbah-website/assets/37486496/f9c6c337-0e85-4589-8ad5-c7edc86350df)
 
 
 Our collaborative masterpiece—the agency rebranding website showcases our collective expertise. Designed by our UX/UI and graphic designers, developed by our skilled team, it highlights our refreshed identity, services, team, and portfolio. Featuring open-source projects, it reflects our commitment to innovation and community collaboration.
