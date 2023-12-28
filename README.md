@@ -5,12 +5,17 @@
 
 <h1 align="center">Welcome to CASBAH 👋</h1>
 
+<p align="center">
+Dive into the open-source dance with us—grab the code, let it groove in your projects, and maybe share a step back!
+</p>
+
+
 ![casbah website](https://github.com/casbah-ma/casbah-website/assets/37486496/f9c6c337-0e85-4589-8ad5-c7edc86350df)
 
 
 Our collaborative masterpiece—the agency rebranding website showcases our collective expertise. Designed by our UX/UI and graphic designers, developed by our skilled team, it highlights our refreshed identity, services, team, and portfolio. Featuring open-source projects, it reflects our commitment to innovation and community collaboration.
 
-### ✨ [Demo](https://www.casbah.ma/)
+### ✨ [Live](https://www.casbah.ma/)
 
 ## Install
 
