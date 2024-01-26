@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { Wrapper, Word, LinkName, AbsoluteContainer } from './Navbar.styles';
-import { useEffect } from 'react';
 import useTranslation from 'next-translate/useTranslation';
-import { child, container } from '../Navbar/variants';
+import { child } from '../Navbar/variants';
 
 const titleAnimation = {
   rest: {
@@ -105,9 +104,6 @@ const AnimatedLink = ({ title }) => {
 export default AnimatedLink;
 
 const AnimatedWord = ({ title, animations, isHovered }) => (
-  useEffect(() => {
-    console.log(isHovered, animations);
-  }, [isHovered]),
   (
     <Word
       variants={titleAnimation}

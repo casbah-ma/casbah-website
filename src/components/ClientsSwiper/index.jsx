@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import MyImage from '../MyImage';
 import {
   CarouselParent,
   ImageWrapper,
@@ -7,8 +6,6 @@ import {
   imageStyle,
 } from './ClientsSwiper.styles';
 import Header from '../Header';
-
-import Marquee from 'react-fast-marquee';
 import dynamic from 'next/dynamic';
 import ImageParallax from '../Animations/ImageParallax';
 
@@ -24,7 +21,7 @@ function ClientsSwiper({ title, description, images }) {
         <ImageParallax baseVelocity={1.5}>
           <div className='m-0 flex h-full'>
             {images.map((image, i) => (
-              <ImageWrapper>
+              <ImageWrapper key={i}>
                 <LazyImageComponent
                   src={image?.src}
                   sizes={imageStyle}
@@ -34,18 +31,6 @@ function ClientsSwiper({ title, description, images }) {
             ))}
           </div>
         </ImageParallax>
-        {/* <Marquee gradient gradientWidth={100} autoFill pauseOnHover>
-          {images?.length > 0 &&
-            images.map((image, i) => (
-              <ImageWrapper key={i}>
-                <LazyImageComponent
-                  src={image?.src}
-                  sizes={imageStyle}
-                  alt={image?.name}
-                />
-              </ImageWrapper>
-            ))}
-        </Marquee> */}
       </CarouselParent>
     </Wrapper>
   );
