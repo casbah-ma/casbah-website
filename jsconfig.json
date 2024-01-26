@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "jsx": "react",
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
@@ -12,5 +13,5 @@
     "**/*.ts",
     ".contentlayer/generated",
     "src/components/Icons/ArrowRight.jsx"
-  ]
+, "src/components/Animations/ImageParallax/index.jsx"  ]
 }

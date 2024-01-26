@@ -102,6 +102,50 @@ const CustomStyles = createGlobalStyle`
 
   }
 
+  .parallax {
+    overflow: hidden;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .parallax .scroller {
+    display: flex;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+    .parallax::before,
+    .parallax::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      width: 30px;
+      height: 100%;
+    }
+    .parallax::before {
+      background: linear-gradient(to right, #fff 0%, rgba(250, 251, 252, 0) 100%
+      ); left: 0;
+    }
+    .parallax::after {
+        background: linear-gradient(to right, rgba(250,251,252,0) 0%, #fff 100%); right: 0;
+    }
+
+  .scroller span {
+    display: block;
+  }
+
+  .not_complete {
+    display: none;
+  }
+
+  .complete {
+  }
+
+
 `;
 
 const GlobalStyles = () => (

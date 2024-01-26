@@ -14,6 +14,7 @@ import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import { motion } from 'framer-motion';
 import { child, container } from '../Navbar/variants';
+import AnimatedLink from '../Navbar/NavLink';
 
 const useDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,7 +58,7 @@ const NavMiniList = ({ name, options, Icon, languages }) => {
       <DropdownButton onClick={toggle}>
         {Icon && <Icon color={isOpen ? 'white' : 'black'} />}
         <div className="flex overflow-hidden md:justify-center md:items-center gap-2 ">
-          <div className="flex wave ">
+          {/* <div className="flex wave ">
             {Array.from(t(name)).map((letter, index) => (
               <span
                 key={index}
@@ -68,7 +69,8 @@ const NavMiniList = ({ name, options, Icon, languages }) => {
                 {letter === ' ' ? '\u00A0' : letter}
               </span>
             ))}
-          </div>
+          </div> */}
+          <AnimatedLink title={t(name)} />
           <ToggleButton open={isOpen}>
             <ArrowDown className="" />
           </ToggleButton>

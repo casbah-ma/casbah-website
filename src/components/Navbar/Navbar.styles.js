@@ -21,7 +21,7 @@ export const LinkLabel = styled(motion.div)`
   ${tw`
     w-fit text-black lg:text-base text-lg leading-[2rem] font-made relative
    lg:py-0 py-4 pl-10 lg:pl-0 
-  lg:after:([content: ''] absolute bg-black h-[2px] w-0 left-0 -bottom-1 transition-[0.4s])
+  lg:after:([content: ''] absolute bg-black h-[2px] w-0 left-0 -bottom-1.5 transition-[0.4s])
   lg:hover:after:w-full
   active:(text-brightOrange)
    `}
@@ -53,3 +53,25 @@ export const PointerWrapper = tw.button`
 export const MobileNav = tw.nav`flex flex-col mt-[4.813rem] border-y border-[#D9D9D9]`;
 
 export const MobileList = tw.ul`flex w-full flex-col justify-center divide-y divide-[#D9D9D9] `;
+
+// create new animation
+
+export const Wrapper = styled(motion.div)`
+  ${tw`relative flex flex-col cursor-pointer  overflow-hidden`}
+`;
+
+export const Word = styled(motion.span)`
+  ${tw`relative whitespace-nowrap active:[&>span]:(text-brightOrange)`}
+`;
+
+export const AbsoluteContainer = styled.div`
+  ${tw`absolute inset-0`}
+`;
+
+export const LinkName = styled(motion.span)`
+  ${tw`relative whitespace-nowrap inline-block text-black lg:text-base text-lg leading-[2rem] font-made
+   lg:py-0 py-4 pl-10 lg:pl-0 
+ 
+   `};
+  ${({ key }) => key === 0 && tw`capitalize`}
+`;
