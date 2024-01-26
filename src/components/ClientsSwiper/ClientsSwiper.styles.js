@@ -32,7 +32,7 @@ export const Carousel2 = styled(Carousel)`
 export const imageStyle = tw`w-full h-full`;
 
 export const ImageWrapper = tw.div`
-w-[6.688rem] h-[2rem] md:(w-[6rem] h-[4rem])   lg:(w-[6.688rem] h-[4.875rem] mx-10)
+w-[6.688rem] h-[2rem] md:(w-[6rem] h-[4rem]) mx-2  lg:(w-[6.688rem] h-[4.875rem] mx-10)
 `;
 
 

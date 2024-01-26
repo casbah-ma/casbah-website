@@ -10,6 +10,7 @@ import Header from '../Header';
 
 import Marquee from 'react-fast-marquee';
 import dynamic from 'next/dynamic';
+import ImageParallax from '../Animations/ImageParallax';
 
 // Assuming 'images' is the array of image objects
 
@@ -18,12 +19,12 @@ const LazyImageComponent = dynamic(() => import('next/image'));
 function ClientsSwiper({ title, description, images }) {
   return (
     <Wrapper>
-      <Header description={description} title={title} />
+      <Header description={description} title={title} hasDesc />
       <CarouselParent>
-        <Marquee gradient gradientWidth={100} autoFill pauseOnHover>
-          {images?.length > 0 &&
-            images.map((image, i) => (
-              <ImageWrapper key={i}> 
+        <ImageParallax baseVelocity={1.5}>
+          <div className='m-0 flex h-full'>
+            {images.map((image, i) => (
+              <ImageWrapper>
                 <LazyImageComponent
                   src={image?.src}
                   sizes={imageStyle}
@@ -31,7 +32,20 @@ function ClientsSwiper({ title, description, images }) {
                 />
               </ImageWrapper>
             ))}
-        </Marquee>
+          </div>
+        </ImageParallax>
+        {/* <Marquee gradient gradientWidth={100} autoFill pauseOnHover>
+          {images?.length > 0 &&
+            images.map((image, i) => (
+              <ImageWrapper key={i}>
+                <LazyImageComponent
+                  src={image?.src}
+                  sizes={imageStyle}
+                  alt={image?.name}
+                />
+              </ImageWrapper>
+            ))}
+        </Marquee> */}
       </CarouselParent>
     </Wrapper>
   );

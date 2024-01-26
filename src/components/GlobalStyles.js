@@ -102,6 +102,32 @@ const CustomStyles = createGlobalStyle`
 
   }
 
+  .parallax {
+    overflow: hidden;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .parallax .scroller {
+    display: flex;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .scroller span {
+    display: block;
+  }
+
+  .not_complete {
+    display: none;
+  }
+
+  .complete {
+  }
+
 `;
 
 const GlobalStyles = () => (
