@@ -1,17 +1,21 @@
 import nodemailer from 'nodemailer';
 
-const email = process.env.EMAIL;
-const password = process.env.EMAIL_PASSWORD;
+const to = process.env.SMTP_FROM;
+const host = process.env.SMTP_HOST;
+const port = process.env.SMTP_PORT;
+const user = process.env.SMTP_USERNAME;
+const pass = process.env.SMTP_PASSWORD;
 
 export const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host,
+  port,
   auth: {
-    user: email,
-    pass: password,
+    user,
+    pass,
   },
 });
 
 export const emailOptions = {
-  from: email,
-  to: email,
+  from: "donotreply@upoui.com",
+  to,
 };
