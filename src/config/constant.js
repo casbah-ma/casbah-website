@@ -21,14 +21,16 @@ export const cords = {
 // Casbah informations
 export const infos = {
   email: 'contact@ctd.ma',
-  phone: '+212 254 485 478',
-  address: "Ahfir Street, Nouha Residence Floor 7, N°49, Tangier 90000 - Morocco",
+  phone: '+212 539 943 914',
+  address:
+    'Ahfir Street, Nouha Residence Floor 7, N°49, Tangier 90000 - Morocco',
 };
 
 export const Addresses = [
   {
     name: 'Tanger',
-    address:  "Ahfir Street, Nouha Residence Floor 7, N°49, Tangier 90000 - Morocco",
+    address:
+      'Ahfir Street, Nouha Residence Floor 7, N°49, Tangier 90000 - Morocco',
   },
   // {
   //   name: 'Casablanca',

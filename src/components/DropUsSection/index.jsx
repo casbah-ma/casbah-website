@@ -27,7 +27,7 @@ const DropUsSection = ({ description, specialLine }) => {
         <SpecialText text={description} specialLine={specialLine} />
       </Header>
       <InfoSection>
-        <Info label={'phone'} title={infos?.phone} renderAs="h2" />
+        <Info label={'phone'} title={infos?.phone} renderAs="h3" />
         <Info label={'email'} title={infos?.email} renderAs="h3" />
         <Info label={'address'} title={infos?.address} renderAs="span" />
       </InfoSection>
