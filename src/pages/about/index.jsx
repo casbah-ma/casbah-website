@@ -114,7 +114,7 @@ const About = ({ data }) => {
         <AboutHero {...data.heroProps} />
         <AboutSection {...data.aboutSection} />
         {/* <AwardsSection {...data.awardsSection} /> */}
-        <TeamSection {...data.teamSection} />
+        {/* <TeamSection {...data.teamSection} /> */}
         <ClientsSwiper {...data.clientSection} />
       </div>
     </>
