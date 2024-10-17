@@ -31,7 +31,7 @@ const DropUsSection = ({ description, specialLine }) => {
         <Info label={'email'} title={infos?.email} renderAs="h3" />
         <Info label={'address'} title={infos?.address} renderAs="span" />
       </InfoSection>
-      <MapCard latitude={cords?.lat} longitude={cords?.lng} />
+      {/* <MapCard latitude={cords?.lat} longitude={cords?.lng} /> */}
     </Wrapper>
   );
 };

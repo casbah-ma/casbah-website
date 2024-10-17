@@ -22,8 +22,7 @@ export const cords = {
 export const infos = {
   email: 'contact@ctd.ma',
   phone: '+212 539 943 914',
-  address:
-    'Ahfir Street, Nouha Residence Floor 7, N°49, Tangier 90000 - Morocco',
+  address: 'Tangier, Morocco \n Gatineau, Canada',
 };
 
 export const Addresses = [
