@@ -13,6 +13,7 @@ import CursorProvider from '../store/CursorProvider';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { useEffect } from 'react';
+import Script from 'next/script';
 
 const made = localFont({
   src: '../../public/fonts/made.otf',
@@ -38,6 +39,8 @@ export default function App({ Component, pageProps }) {
     router.route.replace('/', '')
   );
 
+  const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
   const variants = {
     hidden: { opacity: 0, y: 100, transition: { duration: 0.5 } },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -57,11 +60,43 @@ export default function App({ Component, pageProps }) {
       y = l.getElementsByTagName(r)[0];
       y.parentNode.insertBefore(t, y);
     })(window, document, 'clarity', 'script', 'kd2nxyey3h');
-  }),
-    [];
+  }, []);
+
+  // Track page views on route change for Google Analytics
+  useEffect(() => {
+    if (!GA_MEASUREMENT_ID) return;
+
+    const handleRouteChange = (url) => {
+      window.gtag('config', GA_MEASUREMENT_ID, {
+        page_path: url,
+      });
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events, GA_MEASUREMENT_ID]);
 
   return (
     <CursorProvider>
+      {GA_MEASUREMENT_ID ? (
+        <>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+            strategy="afterInteractive"
+          />
+          <Script id="gtag-init" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_MEASUREMENT_ID}');
+            `}
+          </Script>
+        </>
+      ) : null}
       <GlobalStyles />
       <CursorTracker text="readMore" />
       <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>

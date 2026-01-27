@@ -6,14 +6,12 @@ import {
   Content,
   ContentWrapper,
   LottierContainer,
-  Wrapper,
 } from './AboutHero.styles';
-import { Player } from '@lottiefiles/react-lottie-player';
+import Player from '../LottiePlayer';
 import Title from '../Title';
-import Paragraph from '../Paragraph';
 
 import hero from '../../lotties/AboutHero.json';
-import { forwardRef, useState } from 'react';
+
 import HeroArrow from '../../icons/HeroArrow';
 import { arrowVariant, arrowsVariant } from './variants';
 

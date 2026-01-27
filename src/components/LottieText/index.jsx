@@ -1,4 +1,4 @@
-import { Player } from '@lottiefiles/react-lottie-player';
+import Player from '../LottiePlayer';
 import { LottierContainer, Wrapper } from './LottieText.styles';
 
 export default function LottieText({
