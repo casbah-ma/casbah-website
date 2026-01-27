@@ -3,7 +3,6 @@ import {
   Content,
   LottieContainer,
   LottieWrapper,
-  ScrollTopBtn,
   Texts,
   TitleWrapper,
 } from './HomeSection.styles';
@@ -11,7 +10,7 @@ import Title from '../Title';
 import AnimatedDisplay from '../AnimatedDisplay';
 import Paragraph from '../Paragraph';
 import { motion } from 'framer-motion';
-import { Player } from '@lottiefiles/react-lottie-player';
+import Player from '../LottiePlayer';
 import { useEffect, useRef } from 'react';
 
 function HomeSection({

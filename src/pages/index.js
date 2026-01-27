@@ -16,7 +16,7 @@ import {
   ScrollTopBtn,
 } from '../styles/Home.styles';
 import { Fragment, useMemo, useState } from 'react';
-import { Player } from '@lottiefiles/react-lottie-player';
+import Player from '../components/LottiePlayer';
 import { useInView } from 'react-intersection-observer';
 import HomeFooter from '../components/HomeFooter';
 import ReactFullpage from '@fullpage/react-fullpage';
