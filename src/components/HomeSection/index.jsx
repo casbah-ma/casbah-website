@@ -11,7 +11,7 @@ import AnimatedDisplay from '../AnimatedDisplay';
 import Paragraph from '../Paragraph';
 import { motion } from 'framer-motion';
 import Player from '../LottiePlayer';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 
 function HomeSection({
   id,
@@ -22,11 +22,26 @@ function HomeSection({
   texts = '',
 }) {
   const playerRef = useRef(null);
-  useEffect(() => {
-    if (playerRef && id === activeSectionId) {
-      playerRef.current.play();
+  const [isReady, setIsReady] = useState(false);
+
+  const handleEvent = useCallback((event) => {
+    if (event === 'load') {
+      setIsReady(true);
     }
-  }, [activeSectionId, id]);
+  }, []);
+
+  useEffect(() => {
+    if (id !== activeSectionId || !isReady) return;
+
+    const inst = playerRef.current;
+    if (inst && typeof inst.play === 'function') {
+      // Reset to beginning and play
+      if (typeof inst.setSeeker === 'function') {
+        inst.setSeeker(0, false);
+      }
+      inst.play();
+    }
+  }, [activeSectionId, id, isReady]);
 
   return (
     <div id={id} className="section home_section fp-auto-height-responsive">
@@ -37,6 +52,7 @@ function HomeSection({
             keepLastFrame
             loop={false}
             src={lottie}
+            onEvent={handleEvent}
             style={{
               width: '100%',
               height: '100%',
