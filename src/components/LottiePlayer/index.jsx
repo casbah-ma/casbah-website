@@ -1,11 +1,21 @@
-import dynamic from 'next/dynamic';
+import { forwardRef, useEffect, useState } from 'react';
 
-const Player = dynamic(
-  async () => {
-    const ReactLottie = await import('@lottiefiles/react-lottie-player');
-    return ReactLottie.Player;
-  },
-  { ssr: false }
-);
+const Player = forwardRef((props, ref) => {
+  const [PlayerComponent, setPlayerComponent] = useState(null);
+
+  useEffect(() => {
+    import('@lottiefiles/react-lottie-player').then((mod) => {
+      setPlayerComponent(() => mod.Player);
+    });
+  }, []);
+
+  if (!PlayerComponent) {
+    return null;
+  }
+
+  return <PlayerComponent ref={ref} {...props} />;
+});
+
+Player.displayName = 'Player';
 
 export default Player;
