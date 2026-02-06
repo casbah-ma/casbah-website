@@ -112,6 +112,6 @@ By combining secure infrastructure, user-centered design, and intelligent workfl
 
 This project sets a benchmark for large-scale digital public service platforms in Morocco and beyond.
 
-![https://github.com/user-attachments/assets/5807480d-9208-40e0-8579-e4a202d6d678](https://github.com/user-attachments/assets/5807480d-9208-40e0-8579-e4a202d6d678)
+![KAFAA Platform Homepage - Digital experience recognition program for hospitality professionals](https://github.com/user-attachments/assets/5807480d-9208-40e0-8579-e4a202d6d678)
 
-![https://github.com/user-attachments/assets/dfc71ba6-1a85-4d37-a38e-f60eea0b3d12](https://github.com/user-attachments/assets/dfc71ba6-1a85-4d37-a38e-f60eea0b3d12)
+![KAFAA Platform Candidate Registration Interface with application form](https://github.com/user-attachments/assets/dfc71ba6-1a85-4d37-a38e-f60eea0b3d12)
