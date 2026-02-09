@@ -1,0 +1,11 @@
+{
+	"inputs": [
+		{
+			"id": "token",
+			"type": "promptString",
+			"description": "",
+			"password": true
+		}
+	],
+	"servers": {}
+}
