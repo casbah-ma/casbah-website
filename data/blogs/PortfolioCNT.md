@@ -1,7 +1,7 @@
 ---
 createdAt: '2025-02-09'
-title: 'CNT Digital Clusters Program – Digital Transformation of 80 Tourism Operators'
-description: "A comprehensive digital transformation program empowering 80 tourism operators across Morocco through AI-generated websites, visual content production, OTA integration, and field training, aligned with Morocco's national tourism roadmap."
+title: 'CNT Digital Clusters Program – Digital Transformation of Tourism Operators'
+description: "A comprehensive digital transformation program empowering tourism operators across Morocco through AI-generated websites, visual content production, OTA integration, and field training. 82 websites created, 65 videos produced, 23 Viator accounts activated."
 imgSrc: '/portfolio/cnt-digital-clusters/cnt-image-1.jpg'
 tags:
   - 'Digital Transformation'
@@ -18,7 +18,7 @@ As part of Morocco's national tourism roadmap (Feuille de Route 2026), the CNT D
 
 The project objectives centered on improving digital visibility of local tourism operators, structuring their online presence through modern websites, boosting international bookings via OTAs such as Viator, providing professional visual content including photos and videos, and transferring digital marketing skills through comprehensive field training programs.
 
-CASBAH delivered a hybrid large-scale digital transformation program that combined multiple innovative solutions. Through our AI-Generated Websites powered by the WAKATI Solution, we created 80 responsive, multilingual websites supporting English, French, Arabic, Spanish, and Italian. Each website featured integrated CTA buttons for WhatsApp booking, Viator links, and social media connections, all optimized for both mobile and desktop user experiences.
+CASBAH delivered a hybrid large-scale digital transformation program that combined multiple innovative solutions. Through our AI-Generated Websites powered by the WAKATI Solution, we created responsive, multilingual websites supporting English, French, Arabic, Spanish, and Italian. Each website featured integrated CTA buttons for WhatsApp booking, Viator links, and social media connections, all optimized for both mobile and desktop user experiences.
 
 Our Social Media Content Assistant, the Social Media Whisperer, automated content ideas and captions specifically adapted for Instagram, TikTok, Stories, and Feed formats. This tool empowered operators to maintain an active and engaging social media presence without requiring extensive marketing expertise.
 
