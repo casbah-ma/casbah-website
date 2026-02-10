@@ -1,8 +1,8 @@
 ---
-createdAt: '2026-02-10'
+# createdAt: '2026-02-10'
 title: 'LUMI Morocco – Full Branding & Visual Identity System for a Premium Travel Experience Brand'
-description: 'A complete brand ecosystem showcasing CASBAH's expertise in full branding systems, strategic positioning, visual identity, and scalable applications for a premium travel experience brand in Morocco.'
-imgSrc: '/portfolio/lumi-branding/lumi-logo.png'
+description: "A complete brand ecosystem showcasing CASBAH's expertise in full branding systems, strategic positioning, visual identity, and scalable applications for a premium travel experience brand in Morocco."
+imgSrc: '/portfolio/lumi-branding/lumi-logo1.png'
 tags:
   - 'Brand Identity'
   - 'Visual Design'
@@ -15,7 +15,7 @@ parent: 'portfolio'
 
 LUMI Morocco was founded as a new-generation travel and experience brand aiming to go beyond traditional travel agency positioning. The ambition was to create a brand that reflects premium execution and refined experience design, combines modern elegance with strong Moroccan identity, communicates clarity, trust, and intentionality, and is scalable across digital platforms, events, print, and physical environments. The challenge was to build a complete brand ecosystem from scratch — not just a logo — capable of supporting LUMI's long-term growth and high-end positioning.
 
-![LUMI Morocco Logo](/portfolio/lumi-branding/lumi-logo.png)
+![LUMI Morocco Logo](/portfolio/lumi-branding/lumi-logo1.png)
 
 The project required defining a strong and differentiated brand identity, creating a recognizable visual language aligned with premium travel experiences, ensuring consistency across all touchpoints including digital, print, events, and merchandise, establishing clear brand guidelines for long-term usage, and balancing modern design with cultural anchoring in Morocco.
 
