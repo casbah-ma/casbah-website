@@ -1,7 +1,7 @@
 ---
-createdAt: '2026-02-09'
+# createdAt: '2026-02-09'
 title: 'LUMI Digital Experience Ecosystem & Premium Travel Frameworks'
-description: 'CASBAH delivered a flagship digital ecosystem for LUMI, Morocco's premium experience-design partner, combining refined brand identity, structured service frameworks, destination showcases, and sustainability principles into a comprehensive platform for bespoke travel and events.'
+description: "CASBAH delivered a flagship digital ecosystem for LUMI, Morocco's premium experience-design partner, combining refined brand identity, structured service frameworks, destination showcases, and sustainability principles into a comprehensive platform for bespoke travel and events."
 imgSrc: '/portfolio/lumi-digital/lumi-home-feed.jpg'
 tags:
   - 'Web Development'
