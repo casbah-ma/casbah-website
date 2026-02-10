@@ -64,7 +64,7 @@ const BlogInfoPage = ({ data }) => {
           'w-full flex flex-col justify-center items-center gap-16 p-[1rem] md:pt-32 md:p-0'
         }
       >
-        <Breadcrumb parent={data.parent} slug={router.query.slug} />
+        <Breadcrumb parent={data.parent} title={data.title} />
         <BlogHeader {...data} />
         <BlogBody body={data.body.html} />
         <ShareSection {...StaticData.share} />
