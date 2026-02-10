@@ -1,8 +1,8 @@
 ---
 createdAt: '2025-02-01'
 title: 'CNT Digital Clusters Program – Digital Transformation of Tourism Operators'
-description: 'A large-scale digital transformation program empowering 80 Moroccan tourism operators through AI-generated websites, social media tools, visual content, OTA integration, and comprehensive training as part of Morocco's national tourism roadmap.'
-imgSrc: '/portfolio/cnt-digital-clusters/cnt-image-1.jpg'
+description: "A large-scale digital transformation program empowering 80 Moroccan tourism operators through AI-generated websites, social media tools, visual content, OTA integration, and comprehensive training as part of Morocco's national tourism roadmap."
+imgSrc: '/portfolio/cnt-digital-clusters/cnt-cover.jpg'
 tags:
   - 'Web Development'
   - 'Digital Transformation'
@@ -20,7 +20,7 @@ The project focused on improving digital visibility of local tourism operators, 
 
 CASBAH delivered a hybrid large-scale digital transformation program combining multiple innovative solutions. Through the WAKATI Solution, we generated 80 AI-powered responsive, multilingual websites in English, French, Arabic, Spanish, and Italian, with integrated call-to-action buttons for WhatsApp booking, Viator links, and social media connections, all optimized for both mobile and desktop user experiences.
 
-![CNT Digital Clusters - WAKATI websites](/portfolio/cnt-digital-clusters/cnt-image-1.jpg)
+![CNT Digital Clusters - WAKATI websites](/portfolio/cnt-digital-clusters/cnt-cover.jpg)
 
 The Social Media Whisperer tool provided automated content ideas and captions specifically adapted for Instagram, TikTok, Stories, and Feed formats, helping operators maintain an active social presence. Our visual production team created 65 promotional videos in vertical format optimized for social platforms, along with professional photo libraries for each participating operator.
 
