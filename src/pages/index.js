@@ -26,6 +26,15 @@ import { NextSeo } from 'next-seo';
 
 export const getStaticProps = async ({ locale }) => {
   const data = allHomes.find((home) => home.lang === locale);
+
+  if (!data) {
+    // Fallback to English if locale not found
+    const fallbackData = allHomes.find((home) => home.lang === 'en');
+    return {
+      props: { data: fallbackData || null },
+    };
+  }
+
   return {
     props: { data },
   };

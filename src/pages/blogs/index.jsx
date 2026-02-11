@@ -4,7 +4,10 @@ import BlogsHero from '../../components/BlogsHero';
 import { Container } from '../../styles/blogs.style';
 
 export const getStaticProps = ({ locale }) => {
-  const header = allBlogPages.find((blogPage) => blogPage.lang === locale);
+  const header =
+    allBlogPages.find((blogPage) => blogPage.lang === locale) ||
+    allBlogPages.find((blogPage) => blogPage.lang === 'en') ||
+    null;
   const blogs = allBlogs.filter(
     (page) => page.lang === locale && page.parent === 'blogs'
   );

@@ -1,6 +1,7 @@
 // Create your i18n config object
 const i18nConfig = {
-  locales: ['en'],
+  locales: ['en', 'fr', 'es'],
+  defaultLocale: 'en',
   localeDetector: (request, config) => {
     //get browser language
     const language = request.headers['accept-language'];

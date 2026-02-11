@@ -14,14 +14,14 @@ export default function LanguageMenu() {
   return (
     <Menu as="div" className="relative inline-block">
       <div className="w-full h-full flex items-center">
-        <Button>
+        <Menu.Button as={Button}>
           <span>
             <LangIcon />
           </span>
           <span>
             <ChevronDown />
           </span>
-        </Button>
+        </Menu.Button>
       </div>
       <Transition
         as={Fragment}
@@ -32,21 +32,22 @@ export default function LanguageMenu() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <List>
+        <Menu.Items as={List}>
           {router.locales.map((lang) => (
-            <Menu.Item
-              as="div"
-              key={lang}
-              className="w-full flex justify-center"
-            >
-              {({ active }) => (
-                <Link href={router.asPath} locale={lang} className="w-full">
+            <Menu.Item key={lang}>
+              {({ active, close }) => (
+                <Link
+                  href={router.asPath}
+                  locale={lang}
+                  className="w-full flex justify-center"
+                  onClick={() => close()}
+                >
                   <ListItem active={active}>{t(lang)}</ListItem>
                 </Link>
               )}
             </Menu.Item>
           ))}
-        </List>
+        </Menu.Items>
       </Transition>
     </Menu>
   );

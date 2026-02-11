@@ -1,53 +1,53 @@
 ---
 headerProps:
-  title: 'Developing products, interfaces, tools, and architectures that facilitate the organization in achieving its mission and connecting with its audiences.'
-  description: 'These will have a tailored set of functionalities to empower both users and the organization itself, ensuring they find the perfect solution for their informational, promotional, or practical requirements.'
+  title: "Développer des produits, interfaces, outils et architectures qui facilitent l'organisation dans la réalisation de sa mission et la connexion avec ses audiences."
+  description: "Ceux-ci auront un ensemble fonctionnalités sur mesure pour responsabiliser à la fois les utilisateurs et l'organisation elle-même, en s'assurant qu'ils trouvent la solution parfaite pour leurs besoins informationnels, promotionnels ou pratiques."
 picTopProps:
-  title: 'Digital Ecosystems'
+  title: "Écosystèmes digitaux"
   texts:
-    - 'Organizations miss opportunities when they treat their digital presence as static and unrelated to the rest of what the digital world has to offer. By making way for an evolving and open company, entities can benefit from what the internet has the best to offer, whether it is by interconnecting their very own tools, or by making use of several connectable technologies that can push their digital presence forward.'
+    - "Les organisations manquent des opportunités lorsqu'elles traitent leur présence digitale comme statique et sans lien avec le reste de ce que le monde digital a à offrir. En ouvrant la voie à une entreprise évolutive et ouverte, les entités peuvent bénéficier de ce que l'internet a de mieux à offrir, que ce soit en interconnectant leurs propres outils ou en utilisant plusieurs technologies connectables qui peuvent faire progresser leur présence digitale."
     - ''
-  img: 'https://res.cloudinary.com/casbah/image/upload/v1696286539/PORTFOLIO/Expertise/Digital_Ecosystems_cmam3u.png'
+  img: 'https://res.cloudinary.com/casbah/image/upload/v1703780596/PORTFOLIO/Expertise/DIGITAL_ECOSYSTEMS_copy_qbtqrg.jpg'
 picProps:
-  title: 'Web & App Development'
+  title: 'Développement Web & App'
   article:
-    - 'A cornerstone and constantly evolving field of software. Continuous advancement in programming languages and frameworks opens the way to more innovative and performing digital experiences. This enables organizations to redefine their digital presence and explore a wider range of technological possibilities.'
+    - "Une pierre angulaire et un domaine en constante évolution du logiciel. Les avancées continues dans les langages de programmation et les frameworks ouvrent la voie à des expériences digitales plus innovantes et performantes. Cela permet aux organisations de redéfinir leur présence digitale et d'explorer un plus large éventail de possibilités technologiques."
     - ''
-  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286540/PORTFOLIO/Expertise/Web_App_Development_bd2u6c.png'
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703780597/PORTFOLIO/Expertise/WEB_APP_DEVELOPMENT_copy_smfjzh.jpg'
 picProps1:
-  title: 'Internet of Things'
+  title: 'Internet des objets'
   article:
-    - 'Connected objects continue revolutionizing different areas in our lives, from homes to territories. Whatever wasn’t connected in the past can now become “smart”, capable of communicating information and often receiving commands. With sensors and batteries that can last for years, new ways of collecting and acting on data are being invented every day.'
-  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286540/PORTFOLIO/Expertise/Internet_of_Things_gj7dlr.png'
+    - "Les objets connectés continuent de révolutionner différents domaines de nos vies, des maisons aux territoires. Tout ce qui n'était pas connecté dans le passé peut maintenant devenir \"intelligent\", capable de communiquer des informations et souvent de recevoir des commandes. Avec des capteurs et des batteries qui peuvent durer des années, de nouvelles façons de collecter et d'agir sur les données sont inventées chaque jour."
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703780651/PORTFOLIO/Expertise/INTERNET_OF_THINGS_copy_mnpopx.jpg'
 picProps2:
-  title: 'Augmented Reality'
+  title: 'Réalité augmentée'
   article:
-    - 'Blending the virtual with the real has been the long-standing promise of augmented reality technologies. This vision has finally become a reality, with the development of smartphone cameras that can now detect and measure objects in three dimensions, as well as the introduction of new headsets. This transformative technology has the potential to start a revolution in human interaction within the new blended spaces they’ll inhabit.'
+    - "Mélanger le virtuel avec le réel a été la promesse de longue date des technologies de réalité augmentée. Cette vision est finalement devenue réalité, avec le développement de caméras de smartphone qui peuvent maintenant détecter et mesurer des objets en trois dimensions, ainsi que l'introduction de nouveaux casques. Cette technologie transformative a le potentiel de déclencher une révolution dans l'interaction humaine au sein des nouveaux espaces mélangés qu'ils habiteront."
     - ''
     - ''
-  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286538/PORTFOLIO/Expertise/Augmented_Reality_kffibl.png'
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703780595/PORTFOLIO/Expertise/AUGMENTED_REALITY_copy_azph6l.jpg'
 picProps3:
-  title: 'API & Scalability'
+  title: 'API & Évolutivité'
   article:
-    - "An Application Programming Interface (API) has become a necessary component in organizations' digital agility, enhancing the flexibility and adaptability of their data for various use cases. Remarkable scalability often accompanies an excellent API, which is why your architecture should be capable of effortlessly handling any number of requests, ranging from 0 to 1, 10, or even 100 million."
+    - "Une interface de programmation d'application (API) est devenue un composant nécessaire dans l'agilité digitale des organisations, améliorant la flexibilité et l'adaptabilité de leurs données pour divers cas d'utilisation. Une évolutivité remarquable accompagne souvent une excellente API, c'est pourquoi votre architecture devrait être capable de gérer sans effort n'importe quel nombre de requêtes, allant de 0 à 1, 10, ou même 100 millions."
     - ''
-  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286538/PORTFOLIO/Expertise/API_Scalability_ze4hcr.png'
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703780587/PORTFOLIO/Expertise/API_SCALABILITY_copy_kqfyak.jpg'
 picTopProps2:
-  title: 'Data Science and Artificial Intelligence'
+  title: 'Science des données et Intelligence artificielle'
   texts:
-    - 'Many organizations are sitting on treasure mines of data that often go unused or, worse, remain un-digitized. Creating a data strategy is no longer optional in competitive territories and markets. Its use extends beyond merely collecting data; it also involves harnessing the power of Artificial Intelligence to comprehend future trends and tackle upcoming challenges.'
+    - "De nombreuses organisations sont assises sur des mines au trésor de données qui restent souvent inutil isées ou, pire, restent non-numérisées. Créer une stratégie de données n'est plus optionnel dans les territoires et marchés compétitifs. Son utilisation va au-delà de la simple collecte de données; elle implique également d'exploiter la puissance de l'Intelligence Artificielle pour comprendre les tendances futures et relever les défis à venir."
     - ''
-  img: 'https://res.cloudinary.com/casbah/image/upload/v1696286539/PORTFOLIO/Expertise/Data_Science_and_Artificial_Intelligence_rcvjcr.png'
+  img: 'https://res.cloudinary.com/casbah/image/upload/v1703780595/PORTFOLIO/Expertise/DATA_SCIENCE_AND_ARTIFICIALINTELLIGENCE_copy_vrtffl.jpg'
 picProps4:
-  title: 'Content Management System'
+  title: 'Système de gestion de contenu'
   article:
-    - 'Whether you have specific needs for which you want your CMS to be custom-made or a headless CMS adapted to suit your workflow, managing your content should not be painful. A bonus is connecting your CMS to an API and making the creation, editing, and management of your content cross-channels as easy as publishing it.'
+    - "Que vous ayez des besoins spécifiques pour lesquels vous voulez que votre CMS soit sur mesure ou un CMS headless adapté à votre flux de travail, la gestion de votre contenu ne devrait pas être pénible. Un bonus est de connecter votre CMS à une API et de rendre la création, l'édition et la gestion de votre contenu multi-canaux aussi facile que de le publier."
     - ''
-  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286539/PORTFOLIO/Expertise/Content_Management_System_xagi2q.png'
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703780650/PORTFOLIO/Expertise/CONTENT_MANAGEMENTSYSTEM_copy_wjeveq.jpg'
 picTopProps3:
-  title: 'IT Operations'
+  title: 'Opérations IT'
   texts:
-    - 'Putting the Ops back in DevOps is no easy challenge. Managing access levels, ensuring data security, using appropriate infrastructures to handle the workload, and ensuring optimal performance. Rigorous processes should be in place to ensure well-planned and easily scalable resources, avoiding excessive allocation solely for the sake of safety.'
+    - "Remettre les Ops dans DevOps n'est pas un défi facile. Gérer les niveaux d'accès, assurer la sécurité des données, utiliser des infrastructures appropriées pour gérer la charge de travail et assurer des performances optimales. Des processus rigoureux devraient être en place pour garantir des ressources bien planifiées et facilement évolutives, évitant une allocation excessive uniquement pour des raisons de sécurité."
     - ''
-  img: 'https://res.cloudinary.com/casbah/image/upload/v1696286540/PORTFOLIO/Expertise/IT_Operations_ypmajm.png'
+  img: 'https://res.cloudinary.com/casbah/image/upload/v1703780652/PORTFOLIO/Expertise/IT_OPERATIONS_copy_zg7vii.jpg'
 ---

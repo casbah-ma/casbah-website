@@ -1,44 +1,44 @@
 ---
 headerProps:
-  title: 'Connect the dots and devise innovative approaches to enhance the performance of your organization.'
-  description: 'Developing strategic frameworks for day-to-day operations is fundamental and essential in aligning your teams and resources towards achieving clear long-term goals. Our approach to strategic initiatives revolves around prioritizing the most crucial element in the process: the end user.'
+  title: 'Connecter les points et concevoir des approches innovantes pour améliorer la performance de votre organisation.'
+  description: "L'élaboration de cadres stratégiques pour les opérations quotidiennes est fondamentale et essentielle pour aligner vos équipes et ressources vers l'atteinte d'objectifs clairs à long terme. Notre approche des initiatives stratégiques consiste à prioriser l'élément le plus crucial du processus : l'utilisateur final."
 picTopProps:
-  title: 'Digital transformation'
+  title: 'Transformation digitale'
   texts:
-    - 'Creating the endogenous and exogenous conditions for a successful digital transformation. While a top-down approach often covers all the necessary aspects, it may lack the necessary understanding of the operational challenges faced. Interestingly, the most effective ideas for transformation often arise internally. The digital layer serves as an enabling factor to move from ideas to actionable blueprints.'
+    - "Créer les conditions endogènes et exogènes pour une transformation digitale réussie. Bien qu'une approche descendante couvre souvent tous les aspects nécessaires, elle peut manquer de la compréhension nécessaire des défis opérationnels rencontrés. Fait intéressant, les idées les plus efficaces pour la transformation naissent souvent en interne. La couche digitale sert de facteur facilitateur pour passer des idées à des plans d'action concrets."
     - ''
     - ''
-  img: 'https://res.cloudinary.com/casbah/image/upload/v1696286540/PORTFOLIO/Expertise/Digital_transformation_dc6wvv.png'
+  img: 'https://res.cloudinary.com/casbah/image/upload/v1703759250/PORTFOLIO/Expertise/DIGITAL_TRANSFORMATION_copy_jjstbk.jpg'
 picProps:
-  title: 'Competitive analysis and benchmarking'
+  title: 'Analyse concurrentielle et benchmarking'
   article:
-    - 'Knowing your competitors (direct or indirect) is not necessarily enough to... well, know your competitors. It begins by committing to a method of identifying them objectively and continuously. Then, you can choose your approach, either by periodically benchmarking or by setting up monitoring and market intelligence systems that provide the right Key Performance Indicators (KPIs).'
+    - "Connaître vos concurrents (directs ou indirects) n'est pas nécessairement suffisant pour... bien, connaître vos concurrents. Cela commence par s'engager dans une méthode pour les identifier objectivement et continuellement. Ensuite, vous pouvez choisir votre approche, soit en effectuant périodiquement des benchmarks, soit en mettant en place des systèmes de surveillance et d'intelligence de marché qui fournissent les bons indicateurs clés de performance (KPI)."
     - ''
     - ''
-  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286538/PORTFOLIO/Expertise/Competitive_analysis_and_benchmark_b0alwq.png'
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703759246/PORTFOLIO/Expertise/COMPETITIVE_ANALYSIS_ANDBENCHMARKING_copy_vn0xvc.jpg'
 picProps1:
-  title: 'User Digital Journey'
+  title: "Parcours digital de l'utilisateur"
   article:
-    - 'Tech audit:Not all users are at the same stage in their interaction with your brand. Treating them with a one-size-fits-all approach is a missed opportunity, especially when in this digital age, the personal needs of target users can be answered in particular and precise ways. Defining your funnels (whether you’re selling a product or an idea) should be at top of the priorities in order to get through the existing noise.'
+    - "Tous les utilisateurs ne sont pas au même stade dans leur interaction avec votre marque. Les traiter avec une approche unique est une occasion manquée, surtout quand à l'ère du digital, les besoins personnels des utilisateurs cibles peuvent être satisfaits de manières particulières et précises. Définir vos entonnoirs (que vous vendiez un produit ou une idée) devrait être en tête des priorités afin de traverser le bruit existant."
     - ''
-  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286540/PORTFOLIO/Expertise/User_Digital_Journey_qzimup.png'
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703759253/PORTFOLIO/Expertise/USER_DIGITAL_JOURNEY_copy_o8hdcq.jpg'
 picTopProps2:
-  title: 'Tech audit'
+  title: 'Audit technologique'
   texts:
-    - "A digital bill is always paid, often through inaction. Between managing the complexity of the tech stack, the hosting and computation, the security risks, compliance with data protection regulations, and the imperative of ongoing maintenance, organizations have to keep an analytical eye on their costs, risks, and threats. One option is to choose the 'free' route by having a limited stack. Then again, think of the person-hours lost, missed opportunities for growth, and other potential shortfalls."
+    - "Une facture digitale est toujours payée, souvent par l'inaction. Entre la gestion de la complexité de la pile technologique, l'hébergement et le calcul, les risques de sécurité, la conformité aux réglementations de protection des données et l'impératif de maintenance continue, les organisations doivent garder un œil analytique sur leurs coûts, risques et menaces. Une option est de choisir la route 'gratuite' en ayant une pile limitée. Mais pensez aux heures-personnes perdues, aux opportunités de croissance manquées et à d'autres déficits potentiels."
     - ''
-  img: 'https://res.cloudinary.com/casbah/image/upload/v1696286538/PORTFOLIO/Expertise/A_digital_bill_is_always_paid_qbtzvw.png'
+  img: 'https://res.cloudinary.com/casbah/image/upload/v1703759275/PORTFOLIO/Expertise/TECH_AUDIT_copy_siqwbf.jpg'
 picProps2:
-  title: 'Branding & Identity'
+  title: 'Image de marque et identité'
   article:
-    - 'In order to thrive, brands have to be more than what they sell. Users and customers seek to identify themselves with the brand’s promise and the values it carries. Defining or updating your understanding of who you are, why you exist, and how you engage with the world will empower you to have greater control over your positioning and perception among your audience.'
+    - "Pour prospérer, les marques doivent être plus que ce qu'elles vendent. Les utilisateurs et clients cherchent à s'identifier avec la promesse de la marque et les valeurs qu'elle porte. Définir ou mettre à jour votre compréhension de qui vous êtes, pourquoi vous existez et comment vous vous engagez avec le monde vous donnera un meilleur contrôle sur votre positionnement et perception auprès de votre audience."
     - ''
     - ''
-  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286539/PORTFOLIO/Expertise/Branding_Identity_uljxw6.png'
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703770280/PORTFOLIO/Expertise/BRANDING_IDENTITY_copy_2_xz1rle.jpg'
 picProps3:
-  title: 'Campaign Development'
+  title: 'Développement de campagnes'
   article:
-    - 'Whether your goal is to enhance brand/product recognition, convey specific brand attributes, or guide your users further along the sales funnel, we leverage our collective expertise to give substance to your campaigns. This involves identifying the right targets, crafting the messaging, developing creative concepts, and defining the most effective channels to maximize impact, all while maintaining alignment with the brand’s personality and attributes.'
+    - "Que votre objectif soit d'améliorer la reconnaissance de la marque/du produit, de transmettre des attributs spécifiques de la marque ou de guider vos utilisateurs plus loin dans l'entonnoir de vente, nous tirons parti de notre expertise collective pour donner du corps à vos campagnes. Cela implique d'identifier les bonnes cibles, d'élaborer le message, de développer des concepts créatifs et de définir les canaux les plus efficaces pour maximiser l'impact, tout en maintenant l'alignement avec la personnalité et les attributs de la marque."
     - ''
-  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286538/PORTFOLIO/Expertise/Campaign_Development_zjtirr.png'
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703759247/PORTFOLIO/Expertise/CAMPAIGN_DEVELOPMENT_copy_lnvzhq.jpg'
 ---

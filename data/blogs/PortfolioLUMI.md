@@ -1,5 +1,5 @@
 ---
-# createdAt: '2026-02-10'
+createdAt: '2026-02-10'
 title: 'LUMI Morocco – Full Branding & Visual Identity System for a Premium Travel Experience Brand'
 description: "A complete brand ecosystem showcasing CASBAH's expertise in full branding systems, strategic positioning, visual identity, and scalable applications for a premium travel experience brand in Morocco."
 imgSrc: '/portfolio/lumi-branding/lumi-logo1.png'

@@ -5,7 +5,10 @@ import BlogsHero from '../../components/BlogsHero';
 import { NextSeo } from 'next-seo';
 
 export const getStaticProps = ({ locale }) => {
-  const header = allPortfolios.find((portfolio) => portfolio.lang === locale);
+  const header =
+    allPortfolios.find((portfolio) => portfolio.lang === locale) ||
+    allPortfolios.find((portfolio) => portfolio.lang === 'en') ||
+    null;
   const blogs = allBlogs
     .filter((page) => page.lang === locale && page.parent === 'portfolio')
     .sort((a, b) => {
@@ -17,7 +20,7 @@ export const getStaticProps = ({ locale }) => {
     props: { data: { header, blogs } },
   };
 };
- 
+
 const metadata = {
   title: 'Casbah Portfolio - Showcasing our Innovative Solutions',
   description:

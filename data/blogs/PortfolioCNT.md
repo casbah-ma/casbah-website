@@ -1,5 +1,5 @@
 ---
-# createdAt: '2025-02-01'
+createdAt: '2025-02-01'
 title: 'CNT Digital Clusters Program – Digital Transformation of Tourism Operators'
 description: "A large-scale digital transformation program empowering 80 Moroccan tourism operators through AI-generated websites, social media tools, visual content, OTA integration, and comprehensive training as part of Morocco's national tourism roadmap."
 imgSrc: '/portfolio/cnt-digital-clusters/cnt-image-3.jpg'
