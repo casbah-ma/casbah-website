@@ -1,7 +1,7 @@
 ---
 headerProps:
-  title: 'Formulating the brand’s narrative and creating the appropriate multi-format content, to be distributed in the appropriate channels, are essential priorities for any organization to effectively communicate its message.'
-  description: 'A quality-controlled and output-optimized process should be established, in order to stay on-brand, while also speaking the audience’s language.'
+  title: 'Formular la narrativa de la marca y crear el contenido multiformato apropiado, para ser distribuido en los canales apropiados, son prioridades esenciales para cualquier organización para comunicar eficazmente su mensaje.'
+  description: 'Se debe establecer un proceso controlado en calidad y optimizado para la producción, para mantenerse fiel a la marca, mientras también se habla el lenguaje de la audiencia.'
 picProps:
   title: 'Content direction and audit'
   article:

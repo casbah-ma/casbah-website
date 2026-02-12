@@ -87,7 +87,10 @@ const images = [
 ];
 
 export const getStaticProps = ({ locale }) => {
-  const data = allAbouts.find((page) => page.lang === locale);
+  const data =
+    allAbouts.find((page) => page.lang === locale) ||
+    allAbouts.find((page) => page.lang === 'en') ||
+    null;
 
   return {
     props: {

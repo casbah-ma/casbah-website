@@ -11,7 +11,10 @@ import { NextSeo } from 'next-seo';
 
 //get the data for the current locale
 export const getStaticProps = ({ locale }) => {
-  const data = allFormulates.find((page) => page.lang === locale);
+  const data =
+    allFormulates.find((page) => page.lang === locale) ||
+    allFormulates.find((page) => page.lang === 'en') ||
+    null;
   return {
     props: {
       data,

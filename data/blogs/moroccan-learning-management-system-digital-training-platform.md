@@ -10,7 +10,7 @@ tags:
   - 'AI Integration'
   - 'Security & Infrastructure'
 parent: 'portfolio'
-# createdAt: '2026-02-10'
+createdAt: '2026-02-10'
 ---
 
 # Moroccan Learning Management System - 2026

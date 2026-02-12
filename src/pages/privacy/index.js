@@ -3,7 +3,10 @@ import { PrivacyWrapper } from '../../components/Blogs/BlogBody/BlogBody.styles'
 import { allPrivacies } from 'contentlayer/generated';
 
 export const getStaticProps = ({ locale }) => {
-  const data = allPrivacies.find((home) => home.lang === locale);
+  const data =
+    allPrivacies.find((home) => home.lang === locale) ||
+    allPrivacies.find((home) => home.lang === 'en') ||
+    null;
 
   return {
     props: { data },

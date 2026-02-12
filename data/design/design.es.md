@@ -1,35 +1,35 @@
 ---
 headerProps:
-  title: 'Brands can better leverage their avenues of expression through effective design.'
-  description: 'It is not merely about combining shapes and colors, but about finding the right balance between logic and aesthetics. This allows brands to offer exceptional experiences to their target audiences while effectively conveying the intended messages and remaining true to their brand identity.'
+  title: 'Las marcas pueden aprovechar mejor sus avenidas de expresión a través de un diseño efectivo.'
+  description: 'No se trata simplemente de combinar formas y colores, sino de encontrar el equilibrio adecuado entre la lógica y la estética. Esto permite a las marcas ofrecer experiencias excepcionales a sus audiencias objetivo mientras transmiten efectivamente los mensajes previstos y permanecen fieles a su identidad de marca.'
 picTopProps:
-  title: 'User Experience / User Interface'
+  title: 'Experiencia de usuario / Interfaz de usuario'
   texts:
-    - "The key focus here is the user. The challenge lies in blending the right elements to create a practical user experience that is grounded in benchmarking best practices and user analysis. Additionally, it should feature a pleasing interface that doesn't distract from the core experience but instead complements it by integrating visual elements seamlessly."
+    - "El enfoque clave aquí es el usuario. El desafío radica en mezclar los elementos correctos para crear una experiencia de usuario práctica que esté fundamentada en benchmarking de mejores prácticas y análisis de usuarios. Además, debería presentar una interfaz agradable que no distraiga de la experiencia central sino que la complemente integrando elementos visuales de manera fluida."
     - ''
-  img: 'https://res.cloudinary.com/casbah/image/upload/v1696286573/PORTFOLIO/Expertise/User_Interface_rs9kh1.png'
+  img: 'https://res.cloudinary.com/casbah/image/upload/v1703779557/PORTFOLIO/Expertise/ui_ux_copy_1_islzkv.jpg'
 picProps:
-  title: 'Design Systems'
+  title: 'Sistemas de diseño'
   article:
-    - 'Improving trust within your organization by providing seamless and cohesive digital experiences is an essential tool for building better brand equity over time. Implementing organization-wide rules and guidelines for use cases, as well as design elements such as typography, colors, and UI components, also enhances efficiency, enabling faster achievement of end results with fewer time and resource requirements.'
+    - 'Mejorar la confianza dentro de su organización proporcionando experiencias digitales fluidas y cohesivas es una herramienta esencial para construir mejor equidad de marca con el tiempo. Implementar reglas y directrices a nivel organizacional para casos de uso, así como elementos de diseño como tipografía, colores y componentes UI, también mejora la eficiencia, permitiendo un logro más rápido de los resultados finales con menos requisitos de tiempo y recursos.'
     - ''
-  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286539/PORTFOLIO/Expertise/Design_Systems_is9ofl.png'
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703775846/PORTFOLIO/Expertise/DESIGNSYSTEMS_copy_elaiej.jpg'
 picProps1:
-  title: 'Visual Identity'
+  title: 'Identidad visual'
   article:
-    - 'The visual expression of what a brand is and what it stands for. Your visual identity is about more than a logo. It is about what image you want your users to remember when your brand comes up. A branding strategy and a visual identity are complementary components, as one partially guides the other. The personality of your brand should be reflected in the typography, the angles, and the colors... No detail is insignificant.'
+    - 'La expresión visual de lo que es una marca y lo que representa. Su identidad visual es más que un logo. Se trata de qué imagen quiere que sus usuarios recuerden cuando su marca surja. Una estrategia de marca y una identidad visual son componentes complementarios, ya que uno guía parcialmente al otro. La personalidad de su marca debe reflejarse en la tipografía, los ángulos y los colores... Ningún detalle es insignificante.'
     - ''
-  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286540/PORTFOLIO/Expertise/Visual_Identity_gqpprc.png'
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703775845/PORTFOLIO/Expertise/VISUALIDENTITY_2_copy_mvaqxz.jpg'
 picProps2:
-  title: '2D/Illustrations'
+  title: '2D/Ilustraciones'
   article:
-    - 'Creating visual representations of ideas, creative concepts, and messages that the organization wants to communicate is made easier by mastering the craft of illustration. Whether it is for an internal or external campaign, harnessing the power of digital artistry can result in appealing and engaging content.'
+    - 'Crear representaciones visuales de ideas, conceptos creativos y mensajes que la organización desea comunicar se facilita al dominar el arte de la ilustración. Ya sea para una campaña interna o externa, aprovechar el poder del arte digital puede resultar en contenido atractivo y atrayente.'
     - ''
-  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286546/PORTFOLIO/Expertise/Illustrations_yvuygy.png'
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703775844/PORTFOLIO/Expertise/ILLUSTRATIONS_copy_qzqakc.jpg'
 picProps3:
-  title: '3D Modeling'
+  title: 'Modelado 3D'
   article:
-    - 'Whether to be used for Augmented or Virtual Reality, as a component in User Interfaces or to be printed, 3D objects are now a necessity in many digital experiences. Their new-found novelty, thanks to the rapidly multiplying web experiences, mobile apps, and games that make use of the technology places it on top of design trends that will shape the way we interact with digital platforms.'
+    - 'Ya sea para ser utilizado en realidad aumentada o virtual, como componente en interfaces de usuario o para ser impreso, los objetos 3D son ahora una necesidad en muchas experiencias digitales. Su novel dad recientemente encontrada, gracias a las experiencias web, aplicaciones móviles y juegos que se multiplican rápidamente y que utilizan la tecnología, la coloca en la cima de las tendencias de diseño que darán forma a la forma en que interactuamos con las plataformas digitales.'
     - ''
-  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1696286538/PORTFOLIO/Expertise/3D_Modeling_op1kki.png'
+  imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703775848/PORTFOLIO/Expertise/3D_copy_eryn8s.jpg'
 ---

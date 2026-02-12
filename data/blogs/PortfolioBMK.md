@@ -1,4 +1,5 @@
 ---
+createdAt: '2023-10-23'
 title: 'The digital ecosystem of Beni Mellal Khenifra Destination'
 description: "Creating four innovative solutions within the destination's digital ecosystem, aiming to enhance the tourist experience in this splendid region. These solutions seek to transform the way visitors engage and explore, elevating their journey."
 imgSrc: 'https://res.cloudinary.com/casbah/image/upload/v1703605655/PORTFOLIO/digital_ecosystem_BMK_copy_nlvxx7.jpg'
@@ -7,7 +8,6 @@ tags:
   - 'App Development'
   - 'UX/UI Design'  
   - 'Digital EcoSystem'
-
 parent: 'portfolio'
 ---
 

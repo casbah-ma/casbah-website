@@ -9,7 +9,7 @@ tags:
   - 'Security & Infrastructure'
   - 'Public Digital Transformation'
 parent: 'portfolio'
-# createdAt: '2026-02-09'
+createdAt: '2024-02-09'
 ---
 
 # KAFAA - Ministry of Tourism - 2026

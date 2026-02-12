@@ -11,7 +11,7 @@ export const Button = styled(Menu.Button)`
 `;
 
 export const List = styled(Menu.Items)`
-  ${tw`w-[7.188rem] flex flex-col justify-center items-start mt-2 
+  ${tw`min-w-[7.188rem] flex flex-col justify-center items-start mt-2 
     absolute right-0  shadow-2xl rounded-md
       bg-white ring-black  ring-opacity-5 focus:outline-none`}
 `;
