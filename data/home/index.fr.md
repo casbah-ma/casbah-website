@@ -1,6 +1,6 @@
 ---
 heroProps:
-  title: 'responsabiliser les territoires'
+  title: 'territoires activés'
   description: "il s'agit d'une petite description de ce que fait casbah et de son créneau de marché"
 sectionProps:
   title: 'Le brief est souvent clair : Nous voulons passer de « A » à « B »'

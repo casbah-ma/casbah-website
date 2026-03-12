@@ -1,6 +1,6 @@
 ---
 heroProps:
-  title: 'RESPONSABILISER LES TERRITOIRES'
+  title: 'TERRITOIRES ACTIVÉS'
   description: "Il s'agit d'une petite description de ce que fait casbah et de son créneau de marché"
 aboutSection:
   header:
@@ -10,7 +10,7 @@ aboutSection:
   ourVision:
     title: 'NOTRE VISION'
     text:
-      - "Responsabiliser les territoires pour mieux répondre aux aspirations des peuples."
+      - "Territoires activés pour mieux répondre aux aspirations des peuples."
       - "Guidés par le principe de responsabilisation, nous visons à allumer le potentiel au sein de divers territoires, créant une synergie harmonieuse entre les forces locales et les aspirations mondiales. Notre vision est de cultiver une croissance inclusive, où chaque communauté contribue à un récit partagé de progrès."
       - "Grâce à la collaboration et à l'innovation, nous envisageons un avenir où les territoires responsabilisés servent de phares pour un progrès durable, incarnant l'esprit collectif de réalisation des aspirations."
   ourMission:
