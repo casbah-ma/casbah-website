@@ -99,7 +99,7 @@ const Navbar = ({ hiddenFromHome = false }) => {
               ) : (
                 link?.url && (
                   <Link key={index} href={link?.url}>
-                    <LinkLabel className="capitalize">{link.name}</LinkLabel>
+                    <LinkLabel className="capitalize">{t(link.name)}</LinkLabel>
                   </Link>
                 )
               )
