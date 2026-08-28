@@ -30,35 +30,40 @@ const ContactUs = ({}) => {
   // handle send email form function
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // check if form not empty
+    if (!formState.name || !formState.email || !formState.message) {
+      MySwal.fire({
+        title: <strong>{t('oops')}</strong>,
+        html: <p>{t('contacterror')}</p>,
+        icon: 'error',
+      });
+      return;
+    }
+
+    setLoading(true);
     try {
-      // check if form not empty
-      if (formState.name && formState.email && formState.message) {
-        setLoading(true);
-        sendFormContact(formState).then((res) => {
-          if (res.success) {
-            setLoading(false);
-            MySwal.fire({
-              title: <strong>{t('thankyou')}</strong>,
-              html: <p>{t('contactsuccess')}</p>,
-              icon: 'success',
-            }).then((result) => {
-              setFormState({
-                name: '',
-                email: '',
-                message: '',
-              });
-            });
-          }
+      const res = await sendFormContact(formState);
+      if (res.success) {
+        await MySwal.fire({
+          title: <strong>{t('thankyou')}</strong>,
+          html: <p>{t('contactsuccess')}</p>,
+          icon: 'success',
         });
-      } else {
-        MySwal.fire({
-          title: <strong>{t('oops')}</strong>,
-          html: <p>{t('contacterror')}</p>,
-          icon: 'error',
+        setFormState({
+          name: '',
+          email: '',
+          message: '',
         });
       }
     } catch (error) {
-      console.log(error);
+      MySwal.fire({
+        title: <strong>{t('oops')}</strong>,
+        html: <p>{t('contacterror')}</p>,
+        icon: 'error',
+      });
+    } finally {
+      setLoading(false);
     }
   };
 
