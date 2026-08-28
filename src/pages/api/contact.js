@@ -8,6 +8,18 @@ const CONTACT_MESSAGE_FIELDS = {
   message: 'Message',
 };
 
+/**
+ * Escapes HTML special characters to prevent HTML injection in emails.
+ */
+const sanitizeHtml = (str) => {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+};
+
 const generateEmailContent = (data) => {
   const stringData = Object.entries(data).reduce(
     (str, [key, val]) =>
@@ -15,7 +27,7 @@ const generateEmailContent = (data) => {
     ''
   );
   const htmlData = Object.entries(data).reduce((str, [key, val]) => {
-    return (str += `<h3 class="form-heading" align="left">${CONTACT_MESSAGE_FIELDS[key]}</h3><p class="form-answer" align="left">${val}</p>`);
+    return (str += `<h3 class="form-heading" align="left">${CONTACT_MESSAGE_FIELDS[key]}</h3><p class="form-answer" align="left">${sanitizeHtml(val)}</p>`);
   }, '');
 
   return {
@@ -181,7 +193,7 @@ const handler = async (req, res) => {
         from: data.email,
         to: 'contact@ctd.ma',
         ...generateEmailContent(data),
-        subject: `Message from ${data.name}`,
+        subject: `Message from ${sanitizeHtml(data.name)}`,
         replyTo: data.email,
       });
       return res.status(200).json({ success: true });
@@ -190,7 +202,8 @@ const handler = async (req, res) => {
     }
   }
 
-  return res.status(400).json({ message: 'Bad Request' });
+  res.setHeader('Allow', 'POST');
+  return res.status(405).json({ message: 'Method Not Allowed' });
 };
 
 export default handler;
